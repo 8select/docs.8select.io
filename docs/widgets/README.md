@@ -1,6 +1,6 @@
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-https://docs.8select.io/CSE-integration-manual/
+[Übersicht](https://docs.8select.io/CSE-integration-manual/)
 
 - [8select-CSE Widgets](#8select-cse-widgets)
   - [SYS-PSV Widget - ein Produktset für eine SKU anzeigen](#sys-psv-widget---ein-produktset-f%C3%BCr-eine-sku-anzeigen)

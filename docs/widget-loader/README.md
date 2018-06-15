@@ -1,6 +1,6 @@
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-https://docs.8select.io/CSE-integration-manual/
+[Übersicht](https://docs.8select.io/CSE-integration-manual/)
 
 - [JavaScript-SDK API](#javascript-sdk-api)
   - [initCSE()](#initcse)
