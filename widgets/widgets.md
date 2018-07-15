@@ -1,4 +1,4 @@
-# Widgets
+# Übersicht
 
 8select-CSE Widgets sind simple HTML-Elemente. Diese werden mit Hilfe des 8select-CSE JavaScript SDKs automatisch durch die eigentlichen Widgets ersetzt.
 

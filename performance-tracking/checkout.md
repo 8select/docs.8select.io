@@ -1,4 +1,4 @@
-# Checkout
+# Transaktions-Tracking
 
 Für die Auswertung der Umsätze die über die 8select-CSE kommen, müssen Sie einen zweiten JavaScript Codeausschnitt einbinden. Dies muss auf der Seite die nach einem erfolgreichen Checkout angezeigt wird erfolgen.
 

@@ -4,21 +4,22 @@
 
 ## Installation
 
-* [Installation](installation/installation.md)
+* [Funktionsweise](installation/installation-1.md)
+* [Integration](installation/integration.md)
 
 ## Widgets
 
-* [Widgets](widgets/widgets/README.md)
-  * [SYS-PSV](widgets/widgets/sys-psv.md)
-  * [SYS-PSV Button](widgets/widgets/sys-psv-button.md)
-  * [SYS-ACC](widgets/widgets/sys-acc.md)
-  * [PSP-PSV](widgets/widgets/psp-psv.md)
-  * [PSP-TLV](widgets/widgets/psp-tlv.md)
+* [Übersicht](widgets/widgets.md)
+* [SYS-PSV](widgets/sys-psv.md)
+* [SYS-PSV Button](widgets/sys-psv-button.md)
+* [SYS-ACC](widgets/sys-acc.md)
+* [PSP-PSV](widgets/psp-psv.md)
+* [PSP-TLV](widgets/psp-tlv.md)
 
 ## Performance-Tracking
 
-* [Performance-Tracking](performance-tracking/performance-tracking/README.md)
-  * [Checkout](performance-tracking/performance-tracking/checkout.md)
+* [Integration](performance-tracking/performance-tracking.md)
+* [Transaktions-Tracking](performance-tracking/checkout.md)
 
 ## API
 
