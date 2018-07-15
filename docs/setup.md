@@ -1,29 +1,27 @@
-<!-- START doctoc generated TOC please keep comment here to allow auto update -->
-<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+# setup
+
 [Übersicht](https://docs.8select.io/CSE-integration-manual/)
 
-- [Installation](#installation)
-  - [Wie wird die 8select-CSE integriert?](#wie-wird-die-8select-cse-integriert)
-  - [API-ID](#api-id)
+* [Installation](setup.md#installation)
+  * [Wie wird die 8select-CSE integriert?](setup.md#wie-wird-die-8select-cse-integriert)
+  * [API-ID](setup.md#api-id)
 
-<!-- END doctoc generated TOC please keep comment here to allow auto update -->
-
-# Installation
+## Installation
 
 Das 8select-CSE JavaScript SDK bietet alle clientseitigen Funktionen um die 8select-CSE vollständig in eine Webseite einzubinden.
 
 Es ermöglicht die Nutzung des:
 
-- SYS-PSV Widget - um ein Produktset für eine SKU anzuzeigen
-- SYS-PSV Button - um einen Button mit dem Hinweis auf ein passendes Produktset anzuzeigen
-- SYS-ACC Widget - um ergänzende Vorschläge zu einer in den Warenkorb gelegten SKU anzuzeigen
-- PSP-PSV Widget - um ein bestimmtes Produktsets anzuzeigen
-- PSP-TLV Widget - um eine Liste von Produktsets anzuzeigen
-- ELTX-Client - für das CSE Performance-Tracking
+* SYS-PSV Widget - um ein Produktset für eine SKU anzuzeigen
+* SYS-PSV Button - um einen Button mit dem Hinweis auf ein passendes Produktset anzuzeigen
+* SYS-ACC Widget - um ergänzende Vorschläge zu einer in den Warenkorb gelegten SKU anzuzeigen
+* PSP-PSV Widget - um ein bestimmtes Produktsets anzuzeigen
+* PSP-TLV Widget - um eine Liste von Produktsets anzuzeigen
+* ELTX-Client - für das CSE Performance-Tracking
 
 Das SDK und die Widgets funktionieren in Desktop- und mobilen Webrowsern.
 
-## Wie wird die 8select-CSE integriert?
+### Wie wird die 8select-CSE integriert?
 
 Die 8select-CSE wird mit Hilfe des JavaScript SDK muss nicht heruntergeladen werden. Es wird einfach über ein JavaScript-Codeausschnitt auf der Webseite im HTML platziert.
 
@@ -50,6 +48,7 @@ Mit Hilfe von folgendem Codeausschnitt wird das SDK geladen:
 </script>
 ```
 
-## API-ID
+### API-ID
 
 In vielen Code-Snippets befindet sich der Wert `<API-ID>`. Dieser muss durch `API-ID` ersetzt werden, die 8select zur Verfügung stellt.
+
