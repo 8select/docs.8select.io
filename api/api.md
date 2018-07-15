@@ -1,4 +1,4 @@
-# JavaScript-SDK API
+# API
 
 ## initCSE\(\)
 
@@ -15,3 +15,4 @@ Wenn Ihr Shop Varianten via Ajax nachlädt, so müssen Sie das SYS-PSV Widget ü
 ```javascript
 window._8select.reinitSys("21", "42");
 ```
+

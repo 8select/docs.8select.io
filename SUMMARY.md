@@ -1,25 +1,26 @@
 # Table of contents
 
-- [8select CSE](README.md)
+* [8select CSE](README.md)
 
 ## Installation
 
-- [Installation](Installation/README.md)
+* [Installation](installation/installation.md)
 
 ## Widgets
 
-- [Widgets](Widgets/README.md)
-  - [SYS-PSV](Widgets/SYS-PSV.md)
-  - [SYS-PSV Button](Widgets/SYS-PSV-Button.md)
-  - [SYS-ACC](Widgets/SYS-ACC.md)
-  - [PSP-PSV](Widgets/PSP-PSV.md)
-  - [PSP-TLV](Widgets/PSP-TLV.md)
+* [Widgets](widgets/widgets/README.md)
+  * [SYS-PSV](widgets/widgets/sys-psv.md)
+  * [SYS-PSV Button](widgets/widgets/sys-psv-button.md)
+  * [SYS-ACC](widgets/widgets/sys-acc.md)
+  * [PSP-PSV](widgets/widgets/psp-psv.md)
+  * [PSP-TLV](widgets/widgets/psp-tlv.md)
 
 ## Performance-Tracking
 
-- [Performance-Tracking](Performance-Tracking/README.md)
-  - [Checkout](Performance-Tracking/Checkout.md)
+* [Performance-Tracking](performance-tracking/performance-tracking/README.md)
+  * [Checkout](performance-tracking/performance-tracking/checkout.md)
 
 ## API
 
-- [API](API/README.md)
+* [API](api/api.md)
+

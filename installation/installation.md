@@ -4,12 +4,12 @@ Das 8select-CSE JavaScript SDK bietet alle clientseitigen Funktionen um die 8sel
 
 Es ermöglicht die Nutzung des:
 
-- SYS-PSV Widget - um ein Produktset für eine SKU anzuzeigen
-- SYS-PSV Button - um einen Button mit dem Hinweis auf ein passendes Produktset anzuzeigen
-- SYS-ACC Widget - um ergänzende Vorschläge zu einer in den Warenkorb gelegten SKU anzuzeigen
-- PSP-PSV Widget - um ein bestimmtes Produktsets anzuzeigen
-- PSP-TLV Widget - um eine Liste von Produktsets anzuzeigen
-- ELTX-Client - für das CSE Performance-Tracking
+* SYS-PSV Widget - um ein Produktset für eine SKU anzuzeigen
+* SYS-PSV Button - um einen Button mit dem Hinweis auf ein passendes Produktset anzuzeigen
+* SYS-ACC Widget - um ergänzende Vorschläge zu einer in den Warenkorb gelegten SKU anzuzeigen
+* PSP-PSV Widget - um ein bestimmtes Produktsets anzuzeigen
+* PSP-TLV Widget - um eine Liste von Produktsets anzuzeigen
+* ELTX-Client - für das CSE Performance-Tracking
 
 Das SDK und die Widgets funktionieren in Desktop- und mobilen Webrowsern.
 
@@ -51,3 +51,4 @@ Das Widget-Loader Script `loader.js` ist eine ca. 5 KB große JavaScript Datei. 
 Diese Technik verhindert das Blockieren von Downloads anderer Ressourcen. Außerdem wird das `onload` Event des Browsers nicht blockiert. Somit beeinflusst das Einbinden der 8select CSE in keinster Weise die Ladezeiten Ihres Shops.
 
 Nachdem das 8select-CSE JavaScript SDK geladen ist, füllt dieses automatisch alle gekennzeichneten div-Elemente mit den entsprechenden Widgets.
+

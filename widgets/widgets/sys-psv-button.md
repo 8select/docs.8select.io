@@ -35,3 +35,4 @@ window._eightselect_config['sys'] = {
 ```text
 _8select.utils.goToWidget(widgetUuid, offset)
 ```
+

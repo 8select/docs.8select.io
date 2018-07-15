@@ -1,4 +1,4 @@
-# Tracking von Transaktionen
+# Checkout
 
 Für die Auswertung der Umsätze die über die 8select-CSE kommen, müssen Sie einen zweiten JavaScript Codeausschnitt einbinden. Dies muss auf der Seite die nach einem erfolgreichen Checkout angezeigt wird erfolgen.
 
@@ -36,19 +36,19 @@ Der Codeausschnitt muss im HTML an beliebiger Stelle nach dem Codeausschnitt fü
 
 **order**
 
-| field      | type             | required | description                           |
-| ---------- | ---------------- | -------- | ------------------------------------- |
-| customerid | string           | required | unique customer identifier            |
-| orderid    | string           | required | unique transaction identifier         |
-| products   | array of product | required | which products does the order contain |
+| field | type | required | description |
+| --- | --- | --- | --- |
+| customerid | string | required | unique customer identifier |
+| orderid | string | required | unique transaction identifier |
+| products | array of product | required | which products does the order contain |
 
 **product**
 
-| field  | type    | required | description                                |
-| ------ | ------- | -------- | ------------------------------------------ |
-| sku    | string  | required | product identifier                         |
-| amount | integer | required | how many units are added to the cart       |
-| price  | integer | required | what does one unit cost in _**euro cent**_ |
+| field | type | required | description |
+| --- | --- | --- | --- |
+| sku | string | required | product identifier |
+| amount | integer | required | how many units are added to the cart |
+| price | integer | required | what does one unit cost in _**euro cent**_ |
 
 ```javascript
 {
@@ -68,3 +68,4 @@ Der Codeausschnitt muss im HTML an beliebiger Stelle nach dem Codeausschnitt fü
   ]
 }
 ```
+

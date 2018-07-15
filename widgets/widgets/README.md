@@ -1,6 +1,6 @@
-# 8select-CSE Widgets
+# Widgets
 
-Ein 8select-CSE Widgets sind simple HTML-Elemente. Diese werden mit Hilfe des 8select-CSE JavaScript SDKs automatisch durch die eigentlichen Widgets ersetzt.
+8select-CSE Widgets sind simple HTML-Elemente. Diese werden mit Hilfe des 8select-CSE JavaScript SDKs automatisch durch die eigentlichen Widgets ersetzt.
 
 ## SYS-PSV Widget
 
@@ -8,8 +8,7 @@ Das SYS-PSV Widget wird auf einer Artikeldetailseite genutzt um ein Produkt-Set 
 
 ## SYS-PSV Button
 
-Das SYS-PSV Button Widget wird auf einer Artikeldetailseite genutzt um einen Button mit dem Hinweis auf ein passendes Produkt-Set anzuzeigen.
-Mit Hilfe des Buttons kann der Shop-Besucher direkt zum Widget springen/scrollen.
+Das SYS-PSV Button Widget wird auf einer Artikeldetailseite genutzt um einen Button mit dem Hinweis auf ein passendes Produkt-Set anzuzeigen. Mit Hilfe des Buttons kann der Shop-Besucher direkt zum Widget springen/scrollen.
 
 ## SYS-ACC Widget
 
@@ -22,3 +21,4 @@ Mit dem PSP-PSV Widget kann ein bestimmtes Produkt-Set z.B. auf einer Landingpag
 ## PSP-TLV Widget
 
 Mit dem PSP-TLV Widget kann eine Liste von Produkt-Sets z.B. auf einer Landingpage angezeigt werden.
+

@@ -1,4 +1,4 @@
-# SYS-ACC Widget
+# SYS-ACC
 
 ## Widget-Element
 
@@ -135,3 +135,4 @@ window._eightselect_config['sys-acc'] = {
   }
 }
 ```
+

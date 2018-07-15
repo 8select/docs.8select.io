@@ -1,4 +1,4 @@
-# SYS-PSV Widget
+# SYS-PSV
 
 ```markup
 <div data-8select-widget-id="sys-psv" data-sku="42"></div>
@@ -34,3 +34,4 @@ window._eightselect_config['sys'] = {
   }
 }
 ```
+
