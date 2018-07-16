@@ -8,7 +8,7 @@ Einige Widgets rufen einen Error-First-Callback bei Erfolg- bzw. Fehlerfall auf.
 
 Um Widget-Elemente erst zu laden wenn diese im sichtbaren Bereich, oder in einem bestimmten Abstand zum sichtbaren Bereich sind, kann das Attribut `data-load-distance-factor` gesetzt werden.
 
-`data-load-distance-factor` ist optional und kann eine Zahl größer oder gleich `0` sein. Der Wert beschreibt den Faktor, den ein Widget-Element vom unteren sichtbaren Bereich entfernt sein muss, bis es geladen wird. Siehe dazu folgende [Illustration](widgets.md#file-wgt-ldr-lazy-load-pdf).
+`data-load-distance-factor` ist optional und kann eine Zahl größer oder gleich `0` sein. Der Wert beschreibt den Faktor, den ein Widget-Element vom unteren sichtbaren Bereich entfernt sein muss, bis es geladen wird. Siehe dazu folgende [Illustration](./#file-wgt-ldr-lazy-load-pdf).
 
 Ist das Attribut nicht gesetzt, so werden alle Widget-Elemente direkt geladen.
 
@@ -38,3 +38,4 @@ Sobald das Widget sowie das Produktset geladen sind, wird das Container-Element 
     </div>
 </div>
 ```
+
