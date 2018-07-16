@@ -6,7 +6,7 @@ In vielen Code-Snippets befindet sich der Wert `<API-ID>`. Dieser muss durch `AP
 
 ## Wie wird die 8select-CSE integriert?
 
-Die 8select-CSE wird mit Hilfe des JavaScript SDK muss nicht heruntergeladen werden. Es wird einfach über ein JavaScript-Codeausschnitt auf der Webseite im HTML platziert.
+Die 8select-CSE wird mit Hilfe des JavaScript SDK eingebunden und muss nicht heruntergeladen werden. Es wird einfach über ein JavaScript-Codeausschnitt auf der Webseite im HTML platziert.
 
 Das SDK wird asynchron geladen ohne Ladevorgänge von anderen Elementen auf der Webseite zu blockieren.
 
