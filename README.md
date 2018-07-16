@@ -16,12 +16,16 @@ Das 8select-CSE JavaScript SDK bietet alle clientseitigen Funktionen um die 8sel
 
 Es ermöglicht die Nutzung des
 
-* SYS-PSV Widget - um ein Produktset für eine SKU anzuzeigen
-* SYS-PSV Button - um einen Button mit dem Hinweis auf ein passendes Produktset anzuzeigen
-* SYS-ACC Widget - um ergänzende Vorschläge zu einer in den Warenkorb gelegten SKU anzuzeigen
-* PSP-PSV Widget - um ein bestimmtes Produktsets anzuzeigen
-* PSP-TLV Widget - um eine Liste von Produktsets anzuzeigen
-* ELTX-Client - für das CSE Performance-Tracking
+- SYS-PSV Widget - um ein Produktset für eine SKU anzuzeigen
+- SYS-PSV Button - um einen Button mit dem Hinweis auf ein passendes Produktset anzuzeigen
+- SYS-ACC Widget - um ergänzende Vorschläge zu einer in den Warenkorb gelegten SKU anzuzeigen
+- PSP-PSV Widget - um ein bestimmtes Produktsets anzuzeigen
+- PSP-TLV Widget - um eine Liste von Produktsets anzuzeigen
+- ELTX-Client - für das CSE Performance-Tracking
 
 Das SDK und die Widgets funktionieren in Desktop- und mobilen Webrowsern.
 
+## Produkt-Export
+
+Voraussetzung für die Befüllung der Widgets mit Inhalten ist eine Anlieferung der Produktdaten Ihres Online-Shops.
+Die Produktdaten müssen in einem entsprechenden CSV-Format regelmäßig auf einem von 8select zur Verfügung gestellten AWS S3 Bucket abgelegt werden.

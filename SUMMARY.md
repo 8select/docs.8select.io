@@ -1,27 +1,34 @@
 # Table of contents
 
-* [8select CSE](README.md)
+- [8select CSE](README.md)
 
-## Installation
+## JavaScript-SDK
 
-* [Funktionsweise](installation/installation-1.md)
-* [Integration](installation/integration.md)
+### Installation
 
-## Widgets
+- [Funktionsweise](javascript-sdk/installation/installation-1.md)
+- [Integration](javascript-sdk/installation/integration.md)
 
-* [Übersicht](widgets/widgets.md)
-* [SYS-PSV](widgets/sys-psv.md)
-* [SYS-PSV Button](widgets/sys-psv-button.md)
-* [SYS-ACC](widgets/sys-acc.md)
-* [PSP-PSV](widgets/psp-psv.md)
-* [PSP-TLV](widgets/psp-tlv.md)
+### Widgets
 
-## Performance-Tracking
+- [Übersicht](javascript-sdk/widgets/widgets.md)
+- [SYS-PSV](javascript-sdk/widgets/sys-psv.md)
+- [SYS-PSV Button](javascript-sdk/widgets/sys-psv-button.md)
+- [SYS-ACC](javascript-sdk/widgets/sys-acc.md)
+- [PSP-PSV](javascript-sdk/widgets/psp-psv.md)
+- [PSP-TLV](javascript-sdk/widgets/psp-tlv.md)
+- [Erweitert](javascript-sdk/widgets/erweitert.md)
 
-* [Integration](performance-tracking/performance-tracking.md)
-* [Transaktions-Tracking](performance-tracking/checkout.md)
+### Performance-Tracking
 
-## API
+- [Integration](javascript-sdk/performance-tracking/performance-tracking.md)
+- [Transaktions-Tracking](javascript-sdk/performance-tracking/checkout.md)
 
-* [API](api/api.md)
+### API
 
+- [API](javascript-sdk/api/api.md)
+
+## Produkt-Export
+
+- [Übersicht](product-export/uebersicht.md)
+- [Felder](product-export/felder.md)
