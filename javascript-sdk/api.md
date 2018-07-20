@@ -2,7 +2,7 @@
 
 ## initCSE\(\)
 
-Wenn ihr Shop die Widget HTML-Elemente Asynchron nachläd \(z.B. Shopware Einkaufswelten\), dann muss nach dem Laden die CSE darüber informiert werden. Dies erfolgt durch einen Aufruf von `initCSE()`
+Wenn ihr Shop die Widget HTML-Elemente Asynchron nachlädt \(z.B. Shopware Einkaufswelten\), dann muss nach dem Laden die CSE darüber informiert werden. Dies erfolgt durch einen Aufruf von `initCSE()`
 
 ```javascript
 window._8select.initCSE();

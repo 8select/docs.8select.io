@@ -11,7 +11,7 @@ Hierbei werden zwei Arten von Anlieferung unterschieden:
 
 * Produktvarianten dürfen nur auf Größe basieren, alles andere z.B. Farben muss in Virtuelle Elternprodukte überführt werden.
 * Gibt es mehrere Größen definierende Eigenschaften, so müssen diese im Export berücksichtigt werden \(Größe, Länge, Inhalt\).
-* Mehrfachnennung im Feldinhalt mit Pipe `|` trennen, keine extra Leerzeichen einfügen - z.B. für ein Mehrfarbinges Shirt: Farbe `schwarz|rot|gold`
+* Mehrfachnennung im Feldinhalt mit Pipe `|` trennen, keine extra Leerzeichen einfügen - z.B. für ein Mehrfarbiges Shirt: Farbe `schwarz|rot|gold`
 * CSV-Trennzeichen Semikolon `;`
 * CSV-Text-Qualifier Doppelte-Anführungszeichen `"`
 
@@ -22,7 +22,7 @@ Hierbei werden zwei Arten von Anlieferung unterschieden:
 * ACL für die Datei muss auf bucket-owner-full-control gestellt sein
 * Bucket: s3://productfeed.8select.io/
 
-### Dateifad
+### Dateipfad
 
 ```text
 <bucket>/<feed_id>/<feed_type>/<year>/<month>/<day>/<feed_id>_<feed_type>_<timestamp>.csv
