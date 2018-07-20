@@ -1,9 +1,9 @@
 # Zusätzliche Felder
 
-| Spalte product_feed | Spalte property_feed | Beispiel | Name für Mapping-Dialog | Beschreibung |
+| Spalte product\_feed | Spalte property\_feed | Beispiel | Name für Mapping-Dialog | Beschreibung |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| ean | prop_ean | 5027793879236 | EAN-CODE | [?](https://docs.8select.io/produkt-export/zusaetzliche-felder/zusaetzliche-felder-beispiele#ean-prop_ean) |
-| name2 | - | Regenhosen | ALTERNATIVE ARTIKELBEZEICHNUNG |[?](https://docs.8select.io/produkt-export/zusaetzliche-felder/zusaetzliche-felder-beispiele#name2) |
+| ean | prop\_ean | 5027793879236 | EAN-CODE | [?](https://docs.8select.io/produkt-export/zusaetzliche-felder/zusaetzliche-felder-beispiele#ean-prop_ean) |
+| name2 | - | Regenhosen | ALTERNATIVE ARTIKELBEZEICHNUNG | [?](https://docs.8select.io/produkt-export/zusaetzliche-felder/zusaetzliche-felder-beispiele#name2) |
 | kategorie2 | - | Regenhosen | PRODUKTTYP / UNTERKATEGORIE | [?](https://docs.8select.io/produkt-export/zusaetzliche-felder/zusaetzliche-felder-beispiele#kategorie2) |
 | kategorie3 | - | Regenhose | UNTERKATEGORIE | [?](https://docs.8select.io/produkt-export/zusaetzliche-felder/zusaetzliche-felder-beispiele#kategorie3) |
 | bereich | - | Outdoor | BEREICH | [?](https://docs.8select.io/produkt-export/zusaetzliche-felder/zusaetzliche-felder-beispiele#bereich) |
@@ -27,7 +27,7 @@
 | baukasten | - | 100760001 | ZUGEHÖRIGER ARTIKEL | [?](https://docs.8select.io/produkt-export/zusaetzliche-felder/zusaetzliche-felder-beispiele#baukasten) |
 | eigenschaft | - | 5 °C | EIGENSCHAFT / EINSATZBEREICH | [?](https://docs.8select.io/produkt-export/zusaetzliche-felder/zusaetzliche-felder-beispiele#eigenschaft) |
 | fuellmenge | - | 200ml | FÜLLMENGE / INHALT | [?](https://docs.8select.io/produkt-export/zusaetzliche-felder/zusaetzliche-felder-beispiele#fuellmenge) |
-| funktion | - | trocknet schnell\|schnelltrocknend\|atmungsaktiv | FUNKTION | [?](https://docs.8select.io/produkt-export/zusaetzliche-felder/zusaetzliche-felder-beispiele#funktion) |
+| funktion | - | trocknet schnell | FUNKTION | [?](https://docs.8select.io/produkt-export/zusaetzliche-felder/zusaetzliche-felder-beispiele#funktion) |
 | gruppe | - | Baukastenanzug James | GRUPPE / BAUKAUSTEN | [?](https://docs.8select.io/produkt-export/zusaetzliche-felder/zusaetzliche-felder-beispiele#gruppe) |
 | material | - | 100% Nylon | MATERIAL | [?](https://docs.8select.io/produkt-export/zusaetzliche-felder/zusaetzliche-felder-beispiele#material) |
 | saison | - | Winter 17 | SAISON | [?](https://docs.8select.io/produkt-export/zusaetzliche-felder/zusaetzliche-felder-beispiele#saison) |
