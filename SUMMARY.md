@@ -20,8 +20,8 @@
 ## Produkt-Export
 
 * [Übersicht](produkt-export/uebersicht.md)
-* [Pflichtfelder](produkt-export/pflichtfelder.md)
-  * [Beispiele](produkt-export/pflichtfelder-beispiele.md)
-* [Zusätzliche Felder](produkt-export/zusaetzliche-felder.md)
-  * [Beispiele](produkt-export/zusaetzliche-felder-beispiele.md)
+* [Pflichtfelder](produkt-export/pflichtfelder/README.md)
+  * [Beispiele](produkt-export/pflichtfelder/pflichtfelder-beispiele.md)
+* [Zusätzliche Felder](produkt-export/zusaetzliche-felder/README.md)
+  * [Beispiele](produkt-export/zusaetzliche-felder/zusaetzliche-felder-beispiele.md)
 
