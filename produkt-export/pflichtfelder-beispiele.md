@@ -1,6 +1,5 @@
 # Pflichtfelder Beispiele
 
-
 ## sku - prop_sku
 
 Die Artikelnummer (SKU) ist einzigartig, sie enthält Modell, Farbe und Größe. Die SKU ist der Hauptidentifikator für einen konkreten Artikel (Variante) in einem Shop.
