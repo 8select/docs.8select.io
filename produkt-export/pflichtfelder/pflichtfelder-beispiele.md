@@ -184,7 +184,7 @@ schwarz-rot-gold
 Burnished Rosè
 ```
 
-## produkt\_url \| prop\_url
+## produkt\_url - prop\_url
 
 Deeplink der direkt zur Detailseite im Shop der Variante führt.
 
