@@ -23,7 +23,7 @@
 | stil | - | Casual | STIL | [?](https://docs.8select.io/produkt-export/zusaetzliche-felder/zusaetzliche-felder-beispiele#stil) |
 | sportart | - | Bergsteigen | SPORTART | [?](https://docs.8select.io/produkt-export/zusaetzliche-felder/zusaetzliche-felder-beispiele#sportart) |
 | detail | - | Brusttasche | DETAIL | [?](https://docs.8select.io/produkt-export/zusaetzliche-felder/zusaetzliche-felder-beispiele#detail) |
-| auspraegung | - | 30-55 Liter | auspraegung | [?](https://docs.8select.io/produkt-export/zusaetzliche-felder/zusaetzliche-felder-beispiele#auspraegung) |
+| auspraegung | - | 30-55 Liter | AUSPRÄGUNG | [?](https://docs.8select.io/produkt-export/zusaetzliche-felder/zusaetzliche-felder-beispiele#auspraegung) |
 | baukasten | - | 100760001 | ZUGEHÖRIGER ARTIKEL | [?](https://docs.8select.io/produkt-export/zusaetzliche-felder/zusaetzliche-felder-beispiele#baukasten) |
 | eigenschaft | - | 5 °C | EIGENSCHAFT / EINSATZBEREICH | [?](https://docs.8select.io/produkt-export/zusaetzliche-felder/zusaetzliche-felder-beispiele#eigenschaft) |
 | fuellmenge | - | 200ml | FÜLLMENGE / INHALT | [?](https://docs.8select.io/produkt-export/zusaetzliche-felder/zusaetzliche-felder-beispiele#fuellmenge) |
