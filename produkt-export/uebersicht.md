@@ -10,6 +10,7 @@ Hierbei werden zwei Arten von Anlieferung unterschieden:
 ## Format
 
 * Produktvarianten dürfen nur auf Größe basieren, alles andere z.B. Farben muss in Virtuelle Elternprodukte überführt werden.
+* Im Export sind ausschließlich Produktvarianten enthalten. Elternprodukte und ggf. Virtuelle Elternprodukte werden nur für die Gruppierung von Varianten via `mastersku` und `model` benötigt.
 * Gibt es mehrere Größen definierende Eigenschaften, so müssen diese im Export berücksichtigt werden \(Größe, Länge, Inhalt\).
 * Mehrfachnennung im Feldinhalt mit Pipe `|` trennen, keine extra Leerzeichen einfügen - z.B. für ein Mehrfarbiges Shirt: Farbe `schwarz|rot|gold`
 * CSV-Trennzeichen Semikolon `;`
