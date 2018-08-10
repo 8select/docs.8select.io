@@ -1,7 +1,7 @@
 # Zusätzliche Felder
 
 | Spalte product\_feed | Spalte property\_feed | Beispiel | Name für Mapping-Dialog | Beschreibung |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| :--- | :--- | :--- | :--- | :--- |
 | ean | prop\_ean | 5027793879236 | EAN-CODE | [?](https://docs.8select.io/produkt-export/zusaetzliche-felder/zusaetzliche-felder-beispiele#ean-prop_ean) |
 | name2 | - | Regenhosen | ALTERNATIVE ARTIKELBEZEICHNUNG | [?](https://docs.8select.io/produkt-export/zusaetzliche-felder/zusaetzliche-felder-beispiele#name2) |
 | kategorie2 | - | Regenhosen | PRODUKTTYP / UNTERKATEGORIE | [?](https://docs.8select.io/produkt-export/zusaetzliche-felder/zusaetzliche-felder-beispiele#kategorie2) |

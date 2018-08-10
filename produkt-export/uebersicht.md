@@ -12,9 +12,14 @@ Hierbei werden zwei Arten von Anlieferung unterschieden:
 * Produktvarianten dürfen nur auf Größe basieren, alles andere z.B. Farben muss in Virtuelle Elternprodukte überführt werden.
 * Im Export sind ausschließlich Produktvarianten enthalten. Elternprodukte und ggf. Virtuelle Elternprodukte werden nur für die Gruppierung von Varianten via `mastersku` und `model` benötigt.
 * Gibt es mehrere Größen definierende Eigenschaften, so müssen diese im Export berücksichtigt werden \(Größe, Länge, Inhalt\).
+* Gibt es keine Eigenschaft welche die Größe bezeichnet oder gibt es den Artikel in einer universellen Größe so ist als `groesse` der Wert `onesize` zu exportieren
 * Mehrfachnennung im Feldinhalt mit Pipe `|` trennen, keine extra Leerzeichen einfügen - z.B. für ein Mehrfarbiges Shirt: Farbe `schwarz|rot|gold`
 * CSV-Trennzeichen Semikolon `;`
 * CSV-Text-Qualifier Doppelte-Anführungszeichen `"`
+
+### Beispiel-Export
+
+{% file src="../.gitbook/assets/430ac9fb-4bf3-4405-af0c-0cdc3ac2a241\_product\_feed\_1533859302143.csv" caption="Beispiel-Export" %}
 
 ## AWS S3
 

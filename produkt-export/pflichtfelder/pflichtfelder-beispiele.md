@@ -7,7 +7,7 @@ Die Artikelnummer \(SKU\) ist einzigartig, sie enthält Modell, Farbe und Größ
 Die SKU wird verwendet um einen Artikel aus dem Shop in der 8select CSE zu finden.
 
 | Spalte product\_feed | Spalte property\_feed | Datentyp |
-| --- | --- | --- |
+| :--- | :--- | :--- |
 | sku | prop\_sku | `string` |
 
 ### Beispiele
@@ -23,7 +23,7 @@ Die Master-SKU ist einzigartig, sie enthält Modell und Farbe. Die Master-SKU is
 Die Master-SKU wird verwendet um eine Beziehung zwischen Elternartikel und Varianten herzustellen.
 
 | Spalte product\_feed | Spalte property\_feed | Datentyp |
-| --- | --- | --- |
+| :--- | :--- | :--- |
 | mastersku | prop\_parentSku | `string` |
 
 ### Beispiele
@@ -37,7 +37,7 @@ Die Master-SKU wird verwendet um eine Beziehung zwischen Elternartikel und Varia
 Der Status gibt Auskunft über die Bestellbarkeit einer Variante.
 
 | Spalte product\_feed | Spalte property\_feed | Datentyp |
-| --- | --- | --- |
+| :--- | :--- | :--- |
 | status | prop\_isInStock | `integer` |
 
 ### Beispiele
@@ -61,13 +61,13 @@ Ein Modell bezeichnet das Grundprodukt. Ein Modell kann in mehreren Ausführunge
 Beispiel: Das Modell `Arie` \(8277\) gibt es in den 3 Farben: `blau` \(480\), `rot` \(481\), `gelb` \(482\) und in den 4 Größen: `S` \(01\), `M` \(02\), `L` \(03\), `XL` \(04\), also 12 Ausführungen. Jede Ausführung hat eine eindeutige Artikelnummer.
 
 | Spalte product\_feed | Spalte property\_feed | Datentyp |
-| --- | --- | --- |
+| :--- | :--- | :--- |
 | model | prop\_model | `string` |
 
 ### Beispiele
 
 | model | mastersku | sku |
-| --- | --- | --- |
+| :--- | :--- | :--- |
 | 8277 | 8277-480 | 8277-480-01 |
 
 ## name1 - prop\_name
@@ -75,7 +75,7 @@ Beispiel: Das Modell `Arie` \(8277\) gibt es in den 3 Farben: `blau` \(480\), `r
 Standardbezeichnung für den Artikel so wie er normalerweise in der Artikeldetailansicht genutzt wird.
 
 | Spalte product\_feed | Spalte property\_feed | Datentyp |
-| --- | --- | --- |
+| :--- | :--- | :--- |
 | name1 | prop\_name | `string` |
 
 ### Beispiele
@@ -89,7 +89,7 @@ Desigual Sweatjacke
 Bezeichnung der Artikelgruppen, die meist so in der Shopnavigation verwendet werden.
 
 | Spalte product\_feed | Spalte property\_feed | Datentyp |
-| --- | --- | --- |
+| :--- | :--- | :--- |
 | kategorie1 | - | `string` |
 
 ### Beispiele
@@ -105,7 +105,7 @@ Der orignale Preis bzw. UVP. Im Shop meist als durchgestrichener Preis dargestel
 Ohne Währungsangaben und mit Punkt als Dezimaltrenner formatiert.
 
 | Spalte product\_feed | Spalte property\_feed | Datentyp |
-| --- | --- | --- |
+| :--- | :--- | :--- |
 | streich\_preis | prop\_retailPrice | `string` oder Art von `float` mit 2 Dezimalstellen |
 
 ### Beispiele
@@ -122,7 +122,7 @@ Der Preis zu dem der Artikel verkauft wird.
 Ohne Währungsangaben und mit Punkt als Dezimaltrenner formatiert.
 
 | Spalte product\_feed | Spalte property\_feed | Datentyp |
-| --- | --- | --- |
+| :--- | :--- | :--- |
 | angebots\_preis | prop\_discountPrice | `string` oder Art von `float` mit 2 Dezimalstellen |
 
 ### Beispiele
@@ -137,7 +137,7 @@ Ohne Währungsangaben und mit Punkt als Dezimaltrenner formatiert.
 Größenbezeichnung des Artikels.
 
 | Spalte product\_feed | Spalte property\_feed | Datentyp |
-| --- | --- | --- |
+| :--- | :--- | :--- |
 | groesse | prop\_size | `string` |
 
 ### Beispiele
@@ -155,7 +155,7 @@ M-L
 Markenname bzw. Hersteller eines Artikels.
 
 | Spalte product\_feed | Spalte property\_feed | Datentyp |
-| --- | --- | --- |
+| :--- | :--- | :--- |
 | marke | prop\_brand | `string` |
 
 ### Beispiele
@@ -171,7 +171,7 @@ Betty Barclay
 Die exakte Farbbezeichnung des Artikels.
 
 | Spalte product\_feed | Spalte property\_feed | Datentyp |
-| --- | --- | --- |
+| :--- | :--- | :--- |
 | farbe | prop\_color | `string` |
 
 ### Beispiele
@@ -189,7 +189,7 @@ Burnished Rosè
 Deeplink der direkt zur Detailseite im Shop der Variante führt.
 
 | Spalte product\_feed | Spalte property\_feed | Datentyp |
-| --- | --- | --- |
+| :--- | :--- | :--- |
 | produkt\_url | prop\_url | `string` |
 
 ### Beispiele
@@ -204,7 +204,7 @@ https://www.bettybarclay.com/de/vera-mont-cocktail-kleid-21254528.html?farbe=bur
 Alle verfügbaren Artikelbilder der Variante in der höchsten Auflösung. Mehrere Bilder werden mit einem Pipe `|` getrennt.
 
 | Spalte product\_feed | Spalte property\_feed | Datentyp |
-| --- | --- | --- |
+| :--- | :--- | :--- |
 | bilder | images | `string` |
 
 ### Beispiele
@@ -219,7 +219,7 @@ https://cdn1.bettybarclay.com/out/pictures/1/Cocktail-Kleid_2_182_21254528_6389.
 Der Beschreibungstext zum Artikel im HTML-Format.
 
 | Spalte product\_feed | Spalte property\_feed | Datentyp |
-| --- | --- | --- |
+| :--- | :--- | :--- |
 | beschreibung | prop\_description | HTML `string` |
 
 ### Beispiele
@@ -233,7 +233,7 @@ Der Beschreibungstext zum Artikel im HTML-Format.
 Der Beschreibungstext zum Artikel in Text-Format.
 
 | Spalte product\_feed | Spalte property\_feed | Datentyp |
-| --- | --- | --- |
+| :--- | :--- | :--- |
 | beschreibung1 | - | `string` |
 
 ### Beispiele

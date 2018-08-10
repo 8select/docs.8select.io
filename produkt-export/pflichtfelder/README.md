@@ -1,7 +1,7 @@
 # Pflichtfelder
 
 | Spalte product\_feed | Spalte property\_feed | Beispiel | Beschreibung |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| :--- | :--- | :--- | :--- |
 | sku | prop\_sku | 8277387 | [?](https://docs.8select.io/produkt-export/pflichtfelder/pflichtfelder-beispiele#sku-prop_sku) |
 | mastersku | prop\_parentSku | 8277480 | [?](https://docs.8select.io/produkt-export/pflichtfelder/pflichtfelder-beispiele#mastersku-prop_parentSku) |
 | status | prop\_isInStock | 1 | [?](https://docs.8select.io/produkt-export/pflichtfelder/pflichtfelder-beispiele#status-prop_isInStock) |

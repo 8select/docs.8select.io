@@ -37,7 +37,7 @@ Der Codeausschnitt muss im HTML an beliebiger Stelle nach dem Codeausschnitt fü
 **order**
 
 | field | type | required | description |
-| --- | --- | --- | --- |
+| :--- | :--- | :--- | :--- |
 | customerid | string | required | unique customer identifier |
 | orderid | string | required | unique transaction identifier |
 | products | array of product | required | which products does the order contain |
@@ -45,7 +45,7 @@ Der Codeausschnitt muss im HTML an beliebiger Stelle nach dem Codeausschnitt fü
 **product**
 
 | field | type | required | description |
-| --- | --- | --- | --- |
+| :--- | :--- | :--- | :--- |
 | sku | string | required | product identifier |
 | amount | integer | required | how many units are added to the cart |
 | price | integer | required | what does one unit cost in _**euro cent**_ |

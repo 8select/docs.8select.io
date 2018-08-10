@@ -5,7 +5,7 @@
 Standardisierte eindeutige Materialnummer nach European Article Number \(EAN\) oder Unified Product Code \(UPC\).
 
 | Spalte product\_feed | Spalte property\_feed | Spalte Attribut-Mapping | Datentyp |
-| --- | --- | --- | --- |
+| :--- | :--- | :--- | :--- |
 | ean | prop\_ean | EAN-Code | `integer` |
 
 ### Beispiele
@@ -19,7 +19,7 @@ Standardisierte eindeutige Materialnummer nach European Article Number \(EAN\) o
 Oft als Kurzbezeichnung in Listenansichten verwendet - z.B. `Freizeit-Hemd` oder für Google mit mehr Infos zur besseren Suche.
 
 | Spalte product\_feed | Spalte property\_feed | Spalte Attribut-Mapping | Datentyp |
-| --- | --- | --- | --- |
+| :--- | :--- | :--- | :--- |
 | name2 | - | ALTERNATIVE ARTIKELBEZEICHNUNG | `string` |
 
 ### Beispiele
@@ -35,7 +35,7 @@ Verfeinerung der Ebene `kategorie`.
 Zum Beispiel ist die Kategorie `Bekleidung` und der Produkttyp `Jacken`.
 
 | Spalte product\_feed | Spalte property\_feed | Spalte Attribut-Mapping | Datentyp |
-| --- | --- | --- | --- |
+| :--- | :--- | :--- | :--- |
 | kategorie2 | - | PRODUKTTYP / UNTERKATEGORIE | `string` |
 
 ### Beispiele
@@ -53,7 +53,7 @@ Verfeinerung der Ebene `kategorie` bzw. `kategorie2`.
 Zum Beispiel ist die Kategorie `Bekleidung`, der Produkttyp `Jacken` und die Unterkategorie `Lederjacken`.
 
 | Spalte product\_feed | Spalte property\_feed | Spalte Attribut-Mapping | Datentyp |
-| --- | --- | --- | --- |
+| :--- | :--- | :--- | :--- |
 | kategorie3 | - | UNTERKATEGORIE | `string` |
 
 ### Beispiele
@@ -70,7 +70,7 @@ Freizeit-Hemden
 Damit können Teilsortimente bezeichnet sein.
 
 | Spalte product\_feed | Spalte property\_feed | Spalte Attribut-Mapping | Datentyp |
-| --- | --- | --- | --- |
+| :--- | :--- | :--- | :--- |
 | bereich | - | BEREICH | `string` |
 
 ### Beispiele
@@ -87,7 +87,7 @@ Lifestyle
 Bezeichnet spezielle Artikelgruppen, die als Filter oder Shop-Navigation genutzt werden.
 
 | Spalte product\_feed | Spalte property\_feed | Spalte Attribut-Mapping | Datentyp |
-| --- | --- | --- | --- |
+| :--- | :--- | :--- | :--- |
 | rubrik | - | PRODUKTKATEGORIE / -RUBRIK | `string` |
 
 ### Beispiele
@@ -104,7 +104,7 @@ Stillmode
 Einteilung der Sortimente nach Zielgruppen.
 
 | Spalte product\_feed | Spalte property\_feed | Spalte Attribut-Mapping | Datentyp |
-| --- | --- | --- | --- |
+| :--- | :--- | :--- | :--- |
 | abteilung | - | ABTEILUNG | `string` |
 
 ### Beispiele
@@ -123,7 +123,7 @@ KIKO
 Einteilung nach Zielgruppen speziell für Kindersortimente.
 
 | Spalte product\_feed | Spalte property\_feed | Spalte Attribut-Mapping | Datentyp |
-| --- | --- | --- | --- |
+| :--- | :--- | :--- | :--- |
 | kiko | - | KIKO | `string` |
 
 ### Beispiele
@@ -139,7 +139,7 @@ baby
 Verfeinerung der Ebene `kategorie`.
 
 | Spalte product\_feed | Spalte property\_feed | Spalte Attribut-Mapping | Datentyp |
-| --- | --- | --- | --- |
+| :--- | :--- | :--- | :--- |
 | typ | - | PRODUKTTYP | `string` |
 
 ### Beispiele
@@ -154,7 +154,7 @@ Regenhosen
 Farben sind einem Farbspektrum zugeordnet.
 
 | Spalte product\_feed | Spalte property\_feed | Spalte Attribut-Mapping | Datentyp |
-| --- | --- | --- | --- |
+| :--- | :--- | :--- | :--- |
 | farbspektrum | - | FARBSPEKTRUM | \`\` |
 
 ### Beispiele
@@ -172,7 +172,7 @@ Speziell bei Schuhen die Höhe des Absatzes.
 Format mit oder ohne Maßeinheit.
 
 | Spalte product\_feed | Spalte property\_feed | Spalte Attribut-Mapping | Datentyp |
-| --- | --- | --- | --- |
+| :--- | :--- | :--- | :--- |
 | absatzhoehe | - | ABSATZHÖHE | `string` |
 
 ### Beispiele
@@ -185,7 +185,7 @@ Format mit oder ohne Maßeinheit.
 ## muster
 
 | Spalte product\_feed | Spalte property\_feed | Spalte Attribut-Mapping | Datentyp |
-| --- | --- | --- | --- |
+| :--- | :--- | :--- | :--- |
 | muster | - | MUSTER | `string` |
 
 ### Beispiele
@@ -204,7 +204,7 @@ einfarbig-strukturiert
 Speziell bei Oberbekleidung die Länge der Ärmel.
 
 | Spalte product\_feed | Spalte property\_feed | Spalte Attribut-Mapping | Datentyp |
-| --- | --- | --- | --- |
+| :--- | :--- | :--- | :--- |
 | aermellaenge | - | ÄRMELLÄNGE | `string` |
 
 ### Beispiele
@@ -222,7 +222,7 @@ extra kurzer Arm
 Speziell bei Oberbekleidung die Beschreibung des Kragens oder Ausschnitts.
 
 | Spalte product\_feed | Spalte property\_feed | Spalte Attribut-Mapping | Datentyp |
-| --- | --- | --- | --- |
+| :--- | :--- | :--- | :--- |
 | kragenform | - | KRAGENFORM | `string` |
 
 ### Beispiele
@@ -242,7 +242,7 @@ Unterscheidet rudimentär den Stoff. Wesentliches Material des Artikels.
 Nur Gewebe mit besonderen optischen Eigenschaften werden unterschieden.
 
 | Spalte product\_feed | Spalte property\_feed | Spalte Attribut-Mapping | Datentyp |
-| --- | --- | --- | --- |
+| :--- | :--- | :--- | :--- |
 | obermaterial | - | ART OBERMATERIAL | `string` |
 
 ### Beispiele
@@ -266,7 +266,7 @@ Grobstrick
 In Bezug auf die Körperform, wird häufig für Hemden, Sakkos und Anzüge verwendet.
 
 | Spalte product\_feed | Spalte property\_feed | Spalte Attribut-Mapping | Datentyp |
-| --- | --- | --- | --- |
+| :--- | :--- | :--- | :--- |
 | passform | - | PASSFORM | `string` |
 
 ### Beispiele
@@ -286,7 +286,7 @@ körpernah
 In Bezug auf die Form des Artikels.
 
 | Spalte product\_feed | Spalte property\_feed | Spalte Attribut-Mapping | Datentyp |
-| --- | --- | --- | --- |
+| :--- | :--- | :--- | :--- |
 | schnitt | - | SCHNITT | `string` |
 
 ### Beispiele
@@ -303,7 +303,7 @@ spitzer Schuh
 Optische Wirkung des Materials.
 
 | Spalte product\_feed | Spalte property\_feed | Spalte Attribut-Mapping | Datentyp |
-| --- | --- | --- | --- |
+| :--- | :--- | :--- | :--- |
 | waschung | - | WASCHUNG | `string` |
 
 ### Beispiele
@@ -320,7 +320,7 @@ vintage
 Stilrichtung des Artikels.
 
 | Spalte product\_feed | Spalte property\_feed | Spalte Attribut-Mapping | Datentyp |
-| --- | --- | --- | --- |
+| :--- | :--- | :--- | :--- |
 | stil | - | STIL | `string` |
 
 ### Beispiele
@@ -337,7 +337,7 @@ Retro
 Konkrete Beschreibung speziell bei Sportartikeln. \(z.B. \) \|
 
 | Spalte product\_feed | Spalte property\_feed | Spalte Attribut-Mapping | Datentyp |
-| --- | --- | --- | --- |
+| :--- | :--- | :--- | :--- |
 | sportart | - | SPORTART | `string` |
 
 ### Beispiele
@@ -353,7 +353,7 @@ Bergsteigen
 Erwähnenswerte Details an Artikeln.
 
 | Spalte product\_feed | Spalte property\_feed | Spalte Attribut-Mapping | Datentyp |
-| --- | --- | --- | --- |
+| :--- | :--- | :--- | :--- |
 | detail | - | DETAIL | `string` |
 
 ### Beispiele
@@ -373,7 +373,7 @@ Speziell für Sport und Outdoor wichtige Informationen, die helfen, den Artikel 
 Bei Rucksäcken zum Beispiel Volumen `30-55 Liter`, bei Skistöcken die Größenangaben in Maßeinheit `160 bis 175cm` oder bei Sonderausführungen `Linkshänder`.
 
 | Spalte product\_feed | Spalte property\_feed | Spalte Attribut-Mapping | Datentyp |
-| --- | --- | --- | --- |
+| :--- | :--- | :--- | :--- |
 | auspraegung | - | AUSPRÄGUNG | `string` |
 
 ### Beispiele
@@ -389,7 +389,7 @@ Linkshänder
 SKU für eine direkte Verbindung zu 1:1 zusammengehörigen Artikeln.
 
 | Spalte product\_feed | Spalte property\_feed | Spalte Attribut-Mapping | Datentyp |
-| --- | --- | --- | --- |
+| :--- | :--- | :--- | :--- |
 | baukasten | - | ZUGEHÖRIGER ARTIKEL | `string` |
 
 ### Beispiele
@@ -403,7 +403,7 @@ SKU für eine direkte Verbindung zu 1:1 zusammengehörigen Artikeln.
 Speziell für Sport und Outdoor Hinweise zum Einsatzbereich.
 
 | Spalte product\_feed | Spalte property\_feed | Spalte Attribut-Mapping | Datentyp |
-| --- | --- | --- | --- |
+| :--- | :--- | :--- | :--- |
 | eigenschaft | - | EIGENSCHAFT / EINSATZBEREICH | `string` |
 
 ### Beispiele
@@ -420,7 +420,7 @@ wasserdicht
 Bezieht sich auf die Menge des Inhalts des Artikels, zum Beispiel bei Parfum.
 
 | Spalte product\_feed | Spalte property\_feed | Spalte Attribut-Mapping | Datentyp |
-| --- | --- | --- | --- |
+| :--- | :--- | :--- | :--- |
 | fuellmenge | - | FÜLLMENGE / INHALT | `string` |
 
 ### Beispiele
@@ -437,7 +437,7 @@ Bezieht sich auf die Menge des Inhalts des Artikels, zum Beispiel bei Parfum.
 Beschreibt Materialfunktionen und -eigenschaften.
 
 | Spalte product\_feed | Spalte property\_feed | Spalte Attribut-Mapping | Datentyp |
-| --- | --- | --- | --- |
+| :--- | :--- | :--- | :--- |
 | funktion | - | FUNKTION | `string` |
 
 ### Beispiele
@@ -461,7 +461,7 @@ Zum Beispiel Bikini-Oberteil "Aloha" und Bikini-Unterteil "Aloha" - Gruppe `4242
 Dabei können auch mehr als 2 Artikel eine Gruppe bilden z.B. Mix & Match: Gruppe `Hawaii` besteht aus 3 Bikini-Oberteilen und 2 Bikini-Unterteilen.
 
 | Spalte product\_feed | Spalte property\_feed | Spalte Attribut-Mapping | Datentyp |
-| --- | --- | --- | --- |
+| :--- | :--- | :--- | :--- |
 | gruppe | - | GRUPPE / BAUKAUSTEN | `string` |
 
 ### Beispiele
@@ -478,7 +478,7 @@ Gruppe-9000
 Bezeichnet die genaue Materialzusammensetzung des Artikels. \(z.B. \)
 
 | Spalte product\_feed | Spalte property\_feed | Spalte Attribut-Mapping | Datentyp |
-| --- | --- | --- | --- |
+| :--- | :--- | :--- | :--- |
 | material | - | MATERIAL | `string` |
 
 ### Beispiele
@@ -493,7 +493,7 @@ Bezeichnet die genaue Materialzusammensetzung des Artikels. \(z.B. \)
 Beschreibt zu welcher Saison bzw. saisonalen Kollektion der Artikel gehört.
 
 | Spalte product\_feed | Spalte property\_feed | Spalte Attribut-Mapping | Datentyp |
-| --- | --- | --- | --- |
+| :--- | :--- | :--- | :--- |
 | saison | - | SAISON | `string` |
 
 ### Beispiele
@@ -511,7 +511,7 @@ HW18/19
 Hier können Bezeichnungen für Serien übergeben werden, um Artikelfamilien oder Sondereditionen zu kennzeichnen.
 
 | Spalte product\_feed | Spalte property\_feed | Spalte Attribut-Mapping | Datentyp |
-| --- | --- | --- | --- |
+| :--- | :--- | :--- | :--- |
 | serie | - | SERIE | `string` |
 
 ### Beispiele
@@ -527,7 +527,7 @@ Expert Line
 Beschreibt Verschlussarten eines Artikels.
 
 | Spalte product\_feed | Spalte property\_feed | Spalte Attribut-Mapping | Datentyp |
-| --- | --- | --- | --- |
+| :--- | :--- | :--- | :--- |
 | verschluss | - | VERSCHLUSS | `string` |
 
 ### Beispiele
@@ -546,7 +546,7 @@ Haken&Öse
 Zusätzliche Informationen zum Produkt, technische Beschreibung, Kurzbeschreibung oder auch Keywords.
 
 | Spalte product\_feed | Spalte property\_feed | Spalte Attribut-Mapping | Datentyp |
-| --- | --- | --- | --- |
+| :--- | :--- | :--- | :--- |
 | beschreibung2 | - | ALTERNATIVER BESCHREIBUNGSTEXT | `string` |
 
 ### Beispiele
@@ -560,7 +560,7 @@ Gewicht=200 g Gewogen=Gr. L/31 Material=100% Nylon (Ripstop) mit Gore-Tex-Membra
 Zusätzliche Artikelinformationen, die keinem spezifischen Attribut zugeordnet werden können.
 
 | Spalte product\_feed | Spalte property\_feed | Spalte Attribut-Mapping | Datentyp |
-| --- | --- | --- | --- |
+| :--- | :--- | :--- | :--- |
 | sonstiges | - | SONSTIGES | `string` |
 
 ### Beispiele
