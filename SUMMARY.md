@@ -6,6 +6,7 @@
 
 * [Installation](javascript-sdk/installation/README.md)
   * [Integration](javascript-sdk/installation/integration.md)
+  * [Warenkorbanbindung](javascript-sdk/installation/warenkorbanbindung.md)
 * [Widgets](javascript-sdk/widgets/README.md)
   * [SYS-PSV](javascript-sdk/widgets/sys-psv.md)
   * [SYS-PSV Button](javascript-sdk/widgets/sys-psv-button.md)
