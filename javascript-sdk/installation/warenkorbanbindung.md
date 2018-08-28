@@ -8,7 +8,7 @@ Dafür muss eine JavaScript Funktion `_eightselect_shop_plugin` im globalen Name
 window._eightselect_shop_plugin = window._eightselect_shop_plugin || {}
 window._eightselect_shop_plugin.addToCart = function (sku, quantity, Promise) {
   try {
-    //custom code to add sku to cart here
+    //add your custom code to add sku to cart here
     return Promise.resolve()
   } catch (error) {
     return Promise.reject(error)
