@@ -43,7 +43,7 @@ Folgende CSS Klassen sind nutzbar. Für manche Klassen sind Standardwerte gesetz
 }
 ```
 
-**Beispiel für Anpassungen via CSS**
+### **Beispiel für Anpassungen via CSS**
 
 Folgendes CSS Beispiel fügt ein Eurosymbol \(€\) vor dem Preis ein, formatiert den UVP durchgestrichen und transformiert die Marke zu Großbuchstaben. Außerdem werden der UVP und Angebotspreis nebeneinander dargestellt und Bilder werden zentriert.
 
@@ -68,7 +68,7 @@ Folgendes CSS Beispiel fügt ein Eurosymbol \(€\) vor dem Preis ein, formatier
 }
 ```
 
-**Beispiel Antwort vom Endpunkt**
+### **Beispiel Antwort vom Endpunkt**
 
 Das HTML des zurückgelieferten Widgets hat folgende Struktur:
 
@@ -129,7 +129,7 @@ Das HTML des zurückgelieferten Widgets hat folgende Struktur:
 </div>
 ```
 
-**Widget-Element initialisieren, falls das Widget nachträglich ins DOM geschrieben wird**
+### **Widget-Element initialisieren, falls das Widget nachträglich ins DOM geschrieben wird**
 
 Wie alle anderen Widgets wird auch das SYS-ACC Widget automatisch vom `widget-loader` erkannt, sofern es von vornherein im DOM ist.
 
