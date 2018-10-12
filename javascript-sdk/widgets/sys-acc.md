@@ -43,6 +43,31 @@ Folgende CSS Klassen sind nutzbar. Für manche Klassen sind Standardwerte gesetz
 }
 ```
 
+**Beispiel für Anpassungen via CSS**
+
+Folgendes CSS Beispiel fügt ein Eurosymbol \(€\) vor dem Preis ein, formatiert den UVP durchgestrichen und transformiert die Marke zu Großbuchstaben. Außerdem werden der UVP und Angebotspreis nebeneinander dargestellt und Bilder werden zentriert.
+
+```css
+.-eightselect-item-image,
+.-eightselect-item-body {
+    text-align: center;
+}
+.-eightselect-item-brand {
+    text-transform: uppercase;
+}
+.-eightselect-item-stroke-price {
+    text-decoration: line-through;
+}
+.-eightselect-item-sales-price,
+.-eightselect-item-stroke-price {
+    display: inline-block;
+}
+.-eightselect-item-sales-price::before,
+.-eightselect-item-stroke-price::before {
+    content:"€ ";
+}
+```
+
 **Beispiel Antwort vom Endpunkt**
 
 Das HTML des zurückgelieferten Widgets hat folgende Struktur:
