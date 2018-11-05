@@ -1,6 +1,6 @@
-# Zusätzliche Felder
+# Additional fields
 
-| Spalte product\_feed | Spalte property\_feed | Beispiel | Name für Mapping-Dialog | Beschreibung |
+| Column product\_feed | Column property\_feed | Example | Column Attribut-Mapping | Description |
 | :--- | :--- | :--- | :--- | :--- |
 | ean | prop\_ean | 5027793879236 | EAN-CODE | [?](https://docs.8select.io/produkt-export/zusaetzliche-felder/zusaetzliche-felder-beispiele#ean-prop_ean) |
 | name2 | - | Regenhosen | ALTERNATIVE ARTIKELBEZEICHNUNG | [?](https://docs.8select.io/produkt-export/zusaetzliche-felder/zusaetzliche-felder-beispiele#name2) |
