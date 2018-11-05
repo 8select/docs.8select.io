@@ -10,7 +10,7 @@ Learn more under [https://www.8select.com](https://www.8select.com/cse-pricing)
 
 ## JavaScript SDK
 
-If don't support your Online-Shop-Software with a plugin yet, you can easiliy integrate all client side functions through our JavaScript SDK.
+If we don't support your Online-Shop-Software with a plugin yet, you can easiliy integrate all client side functions through our JavaScript SDK.
 
 The 8select-CSE JavaScript SDK provides all client-side features to fully integrate the 8select-CSE into a webpage.
 
