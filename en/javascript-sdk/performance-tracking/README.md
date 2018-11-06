@@ -4,5 +4,5 @@ Eightlytics is 8select's own Web Analytics Tool, similar like Google Analytics o
 
 ## Integrating Eightlytics
 
-By integrating the 8select-CSE JavaScript SDKs, Eightlytics is loaded automatically when it is needed.
+By integrating the 8select-CSE JavaScript SDKs, Eightlytics is loaded automatically when needed.
 
