@@ -10,7 +10,7 @@ Learn more under [https://www.8select.com](https://www.8select.com/cse-pricing)
 
 ## JavaScript SDK
 
-If we don't support your Online-Shop-Software with a plugin yet, you can easiliy integrate all client side functions through our JavaScript SDK.
+If we don't support your online-shop-software with a plugin yet, you can easiliy integrate all client side functions through our JavaScript SDK.
 
 The 8select-CSE JavaScript SDK provides all client-side features to fully integrate the 8select-CSE into a webpage.
 
@@ -24,7 +24,7 @@ It enables the use of
 * ELTX-Client - for CSE performance tracking
 
 
-The SDK and widgets work on both desktop and mobile web browsers.
+The SDK and widgets work on desktop and mobile web browsers.
 
 
 ## Product-Export
