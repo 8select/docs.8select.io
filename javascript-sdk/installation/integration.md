@@ -16,7 +16,6 @@ Mit Hilfe von folgendem Codeausschnitt wird das SDK geladen:
 <script type="text/javascript">
     (function(d, s, w) {
       var apiId = '<API-ID>';
-
       window.eightlytics || function (w) {
           w.eightlytics = function () {
             window.eightlytics.queue = window.eightlytics.queue || []

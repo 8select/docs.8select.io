@@ -1,12 +1,13 @@
 # Transaktions-Tracking
 
-Für die Auswertung der Umsätze die über die 8select-CSE kommen, müssen Sie einen zweiten JavaScript Codeausschnitt einbinden. Dies muss auf der Seite die nach einem erfolgreichen Checkout angezeigt wird erfolgen.
+Für die Auswertung der Umsätze die über die 8select-CSE kommen, müssen Sie das [SDK](https://docs.8select.io/javascript-sdk/installation/integration#wie-wird-die-8select-cse-integriert) einbinden und zusätzlich einen zweiten JavaScript Codeausschnitt. Dies muss auf der Seite die nach einem erfolgreichen Checkout angezeigt wird erfolgen.
 
 Der Codeausschnitt muss im HTML an beliebiger Stelle nach dem Codeausschnitt für das Laden des 8select-CSE JavaScript-SDKs eingefügt werden.
 
 **ACHTUNG** - Preise müssen in Cent übertragen werden - also aus `199,95 €` wird `19995`.
 
 ```javascript
+<script type="text/javascript">... Code for 8select-CSE JavaScript SDK...</script>
 <script type="text/javascript">
   window.eightlytics(
     'purchase',
