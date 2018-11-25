@@ -1,6 +1,6 @@
 # Table of contents
 
-* [8select CSE](langs/README.md)
+* [8select CSE](README.md)
   * [English](langs/en/README.md)
     * [Table of contents](langs/en/summary.md)
     * [javascript-sdk](langs/en/javascript-sdk/README.md)
