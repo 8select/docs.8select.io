@@ -245,7 +245,6 @@ General classification of fabric or material.
 
 Only textiles with distinct optics are differentiated.
 
-
 | Column product\_feed | Column property\_feed | Column Attribut-Mapping | Data type |
 | :--- | :--- | :--- | :--- |
 | obermaterial | - | ART OBERMATERIAL | `string` |
@@ -268,7 +267,7 @@ Grobstrick
 
 ## passform
 
-Describes the fit of an item in terms of body shape, often used with shirts and suits. 
+Describes the fit of an item in terms of body shape, often used with shirts and suits.
 
 | Column product\_feed | Column property\_feed | Column Attribut-Mapping | Data type |
 | :--- | :--- | :--- | :--- |
@@ -288,7 +287,7 @@ körpernah
 
 ## schnitt
 
-Describes the cut of an item, in terms of shape. 
+Describes the cut of an item, in terms of shape.
 
 | Column product\_feed | Column property\_feed | Column Attribut-Mapping | Data type |
 | :--- | :--- | :--- | :--- |
@@ -339,7 +338,7 @@ Retro
 
 ## sportart
 
-Specific description for sport items. 
+Specific description for sport items.
 
 | Column product\_feed | Column property\_feed | Column Attribut-Mapping | Data type |
 | :--- | :--- | :--- | :--- |
@@ -465,7 +464,6 @@ For example: bikini top "Aloha" and a bikini bottom "Aloha" grouped by `4242`, b
 
 A group can contain more than just two items. For example, mix & match group `Hawaii` consists of 3 bikini tops and 2 bikini bottoms.
 
-
 | Column product\_feed | Column property\_feed | Column Attribut-Mapping | Data type |
 | :--- | :--- | :--- | :--- |
 | gruppe | - | GRUPPE / BAUKAUSTEN | `string` |
@@ -495,6 +493,7 @@ Describes the exact content of fabric specification of the item.
 ```
 
 ## saison
+
 Describes to what season or seasonal collection the item belongs to.
 
 | Column product\_feed | Column property\_feed | Column Attribut-Mapping | Data type |
@@ -512,7 +511,8 @@ HW18/19
 ```
 
 ## serie
-Define here if an item belongs to a certain collection, special edition or product line. 
+
+Define here if an item belongs to a certain collection, special edition or product line.
 
 | Column product\_feed | Column property\_feed | Column Attribut-Mapping | Data type |
 | :--- | :--- | :--- | :--- |
@@ -527,6 +527,7 @@ Expert Line
 ```
 
 ## verschluss
+
 Describes the way of garment closure of the item.
 
 | Column product\_feed | Column property\_feed | Column Attribut-Mapping | Data type |

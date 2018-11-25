@@ -6,7 +6,7 @@
 
 `data-sku` is the SKU of the current item. The CSE searches a matching product set that contains this item. The value for `data-sku` must be set dynamically and must match one of the SKU or master SKU passed in the master data feed.
 
-## Reload SYS-PSV widget with other SKU 
+## Reload SYS-PSV widget with other SKU
 
 If your shop reloads variants via Ajax, you must inform the SYS-PSV widget about the changed SKU.
 

@@ -1,8 +1,8 @@
-# 8select CSE
+# English
 
 **Personalized product sets for your online shop**
 
-Our innovative software solution Curated Shopping as a Service (CuSaaS) enables **high-performance cross-selling**.
+Our innovative software solution Curated Shopping as a Service \(CuSaaS\) enables **high-performance cross-selling**.
 
 Integrate our solution in your online shop via plugin.
 
@@ -23,9 +23,7 @@ It enables the use of
 * PSP-TLV Widget - to display a list of product sets
 * ELTX-Client - for CSE performance tracking
 
-
 The SDK and widgets work on desktop and mobile web browsers.
-
 
 ## Product-Export
 

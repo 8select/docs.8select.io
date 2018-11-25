@@ -1,4 +1,4 @@
-# Beispiele
+# pflichtfelder-beispiele
 
 ## sku - prop\_sku
 

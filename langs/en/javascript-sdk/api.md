@@ -4,7 +4,6 @@
 
 If your shop reloads the widget HTML elements asynchronously \(eg Shopware shopping worlds \), the CSE has to be informed afterwards. This is done by calling `initCSE()`
 
-
 ```javascript
 window._8select.initCSE();
 ```

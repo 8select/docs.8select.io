@@ -16,5 +16,3 @@ window._eightselect_shop_plugin.addToCart = function (sku, quantity, Promise) {
 }
 ```
 
-
-

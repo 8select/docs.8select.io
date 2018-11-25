@@ -34,7 +34,7 @@ The Master-SKU is used to create a relation between the parent item and its vari
 
 ## status - prop\_isInStock
 
-The status provides information about the availability of a variant.  
+The status provides information about the availability of a variant.
 
 | Column product\_feed | Column property\_feed | Data type |
 | :--- | :--- | :--- |
@@ -56,8 +56,7 @@ out of stock
 
 ## model - prop\_model
 
-A model is the basic product. A model can occur in multiple varieties of color and size. 
-Example: the model `Arie` \(8277\) is available in 3 colors: `blue` \(480\), `red` \(481\), `yellow` \(482\) and in 4 sizes: `S` \(01\), `M` \(02\), `L` \(03\), `XL` \(04\). So there are 12 varieties in total. Each of them has a unique item number.
+A model is the basic product. A model can occur in multiple varieties of color and size. Example: the model `Arie` \(8277\) is available in 3 colors: `blue` \(480\), `red` \(481\), `yellow` \(482\) and in 4 sizes: `S` \(01\), `M` \(02\), `L` \(03\), `XL` \(04\). So there are 12 varieties in total. Each of them has a unique item number.
 
 | Column product\_feed | Column property\_feed | Data type |
 | :--- | :--- | :--- |
@@ -70,6 +69,7 @@ Example: the model `Arie` \(8277\) is available in 3 colors: `blue` \(480\), `re
 | 8277 | 8277-480 | 8277-480-01 |
 
 ## name1 - prop\_name
+
 Regular description of an item as normally used in the product detail view.
 
 | Column product\_feed | Column property\_feed | Data type |
@@ -83,8 +83,8 @@ Desigual Sweatjacke
 ```
 
 ## kategorie1
-Description of item groups as used in the shop navigation
 
+Description of item groups as used in the shop navigation
 
 | Column product\_feed | Column property\_feed | Data type |
 | :--- | :--- | :--- |
@@ -98,13 +98,13 @@ Sweatshirts & -jacken
 
 ## streich\_preis - prop\_retailPrice
 
-The original price or recommended retail price (RRP). In a shop commonly displayed as strikethrough price.
+The original price or recommended retail price \(RRP\). In a shop commonly displayed as strikethrough price.
 
 Formatted without currency quotation and with dotted decimal notation.
 
 | Column product\_feed | Column property\_feed | Data type |
 | :--- | :--- | :--- |
-| streich\_preis  | prop\_retailPrice | `string` or `float` with 2 decimal places |
+| streich\_preis | prop\_retailPrice | `string` or `float` with 2 decimal places |
 
 ### Examples
 
@@ -112,12 +112,12 @@ Formatted without currency quotation and with dotted decimal notation.
 80.00
 199.39
 ```
+
 ## angebots\_preis - prop\_discountPrice
 
 The price at which an item is sold.
 
 Formatted without currency quotation and with dotted decimal notation.
-
 
 | Column  product\_feed | Column  property\_feed | Data type |
 | :--- | :--- | :--- |
@@ -232,7 +232,7 @@ The item description, formatted as text.
 
 | Column product\_feed | Column property\_feed | Data type |
 | :--- | :--- | :--- |
-| beschreibung1  | - | `string` |
+| beschreibung1 | - | `string` |
 
 ### Examples
 

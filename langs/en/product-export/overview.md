@@ -10,7 +10,7 @@ There are two types of delivery:
 ## Format
 
 * Product variants are only allowed to be based on size, everything else e.g. colors must be transferred to virtual parent products.
-*  The export contains product variants only. Parent products and possibly virtual parent products are only needed for grouping variants via `mastersku` and` model`.
+* The export contains product variants only. Parent products and possibly virtual parent products are only needed for grouping variants via `mastersku` and`model`.
 * If there are multiple properties that define sizes, then these have to be regarded in the export \(size, length, content \).
 * If none of the properties specify the size of the item or the item as a universal size, then you have to export the property `groesse` with the value `onesize`.
 * Separate multiple entries in one field with pipe `|`, do not insert extra spaces - e.g. for a multicolored shirt: Farbe `black | red | gold`
@@ -18,8 +18,6 @@ There are two types of delivery:
 * CSV-Text-Qualifier: double quotes `"`
 
 ### Example-Export
-
-{% file src="../.gitbook/assets/430ac9fb-4bf3-4405-af0c-0cdc3ac2a241\_product\_feed\_1533859302143.csv" caption="Beispiel-Export" %}
 
 ## AWS S3
 
@@ -42,5 +40,4 @@ There are two types of delivery:
 * month = current month in format mm - z.B. 05 \(UTC\)
 * day = current day in format dd - z.B. 07 \(UTC\)
 * timestamp = unix timestamp in millisecondd - e.g. 1515147815000 \(UTC\)
-
 

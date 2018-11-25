@@ -1,4 +1,4 @@
-# Zusätzliche Felder
+# README
 
 | Spalte product\_feed | Spalte property\_feed | Beispiel | Name für Mapping-Dialog | Beschreibung |
 | :--- | :--- | :--- | :--- | :--- |

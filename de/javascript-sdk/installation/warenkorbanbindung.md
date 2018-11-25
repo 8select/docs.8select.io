@@ -1,4 +1,4 @@
-# Warenkorbanbindung
+# warenkorbanbindung
 
 Damit Kunden Artikel aus den 8select Widgets heraus in den Warenkorb legen können, muss der Warenkorb via JavaScript zugänglich sein.
 

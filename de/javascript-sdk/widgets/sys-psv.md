@@ -1,4 +1,4 @@
-# SYS-PSV
+# sys-psv
 
 ```markup
 <div data-8select-widget-id="sys-psv" data-sku="42"></div>

@@ -13,9 +13,8 @@
 | groesse | prop\_size | 38 | [?](https://docs.8select.io/en/product-export/obligatory-fields/obligarory-fields-examples#groesse-prop_size) |
 | marke | prop\_brand | Desigual | [?](https://docs.8select.io/en/product-export/obligatory-fields/obligarory-fields-examples#marke-prop_brand) |
 | farbe | prop\_color | rot | [?](https://docs.8select.io/en/product-export/obligatory-fields/obligarory-fields-examples#farbe-prop_color) |
-| produkt\_url | prop\_url | https://shop.com/deeplink | [?](https://docs.8select.io/en/product-export/obligatory-fields/obligarory-fields-examples#produkt_url-prop_url) |
+| produkt\_url | prop\_url | [https://shop.com/deeplink](https://shop.com/deeplink) | [?](https://docs.8select.io/en/product-export/obligatory-fields/obligarory-fields-examples#produkt_url-prop_url) |
 | bilder | images | [https://shop.com/image.jpg](https://shop.com/image.jpg) | [?](https://docs.8select.io/en/product-export/obligatory-fields/obligarory-fields-examples#bilder-images) |
 | beschreibung | prop\_description | `<p>Lorem Ipsum</p>` | [?](https://docs.8select.io/en/product-export/obligatory-fields/obligarory-fields-examples#beschreibung-prop_description) |
 | beschreibung1 | - | Lorem Ipsum | [?](https://docs.8select.io/en/product-export/obligatory-fields/obligarory-fields-examples#beschreibung1) |
-
 

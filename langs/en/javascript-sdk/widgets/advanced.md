@@ -24,7 +24,6 @@ If the value is set to `1` the widget is loaded one screen distance earlier. The
 
 The widget can be integrated anywhere in the HTML document. This way you can insert the widget seamlessly into your layout.
 
-
 The 8select product sets are dynamic. There may be a larger or smaller amount of active product sets depending on the availability of items. To avoid displaying empty container elements when a specified product set is no longer available, the parent container element should be hidden initially. This means the property `display` should have the value `none`. Most important the CSS-class **must** be set to `-eightselect-widget-container`.
 
 Once the widget and the product set are loaded, the container element, as well as the widget, appears.
