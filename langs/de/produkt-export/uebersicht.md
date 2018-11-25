@@ -19,7 +19,7 @@ Hierbei werden zwei Arten von Anlieferung unterschieden:
 
 ### Beispiel-Export
 
-{% file src="../../.gitbook/assets/430ac9fb-4bf3-4405-af0c-0cdc3ac2a241\_product\_feed\_1533859302143.csv" caption="Beispiel-Export" %}
+{% file src="../../../.gitbook/assets/430ac9fb-4bf3-4405-af0c-0cdc3ac2a241\_product\_feed\_1533859302143.csv" caption="Beispiel-Export" %}
 
 ## AWS S3
 
