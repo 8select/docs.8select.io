@@ -1,6 +1,4 @@
-# Table of contents
-
-* [8select CSE](./)
+# Inhaltsverzeichnis
 
 ## JavaScript-SDK
 

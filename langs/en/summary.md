@@ -1,7 +1,5 @@
 # Table of contents
 
-* [8select CSE](./)
-
 ## JavaScript-SDK
 
 * [Installation](javascript-sdk/installation/)
