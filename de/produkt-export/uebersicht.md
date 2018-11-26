@@ -1,4 +1,4 @@
-# uebersicht
+# Übersicht
 
 Voraussetzung für die Befüllung der Widgets mit Inhalten ist eine Anlieferung der Produktdaten des Online-Shops an eine von 8select bereitgestellte Standard-Schnittstelle. Die Produktdaten müssen in einem entsprechenden CSV-Format regelmäßig auf einem von 8select zur Verfügung gestellten AWS S3 Bucket abgelegt werden.
 
@@ -19,7 +19,7 @@ Hierbei werden zwei Arten von Anlieferung unterschieden:
 
 ### Beispiel-Export
 
-{% file src="../../../.gitbook/assets/430ac9fb-4bf3-4405-af0c-0cdc3ac2a241\_product\_feed\_1533859302143.csv" caption="Beispiel-Export" %}
+{% file src="../../.gitbook/assets/430ac9fb-4bf3-4405-af0c-0cdc3ac2a241\_product\_feed\_1533859302143.csv" caption="Beispiel-Export" %}
 
 ## AWS S3
 

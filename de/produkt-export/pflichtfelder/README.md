@@ -1,4 +1,4 @@
-# README
+# Pflichtfelder
 
 | Spalte product\_feed | Spalte property\_feed | Beispiel | Beschreibung |
 | :--- | :--- | :--- | :--- |
