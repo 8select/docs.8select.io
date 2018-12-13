@@ -6,13 +6,13 @@
 <div data-8select-widget-id="sys-acc" data-sku="42" data-include-css="true"></div>
 ```
 
-**Parameter**
+### Parameter
 
 `data-sku` is the SKU of the current item. The CSE searches a matching product set that contains this item. The value for `data-sku` must be set dynamically and must match one of the SKU or master SKU passed in the master data feed.
 
 `data-include-css` can be `true` or `false`. If the value is omitted, the value corresponds to `false`. If the value is set to `true` a basic CSS for a CSS grid based on [https://purecss.io/grids/](https://purecss.io/grids/) is generated. In addition, CSS declarations are set for individual elements. Newly added elements for example are hidden by the declaration `display: none`.
 
-**CSS classes**
+### CSS classes
 
 Following CSS classes are used. For some classes, default values ​​are set. These can be overwritten by `!important`.
 
@@ -43,7 +43,7 @@ Following CSS classes are used. For some classes, default values ​​are set. 
 }
 ```
 
-### **Example of customizing CSS**
+### Example of customizing CSS
 
 The following CSS example inserts a euro symbol \(€ \) before the price, formats the recommended retail price and transforms the brand into capital letters. In addition, the recommended retail price and resale price are displayed side by side and images are centered.
 
@@ -68,7 +68,7 @@ The following CSS example inserts a euro symbol \(€ \) before the price, forma
 }
 ```
 
-### **Example response of endpoint**
+### Example response of endpoint
 
 The HTML of the returned widget has the following structure:
 
@@ -129,7 +129,7 @@ The HTML of the returned widget has the following structure:
 </div>
 ```
 
-### **Initialize Widget element if the widget is subsequently written to the DOM**
+### Initialize Widget element if the widget is subsequently written to the DOM
 
 Like all other widgets, the SYS-ACC widget is automatically recognized by the `widget-loader`, as long as the widget is present in the DOM before the `widget-loader`.
 
@@ -143,7 +143,7 @@ window._8select.initCSE();
 
 In case of success or error `window._eightselect_config['sys-acc'].callback` is called, as long as a function is defined.
 
-**Example**
+### **Example**
 
 ```text
 window._eightselect_config = window._eightselect_config || {}

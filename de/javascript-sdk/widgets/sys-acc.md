@@ -6,13 +6,13 @@
 <div data-8select-widget-id="sys-acc" data-sku="42" data-include-css="true"></div>
 ```
 
-**Parameter**
+### Parameter
 
 `data-sku` ist die SKU des aktuellen Artikels. Die CSE sucht basierend darauf ein Produktset welches diesen Artikel enthält. Der Wert für `data-sku` muss dynamisch gesetzt werden und muss eine der im Stammdatenfeed übergebenen SKU oder Master-SKU entsprechend.
 
 `data-include-css` kann `true` oder `false` sein. Wird der Wert weggelassen, entspricht das dem Wert `false`. Steht der Wert auf `true` so wird ein Basis CSS für ein CSS-Grid basierend auf [https://purecss.io/grids/](https://purecss.io/grids/) ausgeliefert. Außerdem werden CSS Deklarationen für einzelne Elemente ausgeliefert. Kommen neue Elemente hinzu werden diese z.B. über die Deklaration `display:none` ausgeblendet.
 
-**CSS Klassen**
+### CSS Klassen
 
 Folgende CSS Klassen sind nutzbar. Für manche Klassen sind Standardwerte gesetzt. Diese können mit Hilfe von `!important` überschrieben werden.
 
@@ -43,7 +43,7 @@ Folgende CSS Klassen sind nutzbar. Für manche Klassen sind Standardwerte gesetz
 }
 ```
 
-### **Beispiel für Anpassungen via CSS**
+### Beispiel für Anpassungen via CSS
 
 Folgendes CSS Beispiel fügt ein Eurosymbol \(€\) vor dem Preis ein, formatiert den UVP durchgestrichen und transformiert die Marke zu Großbuchstaben. Außerdem werden der UVP und Angebotspreis nebeneinander dargestellt und Bilder werden zentriert.
 
@@ -68,7 +68,7 @@ Folgendes CSS Beispiel fügt ein Eurosymbol \(€\) vor dem Preis ein, formatier
 }
 ```
 
-### **Beispiel Antwort vom Endpunkt**
+### Beispiel Antwort vom Endpunkt
 
 Das HTML des zurückgelieferten Widgets hat folgende Struktur:
 
@@ -143,7 +143,7 @@ window._8select.initCSE();
 
 Im Erfolgs- bzw. Fehlerfall wird `window._eightselect_config['sys-acc'].callback` aufgerufen sofern eine Funktion definiert ist.
 
-**Beispiel**
+### Beispiel
 
 ```text
 window._eightselect_config = window._eightselect_config || {}
