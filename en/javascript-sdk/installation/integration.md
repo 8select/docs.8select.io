@@ -2,7 +2,8 @@
 
 ## API-ID
 
-In many code snippets the value `<API-ID>` occurs. Replace all occurrences with the `API-ID` which 8select has provided.
+In some code snippets the value `<API-ID>` occurs. Replace all occurrences with the API-ID which 8select has provided. For example `677f1c3a-c035-4a59-b6a4-1d3c6e75b150`  
+
 
 ## How to integrate the 8select-CSE?
 
