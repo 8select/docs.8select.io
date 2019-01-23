@@ -2,7 +2,8 @@
 
 ## API-ID
 
-In vielen Code-Snippets befindet sich der Wert `<API-ID>`. Dieser muss durch `API-ID` ersetzt werden, die 8select zur Verfügung stellt.
+In manchen Code-Snippets befindet sich der Wert `<API-ID>`. Dieser muss durch die API-ID ersetzt werden, die 8select zur Verfügung stellt. Zum Beispiel `68aeb083-e34b-45bc-9551-583cf33d774c`  
+Siehe dazu auch [http://knowledge.8select.com/knowledge/wie-werde-ich-kunde](http://knowledge.8select.com/knowledge/wie-werde-ich-kunde)
 
 ## Wie wird die 8select-CSE integriert?
 
