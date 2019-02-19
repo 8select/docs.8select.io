@@ -1,45 +1,66 @@
 # Übersicht
 
-Voraussetzung für die Befüllung der Widgets mit Inhalten ist eine Anlieferung der Produktdaten des Online-Shops an eine von 8select bereitgestellte Standard-Schnittstelle. Die Produktdaten müssen in einem entsprechenden CSV-Format regelmäßig auf einem von 8select zur Verfügung gestellten AWS S3 Bucket abgelegt werden.
+Voraussetzung für die Befüllung der Widgets mit Inhalten ist eine Anlieferung der Produktdaten des Online-Shops an 8select.
 
-Hierbei werden zwei Arten von Anlieferung unterschieden:
-
-* Stammdaten-Feed: Alle Produkte mit allen angeforderten Attributen sowie Bild-URLs - Anlieferung 1x täglich
-* Update-Feed: Aktuelle Werte für Preis, Verfügbarkeit und ausgewählte Attribute der Produkte sowie Bilder - Anlieferung alle X Minuten und wenn möglich nur ein Delta
+Die Produktdaten werden dabei über eine vom Shop bereitgestellte API abgefragt.
 
 ## Format
 
-* Produktvarianten dürfen nur auf Größe basieren, alles andere z.B. Farben muss in Virtuelle Elternprodukte überführt werden.
-* Im Export sind ausschließlich Produktvarianten enthalten. Elternprodukte und ggf. Virtuelle Elternprodukte werden nur für die Gruppierung von Varianten via `mastersku` und `model` benötigt.
-* Gibt es mehrere Größen definierende Eigenschaften, so müssen diese im Export berücksichtigt werden \(Größe, Länge, Inhalt\).
-* Gibt es keine Eigenschaft welche die Größe bezeichnet oder gibt es den Artikel in einer universellen Größe so ist als `groesse` der Wert `onesize` zu exportieren
-* Mehrfachnennung im Feldinhalt mit Pipe `|` trennen, keine extra Leerzeichen einfügen - z.B. für ein Mehrfarbiges Shirt: Farbe `schwarz|rot|gold`
-* CSV-Trennzeichen Semikolon `;`
-* CSV-Text-Qualifier Doppelte-Anführungszeichen `"`
+* Im Export sind ausschließlich Produktvarianten enthalten.
+* Produkteigenschaften die Varianten ausmachen, müssen entsprechend gekennzeichnet sein, zum Beispiel Farbe und Größe. 
+* Hat eine Eigenschaft mehrere Werte, so sind die Werte in einem `array` aufzulisten. Zum Beispiel für ein Mehrfarbiges T-Shirt.
 
-### Beispiel-Export
+### Beispiel Produkt
 
-{% file src="../../.gitbook/assets/430ac9fb-4bf3-4405-af0c-0cdc3ac2a241\_product\_feed\_1533859302143.csv" caption="Beispiel-Export" %}
-
-## AWS S3
-
-* Upload auf ein S3 Bucket
-* Upload erfolgt mit Credentials
-* ACL für die Datei muss auf bucket-owner-full-control gestellt sein
-* Bucket: s3://productfeed.8select.io/
-
-### Dateipfad
-
-```text
-<bucket>/<feed_id>/<feed_type>/<year>/<month>/<day>/<feed_id>_<feed_type>_<timestamp>.csv
+```javascript
+{
+  "sku": "grand-c-max-2015-race-rot-125-3tz4uiu564z",
+  "table.with.sku.column": {
+    "label": "sku",
+    "value": "grand-c-max-2015-race-rot-125-3tz4uiu564z"
+  },
+  "table.with.color.column": {
+    "label": "Farbe",
+    "value": "Race-Rot",
+    "isVariantDetail": true
+  },
+  "table.with.material.column": {
+    "label": "Material",
+    "value": [
+        "Aluminium",
+        "PVC",
+        "Stahl"
+    ]
+  },
+  "table.with.brand.column": {
+    "label": "Marke",
+    "value": "FORD"
+  },
+  "table.with.ps.column": {
+    "label": "PS",
+    "value": 125,
+    "isVariantDetail": true
+  },
+  "table.with.seat_color.column": {
+    "label": "Sitzfarbe",
+    "value": "schwarz"
+  },
+  "table.with.mirror_color.column": {
+    "label": "Spiegelfarbe",
+    "value": "Iridium-Schwarz Mica"
+  },
+  "table.with.price.column": {
+    "label": "Preis",
+    "value": 1990000
+  },
+  "table.with.rsp.column": {
+    "label": "UVP",
+    "value": 2220000
+  },
+  "table.with.stock.column": {
+    "label": "Bestand",
+    "value": 42
+  }
+}
 ```
-
-* feed\_id = Feld “Feed ID” aus Plugin Konfiguration
-* feed\_type
-  * täglicher Stammdatenexport = product\_feed
-  * Preis, Statusupdates und Updates ausgewählter Attribute sowie Bilder = property\_feed
-* year = das aktuelle Jahr im Format yyyy - z.B. 2018 \(UTC\)
-* month = der aktuelle Monat im Format mm - z.B. 05 \(UTC\)
-* day = der aktuelle Tag im Format dd - z.B. 07 \(UTC\)
-* timestamp = unix timestamp in Millisekunden - z.B. 1515147815000 \(UTC\)
 
