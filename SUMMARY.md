@@ -40,7 +40,6 @@
       * [transaktions-tracking](de/javascript-sdk/performance-tracking/transaktions-tracking.md)
     * [API](de/javascript-sdk/api.md)
   * [produkt-export](de/produkt-export/README.md)
-    * [Übersicht](de/produkt-export/uebersicht.md)
     * [API](de/produkt-export/api/README.md)
       * [Verbindung vom Shop zu 8select herstellen](de/produkt-export/api/verbindung-vom-shop-zu-8select-herstellen.md)
       * [Abfrage von Produktdaten](de/produkt-export/api/abfrage-von-produktdaten.md)
