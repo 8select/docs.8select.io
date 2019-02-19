@@ -19,8 +19,8 @@
 ## Produkt-Export
 
 * [Übersicht](produkt-export/uebersicht.md)
-* [Pflichtfelder](produkt-export/anforderungen-fashion-content-pool/pflichtfelder/)
-  * [Beispiele](produkt-export/anforderungen-fashion/pflichtfelder-beispiele.md)
-* [Zusätzliche Felder](produkt-export/anforderungen-fashion-content-pool/zusaetzliche-felder/)
-  * [Beispiele](produkt-export/anforderungen-fashion/zusaetzliche-felder-beispiele.md)
+* [Pflichtfelder]()
+  * [Beispiele](produkt-export/anforderungen-fashion-content-pool/pflichtfelder-beispiele.md)
+* [Zusätzliche Felder]()
+  * [Beispiele](produkt-export/anforderungen-fashion-content-pool/zusaetzliche-felder-beispiele.md)
 
