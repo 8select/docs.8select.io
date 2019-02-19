@@ -1,4 +1,4 @@
-# zusaetzliche-felder-beispiele
+# Beispiele
 
 ## ean - prop\_ean
 
