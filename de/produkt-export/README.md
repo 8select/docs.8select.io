@@ -4,6 +4,8 @@ Voraussetzung für die Befüllung der Widgets mit Inhalten ist eine Anlieferung 
 
 Die Produktdaten werden dabei über eine vom Shop bereitgestellte API abgefragt.
 
+![](../../.gitbook/assets/schema.jpg)
+
 ## Format
 
 * Im Export sind ausschließlich Produktvarianten enthalten.
