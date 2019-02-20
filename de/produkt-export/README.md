@@ -9,6 +9,15 @@ Die Produktdaten werden dabei über eine vom Shop bereitgestellte API abgefragt.
 * Im Export sind ausschließlich Produktvarianten enthalten.
 * Produkteigenschaften die Varianten ausmachen, müssen entsprechend gekennzeichnet sein, zum Beispiel Farbe und Größe. 
 * Hat eine Eigenschaft mehrere Werte, so sind die Werte in einem `array` aufzulisten. Zum Beispiel für ein Mehrfarbiges T-Shirt.
+* Ein Produkt ist vom Typ `object` und hat 1 bis n `properties`
+  * Identifikator für ein Produkt ist die `property` mit dem Bezeichner `sku` vom Typ `string` 
+  * Alle weiteren Eigenschaften sind wiederum vom Typ `object`
+    * der `key` einer Eigenschaft ist ein eindeutiger Identifikator
+    * `label` - Typ `string` - ein für Menschen lesbarer Bezeichner der Eigenschaft
+    * `value` - ist vom Typ `string`, `number`, `array<string>` oder `array<number>`
+    * `value` - ist der Wert der Eigenschaft
+    * `isVariantDetail` - Typ `boolean`
+    * `isVariantDetail` - ist `true` wenn eine Eigenschaft für die Variantenbildung verantwortlich ist, z.B. Farben oder Größen
 
 ### Beispiel Produkt
 
