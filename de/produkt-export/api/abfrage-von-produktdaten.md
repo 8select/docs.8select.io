@@ -21,7 +21,7 @@ GET /products?limit=\<limit>&offset=\<offset>&delta=\<delta\>&fields[]=\<field-n
 
 **`HTTP 200`**
 
-```text
+```javascript
 {
   "limit": 50,
   "offset": 0,
@@ -76,10 +76,10 @@ GET /products?limit=\<limit>&offset=\<offset>&delta=\<delta\>&fields[]=\<field-n
 
 **`HTTP 4xx,5xx`**
 
-```text
+```javascript
 {
-  "error": "",
-  "message": ""
+  "error": "SOME_ERROR_CODE",
+  "message": "error description"
 }
 ```
 
