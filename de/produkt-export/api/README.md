@@ -3,7 +3,7 @@
 ### Übersicht
 
 * REST
-* JSON
+* Datenaustausch im JSON Format - `content-type: application/json` 
 * Authentifizierung via Key und Secret Keys im Header
 
 ### Authentifizierung
