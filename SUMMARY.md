@@ -43,7 +43,7 @@
     * [API](de/produkt-export/api/README.md)
       * [Verbindung vom Shop zu 8select herstellen](de/produkt-export/api/verbindung-vom-shop-zu-8select-herstellen.md)
       * [Abfrage von Produktdaten](de/produkt-export/api/abfrage-von-produktdaten.md)
-    * [Anforderungen allgemein](de/produkt-export/anforderungen-allgemein/README.md)
+    * [Anforderungen Allgemein](de/produkt-export/anforderungen-allgemein/README.md)
       * [Pflichtfelder](de/produkt-export/anforderungen-allgemein/pflichtfelder.md)
     * [Anforderungen Fashion Content Pool](de/produkt-export/anforderungen-fashion-content-pool/README.md)
       * [Pflichtfelder](de/produkt-export/anforderungen-fashion-content-pool/pflichtfelder-beispiele.md)
