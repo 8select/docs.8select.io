@@ -1,6 +1,6 @@
 # transaktions-tracking
 
-Für die Auswertung der Umsätze die über die 8select-CSE kommen, müssen Sie das [**SDK**](../installation/integration.md#wie-wird-die-8select-cse-integriert) **einbinde**n und **zusätzlich einen zweiten** JavaScript Codeausschnitt. Dies muss auf der Seite die nach einem erfolgreichen Checkout angezeigt wird erfolgen.
+Für die Auswertung der Umsätze die über die 8select-CSE kommen, müssen Sie das [**SDK**](../installation/integration.md#wie-wird-die-8select-cse-integriert) **einbinden** und **zusätzlich einen zweiten** JavaScript Codeausschnitt. Dies muss auf der Seite die nach einem erfolgreichen Checkout angezeigt wird erfolgen.
 
 Der Codeausschnitt muss im HTML an beliebiger Stelle nach dem Codeausschnitt für das Laden des 8select-CSE JavaScript-SDKs eingefügt werden.
 
