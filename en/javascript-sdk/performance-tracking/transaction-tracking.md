@@ -1,12 +1,16 @@
 # Transaction-Tracking
 
-To enable 8select-CSE sales tracking you have to integrate a second JavaScript code snippet. The sales tracking has to be implemented on the page that is displayed after a successful checkout.
+To enable 8select-CSE sales tracking you have to integrate a **second** JavaScript code snippet. The sales tracking has to be implemented on the page that is displayed after a successful checkout.
 
-The code snippet needs to be placed in the HTML anywhere after the code of the 8select-CSE JavaScript-SDK.
+The code snippet needs to be placed in the HTML anywhere **after the code of the** [**8select-CSE JavaScript-SDK**](../installation/integration.md#how-to-integrate-the-8select-cse).
 
 **WARNING** - Prices have to be defined in cents - so `199,95 €` has to be defined as `19995`.
 
 ```javascript
+<script type="text/javascript">
+    //code of the 8select-CSE JavaScript-SDK - see other snippet
+</script>
+
 <script type="text/javascript">
   window.eightlytics(
     'purchase',
