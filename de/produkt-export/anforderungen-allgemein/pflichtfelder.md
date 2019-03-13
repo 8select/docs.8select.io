@@ -2,7 +2,7 @@
 
 ## Sku
 
-Die Artikelnummer \(SKU\) ist einzigartig, sie enthält Modell, Farbe und Größe. Die SKU ist der Hauptidentifikator für einen konkreten Artikel \(Variante\) in einem Shop.
+Die Artikelnummer \(SKU\) ist einzigartig. Die SKU ist der Hauptidentifikator für einen konkreten Artikel \(Variante\) in einem Shop.
 
 Die SKU wird verwendet um einen Artikel aus dem Shop in der 8select CSE zu finden.
 
@@ -12,7 +12,17 @@ Die SKU wird verwendet um einen Artikel aus dem Shop in der 8select CSE zu finde
 827748001
 ```
 
-Die Master-SKU ist einzigartig, sie enthält Modell und Farbe. Die Master-SKU ist der Hauptidentifikator für einen Artikel \(Elternartikel\) in einem Shop.
+## Mastersku
+
+Die Master-SKU ist einzigartig. Die Master-SKU ist der Hauptidentifikator für einen Artikel \(Elternartikel\) in einem Shop.
+
+Die Master-SKU wird verwendet um eine Beziehung zwischen Elternartikel und Varianten herzustellen.
+
+### Beispiele
+
+```text
+8277480
+```
 
 ## Bestellstatus
 
