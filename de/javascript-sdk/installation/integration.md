@@ -9,6 +9,8 @@ Siehe dazu auch [http://knowledge.8select.com/knowledge/wie-werde-ich-kunde](htt
 
 Die 8select-CSE wird mit Hilfe des JavaScript SDK eingebunden und muss nicht heruntergeladen werden. Es wird einfach über ein JavaScript-Codeausschnitt auf der Webseite im HTML platziert.
 
+Die optimale Platzierung ist die Platzierung als erstes `<script>` Element auf der Seite, noch über dem `<body>` Element.
+
 Das SDK wird asynchron geladen ohne Ladevorgänge von anderen Elementen auf der Webseite zu blockieren.
 
 Mit Hilfe von folgendem Codeausschnitt wird das SDK geladen:
