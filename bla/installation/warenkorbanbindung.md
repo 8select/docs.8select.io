@@ -1,8 +1,8 @@
-# Shopping cart interface
+# Warenkorbanbindung
 
-To enable customers to add a product from the widget to their shopping cart, the shopping cart needs to be accessible through JavaScript.
+Damit Kunden Artikel aus den 8select.CSE Widgets heraus in den Warenkorb des Shops legen können, muss der Warenkorb via JavaScript zugänglich sein.
 
-To achieve this, a JavaScript function `_eightselect_shop_plugin` needs to be defined within the global namespace:
+Dafür muss eine JavaScript Funktion `_eightselect_shop_plugin.addToCart` im globalen Namespace definiert werden:
 
 ```javascript
 window._eightselect_shop_plugin = window._eightselect_shop_plugin || {}

@@ -1,23 +1,11 @@
-# Integration
+# SDK Snippet
 
-## API-ID
-
-In some code snippets the value `<API-ID>` occurs. Replace all occurrences with the API-ID which 8select has provided. For example `677f1c3a-c035-4a59-b6a4-1d3c6e75b150`  
-
-
-## How to integrate the 8select-CSE?
-
-The 8select-CSE is integrated by the JavaScript SDK and doesn't need to be downloaded. A JavaScript code snippet simply needs to be placed in the HTML of the website.
-
-The SDK is loaded asynchronously without blocking the loading processes of any other element of the site.
-
-You can load the SDK with this code snippet:
+Mit Hilfe von folgendem Codeausschnitt wird das SDK geladen.
 
 ```javascript
 <script type="text/javascript">
     (function(d, s, w) {
       var apiId = '<API-ID>';
-
       window.eightlytics || function (w) {
           w.eightlytics = function () {
             window.eightlytics.queue = window.eightlytics.queue || []
@@ -31,4 +19,6 @@ You can load the SDK with this code snippet:
     })(document, 'script', window);
 </script>
 ```
+
+
 
