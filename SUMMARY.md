@@ -4,21 +4,21 @@
 
 ## JavaScript SDK
 
-* [Installation](bla/installation/README.md)
-  * [Integration](bla/installation/integration/README.md)
-    * [SDK Snippet](bla/installation/integration/sdk-snippet.md)
-  * [Warenkorbanbindung](bla/installation/warenkorbanbindung.md)
-  * [Performance-Tracking](bla/installation/performance-tracking/README.md)
-    * [Tracking Snippet](bla/installation/performance-tracking/transaktions-tracking.md)
-    * [API](bla/installation/performance-tracking/api.md)
-* [Widgets](bla/widgets/README.md)
-  * [sys-psv](bla/widgets/sys-psv.md)
-  * [sys-psv-button](bla/widgets/sys-psv-button.md)
-  * [sys-acc](bla/widgets/sys-acc.md)
-  * [psp-psv](bla/widgets/psp-psv.md)
-  * [psp-tlv](bla/widgets/psp-tlv.md)
-  * [erweitert](bla/widgets/erweitert.md)
-* [API](bla/api.md)
+* [Installation](javascript-sdk/installation/README.md)
+  * [Integration](javascript-sdk/installation/integration/README.md)
+    * [SDK Snippet](javascript-sdk/installation/integration/sdk-snippet.md)
+  * [Warenkorbanbindung](javascript-sdk/installation/warenkorbanbindung.md)
+  * [Performance-Tracking](javascript-sdk/installation/performance-tracking/README.md)
+    * [Tracking Snippet](javascript-sdk/installation/performance-tracking/transaktions-tracking.md)
+    * [API](javascript-sdk/installation/performance-tracking/api.md)
+* [Widgets](javascript-sdk/widgets/README.md)
+  * [sys-psv](javascript-sdk/widgets/sys-psv.md)
+  * [sys-psv-button](javascript-sdk/widgets/sys-psv-button.md)
+  * [sys-acc](javascript-sdk/widgets/sys-acc.md)
+  * [psp-psv](javascript-sdk/widgets/psp-psv.md)
+  * [psp-tlv](javascript-sdk/widgets/psp-tlv.md)
+  * [erweitert](javascript-sdk/widgets/erweitert.md)
+* [API](javascript-sdk/api.md)
 
 ## Produkt Export
 
