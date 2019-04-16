@@ -22,6 +22,7 @@
 
 ## Produkt Export
 
+* [Gliederung](produkt-export-1/gliederung.md)
 * [produkt-export](produkt-export-1/produkt-export.md)
 * [Anforderungen Allgemein](produkt-export-1/anforderungen-allgemein/README.md)
   * [Pflichtfelder](produkt-export-1/anforderungen-allgemein/pflichtfelder.md)
