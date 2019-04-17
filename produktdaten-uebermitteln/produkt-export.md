@@ -1,4 +1,4 @@
-# produkt-export
+# Einleitung
 
 Voraussetzung für die Befüllung der Widgets mit Inhalten ist eine Anlieferung der Produktdaten des Online-Shops an 8select.
 

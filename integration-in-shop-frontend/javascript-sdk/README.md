@@ -1,4 +1,4 @@
-# Installation
+# JavaScript SDK
 
 ## Funktionsweise des 8select-CSE JavaScript SDK
 

@@ -1,13 +1,15 @@
 # Integration
 
-### API-ID
+### API ID und Feed ID
 
 {% hint style="info" %}
-In manchen Code-Snippets befindet sich der Wert**`<API-ID>`**.  
-Dieser muss durch die API-ID ersetzt werden, die 8select zur Verfügung stellt.   
+In manchen Code-Snippets befinden sich Platzhalter die mit richtigen Werten ersetzt werden müssen. Die Werte finden Sie in der MCON unter Settings -&gt; Plugin.
+
+**`<API-ID>`** bzw. **`apiId`**  muss durch die API ID ersetzt werden, die 8select zur Verfügung stellt.   
 Zum Beispiel `68aeb083-e34b-45bc-9551-583cf33d774c`
 
-Die API ID finden Sie in der MCON.
+**`<FEED-ID>`** bzw. **`feedId`**  muss durch die Feed ID ersetzt werden, die 8select zur Verfügung stellt.   
+Zum Beispiel `cfd32492-fef9-421f-a399-d9d8e933db62`
 {% endhint %}
 
 ## Wie wird die 8select.CSE integriert?

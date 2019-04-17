@@ -7,7 +7,7 @@ description: Erfahren Sie wie sie die 8select.CSE in einem Shop integrieren kön
 Die 8select **Curated Shopping Engine** \(CSE\) macht Ihre individuelle Expertise für Ihre Kunden im Onlineshop sicht- und erlebbar. Aus Ihrem Sortiment werden **dynamische Product Sets** generiert \(z.B. Outfits\) und an den von Ihnen gewünschten Touchpoints ausgespielt.
 
 {% hint style="success" %}
-Wie Ihnen unsere Curated Shopping Engine Ihre Expertise skalierbar in Ihren Shop zu bringen erfahren sie auf [8select.com](https://www.8select.com) und in unserem [Hilfe-Center](https://knowledge.8select.com/knowledge/wie-werde-ich-kunde).
+Wie Ihnen unsere Curated Shopping Engine dabei hilft Ihre Expertise skalierbar in Ihren Shop zu bringen erfahren sie auf [8select.com](https://www.8select.com) und in unserem [Hilfe-Center](https://knowledge.8select.com/knowledge/wie-werde-ich-kunde).
 {% endhint %}
 
 ## Integration in einen Shop
