@@ -27,15 +27,16 @@
 
 ## Produktdaten übermitteln
 
-* [Gliederung](produktdaten-uebermitteln/gliederung.md)
 * [Einleitung](produktdaten-uebermitteln/produkt-export.md)
 * [Datenübermittlung](produktdaten-uebermitteln/datenuebermittlung/README.md)
   * [REST API - Pull Prinzip](produktdaten-uebermitteln/datenuebermittlung/api/README.md)
     * [Authentifizierung](produktdaten-uebermitteln/datenuebermittlung/api/authentifizierung.md)
-    * [API Spezifikation](produktdaten-uebermitteln/datenuebermittlung/api/abfrage-von-produktdaten.md)
-* [Anforderungen Allgemein](produktdaten-uebermitteln/anforderungen-allgemein/README.md)
+    * [API Spezifikation](produktdaten-uebermitteln/datenuebermittlung/api/abfrage-von-produktdaten/README.md)
+      * [Abfrage von Produktdaten](produktdaten-uebermitteln/datenuebermittlung/api/abfrage-von-produktdaten/abfrage-von-produktdaten-1.md)
+      * [Abfrage aller Produkteigenschaften](produktdaten-uebermitteln/datenuebermittlung/api/abfrage-von-produktdaten/abfrage-aller-verfuegbaren-produkteigenschaften.md)
+      * [Abfrage von Produkteigenschaften für Variantenbildung](produktdaten-uebermitteln/datenuebermittlung/api/abfrage-von-produktdaten/untitled.md)
+* [Produktdaten](produktdaten-uebermitteln/anforderungen-allgemein/README.md)
   * [Pflichtfelder](produktdaten-uebermitteln/anforderungen-allgemein/pflichtfelder.md)
-* [Anforderungen Fashion Content Pool](produktdaten-uebermitteln/anforderungen-fashion-content-pool/README.md)
-  * [Pflichtfelder](produktdaten-uebermitteln/anforderungen-fashion-content-pool/pflichtfelder-beispiele.md)
-  * [Zusätzliche Felder](produktdaten-uebermitteln/anforderungen-fashion-content-pool/zusaetzliche-felder-beispiele.md)
+  * [Anforderungen Fashion Content Pool](produktdaten-uebermitteln/anforderungen-allgemein/anforderungen-fashion-content-pool/README.md)
+    * [Zusätzliche Felder](produktdaten-uebermitteln/anforderungen-allgemein/anforderungen-fashion-content-pool/zusaetzliche-felder-beispiele.md)
 

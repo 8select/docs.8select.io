@@ -1,6 +1,33 @@
 # Pflichtfelder
 
-## Sku
+## Produkt Identifikator für Variante \(id\)
+
+Die  Produkt Identifikator \(`id`\) ist einzigartig. Die `id` ist der Hauptidentifikator für einen konkreten Artikel \(Variante\) in einem Shop.  
+Häufig wird hier die Datenbank Id benutzt.
+
+### Beispiele
+
+```text
+8febdd77-c6a6-40f6-b322-9620680c7bc2
+42
+A-2-21
+```
+
+## Produkt Identifikator für Elternartikel \(parentId\)
+
+Die `parentId` ist einzigartig. Die `parentId` ist der Hauptidentifikator für einen Elternartikel in einem Shop.  
+Die `parentId` wird verwendet um eine Beziehung zwischen Elternartikel und Varianten herzustellen.  
+Häufig wird hier die Datenbank Id des Elternartikels benutzt.
+
+### Beispiele
+
+```text
+8febdd77-c6a6-40f6-b322-9620680c7bc2
+42
+A-2-21
+```
+
+## SKU
 
 Die Artikelnummer \(SKU\) ist einzigartig. Die SKU ist der Hauptidentifikator für einen konkreten Artikel \(Variante\) in einem Shop.
 
@@ -9,19 +36,10 @@ Die SKU wird verwendet um einen Artikel aus dem Shop in der 8select CSE zu finde
 ### Beispiele
 
 ```text
-827748001
-```
-
-## Mastersku
-
-Die Master-SKU ist einzigartig. Die Master-SKU ist der Hauptidentifikator für einen Artikel \(Elternartikel\) in einem Shop.
-
-Die Master-SKU wird verwendet um eine Beziehung zwischen Elternartikel und Varianten herzustellen.
-
-### Beispiele
-
-```text
-8277480
+8277-480-01
+8febdd77-c6a6-40f6-b322-9620680c7bc2
+42
+A-2-21
 ```
 
 ## Bestellstatus
@@ -95,7 +113,7 @@ Alle verfügbaren Artikelbilder der Variante in der höchsten Auflösung. Mehrer
 
 ### Beispiele
 
-```text
+```javascript
 [
   "https://ambellis.scene7.com/is/image/ambellis/ext/8277480-01.jpg?$rtf\_amb\_prod-main-zoom\_xl$"
 ]

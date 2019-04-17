@@ -1,5 +1,92 @@
 # Zusätzliche Felder
 
+## Mastersku
+
+Die Master-SKU ist einzigartig, sie enthält Modell und Farbe. Die Master-SKU ist der Hauptidentifikator für einen Artikel \(Elternartikel\) in einem Shop.
+
+Die Master-SKU wird verwendet um eine Beziehung zwischen Elternartikel und Varianten herzustellen.
+
+### Beispiele
+
+```text
+8277-480
+```
+
+## Model
+
+Ein Modell bezeichnet das Grundprodukt. Ein Modell kann in mehreren Ausführungen vorkommen, die sich z.B. in Größe, Farbe oder Muster unterschieden.
+
+Beispiel: Das Modell `Arie` \(8277\) gibt es in den 3 Farben: `blau` \(480\), `rot` \(481\), `gelb` \(482\) und in den 4 Größen: `S` \(01\), `M` \(02\), `L` \(03\), `XL` \(04\), also 12 Ausführungen. Jede Ausführung hat eine eindeutige Artikelnummer.
+
+### Beispiele
+
+| model | mastersku | sku |
+| :--- | :--- | :--- |
+| 8277 | 8277-480 | 8277-480-01 |
+
+## Größe
+
+Größenbezeichnung des Artikels.
+
+### Beispiele
+
+```text
+38
+L
+32/32
+32 L
+M-L
+```
+
+## Marke
+
+Markenname bzw. Hersteller eines Artikels.
+
+### Beispiele
+
+```text
+Desigual
+HUGO BOSS
+Betty Barclay
+```
+
+## Farbe
+
+Die exakte Farbbezeichnung des Artikels.
+
+### Beispiele
+
+```text
+rot
+grün
+gelb
+schwarz-rot-gold
+Burnished Rosè
+```
+
+## Beschreibung
+
+Der Beschreibungstext zum Artikel im HTML-Format.
+
+### Beispiele
+
+```markup
+<p>
+Diese auffällig gemusterte Sweatjacke von Desigual zeigt sich mit sportiven 
+Raglanärmeln und Kapuze mit Tunnelzug. Ärmelsaum und Saum sind elastisch 
+gestaltet.<br><br>    
+- modisch nach innen gezogenen Seitennähte<br>  
+- zwei Nahttaschen auf Hüfthöhe<br>  
+- Rückenteil modisch verlängert<br>  
+- Rückenlänge bei Gr. S (36): ca. 64 cm<br>  
+- unser Model trägt Größe S (36) bei einer Körpergröße von 176 cm<br><br>   
+Material: 51% Baumwolle, 45% Polyester, 4% Elasthan<br><br>    
+---Pflegehinweise---<br>  
+- Maschinenwäsche bei 30°, von links<br>  
+- nicht für den Trockner geeignet<br>
+</p>
+```
+
 ## EAN
 
 Standardisierte eindeutige Materialnummer nach European Article Number \(EAN\) oder Unified Product Code \(UPC\).
@@ -18,6 +105,16 @@ Oft als Kurzbezeichnung in Listenansichten verwendet - z.B. `Freizeit-Hemd` oder
 
 ```text
 Freizeit-Hemd
+```
+
+## Kategorie
+
+Bezeichnung der Artikelgruppen, die meist so in der Shopnavigation verwendet werden.
+
+### Beispiele
+
+```text
+Sweatshirts & -jacken
 ```
 
 ## Kategorie 2
