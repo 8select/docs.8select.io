@@ -8,69 +8,53 @@ Die Produktdaten werden dabei über eine vom Shop bereitgestellte API abgefragt.
 
 ## Format
 
-* Im Export sind ausschließlich Produktvarianten enthalten.
+* Im Export sind ausschließlich **Produktvarianten** enthalten.
 * Produkteigenschaften die Varianten ausmachen, müssen entsprechend gekennzeichnet sein, zum Beispiel Farbe und Größe. 
-* Hat eine Eigenschaft mehrere Werte, so sind die Werte in einem `array` aufzulisten. Zum Beispiel für ein Mehrfarbiges T-Shirt.
-* Ein Produkt ist vom Typ `object` und hat 1 bis n `properties`
-  * Identifikator für ein Produkt ist die `property` mit dem Bezeichner `sku` vom Typ `string` 
-  * Alle weiteren Eigenschaften sind wiederum vom Typ `object`
+* Hat eine Eigenschaft mehrere Werte, so sind die Werte in einem `Array` aufzulisten. Zum Beispiel für ein Mehrfarbiges T-Shirt.
+* Ein Produkt ist vom Typ `Object` und hat 1 bis n `properties`
+  * Es gibt Pflichtfelder damit ein Produkt und sein Elternprodukt eindeutig identifizierbar sind
+  * Alle Eigenschaften sind vom Typ `Object`
     * der `key` einer Eigenschaft ist ein eindeutiger Identifikator
-    * `label` - Typ `string` - ein für Menschen lesbarer Bezeichner der Eigenschaft
-    * `value` - ist vom Typ `string`, `number`, `array<string>` oder `array<number>`
+    * `label` - Typ `String` - ein für Menschen lesbarer Bezeichner der Eigenschaft
+    * `value` - ist vom Typ `String`, `Number`, `String[]` , `Number[]`, `null`
     * `value` - ist der Wert der Eigenschaft
-    * `isVariantDetail` - Typ `boolean`
+    * `isVariantDetail` - Typ `Boolean`
     * `isVariantDetail` - ist `true` wenn eine Eigenschaft für die Variantenbildung verantwortlich ist, z.B. Farben oder Größen
 
 ### Beispiel Produkt
 
 ```javascript
 {
-  "sku": "grand-c-max-2015-race-rot-125-3tz4uiu564z",
-  "table.with.sku.column": {
-    "label": "sku",
-    "value": "grand-c-max-2015-race-rot-125-3tz4uiu564z"
+  "s_articles_details.id": {
+    "label": "id",
+    "value": "732"
   },
-  "table.with.color.column": {
-    "label": "Farbe",
-    "value": "Race-Rot",
-    "isVariantDetail": true
+  "s_articles_details.articleID": {
+    "label": "parentId",
+    "value": "5"
   },
-  "table.with.material.column": {
-    "label": "Material",
+  "s_articles_details.ordernumber": {
+    "label": "Artikelnummer",
+    "value": "SW10005.2"
+  },
+  "url": {
+    "label": "URL",
+    "value": "http://shopware-5-2-17-php7.staging.8select.io/hoehenluft-abenteuer/ausruestung/zubehoer/stoecke/5/hot-shot-s?number=SW10005.2"
+  },
+  "images": {
+    "label": "Bilder",
     "value": [
-        "Aluminium",
-        "PVC",
-        "Stahl"
+      "http://shopware-5-2-17-php7.staging.8select.io/media/image/fd/6c/be/SW10005.jpg",
+      "http://shopware-5-2-17-php7.staging.8select.io/media/image/e5/d5/8a/SW10005_1.jpg"
     ]
   },
-  "table.with.brand.column": {
-    "label": "Marke",
-    "value": "FORD"
+  "s_articles.name": {
+    "label": "Artikel-Bezeichnung",
+    "value": "HOT SHOT S"
   },
-  "table.with.ps.column": {
-    "label": "PS",
-    "value": 125,
-    "isVariantDetail": true
-  },
-  "table.with.seat_color.column": {
-    "label": "Sitzfarbe",
-    "value": "schwarz"
-  },
-  "table.with.mirror_color.column": {
-    "label": "Spiegelfarbe",
-    "value": "Iridium-Schwarz Mica"
-  },
-  "table.with.price.column": {
-    "label": "Preis",
-    "value": 1990000
-  },
-  "table.with.rsp.column": {
-    "label": "UVP",
-    "value": 2220000
-  },
-  "table.with.stock.column": {
-    "label": "Bestand",
-    "value": 42
+  "s_articles_supplier.name": {
+    "label": "Hersteller",
+    "value": "LEKI"
   }
 }
 ```
