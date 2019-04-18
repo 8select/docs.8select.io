@@ -257,15 +257,19 @@ Wenn API ID und/oder Feed ID im Shop nicht hinterlegt sind.
   } 
   "sku": { // Stock Keeping Unit der Produktvariante
     "label": "SKU",
-    "value": String // Wert der SKU
+    "value": String // Wert
   } 
   "url" { // Deeplink in den Shop die zur Artikeldetailseite führt
-    "label": "URL",
-    "value": String // Wert der URL
+    "label": "Deeplink",
+    "value": String // URL des Artikels
+  }
+  "name": { // Name des Produkts
+    "label": "Artikel-Bezeichnung",
+    "value": String // Wert
   }
   "images": { // Liste von 0 bis n Bildern der Variante
-    "label": "images",
-    "value": String[] // Werte der Bildurls
+    "label": "Bilder",
+    "value": String[] // URLs der Bilder
   }
 }
 ```
