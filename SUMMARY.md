@@ -22,21 +22,21 @@
 
 ## Shop mit CSE verbinden
 
-* [Einleitung](shop-mit-cse-verbinden/warum-wieso-weshalb.md)
-* [API](shop-mit-cse-verbinden/verbindung-vom-shop-zu-8select-herstellen.md)
+* [Einleitung](shop-mit-cse-verbinden/einleitung.md)
+* [API](shop-mit-cse-verbinden/api.md)
 
 ## Produktdaten übermitteln
 
-* [Einleitung](produktdaten-uebermitteln/produkt-export.md)
+* [Einleitung](produktdaten-uebermitteln/einleitung.md)
 * [Datenübermittlung](produktdaten-uebermitteln/datenuebermittlung/README.md)
-  * [REST API - Pull Prinzip](produktdaten-uebermitteln/datenuebermittlung/api/README.md)
-    * [Authentifizierung](produktdaten-uebermitteln/datenuebermittlung/api/authentifizierung.md)
-    * [API Spezifikation](produktdaten-uebermitteln/datenuebermittlung/api/abfrage-von-produktdaten/README.md)
-      * [Abfrage von Produktdaten](produktdaten-uebermitteln/datenuebermittlung/api/abfrage-von-produktdaten/abfrage-von-produktdaten-1.md)
-      * [Abfrage aller Produkteigenschaften](produktdaten-uebermitteln/datenuebermittlung/api/abfrage-von-produktdaten/abfrage-aller-verfuegbaren-produkteigenschaften.md)
-      * [Abfrage von Produkteigenschaften für Variantenbildung](produktdaten-uebermitteln/datenuebermittlung/api/abfrage-von-produktdaten/untitled.md)
-* [Produktdaten](produktdaten-uebermitteln/anforderungen-allgemein/README.md)
-  * [Pflichtfelder](produktdaten-uebermitteln/anforderungen-allgemein/pflichtfelder.md)
-  * [Anforderungen Fashion Content Pool](produktdaten-uebermitteln/anforderungen-allgemein/anforderungen-fashion-content-pool/README.md)
-    * [Zusätzliche Felder](produktdaten-uebermitteln/anforderungen-allgemein/anforderungen-fashion-content-pool/zusaetzliche-felder-beispiele.md)
+  * [REST API - Pull Prinzip](produktdaten-uebermitteln/datenuebermittlung/rest-api-pull-prinzip/README.md)
+    * [Authentifizierung](produktdaten-uebermitteln/datenuebermittlung/rest-api-pull-prinzip/authentifizierung.md)
+    * [API Spezifikation](produktdaten-uebermitteln/datenuebermittlung/rest-api-pull-prinzip/api-spezifikation/README.md)
+      * [Abfrage von Produktdaten](produktdaten-uebermitteln/datenuebermittlung/rest-api-pull-prinzip/api-spezifikation/abfrage-von-produktdaten.md)
+      * [Abfrage aller Produkteigenschaften](produktdaten-uebermitteln/datenuebermittlung/rest-api-pull-prinzip/api-spezifikation/abfrage-aller-produkteigenschaften.md)
+      * [Abfrage von Produkteigenschaften für Variantenbildung](produktdaten-uebermitteln/datenuebermittlung/rest-api-pull-prinzip/api-spezifikation/abfrage-von-produkteigenschaften-fuer-variantenbildung.md)
+* [Produktdaten](produktdaten-uebermitteln/produktdaten/README.md)
+  * [Pflichtfelder](produktdaten-uebermitteln/produktdaten/pflichtfelder.md)
+  * [Anforderungen Fashion Content Pool](produktdaten-uebermitteln/produktdaten/anforderungen-fashion-content-pool/README.md)
+    * [Zusätzliche Felder](produktdaten-uebermitteln/produktdaten/anforderungen-fashion-content-pool/zusaetzliche-felder.md)
 
