@@ -238,7 +238,7 @@ Wenn API ID und/oder Feed ID im Shop nicht hinterlegt sind.
 ```javascript
 "name": { String // Identifikator der Produkteigenschaft
   "label": String // Bezeichnung der Produkteigenschaft
-  "value": String, String[], Number, Number[], null // Wert(e) der Produkteigenschaft
+  "value": String, String[], Number, Number[], boolean // Wert(e) der Produkteigenschaft
   "isVariantDetail"?: Boolean // Nur vorhanden und true wenn die Produkteigenschaft für die Variantenbildung des Produkts benutzt
 }
 ```
