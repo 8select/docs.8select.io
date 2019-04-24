@@ -10,16 +10,17 @@ Die Produktdaten werden dabei über eine vom Shop bereitgestellte API abgefragt.
 
 * Im Export sind ausschließlich **Produktvarianten** enthalten.
 * Produkteigenschaften die Varianten ausmachen, müssen entsprechend gekennzeichnet sein, zum Beispiel Farbe und Größe. 
-* Hat eine Eigenschaft mehrere Werte, so sind die Werte in einem `Array` aufzulisten. Zum Beispiel für ein Mehrfarbiges T-Shirt.
-* Ein Produkt ist vom Typ `Object` und hat 1 bis n `properties`
+* Hat eine Eigenschaft mehrere Werte, so sind die Werte in einem `array` aufzulisten. Zum Beispiel für ein Mehrfarbiges T-Shirt.
+* Ein Produkt ist vom Typ `object` und hat 1 bis n `properties`
   * Es gibt Pflichtfelder damit ein Produkt und sein Elternprodukt eindeutig identifizierbar sind
-  * Alle Eigenschaften sind vom Typ `Object`
+  * Alle Eigenschaften sind vom Typ `object`
     * der `key` einer Eigenschaft ist ein eindeutiger Identifikator
-    * `label` - Typ `String` - ein für Menschen lesbarer Bezeichner der Eigenschaft
-    * `value` - ist vom Typ `String`, `Number`, `String[]` , `Number[]`, `null`
+    * `label` - Typ `string` - ein für Menschen lesbarer Bezeichner der Eigenschaft
+    * `value` - ist vom Typ `string`, `number`, `string[]` , `number[]`, `boolean`
     * `value` - ist der Wert der Eigenschaft
-    * `isVariantDetail` - Typ `Boolean`
+    * `isVariantDetail` - Typ `boolean`
     * `isVariantDetail` - ist `true` wenn eine Eigenschaft für die Variantenbildung verantwortlich ist, z.B. Farben oder Größen
+    * `isVariantDetail`wird nur benötigt wenn der Wert `true` ist, ansonsten kann die Eigenschaft weggelassen werden
 
 ### Beispiel Produkt
 

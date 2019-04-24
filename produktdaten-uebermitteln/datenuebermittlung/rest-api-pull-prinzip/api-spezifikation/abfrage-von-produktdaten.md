@@ -226,20 +226,20 @@ Wenn API ID und/oder Feed ID im Shop nicht hinterlegt sind.
 {% code-tabs-item title="Root Level" %}
 ```javascript
 {  
-  "limit": Number // Aktuell gesetztes Limit - Standard kann z.B. 100 sein
-  "offset": Number // Aktuell gesetztes Offset - Standard ist 0
-  "total": Number // Gesamtanzahl der Produkte
-  "data": Array // Die einzelnen Produkte
+  "limit": number // Aktuell gesetztes Limit - Standard kann z.B. 100 sein
+  "offset": number // Aktuell gesetztes Offset - Standard ist 0
+  "total": number // Gesamtanzahl der Produkte
+  "data": array // Die einzelnen Produkte
 }
 ```
 {% endcode-tabs-item %}
 
 {% code-tabs-item title="Data Level Object Format" %}
 ```javascript
-"name": { String // Identifikator der Produkteigenschaft
-  "label": String // Bezeichnung der Produkteigenschaft
-  "value": String, String[], Number, Number[], boolean // Wert(e) der Produkteigenschaft
-  "isVariantDetail"?: Boolean // Nur vorhanden und true wenn die Produkteigenschaft für die Variantenbildung des Produkts benutzt
+"name": { string // Identifikator der Produkteigenschaft
+  "label": string // Bezeichnung der Produkteigenschaft
+  "value": string, string[], number, number[], boolean // Wert(e) der Produkteigenschaft
+  "isVariantDetail"?: boolean // Nur vorhanden und true wenn die Produkteigenschaft für die Variantenbildung des Produkts benutzt
 }
 ```
 {% endcode-tabs-item %}
@@ -249,27 +249,27 @@ Wenn API ID und/oder Feed ID im Shop nicht hinterlegt sind.
 {
   "id": { // Identifikator der Produktvariante
     "label": "id",
-    "value": String // Wert - zum Beispiel Datenbank Id
+    "value": string // Wert - zum Beispiel Datenbank Id
   }
   "parentId": { // Identifikator vom Elternprodukt der Variante
     "label": "parentId",
-    "value": String // Wert - zum Beispiel Datenbank Id
+    "value": string // Wert - zum Beispiel Datenbank Id
   } 
   "sku": { // Stock Keeping Unit der Produktvariante
     "label": "SKU",
-    "value": String // Wert
+    "value": string // Wert
   } 
   "url" { // Deeplink in den Shop die zur Artikeldetailseite führt
     "label": "Deeplink",
-    "value": String // URL des Artikels
+    "value": string // URL des Artikels
   }
   "name": { // Name des Produkts
     "label": "Artikel-Bezeichnung",
-    "value": String // Wert
+    "value": string // Wert
   }
   "images": { // Liste von 0 bis n Bildern der Variante
     "label": "Bilder",
-    "value": String[] // URLs der Bilder
+    "value": string[] // URLs der Bilder
   }
 }
 ```

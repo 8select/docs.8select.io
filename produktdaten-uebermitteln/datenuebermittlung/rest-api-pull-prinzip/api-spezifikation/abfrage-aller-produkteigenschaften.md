@@ -280,10 +280,10 @@ Wenn API ID und/oder Feed ID im Shop nicht hinterlegt sind.
 {% code-tabs-item title="Root Level" %}
 ```javascript
 {  
-  "limit": Number // Aktuell gesetztes Limit - Standard ist soviele Einträge wie vorhanden sind
-  "offset": Number // Aktuell gesetztes Offset - Standard ist 0
-  "total": Number // Gesamtanzahl der Produkteigenschaften
-  "data": Array // Die einzelnen Produkteigenschaften
+  "limit": number // Aktuell gesetztes Limit - Standard ist soviele Einträge wie vorhanden sind
+  "offset": number // Aktuell gesetztes Offset - Standard ist 0
+  "total": number // Gesamtanzahl der Produkteigenschaften
+  "data": array // Die einzelnen Produkteigenschaften
 }
 ```
 {% endcode-tabs-item %}
@@ -291,8 +291,8 @@ Wenn API ID und/oder Feed ID im Shop nicht hinterlegt sind.
 {% code-tabs-item title="Data Level" %}
 ```javascript
 {
-  "name": String // Identifikator der Eigenschaft
-  "label": String // Beschreibung / Bezeichnung der Eigenschaft
+  "name": string // Identifikator der Eigenschaft
+  "label": string // Beschreibung / Bezeichnung der Eigenschaft
 }
 ```
 {% endcode-tabs-item %}
