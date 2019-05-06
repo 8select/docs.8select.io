@@ -4,7 +4,7 @@
 <div data-8select-widget-id="sys-psv" data-sku="42"></div>
 ```
 
-`data-sku` ist die SKU des aktuellen Artikels. Die CSE sucht basierend darauf ein Produktset welches diesen Artikel enthält. Der Wert für `data-sku` muss dynamisch gesetzt werden und muss einer der im Stammdatenfeed übergebenen SKU oder Master-SKU entsprechen.
+`data-sku` ist die SKU des aktuellen Artikels. Die CSE sucht basierend darauf ein Produktset welches diesen Artikel enthält. Der Wert für `data-sku` muss dynamisch gesetzt werden und muss einer der im [Produktexport](../../produktdaten-uebermitteln/datenuebermittlung/rest-api-pull-prinzip/api-spezifikation/abfrage-von-produktdaten.md) übergebenen SKU entsprechen.
 
 ## SYS-PSV Widget mit anderer SKU neuladen
 
