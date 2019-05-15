@@ -16,19 +16,23 @@ Um die CSE nutzen zu können, wird ein Mindestdatensatz pro Produkt benötigt.
 {% api-method-request %}
 {% api-method-query-parameters %}
 {% api-method-parameter name="delta" type="boolean" required=false %}
-Möglichkeit nur Produkte zurückzugeben die sich seit der letzten Abfrage geändert haben
+Möglichkeit nur Produkte zurückzugeben die sich seit der letzten Abfrage geändert haben  
+`delta=true`
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="fields" type="array" required=false %}
-Möglichkeit um die in der Antwort enthaltenen Felder zu limitieren
+Möglichkeit um die in der Antwort enthaltenen Felder zu limitieren  
+`fields[]=feld1&fields[]=feld2`
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="limit" type="number" required=false %}
-Pagination - Limitierung der in der Antwort enthaltenen Produkte
+Pagination - Limitierung der in der Antwort enthaltenen Produkte  
+`limit=42`
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="offset" type="number" required=false %}
-Pagination - Anzahl von Produkten die Übersprungen werden soll
+Pagination - Anzahl von Produkten die Übersprungen werden soll  
+`offset=42`
 {% endapi-method-parameter %}
 {% endapi-method-query-parameters %}
 {% endapi-method-request %}
