@@ -1,4 +1,12 @@
+---
+description: >-
+  Widget für die Artikeldetailseite. Zeigt einen Button an, sofern ein
+  Produktset passend zu einer SKU vorhanden ist.
+---
+
 # sys-psv-button
+
+![](../../.gitbook/assets/sys-psv.png)
 
 Der SYS-PSV-Button weißt den Nutzer der Webseite darauf hin, dass es zum aktuell angesehenen Artikel ein passendes Produktset gibt.  
 Der Nutzer kann mit einem Klick auf den Button direkt zum Produktset runterscrollen oder springen.

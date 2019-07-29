@@ -1,4 +1,10 @@
+---
+description: Widget für die Artikeldetailseite. Zeigt ein Produktset passend zu einer SKU.
+---
+
 # sys-psv
+
+![](../../.gitbook/assets/sys-psv.png)
 
 ```markup
 <div data-8select-widget-id="sys-psv" data-sku="42"></div>
