@@ -2,6 +2,7 @@
 
 Mit Hilfe von folgendem Codeausschnitt wird das SDK geladen.
 
+{% code title="" %}
 ```javascript
 <script type="text/javascript">
     (function(d, s, w) {
@@ -19,6 +20,7 @@ Mit Hilfe von folgendem Codeausschnitt wird das SDK geladen.
     })(document, 'script', window);
 </script>
 ```
+{% endcode %}
 
 
 

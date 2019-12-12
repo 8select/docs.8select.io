@@ -108,8 +108,8 @@ Verbindung hergestellt
 
 ### **Beispiel**
 
-{% code-tabs %}
-{% code-tabs-item title="API Request - cURL" %}
+{% tabs %}
+{% tab title="API Request - cURL" %}
 ```bash
 curl -X PUT 'https://sc.8select.io/shops/b796a03e-7117-4d12-b40f-e4b06c0ee2dd/497d4510-29c4-4160-adac-42ebb32a09c0' \
   -H 'Content-Type: application/json; charset=utf-8' \
@@ -117,9 +117,9 @@ curl -X PUT 'https://sc.8select.io/shops/b796a03e-7117-4d12-b40f-e4b06c0ee2dd/49
   -H '8select-com-tid: b796a03e-7117-4d12-b40f-e4b06c0ee2dd' \
   -d '{"api":{"attributes":"https://shopware.demo.8select.io/cse-api/attributes","products":"https://shopware.demo.8select.io/cse-api/products","variantDimensions":"https://shopware.demo.8select.io/cse-api/variant-dimensions"},"plugin":{"version":"3.0.0"},"shop":{"software":"Shopware","url":"https://shopware.demo.8select.io","version":"5.5.3"}}'
 ```
-{% endcode-tabs-item %}
+{% endtab %}
 
-{% code-tabs-item title="response.json" %}
+{% tab title="response.json" %}
 ```javascript
 {       
   "api": {
@@ -137,6 +137,6 @@ curl -X PUT 'https://sc.8select.io/shops/b796a03e-7117-4d12-b40f-e4b06c0ee2dd/49
   }
 }ja
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endtab %}
+{% endtabs %}
 

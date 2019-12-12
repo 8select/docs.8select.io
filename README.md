@@ -14,11 +14,11 @@ Wie Ihnen unsere Curated Shopping Engine dabei hilft Ihre Expertise skalierbar i
 
 ### Plug & Play
 
-Die 8select.CSE kann für Shopware und Oxid mittels Plugin integriert werden. Die Plugins finden Sie in den jeweiligen App-Stores der Shopsysteme.
+Die 8select.CSE kann für **SAP Commerce, Salesforce Commerce Cloud, Shopware, Oxid** und **JTL-Shop** mittels Plugin integriert werden. Die Plugins finden Sie in den jeweiligen App-Stores der Shopsysteme.
 
 ### Manuelle Integration
 
-Die manuelle Integration in einen Shop ist sehr einfach und erfolgt im Shop-Frontend mittels JavaScript SDK und im Backend mit Hilfe unserer REST APIs.
+Die manuelle Integration in einen Shop ist sehr einfach und erfolgt im Shop-Frontend mittels JavaScript SDK und im Backend mit Hilfe unserer REST APIs. Alternativ können die Produktdaten auch als CSV oder XML via Push oder Pull übermittelt werden.
 
 #### Widgets im Shop einbinden
 

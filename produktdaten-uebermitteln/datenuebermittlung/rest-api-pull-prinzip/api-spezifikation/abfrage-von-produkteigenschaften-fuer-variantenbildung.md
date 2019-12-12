@@ -123,8 +123,8 @@ Wenn API ID und/oder Feed ID im Shop nicht hinterlegt sind.
 
 ### Antwort Format
 
-{% code-tabs %}
-{% code-tabs-item title="Root Level" %}
+{% tabs %}
+{% tab title="Root Level" %}
 ```javascript
 {  
   "limit": number // Aktuell gesetztes Limit - Standard ist soviele Einträge wie vorhanden sind
@@ -133,31 +133,31 @@ Wenn API ID und/oder Feed ID im Shop nicht hinterlegt sind.
   "data": array // Die einzelnen Produkteigenschaften
 }
 ```
-{% endcode-tabs-item %}
+{% endtab %}
 
-{% code-tabs-item title="Data Level" %}
+{% tab title="Data Level" %}
 ```javascript
 {
   "name": string // Identifikator der Eigenschaft
   "label": string // Beschreibung / Bezeichnung der Eigenschaft
 }
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endtab %}
+{% endtabs %}
 
 ### Beispiel
 
-{% code-tabs %}
-{% code-tabs-item title="API Request - cURL" %}
+{% tabs %}
+{% tab title="API Request - cURL" %}
 ```bash
 curl 'https://shopware.demo.8select.io/cse-api/variant-dimensions' \
   -H 'Content-Type: application/json; charset=utf-8' \
   -H '8select-com-fid: 497d4510-29c4-4160-adac-42ebb32a09c0' \
   -H '8select-com-tid: b796a03e-7117-4d12-b40f-e4b06c0ee2dd'
 ```
-{% endcode-tabs-item %}
+{% endtab %}
 
-{% code-tabs-item title="response.json" %}
+{% tab title="response.json" %}
 ```javascript
 {
   "limit": 13,
@@ -219,8 +219,8 @@ curl 'https://shopware.demo.8select.io/cse-api/variant-dimensions' \
   ]
 }
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endtab %}
+{% endtabs %}
 
 
 

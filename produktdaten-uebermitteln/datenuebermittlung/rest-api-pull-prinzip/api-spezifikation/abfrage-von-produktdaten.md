@@ -226,8 +226,8 @@ Wenn API ID und/oder Feed ID im Shop nicht hinterlegt sind.
 
 ### Antwort Format
 
-{% code-tabs %}
-{% code-tabs-item title="Root Level" %}
+{% tabs %}
+{% tab title="Root Level" %}
 ```javascript
 {  
   "limit": number // Aktuell gesetztes Limit - Standard kann z.B. 100 sein
@@ -236,9 +236,9 @@ Wenn API ID und/oder Feed ID im Shop nicht hinterlegt sind.
   "data": array // Die einzelnen Produkte
 }
 ```
-{% endcode-tabs-item %}
+{% endtab %}
 
-{% code-tabs-item title="Data Level Object Format" %}
+{% tab title="Data Level Object Format" %}
 ```javascript
 "name": { string // Identifikator der Produkteigenschaft
   "label": string // Bezeichnung der Produkteigenschaft
@@ -246,9 +246,9 @@ Wenn API ID und/oder Feed ID im Shop nicht hinterlegt sind.
   "isVariantDetail"?: boolean // Nur vorhanden und true wenn die Produkteigenschaft für die Variantenbildung des Produkts benutzt
 }
 ```
-{% endcode-tabs-item %}
+{% endtab %}
 
-{% code-tabs-item title="Data Level Minimum" %}
+{% tab title="Data Level Minimum" %}
 ```javascript
 {
   "id": { // Identifikator der Produktvariante
@@ -277,15 +277,15 @@ Wenn API ID und/oder Feed ID im Shop nicht hinterlegt sind.
   }
 }
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endtab %}
+{% endtabs %}
 
 ### Beispiele
 
 #### Mit Filter der Antwort über den Queryparameter `fields` mit nur einem Wert.
 
-{% code-tabs %}
-{% code-tabs-item title="API Request - cURL" %}
+{% tabs %}
+{% tab title="API Request - cURL" %}
 ```bash
 curl 'https://shopware.demo.8select.io/cse-api/products?limit=3&offset=18&fields[]=url' \
   -H 'Content-Type: application/json; charset=utf-8' \
@@ -293,9 +293,9 @@ curl 'https://shopware.demo.8select.io/cse-api/products?limit=3&offset=18&fields
   -H '8select-com-tid: b796a03e-7117-4d12-b40f-e4b06c0ee2dd'
 
 ```
-{% endcode-tabs-item %}
+{% endtab %}
 
-{% code-tabs-item title="response.json" %}
+{% tab title="response.json" %}
 ```javascript
 {
   "limit": 3,
@@ -359,13 +359,13 @@ curl 'https://shopware.demo.8select.io/cse-api/products?limit=3&offset=18&fields
   ]
 }
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endtab %}
+{% endtabs %}
 
 #### Mit Filter der Antwort über den Queryparameter `fields` mit mehreren Werten.
 
-{% code-tabs %}
-{% code-tabs-item title="API Request - cURL" %}
+{% tabs %}
+{% tab title="API Request - cURL" %}
 ```bash
 curl 'https://shopware.demo.8select.io/cse-api/products?limit=1&offset=18&fields[]=s_categories&fields[]=s_article_configurator_groups&fields[]=s_articles_prices.price&fields[]=s_articles_prices.pseudoprice' \
   -H 'Content-Type: application/json; charset=utf-8' \
@@ -373,9 +373,9 @@ curl 'https://shopware.demo.8select.io/cse-api/products?limit=1&offset=18&fields
   -H '8select-com-tid: b796a03e-7117-4d12-b40f-e4b06c0ee2dd'
 
 ```
-{% endcode-tabs-item %}
+{% endtab %}
 
-{% code-tabs-item title="response.json" %}
+{% tab title="response.json" %}
 ```javascript
 {
   "limit": 3,
@@ -496,6 +496,6 @@ curl 'https://shopware.demo.8select.io/cse-api/products?limit=1&offset=18&fields
   ]
 }
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endtab %}
+{% endtabs %}
 
