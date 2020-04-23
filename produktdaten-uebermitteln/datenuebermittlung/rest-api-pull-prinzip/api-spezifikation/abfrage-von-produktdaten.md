@@ -499,3 +499,32 @@ curl 'https://shopware.demo.8select.io/cse-api/products?limit=1&offset=18&fields
 {% endtab %}
 {% endtabs %}
 
+#### Abfrage die nur geänderte Produkte zurück gibt - aktuell gibt es keine geänderten Produkte.
+
+Die API gibt Produkte zurück, die sich seit der letzten Abfrage geändert haben. Die Abfrage erfolgt immer mit `offset=0` da die Produkte die zuvor abgefragt wurden, bei der nächsten Abfrage nicht mehr in der API Antwort auftauchen. Das heißt das `total` der nächsten Abfrage verringert sich auch immer um die Menge an Produkten die die vorherige Abfrage zurückgegeben hat.
+
+Gibt es keine geänderten Produkte, so ist `total=0`  
+Gibt es 1 geändertes Produkt, ist `total=1`
+
+{% tabs %}
+{% tab title="API Request - cURL" %}
+```bash
+curl 'https://shopware.demo.8select.io/cse-api/products?limit=10&offset=0&delta=true' \
+  -H 'Content-Type: application/json; charset=utf-8' \
+  -H '8select-com-fid: 497d4510-29c4-4160-adac-42ebb32a09c0' \
+  -H '8select-com-tid: b796a03e-7117-4d12-b40f-e4b06c0ee2dd'
+```
+{% endtab %}
+
+{% tab title="response.json" %}
+```javascript
+{
+  "limit": 10,
+  "offset": 0,
+  "total": 0,
+  "data": []
+}
+```
+{% endtab %}
+{% endtabs %}
+
