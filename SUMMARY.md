@@ -13,6 +13,7 @@
     * [Tracking Snippet](integration-in-shop-frontend/javascript-sdk/performance-tracking/transaktions-tracking.md)
     * [API](integration-in-shop-frontend/javascript-sdk/performance-tracking/api.md)
 * [Widgets](integration-in-shop-frontend/widgets/README.md)
+  * [8.SET Mail \(beta\)](integration-in-shop-frontend/widgets/set-mail.md)
   * [sys-psv](integration-in-shop-frontend/widgets/sys-psv.md)
   * [sys-psv-button](integration-in-shop-frontend/widgets/sys-psv-button.md)
   * [sys-acc](integration-in-shop-frontend/widgets/sys-acc.md)
