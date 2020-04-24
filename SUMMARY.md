@@ -36,6 +36,7 @@
       * [Abfrage von Produktdaten](produktdaten-uebermitteln/datenuebermittlung/rest-api-pull-prinzip/api-spezifikation/abfrage-von-produktdaten.md)
       * [Abfrage aller Produkteigenschaften](produktdaten-uebermitteln/datenuebermittlung/rest-api-pull-prinzip/api-spezifikation/abfrage-aller-produkteigenschaften.md)
       * [Abfrage von Produkteigenschaften für Variantenbildung](produktdaten-uebermitteln/datenuebermittlung/rest-api-pull-prinzip/api-spezifikation/abfrage-von-produkteigenschaften-fuer-variantenbildung.md)
+  * [Datei - Pull Prinzip](produktdaten-uebermitteln/datenuebermittlung/datei-pull-prinzip.md)
 * [Produktdaten](produktdaten-uebermitteln/produktdaten/README.md)
   * [Pflichtfelder](produktdaten-uebermitteln/produktdaten/pflichtfelder.md)
   * [Anforderungen Fashion Content Pool](produktdaten-uebermitteln/produktdaten/anforderungen-fashion-content-pool/README.md)
