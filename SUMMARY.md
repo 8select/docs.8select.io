@@ -41,4 +41,5 @@
   * [Pflichtfelder](produktdaten-uebermitteln/produktdaten/pflichtfelder.md)
   * [Anforderungen Fashion Content Pool](produktdaten-uebermitteln/produktdaten/anforderungen-fashion-content-pool/README.md)
     * [Zusätzliche Felder](produktdaten-uebermitteln/produktdaten/anforderungen-fashion-content-pool/zusaetzliche-felder.md)
+* [Image Bot](produktdaten-uebermitteln/image-bot.md)
 
