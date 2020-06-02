@@ -1,10 +1,22 @@
 ---
-description: Widget für die Artikeldetailseite. Zeigt ein Produktset passend zu einer SKU.
+description: Produkt-Set für Cross-Selling inklusive Alternativen.
 ---
 
-# sys-psv
+# 8.SET Compose
 
-![](../../.gitbook/assets/sys-psv.png)
+## Beispiel
+
+### Desktop
+
+![](../../.gitbook/assets/8.set-compose-desktop.png)
+
+### Mobile
+
+![](../../.gitbook/assets/8.set-compose-mobile.png)
+
+## Code für Widgets
+
+### Passendes Product-Set für eine SKU
 
 ```markup
 <div data-8select-widget-id="sys-psv" data-sku="42"></div>
@@ -12,7 +24,17 @@ description: Widget für die Artikeldetailseite. Zeigt ein Produktset passend zu
 
 `data-sku` ist die SKU des aktuellen Artikels. Die CSE sucht basierend darauf ein Produktset welches diesen Artikel enthält. Der Wert für `data-sku` muss dynamisch gesetzt werden und muss einer der im [Produktexport](../../produktdaten-uebermitteln/datenuebermittlung/rest-api-pull-prinzip/api-spezifikation/abfrage-von-produktdaten.md) übergebenen SKU entsprechen.
 
-## SYS-PSV Widget mit anderer SKU neuladen
+### Ein bestimmtes Product-Set
+
+```markup
+<div data-8select-widget-id="psp-psv" data-set-id="65b1169b-12a7-46a2-a9c0-6561861cbca5"></div>
+```
+
+`data-set-id` definiert welches Produktset angezeigt werden soll. Den Wert für `data-set-id` entnehmen Sie bitte der Management-Console.
+
+## API
+
+### Über SKU Wechsel informieren
 
 Wenn Ihr Shop Varianten via Ajax nachlädt, so müssen Sie das SYS-PSV Widget über die geänderte SKU informieren.
 
@@ -20,7 +42,7 @@ Wenn Ihr Shop Varianten via Ajax nachlädt, so müssen Sie das SYS-PSV Widget ü
 window._8select.reinitSys("<neue-sku>", "<alte-sku>");
 ```
 
-## SYS-PSV Callback
+### Callback wenn für SKU ein Product-Set \(nicht\) gefunden
 
 Im Erfolgs- bzw. Fehlerfall wird `window._eightselect_config.sys.callback` aufgerufen sofern eine Funktion definiert ist.
 
