@@ -1,6 +1,15 @@
 # REST API - Pull Prinzip
 
-Die 8select.CSE ruft die Produktdaten von einer vom Shop bereitgestellten REST API ab.  
+Die 8select.CSE ruft die Produktdaten von einer vom Shop bereitgestellten REST API ab.
+
+Die CSE Widgets stellen Produkte aktuell nur mit einer Variantendimension dar. Dazu muss die CSE vom Kunden konfiguriert werden. Für die Konfiguration muss die CSE alle Produkteigenschaften kennen und von allen Eigenschaften wissen ob diese im Shop für die Variantenbildung genutzt werden oder nicht.  
+Um die Abfragen möglichst einfach und performant zu halten, muss ein Shop 3 Endpunkte bereitstellen über den Informationen abgefragt werden können.
+
+* Endpunkt zur Abfrage von Produkten
+* Endpunkt zur Abfrage von allen vorhandenen Produkteigenschaften - ohne Werte
+* Endpunkt zur Abfrage von allen Produkteigenschaften die der Shop für die Variantenbildung nutzt
+
+  
 Der Datenaustausch findet im JSON Format statt. Die Authentifizierung erfolgt über Key und Secret Key im Header.
 
 * HTTP REST API
