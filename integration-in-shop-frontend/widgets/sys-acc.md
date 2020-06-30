@@ -1,4 +1,12 @@
-# sys-acc
+---
+description: >-
+  Sehr simples Widget, dass aus einem Set bis zu 4 Artikel anzeigt. Zum Beispiel
+  für die Integration eines Warenkorb-Layers.
+---
+
+# 8.SET Flat
+
+![8.SET Flat im Warenkorb-Layer](../../.gitbook/assets/8.set-flat-example.png)
 
 ## Widget-Element
 
@@ -129,34 +137,38 @@ Das HTML des zurückgelieferten Widgets hat folgende Struktur:
 </div>
 ```
 
-### **Widget-Element initialisieren, falls das Widget nachträglich ins DOM geschrieben wird**
+## **API**
 
-Wie alle anderen Widgets wird auch das SYS-ACC Widget automatisch vom `widget-loader` erkannt, sofern es von vornherein im DOM ist.
+### **Asynchrone Einbindung**
 
-Wird das Widget-Element erst nachträglich in das DOM aufgenommen, zum Beispiel durch ein Modal welches über einen AJAX Aufruf gefüllt wird, so muss das Widget-Element manuell initialisiert werden.
+Wird ein **8.SET Flat** dynamisch erzeugt bzw. asynchron geladen, so kann es passieren, dass das Widget zu spät dem DOM hinzugefügt wird. Um die Funktion des Widgets zu trigger, muss nachdem hinzufügen zum DOM das JS SDK darüber informiert werden.
 
-```text
-window._8select.initCSE();
+```javascript
+// failsafe if the JS SDK is not yet injected
+if (typeof _8select === "undefined") {
+  return
+}
+// activate 8.SET Flat widget
+_8select.initCSE();
 ```
 
-## SYS-ACC Callback
+### Callback
 
 Im Erfolgs- bzw. Fehlerfall wird `window._eightselect_config['sys-acc'].callback` aufgerufen sofern eine Funktion definiert ist.
 
-### Beispiel
+#### Beispiel
 
-```text
-window._eightselect_config = window._eightselect_config || {}
-window._eightselect_config['sys-acc'] = {
+```javascript
+_eightselect_config = _eightselect_config || {}
+_eightselect_config['sys-acc'] = {
   callback: function (error, sku, widgetUuid) {
     if (error) {
       // something went wrong or no set was found for given sku
-      alert('uh oh')
+      functionToShowFallbackElement()
       return
     }
     // everything fine and a set was found for given sku
-    alert('YEAH BABY!')
-
+    trackAnEventWithYourFavouriteTool()
   }
 }
 ```
