@@ -20,9 +20,11 @@ description: >-
 
 `data-include-css` kann `true` oder `false` sein. Wird der Wert weggelassen, entspricht das dem Wert `false`. Steht der Wert auf `true` so wird ein Basis CSS für ein CSS-Grid basierend auf [https://purecss.io/grids/](https://purecss.io/grids/) ausgeliefert. Außerdem werden CSS Deklarationen für einzelne Elemente ausgeliefert. Kommen neue Elemente hinzu werden diese z.B. über die Deklaration `display:none` ausgeblendet.
 
-### CSS Klassen
+### Aussehen anpassen
 
-Folgende CSS Klassen sind nutzbar. Für manche Klassen sind Standardwerte gesetzt. Diese können mit Hilfe von `!important` überschrieben werden.
+Mit Hilfe von CSS können Elemente ein- bzw. ausgeblendet werden. Auch das Aussehen von den einzelnen Elementen wird über CSS geändert.
+
+Die einzelnen Klassen können direkt über den Widget-Manager in der MCON angepasst werden.
 
 ```css
 .-eightselect-item-list {
@@ -102,9 +104,8 @@ Das HTML des zurückgelieferten Widgets hat folgende Struktur:
             </div>
             <div class="-eightselect-item-body">
                 <div class="-eightselect-item-brand">Hugo Boss</div>
-                <div class="-eightselect-item-name">Sakko</div>
-                <div class="-eightselect-item-stroke-price">299,99</div>
-                <div class="-eightselect-item-sales-price">249,99</div>
+                <div class="-eightselect-item-name">Hose</div>
+                <div class="-eightselect-item-sales-price">149,99</div>
             </div>
         </a>
     </div>
@@ -115,9 +116,9 @@ Das HTML des zurückgelieferten Widgets hat folgende Struktur:
             </div>
             <div class="-eightselect-item-body">
                 <div class="-eightselect-item-brand">Hugo Boss</div>
-                <div class="-eightselect-item-name">Sakko</div>
-                <div class="-eightselect-item-stroke-price">299,99</div>
-                <div class="-eightselect-item-sales-price">249,99</div>
+                <div class="-eightselect-item-name">Weste</div>
+                <div class="-eightselect-item-stroke-price">99,99</div>
+                <div class="-eightselect-item-sales-price">49,99</div>
             </div>
         </a>
     </div>
@@ -128,9 +129,8 @@ Das HTML des zurückgelieferten Widgets hat folgende Struktur:
             </div>
             <div class="-eightselect-item-body">
                 <div class="-eightselect-item-brand">Hugo Boss</div>
-                <div class="-eightselect-item-name">Sakko</div>
-                <div class="-eightselect-item-stroke-price">299,99</div>
-                <div class="-eightselect-item-sales-price">249,99</div>
+                <div class="-eightselect-item-name">Krawatte</div>
+                <div class="-eightselect-item-sales-price">49,99</div>
             </div>
         </a>
     </div>
