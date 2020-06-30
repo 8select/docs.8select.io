@@ -26,6 +26,8 @@ Mit Hilfe von CSS können Elemente ein- bzw. ausgeblendet werden. Auch das Ausse
 
 Die einzelnen Klassen können direkt über den Widget-Manager in der MCON angepasst werden.
 
+#### Standard CSS das ausgeliefert wird
+
 ```css
 .-eightselect-item-list {
 }
@@ -53,29 +55,62 @@ Die einzelnen Klassen können direkt über den Widget-Manager in der MCON angepa
 }
 ```
 
-### Beispiel für Anpassungen via CSS
+#### Beispiel für eine Anpassung
 
-Folgendes CSS Beispiel fügt ein Eurosymbol \(€\) vor dem Preis ein, formatiert den UVP durchgestrichen und transformiert die Marke zu Großbuchstaben. Außerdem werden der UVP und Angebotspreis nebeneinander dargestellt und Bilder werden zentriert.
+Es wurde mit Hilfe von Flex-Box die Position von Streich- und Verkaufspreis getauscht. Außerdem wurden einige Farben und Größen verändert.
 
 ```css
-.-eightselect-item-image,
+.eightselect-item-list {
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif !important;
+}
+
 .-eightselect-item-body {
-    text-align: center;
+  margin-top: 5px;
 }
+
 .-eightselect-item-brand {
-    text-transform: uppercase;
+  display: none;
 }
+
+.-eightselect-item-name {
+  display: block !important;
+  color: #0d0d0d;
+  min-height: 2.5rem;
+  line-height: 1.25rem;
+  font-size: 0.875rem;
+  font-weight: 700;
+  text-decoration: underline;
+  margin-bottom: 5px;
+}
+
+.-eightselect-item-price {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: flex;
+  color: #666;
+}
+
+.-eightselect-item-sales-price:after,
+.-eightselect-item-stroke-price:after {
+ content: ' € *';
+}
+
+.-eightselect-item-sales-price {
+  order: 1;
+}
+
+.-eightselect-item-price-has-stroke-price > .-eightselect-item-sales-price {
+  color: #e74c3c;
+}
+
 .-eightselect-item-stroke-price {
-    text-decoration: line-through;
+  order: 2;
+  text-decoration: line-through;
+  margin-left: 10px;
+  font-size: 0.75rem
 }
-.-eightselect-item-sales-price,
-.-eightselect-item-stroke-price {
-    display: inline-block;
-}
-.-eightselect-item-sales-price::before,
-.-eightselect-item-stroke-price::before {
-    content:"€ ";
-}
+
+
 ```
 
 ### Beispiel Antwort vom Endpunkt
@@ -84,56 +119,85 @@ Das HTML des zurückgelieferten Widgets hat folgende Struktur:
 
 ```markup
 <div class="-eightselect-item-list -eightselect-g">
-    <div class="-eightselect-item -eightselect-u-1-4">
-        <a href="#">
-            <div class="-eightselect-item-image">
-                <img src="" />
-            </div>
-            <div class="-eightselect-item-body">
-                <div class="-eightselect-item-brand">Hugo Boss</div>
-                <div class="-eightselect-item-name">Sakko</div>
-                <div class="-eightselect-item-stroke-price">299,99</div>
-                <div class="-eightselect-item-sales-price">249,99</div>
-            </div>
-        </a>
-    </div>
-    <div class="-eightselect-item -eightselect-u-1-4">
-        <a href="#">
-            <div class="-eightselect-item-image">
-                <img src="" />
-            </div>
-            <div class="-eightselect-item-body">
-                <div class="-eightselect-item-brand">Hugo Boss</div>
-                <div class="-eightselect-item-name">Hose</div>
-                <div class="-eightselect-item-sales-price">149,99</div>
-            </div>
-        </a>
-    </div>
-    <div class="-eightselect-item -eightselect-u-1-4">
-        <a href="#">
-            <div class="-eightselect-item-image">
-                <img src="" />
-            </div>
-            <div class="-eightselect-item-body">
-                <div class="-eightselect-item-brand">Hugo Boss</div>
-                <div class="-eightselect-item-name">Weste</div>
-                <div class="-eightselect-item-stroke-price">99,99</div>
-                <div class="-eightselect-item-sales-price">49,99</div>
-            </div>
-        </a>
-    </div>
-    <div class="-eightselect-item -eightselect-u-1-4">
-        <a href="#">
-            <div class="-eightselect-item-image">
-                <img src="" />
-            </div>
-            <div class="-eightselect-item-body">
-                <div class="-eightselect-item-brand">Hugo Boss</div>
-                <div class="-eightselect-item-name">Krawatte</div>
-                <div class="-eightselect-item-sales-price">49,99</div>
-            </div>
-        </a>
-    </div>
+  <div class="-eightselect-item -eightselect-u-1-4">
+    <a href="https://www.outletcity.com/de-de/shop/style-001123111/?size=42">
+      <div class="-eightselect-item-image">
+        <img
+          src="https://thumbnails.8scdn.io/917961977e3cf12217e86e4845b773130e496f1198f716a2854fc8d6b9c6b186/150x198.jpg"
+        />
+      </div>
+      <div class="-eightselect-item-body">
+        <div class="-eightselect-item-brand">ESCADA SPORT</div>
+        <div class="-eightselect-item-name">Blazer 'Barbados'</div>
+        <div
+          class="-eightselect-item-price -eightselect-item-price-has-stroke-price"
+        >
+          <div class="-eightselect-item-stroke-price">449,00</div>
+          <div class="-eightselect-item-sales-price">149,00</div>
+        </div>
+      </div>
+    </a>
+  </div>
+
+  <div class="-eightselect-item -eightselect-u-1-4">
+    <a href="https://www.outletcity.com/de-de/shop/style-001176130/?size=one size">
+      <div class="-eightselect-item-image">
+        <img
+          src="https://thumbnails.8scdn.io/dcf94b91b6096d7e426428463a8aac623bc0cb09bd59b9768ca1d7f1f6e7df44/150x198.jpg"
+        />
+      </div>
+      <div class="-eightselect-item-body">
+        <div class="-eightselect-item-brand">SKAGEN DENMARK</div>
+        <div class="-eightselect-item-name">Halskette silber</div>
+        <div
+          class="-eightselect-item-price -eightselect-item-price-has-stroke-price"
+        >
+          <div class="-eightselect-item-stroke-price">69,00</div>
+          <div class="-eightselect-item-sales-price">47,90</div>
+        </div>
+      </div>
+    </a>
+  </div>
+
+  <div class="-eightselect-item -eightselect-u-1-4">
+    <a href="https://www.outletcity.com/de-de/shop/style-001162806/?size=one size" >
+      <div class="-eightselect-item-image">
+        <img
+          src="https://thumbnails.8scdn.io/96c4d816b52169e60804abe5966dcca6ddd8af0476c639a88bac3af80a02d939/150x198.jpg"
+        />
+      </div>
+      <div class="-eightselect-item-body">
+        <div class="-eightselect-item-brand">LA MARTINA</div>
+        <div class="-eightselect-item-name">Handtasche 'Sofia' rosa</div>
+        <div
+          class="-eightselect-item-price -eightselect-item-price-has-stroke-price"
+        >
+          <div class="-eightselect-item-stroke-price">345,00</div>
+          <div class="-eightselect-item-sales-price">171,90</div>
+        </div>
+      </div>
+    </a>
+  </div>
+
+  <div class="-eightselect-item -eightselect-u-1-4">
+    <a href="https://www.outletcity.com/de-de/shop/style-001110965/?size=39">
+      <div class="-eightselect-item-image">
+        <img
+          src="https://thumbnails.8scdn.io/e31ed13163474c8d1cc4df57313685befb3000e222f2d64eb9e79cd49f19331c/150x198.jpg"
+        />
+      </div>
+      <div class="-eightselect-item-body">
+        <div class="-eightselect-item-brand">TED BAKER</div>
+        <div class="-eightselect-item-name">Pumps 'Dahrlin' rosa</div>
+        <div
+          class="-eightselect-item-price -eightselect-item-price-has-stroke-price"
+        >
+          <div class="-eightselect-item-stroke-price">200,00</div>
+          <div class="-eightselect-item-sales-price">79,90</div>
+        </div>
+      </div>
+    </a>
+  </div>
 </div>
 ```
 
