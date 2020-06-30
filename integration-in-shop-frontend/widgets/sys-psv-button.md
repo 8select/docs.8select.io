@@ -4,37 +4,37 @@ description: >-
   Produktset passend zu einer SKU vorhanden ist.
 ---
 
-# sys-psv-button
+# 8.SET Teaser Button
 
-![](../../.gitbook/assets/sys-psv.png)
+![8.SET Teaser Button unter dem Produktbild platziert](../../.gitbook/assets/8.set-teaser-button-example.png)
 
-Der SYS-PSV-Button weißt den Nutzer der Webseite darauf hin, dass es zum aktuell angesehenen Artikel ein passendes Produktset gibt.  
-Der Nutzer kann mit einem Klick auf den Button direkt zum Produktset runterscrollen oder springen.
+Das Widget **8.SET Teaser Button** weißt den Nutzer der Webseite darauf hin, dass es zum aktuell angesehenen Artikel ein passendes Produktset gibt.  
+Der Nutzer gelangt mit einem Klick auf den Button direkt zum Produktset.
 
-Ein beliebiges Element mit dem Attribut `data-8select-widget-id="sys-psv-button"` wird als SYS-PSV Button erkannt. Dieses Element sollte initial versteckt sein. Ist ein Produktset zum Artikel verfügbar, wird der Button automatisch eingeblendet.
+Ein beliebiges Element mit dem Attribut `data-8select-widget-id="sys-psv-button"` wird als **8.SET Teaser Button** erkannt. Dieses Element sollte initial versteckt sein. Ist ein Produktset zum Artikel verfügbar, wird das Element automatisch eingeblendet.
 
 **Beispiel**
 
-HTML im Quellcode:
-
 ```markup
-<button
-    data-8select-widget-id="sys-psv-button"
-    onclick="_8select.utils.goToWidget(document.querySelectorAll('[data-8select-widget-id=sys-psv]')[0].getAttribute('data-8select-widget-uuid'), 0);"
-    ontouchend="_8select.utils.goToWidget(document.querySelectorAll('[data-8select-widget-id=sys-psv]')[0].getAttribute('data-8select-widget-uuid'), 0);"
-    type="submit"
-    style="display: none;"
-  >Passender Look</button>
+<div data-8select-widget-id="sys-psv-button" style="display: none;">
+    <button
+        onclick="_8select.utils.goToWidget(document.querySelectorAll('[data-8select-widget-id=sys-psv]')[0].getAttribute('data-8select-widget-uuid'), 0);"
+        ontouchend="_8select.utils.goToWidget(document.querySelectorAll('[data-8select-widget-id=sys-psv]')[0].getAttribute('data-8select-widget-uuid'), 0);"
+        type="submit"
+    >Passender Look</button>
+</div>
 ```
 
 **Asynchrone Einbindung**
 
-Für den Fall, dass das SYS-PSV-Button-Element dynamisch erzeugt oder asynchron geladen wird, muss im Zuge dessen folgender JavaScript-Callback ausgeführt werden:
+Wird ein **8.SET Teaser Button** dynamisch erzeugt bzw. asynchron geladen, so kann es passieren, dass das Widget zu spät dem DOM hinzugefügt wird. Um die Funktion des Widgets zu trigger, muss nachdem hinzufügen zum DOM das JS SDK darüber informiert werden.
 
 ```javascript
+// failsafe if the JS SDK is not yet injected
 if (typeof _8select === "undefined") {
   return
 }
+// activate 8.SET Teaser Button widget
 _8select.utils.showSysButton()
 ```
 
