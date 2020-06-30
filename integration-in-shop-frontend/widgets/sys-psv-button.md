@@ -1,7 +1,7 @@
 ---
 description: >-
-  Widget für die Artikeldetailseite. Zeigt einen Button an, sofern ein
-  Produktset passend zu einer SKU vorhanden ist.
+  Widget für die Artikeldetailseite. Zeigt ein Element an, sofern ein Produktset
+  passend zu einer SKU vorhanden ist.
 ---
 
 # 8.SET Teaser Button
