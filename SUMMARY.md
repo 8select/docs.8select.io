@@ -15,7 +15,7 @@
 * [Widgets](integration-in-shop-frontend/widgets/README.md)
   * [8.SET Compose](integration-in-shop-frontend/widgets/8.set-compose.md)
   * [8.SET Teaser Button](integration-in-shop-frontend/widgets/8.set-teaser-button.md)
-  * [8.SET Flat](integration-in-shop-frontend/widgets/sys-acc.md)
+  * [8.SET Flat](integration-in-shop-frontend/widgets/8.set-flat.md)
   * [psp-psv](integration-in-shop-frontend/widgets/psp-psv.md)
   * [psp-tlv](integration-in-shop-frontend/widgets/psp-tlv.md)
   * [8.SET Mail \(beta\)](integration-in-shop-frontend/widgets/set-mail.md)
