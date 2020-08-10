@@ -36,3 +36,7 @@ Für ein Artikel für `199,95 €` muss der Wert `19995`übertragen werden.
 </script>
 ```
 
+### Integration via Tag Manager - zum Beispiel GTM
+
+Eine Integration via \(Google\) Tag Manager ist mit dem obigen Snippet problemlos möglich. Die entsprechenden Werte werden dann einfach aus dem GTM Data Layer befüllt. Auch hier bitte beachten, dass die Preise in Cent übertragen werden müssen.
+
