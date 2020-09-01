@@ -21,21 +21,9 @@
   * [8.SET Mail \(beta\)](integration-in-shop-frontend/widgets/set-mail.md)
   * [erweitert](integration-in-shop-frontend/widgets/erweitert.md)
 
-## Shop mit CSE verbinden
-
-* [Einleitung](shop-mit-cse-verbinden/einleitung.md)
-* [API](shop-mit-cse-verbinden/api.md)
-
 ## Produktdaten übermitteln
 
-* [Einleitung](produktdaten-uebermitteln/einleitung.md)
 * [Datenübermittlung](produktdaten-uebermitteln/datenuebermittlung/README.md)
-  * [REST API - Pull Prinzip](produktdaten-uebermitteln/datenuebermittlung/rest-api-pull-prinzip/README.md)
-    * [Authentifizierung](produktdaten-uebermitteln/datenuebermittlung/rest-api-pull-prinzip/authentifizierung.md)
-    * [API Spezifikation](produktdaten-uebermitteln/datenuebermittlung/rest-api-pull-prinzip/api-spezifikation/README.md)
-      * [Abfrage von Produktdaten](produktdaten-uebermitteln/datenuebermittlung/rest-api-pull-prinzip/api-spezifikation/abfrage-von-produktdaten.md)
-      * [Abfrage aller Produkteigenschaften](produktdaten-uebermitteln/datenuebermittlung/rest-api-pull-prinzip/api-spezifikation/abfrage-aller-produkteigenschaften.md)
-      * [Abfrage von Produkteigenschaften für Variantenbildung](produktdaten-uebermitteln/datenuebermittlung/rest-api-pull-prinzip/api-spezifikation/abfrage-von-produkteigenschaften-fuer-variantenbildung.md)
   * [Datei - Pull Prinzip](produktdaten-uebermitteln/datenuebermittlung/datei-pull-prinzip.md)
 * [Produktdaten](produktdaten-uebermitteln/produktdaten/README.md)
   * [Pflichtfelder](produktdaten-uebermitteln/produktdaten/pflichtfelder.md)
