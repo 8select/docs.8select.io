@@ -16,3 +16,7 @@ window._eightselect_shop_plugin.addToCart = function (sku, quantity, Promise) {
 }
 ```
 
+Widgets die eine Warenkorbfunktion beinhalten, zum Beispiel 8.SET Compose, greifen auf diese Funktion zu um Artikel in den Warenkorb zu legen. Die SKU wird also von Widget übergeben. Die SKU ist der Identifikator der auch im Produktexport als Identifikator für eine Variante genutzt wird.
+
+
+
