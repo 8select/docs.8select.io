@@ -4,3 +4,7 @@ Um die Integration von SDK + Widgets zu testen, kann das SDK in den Demo-Modus v
 
 ![](../../.gitbook/assets/demo-mode.jpg)
 
+{% hint style="info" %}
+Im Demo-Modus funktioniert die Warenkorb Anbindung nicht - da die Demo-Artikel nicht im Shop verfügbar sind.
+{% endhint %}
+
