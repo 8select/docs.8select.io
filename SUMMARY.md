@@ -12,6 +12,7 @@
   * [Performance-Tracking](integration-in-shop-frontend/javascript-sdk/performance-tracking/README.md)
     * [Tracking Snippet](integration-in-shop-frontend/javascript-sdk/performance-tracking/transaktions-tracking.md)
     * [API](integration-in-shop-frontend/javascript-sdk/performance-tracking/api.md)
+  * [Demo-Modus](integration-in-shop-frontend/javascript-sdk/demo-modus.md)
 * [Widgets](integration-in-shop-frontend/widgets/README.md)
   * [Konfiguration](integration-in-shop-frontend/widgets/konfiguration.md)
   * [8.SET Compose](integration-in-shop-frontend/widgets/8.set-compose.md)
