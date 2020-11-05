@@ -1,8 +1,10 @@
-# erweitert
+# Konfiguration
 
 ## Callbacks
 
 Einige Widgets rufen einen Error-First-Callback bei Erfolg- bzw. Fehlerfall auf. Darüber lässt sich beispielsweise alternativer Inhalt anstelle eines Widgets anzeigen, wenn zum Beispiel gerade kein Produktset für ein bestimmtes Produkt zur Verfügung steht.
+
+Details dazu stehen in der Beschreibung des jeweiligen Widgets.
 
 ## Lazy Loading
 
