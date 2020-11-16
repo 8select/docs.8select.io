@@ -19,7 +19,8 @@
   * [8.SET Flat](integration-in-shop-frontend/widgets/8.set-flat.md)
   * [8.SET Teaser Button](integration-in-shop-frontend/widgets/8.set-teaser-button.md)
   * [8.SET Teaser List](integration-in-shop-frontend/widgets/psp-tlv.md)
-  * [8.SET Mail \(beta\)](integration-in-shop-frontend/widgets/set-mail.md)
+  * [8.SET Photo \(Beta\)](integration-in-shop-frontend/widgets/8.set-photo-beta.md)
+  * [8.SET Mail \(Beta\)](integration-in-shop-frontend/widgets/set-mail.md)
 
 ## Produktdaten übermitteln
 

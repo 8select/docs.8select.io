@@ -1,4 +1,4 @@
-# 8.SET Mail \(beta\)
+# 8.SET Mail \(Beta\)
 
 Mit Hilfe von 8.SET Mail kann ein Produkt-Set passend zu einer Liste von Artikeln in eine E-Mail eingebunden werden. Unsere APIs liefern ein Bild von dem Produkt-Set sowie einen Link über den der Kunde auf die Artikeldetailseite mit dem soeben gezeigten Produkt-Set kommt.
 
