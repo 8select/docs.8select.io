@@ -32,5 +32,6 @@
 
 ## Sandbox
 
-* [Content Demo](sandbox/content-demo.md)
+* [Demo-Integration](sandbox/demo-integration.md)
+* [Demo-Modus](sandbox/demo-modus.md)
 
