@@ -8,7 +8,7 @@ Um einen reibungslosen Betrieb der 8select CSE zu gewährleisten, muss unser Ima
 
 Der Image Bot verwendet folgenden User-Agent:
 
-```text
+```http
 8SELECT-imagebot/1.0 (+https://www.8select.com/bot)
 ```
 

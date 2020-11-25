@@ -19,12 +19,13 @@
 * [8.SET Photo \(Beta\)](widgets/8.set-photo-beta.md)
 * [8.SET Mail \(Beta\)](widgets/8.set-mail-beta.md)
 
-## Produkt Export
+## Produkt Export <a id="produktdaten-uebermitteln"></a>
 
-* [Stammdaten](produkt-export/untitled/README.md)
-  * [Details](produkt-export/untitled/details.md)
-* [Fashion Content Pool](produkt-export/fashion-content-pool/README.md)
-  * [Details](produkt-export/fashion-content-pool/details.md)
+* [Stammdaten](produktdaten-uebermitteln/untitled/README.md)
+  * [Details](produktdaten-uebermitteln/untitled/details.md)
+* [Fashion Content Pool](produktdaten-uebermitteln/fashion-content-pool/README.md)
+  * [Details](produktdaten-uebermitteln/fashion-content-pool/details.md)
+* [Image Bot](produktdaten-uebermitteln/image-bot.md)
 
 ## Plug&Play Integration
 
