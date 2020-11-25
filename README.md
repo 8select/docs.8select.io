@@ -8,6 +8,10 @@ Die 8.HX Platform kann für **Salesforce Commerce Cloud, Shopware 5, Oxid** und 
 
 Die manuelle Integration in einen Shop ist sehr einfach und erfolgt über unser **JavaScript SDK**. Produktdaten können via API oder Datei im Push oder Pull Verfahren übermittelt werden.
 
+{% hint style="info" %}
+Im Abschnitt **SHOP INTEGRATION** finden Sie eine **Schritt für Schritt Anleitung** für die Integration.
+{% endhint %}
+
 {% hint style="success" %}
 Unsere Kunden haben 8.HX über eine manuelle Integration bereits problemlos in **SAP Commerce,** **novomind iShop** sowie individuelle Shopsysteme integriert.
 {% endhint %}
