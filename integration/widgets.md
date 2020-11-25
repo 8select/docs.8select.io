@@ -11,6 +11,6 @@ Wird benutzt um Cross-Selling Content in Form von Product Sets für ein Produkt 
 ```
 
 {% hint style="info" %}
-Im Abschnitt **WIDGETS** ist die Integration für alle verfügbaren Widgets detailliert beschrieben.
+Im Abschnitt [**WIDGETS**](https://docs.8select.io/widgets) ist die Integration für alle verfügbaren Widgets detailliert beschrieben.
 {% endhint %}
 
