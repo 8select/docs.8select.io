@@ -1,34 +1,36 @@
 # Table of contents
 
-* [8select Curated Shopping Engine \(CSE\)](README.md)
+* [8.HX PLATFORM](README.md)
 
-## Integration in Shop Frontend
+## Shop Integration <a id="integration"></a>
 
-* [JavaScript SDK](integration-in-shop-frontend/javascript-sdk/README.md)
-  * [Integration](integration-in-shop-frontend/javascript-sdk/integration/README.md)
-    * [SDK Snippet](integration-in-shop-frontend/javascript-sdk/integration/sdk-snippet.md)
-  * [API](integration-in-shop-frontend/javascript-sdk/api.md)
-  * [Warenkorbanbindung](integration-in-shop-frontend/javascript-sdk/warenkorbanbindung.md)
-  * [Performance-Tracking](integration-in-shop-frontend/javascript-sdk/performance-tracking/README.md)
-    * [Tracking Snippet](integration-in-shop-frontend/javascript-sdk/performance-tracking/transaktions-tracking.md)
-    * [API](integration-in-shop-frontend/javascript-sdk/performance-tracking/api.md)
-  * [Demo-Modus](integration-in-shop-frontend/javascript-sdk/demo-modus.md)
-* [Widgets](integration-in-shop-frontend/widgets/README.md)
-  * [Konfiguration](integration-in-shop-frontend/widgets/konfiguration.md)
-  * [8.SET Compose](integration-in-shop-frontend/widgets/8.set-compose.md)
-  * [8.SET Flat](integration-in-shop-frontend/widgets/8.set-flat.md)
-  * [8.SET Teaser Button](integration-in-shop-frontend/widgets/8.set-teaser-button.md)
-  * [8.SET Teaser List](integration-in-shop-frontend/widgets/psp-tlv.md)
-  * [8.SET Photo \(Beta\)](integration-in-shop-frontend/widgets/8.set-photo-beta.md)
-  * [8.SET Mail \(Beta\)](integration-in-shop-frontend/widgets/set-mail.md)
+* [JavaScript SDK](integration/javascript-sdk.md)
+* [Widgets](integration/widgets.md)
+* [Warenkorb](integration/warenkorb.md)
+* [Checkout](integration/checkout.md)
+* [Produkt Export](integration/produkt-export.md)
 
-## Produktdaten übermitteln
+## Widgets
 
-* [Datenübermittlung](produktdaten-uebermitteln/datenuebermittlung/README.md)
-  * [Datei - Pull Prinzip](produktdaten-uebermitteln/datenuebermittlung/datei-pull-prinzip.md)
-* [Produktdaten](produktdaten-uebermitteln/produktdaten/README.md)
-  * [Pflichtfelder](produktdaten-uebermitteln/produktdaten/pflichtfelder.md)
-  * [Anforderungen Fashion Content Pool](produktdaten-uebermitteln/produktdaten/anforderungen-fashion-content-pool/README.md)
-    * [Zusätzliche Felder](produktdaten-uebermitteln/produktdaten/anforderungen-fashion-content-pool/zusaetzliche-felder.md)
-* [Image Bot](produktdaten-uebermitteln/image-bot.md)
+* [8.SET Compose](widgets/8.set-compose.md)
+* [8.SET Flat](widgets/8.set-flat.md)
+* [8.SET Teaser Button](widgets/8.set-teaser-button.md)
+* [8.SET Teaser List](widgets/8.set-teaser-list.md)
+* [8.SET Photo \(Beta\)](widgets/8.set-photo-beta.md)
+* [8.SET Mail \(Beta\)](widgets/8.set-mail-beta.md)
+
+## Produkt Export
+
+* [Stammdaten](produkt-export/untitled/README.md)
+  * [Details](produkt-export/untitled/details.md)
+* [Fashion Content Pool](produkt-export/fashion-content-pool/README.md)
+  * [Details](produkt-export/fashion-content-pool/details.md)
+
+## Plug&Play Integration
+
+* [Plugins](plug-and-play-integration/untitled.md)
+
+## Sandbox
+
+* [Content Demo](sandbox/content-demo.md)
 
