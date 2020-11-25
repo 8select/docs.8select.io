@@ -10,7 +10,7 @@ Die manuelle Integration in einen Shop ist sehr einfach und erfolgt über unser 
 
 {% hint style="info" %}
 Im Abschnitt [**SHOP INTEGRATION**](https://docs.8select.io/integration) finden Sie eine **Schritt für Schritt Anleitung** für die Integration.  
-Im Abschnitt [SANDBOX](https://docs.8select.io/sandbox) finden sie die Möglichkeit eine Integration vorab zu simulieren.
+Im Abschnitt [**SANDBOX**](https://docs.8select.io/sandbox) finden sie die Möglichkeit eine Integration vorab zu simulieren.
 {% endhint %}
 
 {% hint style="success" %}
