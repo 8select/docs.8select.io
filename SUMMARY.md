@@ -28,7 +28,7 @@
 
 ## Plug&Play Integration
 
-* [Plugins](plug-and-play-integration/untitled.md)
+* [Plugins](plug-and-play-integration/plugins.md)
 
 ## Sandbox
 
