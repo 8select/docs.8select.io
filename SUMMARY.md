@@ -16,8 +16,8 @@
 * [8.SET Flat](widgets/8.set-flat.md)
 * [8.SET Teaser Button](widgets/8.set-teaser-button.md)
 * [8.SET Teaser List](widgets/8.set-teaser-list.md)
-* [8.SET Photo \(Beta\)](widgets/8.set-photo-beta.md)
-* [8.SET Mail \(Beta\)](widgets/8.set-mail-beta.md)
+* [8.SET Photo \(Beta\)](widgets/8.set-photo.md)
+* [8.SET Mail \(Beta\)](widgets/8.set-mail.md)
 
 ## Produkt Export <a id="produktdaten-uebermitteln"></a>
 
@@ -38,5 +38,5 @@
 
 ## API
 
-* [8.API \(Alpha\)](api/8.api-alpha.md)
+* [8.API \(Alpha\)](api/8.api.md)
 
