@@ -21,8 +21,8 @@
 
 ## Produkt Export <a id="produktdaten-uebermitteln"></a>
 
-* [Stammdaten](produktdaten-uebermitteln/untitled/README.md)
-  * [Details](produktdaten-uebermitteln/untitled/details.md)
+* [Stammdaten](produktdaten-uebermitteln/stammdaten/README.md)
+  * [Details](produktdaten-uebermitteln/stammdaten/details.md)
 * [Fashion Content Pool](produktdaten-uebermitteln/fashion-content-pool/README.md)
   * [Details](produktdaten-uebermitteln/fashion-content-pool/details.md)
 * [Image Bot](produktdaten-uebermitteln/image-bot.md)
