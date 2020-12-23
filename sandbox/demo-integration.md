@@ -3,7 +3,7 @@
 Um die Integration zu testen, kann das SDK über die \(Chrome\) Developer Tools im Shop eingefügt werden.  
 Hierfür gibt es einen Demo Mandanten sowie Demo Produktdaten und Content.
 
-Das folgende Snippet für das Widget 8.SET Compose ganz oben auf der aktuellen Seite ein.
+Das folgende Snippet für das Widget 8.SET Compose fügen Sie ganz oben auf der aktuellen Seite ein.
 
 ```javascript
 // 8.SET Compose Widget einfügen

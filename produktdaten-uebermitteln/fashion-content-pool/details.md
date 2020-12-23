@@ -1,6 +1,6 @@
 # Details
 
-## Mastersku
+## Master-SKU
 
 Die Master-SKU ist einzigartig, sie enthält Modell und Farbe. Die Master-SKU ist der Hauptidentifikator für einen Artikel \(Elternartikel\) in einem Shop.
 
@@ -12,7 +12,7 @@ Die Master-SKU wird verwendet um eine Beziehung zwischen Elternartikel und Varia
 8277-480
 ```
 
-## Model
+## Modell
 
 Ein Modell bezeichnet das Grundprodukt. Ein Modell kann in mehreren Ausführungen vorkommen, die sich z.B. in Größe, Farbe oder Muster unterschieden.
 
@@ -355,7 +355,7 @@ Retro
 
 ## Sportart
 
-Konkrete Beschreibung speziell bei Sportartikeln. \(z.B. \) \|
+Konkrete Beschreibung speziell bei Sportartikeln.
 
 ### Beispiele
 
