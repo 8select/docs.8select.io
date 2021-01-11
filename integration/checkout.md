@@ -2,6 +2,13 @@
 
 Die Vergütung erfolgt performancebasiert, dass heißt nur für Produkte die über unsere Widgets gekauft wurden fällt eine Provision an. Um diese Produkte zu ermitteln werden die Käufe im Shop mit den Interaktionen in unseren Widgets abgeglichen. Dazu müssen alle Shopumsätze übermitteln werden. Die Übermittlung erfolgt ohne personenbezogene Daten und enthält lediglich die einzelnen Auftragspositionen.
 
+{% hint style="warning" %}
+Für **`price`** muss der Preis in Cent als **`integer`** übertragen werden.  
+Für einen Artikel der 199,95 € kostet, muss der Wert `19995` übertragen werden.
+
+Für **`sku`** muss der gleiche Wert wie im [Produkt Export](../produktdaten-uebermitteln/stammdaten/details.md#sku) genutzt werden. Der Wert muss als **`string`** übertragen werden.
+{% endhint %}
+
 ```javascript
 <script type="text/javascript">
   //////
@@ -13,18 +20,18 @@ Die Vergütung erfolgt performancebasiert, dass heißt nur für Produkte die üb
   window.eightlytics(
     'purchase',
       {
-        customerid: '1234',
-        orderid: '1234',
+        customerid: '1234', // string
+        orderid: '1234', // string
         products: [
           {
-            sku: '12345',
-            amount: 3,
-            price: 1199
+            sku: '12345', // string
+            amount: 3, // integer
+            price: 1199 // integer - price in cent
           },
           {
-            sku: '456',
-            amount: 1,
-            price: 19995
+            sku: '456', // string
+            amount: 1, // integer
+            price: 19995 // integer
           }
         ]
     }  
