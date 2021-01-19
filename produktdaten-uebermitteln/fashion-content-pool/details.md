@@ -4,39 +4,34 @@
 
 Die Master-SKU ist einzigartig, sie enthält Modell und Farbe. Die Master-SKU ist der Hauptidentifikator für einen Artikel \(Elternartikel\) in einem Shop.
 
-Die Master-SKU wird verwendet um eine Beziehung zwischen Elternartikel und Varianten herzustellen.
+Die Master-SKU wird verwendet um eine Beziehung zwischen Elternartikel und Varianten herzustellen.  
+  
+Elternartikel: Hose - Farbe blau  
+Variante: Hose - Farbe blau - Größe M
 
 ### Beispiele
 
 ```text
 8277-480
+Hose-Blau
 ```
 
 ## Modell
 
 Ein Modell bezeichnet das Grundprodukt. Ein Modell kann in mehreren Ausführungen vorkommen, die sich z.B. in Größe, Farbe oder Muster unterschieden.
 
-Beispiel: Das Modell `Arie` \(8277\) gibt es in den 3 Farben: `blau` \(480\), `rot` \(481\), `gelb` \(482\) und in den 4 Größen: `S` \(01\), `M` \(02\), `L` \(03\), `XL` \(04\), also 12 Ausführungen. Jede Ausführung hat eine eindeutige Artikelnummer.
+Das Modell `Arie` \(8277\) gibt es in den 3 Farben: `blau` \(480\), `rot` \(481\), `gelb` \(482\) und in den 4 Größen: `S` \(01\), `M` \(02\), `L` \(03\), `XL` \(04\), also 12 Ausführungen. Jede Ausführung hat eine eindeutige Artikelnummer.  
+  
+Model: Hose Arie  
+Elternartikel: Hose Arie - Farbe blau  
+Variante: Hose Arie - Farbe blau - Größe M
 
 ### Beispiele
 
 | model | mastersku | sku |
 | :--- | :--- | :--- |
 | 8277 | 8277-480 | 8277-480-01 |
-
-## Größe
-
-Größenbezeichnung des Artikels.
-
-### Beispiele
-
-```text
-38
-L
-32/32
-32 L
-M-L
-```
+| Hose-Arie | Hose-Arie-Blau | Hose-Arie-Blau-M |
 
 ## Marke
 

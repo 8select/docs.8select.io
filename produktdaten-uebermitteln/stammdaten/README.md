@@ -1,5 +1,7 @@
 # Stammdaten
 
+Um die Produkte sinnvoll in den Widgets darstellen zu können, muss ein Grundstamm an Daten übermittelt werden.
+
 Der Export sollte folgendes enthalten
 
 * möglichst alle Produkteigenschaften die verfügbar sind

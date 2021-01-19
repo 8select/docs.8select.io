@@ -35,6 +35,20 @@ nicht bestellbar
 0
 ```
 
+## Größe
+
+Größenbezeichnung des Artikels.
+
+### Beispiele
+
+```text
+38
+L
+32/32
+32 L
+M-L
+```
+
 ## Name
 
 Standardbezeichnung für den Artikel so wie er normalerweise in der Artikeldetailansicht genutzt wird.
