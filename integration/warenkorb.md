@@ -30,3 +30,8 @@ Das Script wird auf allen Seiten benötigt auf denen Widgets genutzt werden.
 In die Funktion wird ein `Promise` Objekt injiziert. Für ältere Browser wird ein Polyfill bereitgestellt. Somit muss dies nicht durch den Shop abgedeckt werden.
 {% endhint %}
 
+[  
+](https://app.gitbook.com/@8select/s/docs/~/drafts/-MRQJtvn2WI5oMAsvGIj/integration/warenkorb)
+
+
+

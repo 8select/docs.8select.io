@@ -23,3 +23,5 @@ Der Wert dieser Attribute ändert sich nicht, zum Beispiel `data-8select-widget-
 
 Der Wert dieser Attribute kann sich ändern, zum Beispiel `data-sku` - je nach Produkt wird hier ein anderer Wert enthalten sein.
 
+
+
