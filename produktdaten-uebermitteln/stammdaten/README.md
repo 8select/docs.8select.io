@@ -15,3 +15,7 @@ Der Export sollte folgendes enthalten
 * Bilder in maximaler Auflösung, für eine optimale Präsentation mindestens ein freigestelltes Bild
 * Information über Produktzusammengehörigkeit \(zu welchem Produkt gehört diese Variante\)
 
+{% page-ref page="details.md" %}
+
+
+
