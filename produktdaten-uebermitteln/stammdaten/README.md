@@ -17,6 +17,10 @@ Der Export sollte folgendes enthalten
 * Bilder in maximaler Auflösung, für eine optimale Präsentation mindestens ein freigestelltes Bild
 * Information über Produktzusammengehörigkeit \(zu welchem Produkt gehört diese Variante\)
 
+{% hint style="info" %}
+Da sich Preise und Bestände sehr häufig ändern, sollte es hierfür mehrfach am Tag ein Download verfügbar sein. Es ist auch möglich Preis- und Bestandsupdates gesondert von den restliche Daten bereitzustellen.
+{% endhint %}
+
 {% page-ref page="details.md" %}
 
 
