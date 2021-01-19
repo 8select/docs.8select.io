@@ -84,21 +84,14 @@ https://www.bettybarclay.com/de/vera-mont-cocktail-kleid-21254528.html?farbe=bur
 
 ## Bilder
 
-Alle verfügbaren Artikelbilder der Variante in der höchsten Auflösung. Mehrere Bilder werden als array übertragen.
+Alle verfügbaren Artikelbilder der Variante in der höchsten Auflösung.  
+Mehrere Bilder werden mit Pipe `|` getrennt.
 
 ### Beispiele
 
 ```javascript
-[
-  "https://ambellis.scene7.com/is/image/ambellis/ext/8277480-01.jpg?$rtf\_amb\_prod-main-zoom\_xl$"
-]
+https://ambellis.scene7.com/is/image/ambellis/ext/8277480-01.jpg?$rtf\_amb\_prod-main-zoom\_xl$
 
-[  
-  "https://cdn1.bettybarclay.com/out/pictures/1/Cocktail-Kleid_2_182_21254528_6389.v6.jpg",
-  "https://cdn1.bettybarclay.com/out/pictures/3/Cocktail-Kleid_2_182_21254528_6389.v6.jpg",
-  "https://cdn1.bettybarclay.com/out/pictures/6/Cocktail-Kleid_2_182_21254528_6389.v6.jpg"
-  ]
+https://cdn.8select.io/image1.jpg|https://cdn.8select.io/image2.jpg
 ```
-
-
 
