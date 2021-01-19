@@ -9,6 +9,7 @@
 * [Warenkorb](integration/warenkorb.md)
 * [Checkout](integration/checkout.md)
 * [Produkt Export](integration/produkt-export.md)
+* [A/B Testing](integration/a-b-testing.md)
 
 ## Widgets
 
