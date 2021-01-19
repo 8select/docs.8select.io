@@ -85,7 +85,8 @@ https://www.bettybarclay.com/de/vera-mont-cocktail-kleid-21254528.html?farbe=bur
 ## Bilder
 
 Alle verfügbaren Artikelbilder der Variante in der höchsten Auflösung.  
-Mehrere Bilder werden mit Pipe `|` getrennt.
+Mehrere Bilder werden mit Pipe `|` getrennt.  
+An Position 1 ist idealerweise ein Hollowman-Bild bzw. Produktbild ohne Model.
 
 ### Beispiele
 
