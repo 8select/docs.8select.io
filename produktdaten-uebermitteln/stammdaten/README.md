@@ -18,7 +18,7 @@ Der Export sollte folgendes enthalten
 * Information über Produktzusammengehörigkeit \(zu welchem Produkt gehört diese Variante\)
 
 {% hint style="info" %}
-Da sich Preise und Bestände sehr häufig ändern, sollte es hierfür mehrfach am Tag ein Download verfügbar sein. Es ist auch möglich Preis- und Bestandsupdates gesondert von den restliche Daten bereitzustellen.
+Da sich Preise und Bestände sehr häufig ändern, sollte hierfür mehrfach am Tag ein Download verfügbar sein. Es ist auch möglich Preis- und Bestandsupdates gesondert von den restlichen Daten bereitzustellen.
 {% endhint %}
 
 {% page-ref page="details.md" %}
