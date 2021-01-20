@@ -18,11 +18,11 @@ Aktuell unterstützen die Übertragung der Daten im Pull-Prinzip über REST API 
 
 ### Format
 
-Wir können die Produktdaten in fast beliebigem Format abrufen. Ideal ist eine Bereitstellung als CSV mit den Daten einer Produktvariante \(SKU\) als Zeile.
+Wir können die Produktdaten in fast jedem beliebigen Format abrufen. Ideal ist eine Bereitstellung als CSV mit den Daten einer Produktvariante \(SKU\) als Zeile.
 
 {% file src="../.gitbook/assets/datenexport-beispiel.csv" caption="Beispiel CSV" %}
 
 {% hint style="info" %}
-Da sich Preise und Bestände sehr häufig ändern, sollte es hierfür mehrfach am Tag ein Download verfügbar sein. Es ist auch möglich Preis- und Bestandsupdates gesondert von den restliche Daten bereitzustellen.
+Da sich Preise und Bestände sehr häufig ändern, sollte hierfür mehrfach am Tag ein Download verfügbar sein. Es ist auch möglich Preis- und Bestandsupdates gesondert von den restlichen Daten bereitzustellen.
 {% endhint %}
 
