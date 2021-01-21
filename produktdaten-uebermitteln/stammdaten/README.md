@@ -2,20 +2,24 @@
 
 Um die Produkte sinnvoll in den Widgets darstellen zu können, muss ein Grundstamm an Daten übermittelt werden.
 
-Der Export sollte folgendes enthalten
+Der Export muss folgendes enthalten
 
-* möglichst alle Produkteigenschaften die verfügbar sind
-* aktueller Bestand bzw. ist der Artikel grundsätzlich bestellbar?
-* ist der Artikel derzeit im Shop sichtbar?
 * SKU
-* Name
-* Deeplink
+  * primärer Identifikator
+* Main-SKU, Model
+  * Information über Produktzusammengehörigkeit \(zu welchem Produkt gehört diese Variante\)
+* Bestand
+  * Flag 0/1 oder aktueller Anzahl Bestand
 * Größe
-* andere Varianteneigenschaften wie Farbe, Muster, Länge, etc.
-* Preis
-* Streichpreis
-* Bilder in maximaler Auflösung, für eine optimale Präsentation mindestens ein freigestelltes Bild
-* Information über Produktzusammengehörigkeit \(zu welchem Produkt gehört diese Variante\)
+* Name
+* Preis und Streichpreis
+* Deeplink zur Produktvariante
+* Bilder
+  * in maximaler Auflösung, für eine optimale Präsentation mindestens ein freigestelltes Bild
+
+{% hint style="warning" %}
+Um auf unseren Fashion Content Pool zugreifen zu können, sind weitere Daten nötig. Siehe dazu [**Fashion Content Pool**](../fashion-content-pool/).
+{% endhint %}
 
 {% file src="../../.gitbook/assets/datenexport-beispiel.csv" caption="Beispiel vollständiger Export" %}
 

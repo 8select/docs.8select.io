@@ -24,9 +24,9 @@
 
 * [Daten Übertragung](produktdaten-uebermitteln/daten-uebertragung.md)
 * [Stammdaten](produktdaten-uebermitteln/stammdaten/README.md)
-  * [Details](produktdaten-uebermitteln/stammdaten/details.md)
+  * [Details und Beispiele](produktdaten-uebermitteln/stammdaten/details.md)
 * [Fashion Content Pool](produktdaten-uebermitteln/fashion-content-pool/README.md)
-  * [Details](produktdaten-uebermitteln/fashion-content-pool/details.md)
+  * [Details und Beispiele](produktdaten-uebermitteln/fashion-content-pool/details.md)
 * [Image Bot](produktdaten-uebermitteln/image-bot.md)
 
 ## Plug&Play Integration
