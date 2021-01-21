@@ -18,11 +18,11 @@ Die SKU wird verwendet um Content zu einem Artikel zu finden, um einen Artikel i
 Das heißt dieser Wert muss auch im Shop für die Widgets und im Checkout verfügbar sein.
 {% endhint %}
 
-## Master-SKU
+## Main-SKU
 
-Die Master-SKU ist einzigartig, sie enthält Modell und Farbe. Die Master-SKU ist der Hauptidentifikator für einen Artikel \(Elternartikel\) in einem Shop.
+Die Main-SKU ist einzigartig, sie enthält Modell und Farbe. Die Main-SKU ist der Hauptidentifikator für einen Artikel \(Elternartikel\) in einem Shop.
 
-Die Master-SKU wird verwendet um eine Beziehung zwischen Elternartikel und Varianten herzustellen.  
+Die Main-SKU wird verwendet um eine Beziehung zwischen Elternartikel und Varianten herzustellen.  
   
 Elternartikel: Hose - Farbe blau  
 Variante: Hose - Farbe blau - Größe M
@@ -40,13 +40,13 @@ Ein Modell bezeichnet das Grundprodukt. Ein Modell kann in mehreren Ausführunge
 
 Das Modell `Arie` \(8277\) gibt es in den 3 Farben: `blau` \(480\), `rot` \(481\), `gelb` \(482\) und in den 4 Größen: `S` \(01\), `M` \(02\), `L` \(03\), `XL` \(04\), also 12 Ausführungen. Jede Ausführung hat eine eindeutige Artikelnummer.  
   
-Model: Hose Arie  
+Modell: Hose Arie  
 Elternartikel: Hose Arie - Farbe blau  
 Variante: Hose Arie - Farbe blau - Größe M
 
 ### Beispiele
 
-| model | mastersku | sku |
+| model | main-sku | sku |
 | :--- | :--- | :--- |
 | 8277 | 8277-480 | 8277-480-01 |
 | Hose-Arie | Hose-Arie-Blau | Hose-Arie-Blau-M |

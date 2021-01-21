@@ -15,7 +15,7 @@ Der Export muss folgendes enthalten
 * Preis und Streichpreis
 * Deeplink zur Produktvariante
 * Bilder
-  * in maximaler Auflösung, für eine optimale Präsentation mindestens ein freigestelltes Bild
+  * Alle verfügbaren Bilder in maximaler Auflösung. Für eine optimale Präsentation mindestens ein freigestelltes Bild.
 
 {% hint style="warning" %}
 Um auf unseren Fashion Content Pool zugreifen zu können, sind weitere Daten nötig. Siehe dazu [**Fashion Content Pool**](../fashion-content-pool/).
