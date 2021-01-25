@@ -6,7 +6,9 @@ Der Export muss folgendes enthalten
 
 * SKU
   * primärer Identifikator
-* Main-SKU, Model
+* Main-SKU bzw. Parent-SKU
+  * Information über Produktzusammengehörigkeit der Varianten
+* Model
   * Information über Produktzusammengehörigkeit \(zu welchem Produkt gehört diese Variante\)
 * Bestand
   * Flag 0/1 oder aktueller Anzahl Bestand
