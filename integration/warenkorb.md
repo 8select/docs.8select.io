@@ -1,33 +1,39 @@
-# Warenkorb
+---
+description: Allow to add products to your cart from within 8SELECT widgets
+---
 
-Über viele Widgets kann ein Produkt direkt in den Warenkorb gelegt werden.
+# Shopping Cart
 
-Widgets mit Warenkorb-Funktion rufen die Funktion `_eightselect_shop_plugin.addToCart()` auf. Diese Funktion kann dann direkt den Code beinhalten um etwas in den Warenkorb zu legen oder aber eine weitere Funktion aufrufen, die bereits vom Shop definiert ist.
+Many widgets allow a product to be added directly to the shopping cart.
+
+Widgets that allow to add products to the cart will call the function `_eightselect_shop_plugin.addToCart()`. This function can then directly contain the code to add something to the shopping cart or call another function that is already implemented in the shop frontend.
 
 ```javascript
 <script type="text/javascript">
   window._eightselect_shop_plugin = window._eightselect_shop_plugin || {};
   window._eightselect_shop_plugin.addToCart = function (sku, quantity, Promise) {
-    try {
-      //////
-      //
-      // Hier kommt der Code um etwas in den Warenkorb zu legen
-      //
-      //////
-      return Promise.resolve();
-    } catch (error) {
-      return Promise.reject(error);
+    // the function has to return a promise
+    // you can use the injected Promise or use your own polyfill
+    
+    // add your cart logic here, for example
+    return new Promise(function(resolve, reject) {
+      var response = shopApi.add2cart(sku);
+      if (response === "OK") {        
+        return resolve("done");
+      }
+
+      return reject(new Error("add2cart failed"));
     }
   }
 </script>
 ```
 
 {% hint style="info" %}
-Das Script wird auf allen Seiten benötigt auf denen Widgets genutzt werden. 
+The script is needed on all pages where widgets are used.
 {% endhint %}
 
 {% hint style="success" %}
-In die Funktion wird ein `Promise` Objekt injiziert. Für ältere Browser wird ein Polyfill bereitgestellt. Somit muss dies nicht durch den Shop abgedeckt werden.
+A `Promise` object is injected into the function. A polyfill is provided for older browsers. This means that this does not have to be covered by the shop.
 {% endhint %}
 
 [  

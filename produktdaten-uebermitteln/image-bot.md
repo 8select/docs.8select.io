@@ -1,12 +1,12 @@
 # Image Bot
 
-Wir nutzen die Produktbilder in Widgets aber auch, um via Image Recognition die Produktdaten anzureichern. Dazu ist es nötig die Produktbilder herunterzuladen. 
+We use the product images not only in our widgets but also to enrich the product data via image recognition. To do this, it is necessary to download the product images.
 
-Wir machen dies über unseren Image Bot. 
+We do this via our image bot.
 
-Um einen reibungslosen Betrieb der 8select CSE zu gewährleisten, muss unser Image Bot Zugriff auf die Produktbilder haben.
+To ensure a smooth operation of the 8.HX, our image bot must have access to the product images.
 
-Der Image Bot verwendet folgenden User-Agent:
+The image bot uses the following user agent:
 
 ```http
 8SELECT-imagebot/1.0 (+https://www.8select.com/bot)

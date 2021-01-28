@@ -1,21 +1,11 @@
 # Demo-Integration
 
-Um die Integration zu testen, kann das SDK über die \(Chrome\) Developer Tools im Shop eingefügt werden.  
-Hierfür gibt es einen Demo Mandanten sowie Demo Produktdaten und Content.
+To test the integration, the 8.SDK can be inserted into the shop via the \(Chrome\) Developer Tools. For this purpose, there is a demo tenant as well as demo product data and content. 
 
-Das folgende Snippet für das Widget 8.SET Compose fügen Sie ganz oben auf der aktuellen Seite ein.
+Insert and execute the following snippets one by one to show the widget 8.SET Compose at the top of the current page.
 
 ```javascript
-// 8.SET Compose Widget einfügen
-sku = '8S-DEMO-Polohemd-M';
-composeWidget = `<div data-sku="${sku}" data-8select-widget-id="sys-psv"></div>`;
-composeHeadline = `<div>Passender Look</div>`
-composeContainer = `<div class="-eightselect-widget-container" style="display: none;">${composeHeadline}${composeWidget}</div>`
-composeSelector = `body`;
-document.querySelector(composeSelector).insertAdjacentHTML('afterbegin', composeContainer);
-
-
-// JavaScript SDK laden
+// Load 8.SDK
 
 (function(d, s, w) {
   var apiId = 'db54750f-80fc-4818-9455-30ca233225dc';
@@ -32,11 +22,10 @@ document.querySelector(composeSelector).insertAdjacentHTML('afterbegin', compose
 })(document, 'script', window);
 ```
 
-Durch die Anpassung von `composeSelector` und `afterbegin` kann das Widget an eine beliebige Stelle im Shop platziert werden.
-
-{% hint style="info" %}
-Im Demo-Modus funktioniert die Warenkorb Anbindung nicht - da die Demo-Artikel nicht im Shop verfügbar sind.
-{% endhint %}
+```javascript
+// Add 8.SET Compose Widget
+_8select.demo('sys-psv')
+```
 
 
 

@@ -1,31 +1,30 @@
-# Daten Übertragung
+# Data transfer
 
-Aktuell unterstützen die Übertragung der Daten im Pull-Prinzip über REST API \(8SELECT Spezifikation\) oder Datei Download.
+Currently we support the transfer of data by pulling a REST API \(8SELECT specification\) or by file download.
 
 ## REST API
 
-* REST API \(Spezifikation auf Anfrage\)
-  * unsere Plugins für Shopware, Oxid und JTL-Shop nutzen diese Art der Datenübertragung
+* REST API \(specification on request\)
+  * our plugins for Shopware, Oxid and JTL-Shop currently use this method for data transfer
 
-## Datei Download
+## File download
 
-### Protokolle
+### Protocols
 
-* File Storage, wie zum Beispiel
+* File Storage, for example
   * sFTP
   * AWS S3
 * HTTPS
 
 ### Format
 
-Wir können die Produktdaten in fast jedem beliebigen Format abrufen. Ideal ist eine Bereitstellung als CSV mit den Daten einer Produktvariante \(SKU\) als Zeile.
+We can retrieve the product data in almost any format. We prefer a deliver as CSV with the data of a product variant \(SKU\) per line.
 
-{% file src="../.gitbook/assets/datenexport-beispiel.csv" caption="Beispiel vollständiger Export" %}
+{% file src="../.gitbook/assets/datenexport-beispiel.csv" caption="Full export example" %}
 
-{% file src="../.gitbook/assets/datenexport-beispiel-preise-bestand.csv" caption="Beispiel gesonderter Preis- und Bestandsupdate" %}
+{% file src="../.gitbook/assets/datenexport-beispiel-preise-bestand.csv" caption="Extra stock- price-update example" %}
 
-{% hint style="info" %}
-Da sich Preise und Bestände sehr häufig ändern, sollte hierfür mehrfach am Tag ein Download verfügbar sein.  
-Es ist auch möglich Preis- und Bestandsupdates gesondert von den restlichen Daten bereitzustellen. Siehe **Beispiel gesonderter Preis- und Bestandsupdate**.
+{% hint style="warning" %}
+Prices and stock levels can change very fast. To ensure that 8SELECT and the shop are in sync we recommend that you deliver one full export every 24 hours and an extra stock- price-update more often - up to every 15 minutes.
 {% endhint %}
 

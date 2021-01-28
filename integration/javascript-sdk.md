@@ -1,12 +1,16 @@
-# JavaScript SDK
+---
+description: 8.SDK Web
+---
 
-Um Content im Shop auszuspielen muss das JavaScript SDK eingebunden sein. Die Variable `apiId` muss mit der von uns bereitgestellten API-ID belegt werden.
+# 8.SDK Web \(JavaScript SDK\)
+
+In order to display content in the shop, the **8.SDK Web** \(JavaScript SDK\) must be integrated. The variable `apiId` must be filled with the API ID provided by us.
 
 ```javascript
 <script type="text/javascript">
     (function(d, s, w) {
       var apiId = '<API-ID>';
-      window.eightlytics || function (w) {
+      w.eightlytics || function (w) {
           w.eightlytics = function () {
             window.eightlytics.queue = window.eightlytics.queue || [];
             window.eightlytics.queue.push(arguments);
@@ -21,13 +25,12 @@ Um Content im Shop auszuspielen muss das JavaScript SDK eingebunden sein. Die Va
 ```
 
 {% hint style="warning" %}
-Das Script sollte soweit oben wie möglich im `<head>` stehen, damit es so früh wie möglich ausgeführt wird.  
-Da das Script dynamisch eingefügt wird, ist es `async` und das Laden der Seite wird nicht geblockt. Mehr dazu [hier](https://developer.mozilla.org/en-US/docs/Web/API/HTMLScriptElement#Dynamically_importing_scripts).
+The script should be placed as far up as possible in the DOM, preferably as first in the `<head>` tag to ensure it is executed as early as possible. Since the script is inserted dynamically, it is `async` by default and the loading of the page is not blocked. More about this [here](https://developer.mozilla.org/en-US/docs/Web/API/HTMLScriptElement#dynamically_importing_scripts).
 {% endhint %}
 
 {% hint style="info" %}
-Das Script wird auf allen Seiten benötigt auf denen Widgets genutzt werden.   
-Für das Transaktions-Tracking muss es auch auf der Seite nach dem Checkout eingebunden werden.
+The script is required on all pages where 8SELECT widgets are used.  
+For transaction tracking, it must also be included on the page **after checkout** where the tracking can happen.
 {% endhint %}
 
 

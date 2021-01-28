@@ -1,11 +1,11 @@
-# Produkt Export
+# Product Export
 
-Um die Produkte sinnvoll in den Widgets darstellen zu können, muss ein Grundstamm an Daten übermittelt werden.
+In order to be able to display the products in the widgets in a meaningful way, a basic set of data must be transmitted.
 
-Um auf den Fashion Content Pool zugreifen zu können, benötigen wir bestimmte Produkteigenschaften damit unser System die Daten normalisieren und die Produkte mit weiteren Eigenschaften anreichern kann.
+In order to access the [Fashion Content Pool](../produktdaten-uebermitteln/fashion-content-pool/), we need certain product properties so that our system can normalise the data and enrich the products with further properties.
 
 {% hint style="info" %}
-Im Abschnitt [**PRODUKT EXPORT**](../produktdaten-uebermitteln/daten-uebertragung.md) sind die Anforderungen und Möglichkeiten der Datenübertragung detailliert beschrieben.
+In the section [**PRODUCT EXPORT**](../produktdaten-uebermitteln/daten-uebertragung.md) the requirements and possibilities of data transfer are described in detail.
 {% endhint %}
 
 

@@ -1,18 +1,22 @@
+---
+description: Transfer order data for analytics and performance based pricing
+---
+
 # Checkout
 
-Die Vergütung erfolgt performancebasiert, dass heißt nur für Produkte die über unsere Widgets gekauft wurden fällt eine Provision an. Um diese Produkte zu ermitteln werden die Käufe im Shop mit den Interaktionen in unseren Widgets abgeglichen. Dazu müssen alle Shopumsätze übermitteln werden. Die Übermittlung erfolgt ohne personenbezogene Daten und enthält lediglich die einzelnen Auftragspositionen.
+The commission is based on performance, i.e. only products purchased via our widgets are eligible for commission. To determine these products, the purchases in the shop are compared with the interactions in our widgets. For this purpose, all shop transactions must be transmitted. The transmission takes place without personal data and only contains the individual order items.
 
 {% hint style="warning" %}
-Für **`price`** muss der Preis in Cent als **`integer`** übertragen werden.  
-Für einen Artikel der 199,95 € kostet, muss der Wert `19995` übertragen werden.
+For **`price`**, the price in cents per item must be transferred as an **`integer`**.  
+For an item that costs 199.95 €, the value `19995` must be transferred. 
 
-Für **`sku`** muss der gleiche Wert wie im [Produkt Export](../produktdaten-uebermitteln/stammdaten/details.md#sku) genutzt werden. Der Wert muss als **`string`** übertragen werden.
+For **sku**, the same value as in the product export must be used. The value must be transmitted as a **string**.
 {% endhint %}
 
 ```javascript
 <script type="text/javascript">
   //////
-  // 8SELECT JavaScript-SDK
+  // 8.SDK Web code
   //////
 </script>
 
@@ -20,13 +24,13 @@ Für **`sku`** muss der gleiche Wert wie im [Produkt Export](../produktdaten-ueb
   window.eightlytics(
     'purchase',
       {
-        customerid: '1234', // string
+        customerid: 'anonymous', // string
         orderid: '1234', // string
         products: [
           {
             sku: '12345', // string
             amount: 3, // integer
-            price: 1199 // integer - price in cent
+            price: 1199 // integer - price of 1 item in cent
           },
           {
             sku: '456', // string
@@ -40,10 +44,10 @@ Für **`sku`** muss der gleiche Wert wie im [Produkt Export](../produktdaten-ueb
 ```
 
 {% hint style="info" %}
-Die **customerid** wird genutzt um die Ausspielung von Content zu optimieren. Wird die customerid anonymisiert, sollte dies deterministisch erfolgen.
+The **customerid** will be used to optimize content in the future. For the sake of simplicity and GDPR concerns we are removing it for now as a requirement. In the meantime just transfer `anonymous` as value.
 {% endhint %}
 
 {% hint style="info" %}
-Die **orderid** kann genutzt werden um auf Anfrage einen Abgleich unserer Analytics Daten mit den Analytics Daten des Shops zu machen. Zum Beispiel für Stichproben. Wenn dies gewünscht wird, darf die orderid nicht anonymisiert übermittelt werden.
+The **orderid** is used to compare our analytics data with the shop's analytics data on request. For example, for spot checks. If this is desired, the orderid must not be transmitted anonymously.
 {% endhint %}
 

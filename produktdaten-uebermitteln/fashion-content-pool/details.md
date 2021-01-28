@@ -1,4 +1,4 @@
-# Details und Beispiele
+# Details and examples
 
 ## Marke
 

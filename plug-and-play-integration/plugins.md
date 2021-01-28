@@ -1,6 +1,6 @@
 # Plugins
 
-Die 8select.CSE kann für **Salesforce Commerce Cloud, Shopware 5, Oxid** und **JTL-Shop** mittels Plugin integriert werden. Die Plugins finden Sie in den jeweiligen App-Stores der Shopsysteme.
+The 8.HX can be integrated for **Salesforce Commerce Cloud**, **Shopware 5,** **Oxid 4, 5 and 6** and **JTL-Shop** via plugin. You can find the plugins in the respective shop system's app store.
 
-Die Plugins bieten einen Produkt Export via API als auch die vollständige Shop Integration.
+The plugins offer a product export via API and full integration into the shop frontend.
 

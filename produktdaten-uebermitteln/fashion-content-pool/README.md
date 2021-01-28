@@ -1,8 +1,10 @@
 # Fashion Content Pool
 
-Um auf den Fashion Content Pool zugreifen zu können, benötigen wir bestimmte Produkteigenschaften damit unser System die Daten normalisieren und die Produkte mit weiteren Eigenschaften anreichern kann. Je mehr Eigenschaften übermittelt werden, desto genauer werden die Produkte mit weiteren Eigenschaften angereichert.
+We provide a huge amount \(currently 5 figures\) of pre defined product sets. Depending on your assortment those will almost cover 80% of our products with content. We constantly improve the existing sets and add new sets for other assortments.
 
-{% file src="../../.gitbook/assets/datenexport-felder.xlsx" caption="Beispiel Datensatz" %}
+In order to access the Fashion Content Pool, we need certain product properties so that our system can normalise the data and enrich the products with further properties. The more properties are transmitted, the more precisely the products are enriched with further properties.
+
+{% file src="../../.gitbook/assets/datenexport-felder.xlsx" caption="Full export example" %}
 
 {% page-ref page="details.md" %}
 

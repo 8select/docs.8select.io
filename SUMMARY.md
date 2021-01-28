@@ -4,11 +4,11 @@
 
 ## Shop Integration <a id="integration"></a>
 
-* [JavaScript SDK](integration/javascript-sdk.md)
+* [8.SDK Web \(JavaScript SDK\)](integration/javascript-sdk.md)
 * [Widgets](integration/widgets.md)
-* [Warenkorb](integration/warenkorb.md)
+* [Shopping Cart](integration/warenkorb.md)
 * [Checkout](integration/checkout.md)
-* [Produkt Export](integration/produkt-export.md)
+* [Product Export](integration/produkt-export.md)
 * [A/B Testing](integration/a-b-testing.md)
 
 ## Widgets
@@ -20,13 +20,13 @@
 * [8.SET Photo \(Beta\)](widgets/8.set-photo.md)
 * [8.SET Mail \(Beta\)](widgets/8.set-mail.md)
 
-## Produkt Export <a id="produktdaten-uebermitteln"></a>
+## Product Export <a id="produktdaten-uebermitteln"></a>
 
-* [Daten Übertragung](produktdaten-uebermitteln/daten-uebertragung.md)
-* [Stammdaten](produktdaten-uebermitteln/stammdaten/README.md)
-  * [Details und Beispiele](produktdaten-uebermitteln/stammdaten/details.md)
+* [Data transfer](produktdaten-uebermitteln/daten-uebertragung.md)
+* [Base data](produktdaten-uebermitteln/stammdaten/README.md)
+  * [Details and examples](produktdaten-uebermitteln/stammdaten/details.md)
 * [Fashion Content Pool](produktdaten-uebermitteln/fashion-content-pool/README.md)
-  * [Details und Beispiele](produktdaten-uebermitteln/fashion-content-pool/details.md)
+  * [Details and examples](produktdaten-uebermitteln/fashion-content-pool/details.md)
 * [Image Bot](produktdaten-uebermitteln/image-bot.md)
 
 ## Plug&Play Integration
@@ -36,7 +36,7 @@
 ## Sandbox
 
 * [Demo-Integration](sandbox/demo-integration.md)
-* [Demo-Modus](sandbox/demo-modus.md)
+* [Demo-Mode](sandbox/demo-modus.md)
 
 ## API
 

@@ -1,10 +1,12 @@
-# Details und Beispiele
+# Details and examples
 
 ## SKU
 
-Die Artikelnummer \(SKU\) ist einzigartig. Die SKU ist der Hauptidentifikator für einen konkreten Artikel \(Variante\) in einem Shop.
+The SKU is unique. The SKU is the main identifier for a specific item \(buyable physical variant\) in a shop.
 
-### Beispiele
+Variant \(SKU\): Shirt Arie - color blue - size M
+
+### Examples
 
 ```text
 8277-480-01
@@ -14,50 +16,50 @@ A-2-21
 ```
 
 {% hint style="warning" %}
-Die SKU wird verwendet um Content zu einem Artikel zu finden, um einen Artikel in den Warenkorb zu legen und für den Abgleich der Käufe mit den Interaktionen in unseren Widgets.   
-Das heißt dieser Wert muss auch im Shop für die Widgets und im Checkout verfügbar sein.
+The SKU is used to find content for an item, to add an item to the shopping cart and to match purchases with interactions in our widgets.   
+This means that this value must also be available in the shop for the widgets and in the checkout.
 {% endhint %}
 
 ## Main-SKU
 
-Die Main-SKU ist einzigartig, sie enthält Modell und Farbe. Die Main-SKU ist der Hauptidentifikator für einen Artikel \(Elternartikel\) in einem Shop.
+The Main-SKU is unique, it contains the model and colour. The Main SKU is the main identifier for an item \(parent item\) in a shop. 
 
-Die Main-SKU wird verwendet um eine Beziehung zwischen Elternartikel und Varianten herzustellen.  
+The Main-SKU is used to establish a relationship between parent items and size variants.  
   
-Elternartikel: Hose - Farbe blau  
-Variante: Hose - Farbe blau - Größe M
+Parent item \(Main-SKU\): Shirt Arie - color blue  
+Variant \(SKU\): Shirt Arie - color blue - size M
 
-### Beispiele
+### Examples
 
 ```text
 8277-480
-Hose-Blau
+Shirt-blue
 ```
 
-## Modell
+## Model
 
-Ein Modell bezeichnet das Grundprodukt. Ein Modell kann in mehreren Ausführungen vorkommen, die sich z.B. in Größe, Farbe oder Muster unterschieden.
+A model refers to the basic product. A model can exist in several versions that differ, for example, in size, colour or pattern.
 
-Das Modell `Arie` \(8277\) gibt es in den 3 Farben: `blau` \(480\), `rot` \(481\), `gelb` \(482\) und in den 4 Größen: `S` \(01\), `M` \(02\), `L` \(03\), `XL` \(04\), also 12 Ausführungen. Jede Ausführung hat eine eindeutige Artikelnummer.  
+The model `Arie` \(8277\) exists in three different colors: `blue` \(480\), `red` \(481\), `yellow` \(482\) and in four different sizes: `S` \(01\), `M` \(02\), `L` \(03\), `XL` \(04\). All combined will make up to 12 different variants. Each variant has its own SKU.  
   
-Modell: Hose Arie  
-Elternartikel: Hose Arie - Farbe blau  
-Variante: Hose Arie - Farbe blau - Größe M
+Model: Shirt Arie  
+Parent item \(Main-SKU\): Shirt Arie - color blue  
+Variant \(SKU\): Shirt Arie - color blue - size M
 
-### Beispiele
+### Examples
 
 | model | main-sku | sku |
 | :--- | :--- | :--- |
 | 8277 | 8277-480 | 8277-480-01 |
-| Hose-Arie | Hose-Arie-Blau | Hose-Arie-Blau-M |
+| shirt-arie | shirt-arie-color-blue | shirt-arie-color-blue-size-m |
 
-## Bestellstatus
+## Stock
 
-Der Status gibt Auskunft über die Bestellbarkeit einer Variante. Es kann ein Flag sein \(0/1\) oder aber die Menge der verfügbaren Artikel.
+The value provides information about the availability of a variant. It can be a flag \(0/1\) or the quantity of available items.
 
-### Beispiele
+### Examples
 
-bestellbar
+available
 
 ```text
 1
@@ -65,15 +67,15 @@ bestellbar
 12
 ```
 
-nicht bestellbar
+not available
 
 ```text
 0
 ```
 
-## Größe
+## Size
 
-Größenbezeichnung des Artikels.
+Size of the item.
 
 ### Beispiele
 
@@ -87,43 +89,45 @@ M-L
 
 ## Name
 
-Standardbezeichnung für den Artikel so wie er normalerweise in der Artikeldetailansicht genutzt wird.
+Default name for the item as it is normally used on the product page.
 
-### Beispiele
+### Examples
 
 ```text
-Desigual Sweatjacke
+Desigual Sweatshirt
+Evelyne GM 33
 ```
 
-## Streichpreis
+## Retail price
 
-Der originale Preis bzw. UVP. Im Shop meist als durchgestrichener Preis dargestellt.
+The original price or RRP.   
+Usually shown as a crossed-out price in the shop. 
 
-Ohne Währungsangaben und in Cent.
+Without currency and in cents.
 
-### Beispiele
+### Examples
 
 ```text
 8000
 19939
 ```
 
-## Angebotspreis
+## Discount price
 
-Der Preis zu dem der Artikel verkauft wird.
+The price at which the item is sold. 
 
-Ohne Währungsangaben und in Cent.
+Without currency and in cents.
 
-### Beispiele
+### Examples
 
 ```text
 6995
 13750
 ```
 
-## Produkt URL
+## Product URL
 
-Deeplink der direkt zur Detailseite im Shop der Variante führt.
+Deep link that leads directly to the detail page in the shop of the variant.
 
 ### Beispiele
 
@@ -132,11 +136,9 @@ https://www.ambellis.de/desigual-sweatjacke-8277480.html?sku=8277387
 https://www.bettybarclay.com/de/vera-mont-cocktail-kleid-21254528.html?farbe=burnished-ros&groesse=38
 ```
 
-## Bilder
+## Images
 
-Alle verfügbaren Artikelbilder der Variante in der höchsten Auflösung.  
-Mehrere Bilder werden mit Pipe `|` getrennt.  
-An Position 1 ist idealerweise ein Hollowman-Bild bzw. Produktbild ohne Model.
+All available item images of the variant in the highest resolution. Multiple images are separated with pipe `|`. Position 1 is ideally a hollow man image or product image without model.
 
 ### Beispiele
 

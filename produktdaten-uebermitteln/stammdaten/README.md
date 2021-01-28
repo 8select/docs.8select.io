@@ -1,36 +1,41 @@
-# Stammdaten
+---
+description: Base product data we need to playout any content
+---
 
-Um die Produkte sinnvoll in den Widgets darstellen zu können, muss ein Grundstamm an Daten übermittelt werden.
+# Base data
 
-Der Export muss folgendes enthalten
+In order to be able to display the products meaningfully in the widgets, a basic set of data must be transmitted. 
+
+The export must contain the following
 
 * SKU
-  * primärer Identifikator
-* Main-SKU bzw. Parent-SKU
-  * Information über Produktzusammengehörigkeit der Varianten
+  * primary identifier used in widgets and tracking
+* Main-SKU \(Parent-SKU\)
+  * identifier for group of product variants \(size only\)
 * Model
-  * Information über Produktzusammengehörigkeit \(zu welchem Produkt gehört diese Variante\)
-* Bestand
-  * Flag 0/1 oder aktueller Anzahl Bestand
-* Größe
+  * identifier for group of product variants \(colors etc.\)
+* Stock
+  * Flag 0/1 or current stock level
+* Size
 * Name
-* Preis und Streichpreis
-* Deeplink zur Produktvariante
-* Bilder
-  * Alle verfügbaren Bilder in maximaler Auflösung. Für eine optimale Präsentation mindestens ein freigestelltes Bild.
+* Retail price and discount price
+* Deeplink to product variant in shop
+* Images
+  * All available images in maximum resolution. For an optimal presentation at least one cut out image \(hollow man photography\).
+
+{% hint style="danger" %}
+In order to access our Fashion Content Pool, further data is required. See [**Fashion Content Pool**](../fashion-content-pool/).
+{% endhint %}
+
+{% file src="../../.gitbook/assets/datenexport-beispiel.csv" caption="Full export example" %}
+
+{% file src="../../.gitbook/assets/datenexport-beispiel-preise-bestand.csv" caption="Extra stock- price-update example" %}
 
 {% hint style="warning" %}
-Um auf unseren Fashion Content Pool zugreifen zu können, sind weitere Daten nötig. Siehe dazu [**Fashion Content Pool**](../fashion-content-pool/).
+Prices and stock levels can change very fast. To ensure that 8SELECT and the shop are in sync we recommend that you deliver one full export every 24 hours and an extra stock- price-update more often - up to every 15 minutes.
 {% endhint %}
 
-{% file src="../../.gitbook/assets/datenexport-beispiel.csv" caption="Beispiel vollständiger Export" %}
-
-{% file src="../../.gitbook/assets/datenexport-beispiel-preise-bestand.csv" caption="Beispiel gesonderter Preis- und Bestandsupdate" %}
-
-{% hint style="info" %}
-Da sich Preise und Bestände sehr häufig ändern, sollte hierfür mehrfach am Tag ein Download verfügbar sein.   
-Es ist auch möglich Preis- und Bestandsupdates gesondert von den restlichen Daten bereitzustellen. Siehe **Beispiel gesonderter Preis- und Bestandsupdate**.
-{% endhint %}
+Prices and stock levels can change very fast. To ensure that 8SLECT and the shop are in sync we recommend that you deliver one full export every 24 hours and an extra stock- price-update more often - up to every 15 minutes.
 
 {% page-ref page="details.md" %}
 
