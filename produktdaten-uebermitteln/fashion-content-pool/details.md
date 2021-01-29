@@ -1,13 +1,14 @@
 # Details and examples
 
-Values must be in plain text except for description. Some properties are required.
+{% hint style="info" %}
+Values must be in plain text except for description. 
 
-The properties the better.
+Some properties are **required**.
+{% endhint %}
 
-## Description (beschreibung) - required
+## Description \(beschreibung\) - required
 
-The description text for the article. Often used in the shop on the product detail page.
-HTML format is allowed here.
+The description text for the article. Often used in the shop on the product detail page. HTML format is allowed here.
 
 ### Examples
 
@@ -28,7 +29,7 @@ Material: 51% Baumwolle, 45% Polyester, 4% Elasthan<br><br>
 </p>
 ```
 
-## Color (farbe) - required
+## Color \(farbe\) - required
 
 The exact colour name of the item.
 
@@ -42,10 +43,9 @@ schwarz-rot-gold
 Burnished Rosè
 ```
 
-## Category (kategorie1) - required
+## Category \(kategorie1\) - required
 
-Description of the article groups. Often used in the shop's navigation and as breadcrumbs.
-The full category path will work best.
+Description of the article groups. Often used in the shop's navigation and as breadcrumbs. The full category path will work best.
 
 ### Examples
 
@@ -56,7 +56,7 @@ Women - Clothes - Skirts
 Men - Clothes - Underwear & Nightwear - Sleepwear
 ```
 
-## Brand (marke) - required
+## Brand \(marke\) - required
 
 Brand name or manufacturer of an item.
 
@@ -70,19 +70,7 @@ Jimmy Choo
 Gucci
 ```
 
-
-
-
-
-
-
-
-
-
-
-
-
-## Heel height (absatzhöhe)
+## Heel height \(absatzhöhe\)
 
 Heel height of shoes with unit of measurement.
 
@@ -93,7 +81,7 @@ Heel height of shoes with unit of measurement.
 Absatzhöhe in mm: 60
 ```
 
-## Department (abteilung)
+## Department \(abteilung\)
 
 Classification of the assortments according to target groups. Often used in the shop's navigation.
 
@@ -109,7 +97,7 @@ Herren
 Kinder
 ```
 
-## Sleeve length (aermellaenge)
+## Sleeve length \(aermellaenge\)
 
 Especially for upper garments, the length of the sleeves.
 
@@ -122,7 +110,8 @@ extra-lange Ärmel
 3/4 Arm
 extra kurzer Arm
 ```
-## Specification (auspraegung)
+
+## Specification \(auspraegung\)
 
 Important information, especially for sports and outdoor activities, which helps to classify the article in the range.
 
@@ -137,9 +126,10 @@ Linkshänder
 Rucksackmaße 40 cm x 28 cm x 18 cm
 ```
 
-## Related items (baukasten)
+## Related items \(baukasten\)
 
-SKU for a direct link to 1:1 related items. For example for modular suits.
+SKU for a direct link to 1:1 related items. For example for modular suits.  
+On top you can provide a [group](details.md#group-gruppe).
 
 ### Examples
 
@@ -147,7 +137,7 @@ SKU for a direct link to 1:1 related items. For example for modular suits.
 123-456-789
 ```
 
-## Assortment (bereich)
+## Assortment \(bereich\)
 
 A shop may allocate products to different assortments.
 
@@ -162,7 +152,7 @@ Lifestyle
 DIY
 ```
 
-## Additional description (beschreibung2)
+## Additional description \(beschreibung2\)
 
 Additional information about the product, technical description, short description or keywords.
 
@@ -172,8 +162,7 @@ Additional information about the product, technical description, short descripti
 Gewicht=200 g Gewogen=Gr. L/31 Material=100% Nylon (Ripstop) mit Gore-Tex-Membran (PTFE)
 ```
 
-
-## Details (detail)
+## Details \(detail\)
 
 Any details of the article worth mentioning.
 
@@ -187,7 +176,7 @@ Netzeinsatz
 Kragen in Kontrastfarbe
 ```
 
-## EAN (ean)
+## EAN \(ean\)
 
 Standardised unique material number according to European Article Number \(EAN\) or Unified Product Code \(UPC\).
 
@@ -197,7 +186,7 @@ Standardised unique material number according to European Article Number \(EAN\)
 5027793879236
 ```
 
-## Features (eigenschaft)
+## Features \(eigenschaft\)
 
 Specially designed for sports and outdoor use notes on the field of application.
 
@@ -208,7 +197,7 @@ Specially designed for sports and outdoor use notes on the field of application.
 Schlafsack geeignet für Temparaturbereich 1 °C bis -16 °C
 ```
 
-## Colour spectrum (farbspektrum)
+## Colour spectrum \(farbspektrum\)
 
 The colour spectrum refers to the main colour in the product and allows product sets across different colours from the same spectrum. Often used as a search filter in the shop.
 
@@ -222,7 +211,7 @@ Blau
 Gelb Orange
 ```
 
-## Filling quantity (fuellmenge)
+## Filling quantity \(fuellmenge\)
 
 Refers to the quantity of the item's contents, for example in the case of perfume.
 
@@ -235,7 +224,7 @@ Refers to the quantity of the item's contents, for example in the case of perfum
 150 Stück
 ```
 
-## More features (funktion)
+## More features \(funktion\)
 
 Describes material functions and properties.
 
@@ -253,13 +242,11 @@ bügelleicht
 körperformend
 ```
 
+## Group \(gruppe\)
 
-## Group (gruppe)
+Denotes an identifier for items that directly belong together. You can also add a relation via the [related items](details.md#related-items-baukasten) property.
 
-Denotes an identifier for items that directly belong together.
-
-For example, bikini top "Aloha" and bikini bottom "Aloha" make the product `4242`.
-Construction jacket "Ernie" and construction trousers "Bert" make the product group `E&B`.
+For example, bikini top "Aloha" and bikini bottom "Aloha" make the product `4242`. Construction jacket "Ernie" and construction trousers "Bert" make the product group `E&B`.
 
 A group can also consist of more than two items, e.g. mix & match group `Hawaii` consists of three bikini tops and two bikini bottoms.
 
@@ -272,9 +259,9 @@ Hawaii
 Gruppe-9000
 ```
 
-## Subcategory (kategorie2)
+## Subcategory \(kategorie2\)
 
-Subcategory used in the shop. 
+Subcategory used in the shop.
 
 For example the category is "Damen - Blusen & Tuniken" and the subcategory is "Hemdblusen".
 
@@ -284,13 +271,15 @@ For example the category is "Damen - Blusen & Tuniken" and the subcategory is "H
 Regenhosen
 Hemdblusen
 ```
-## Extra category (kategorie3)
+
+## Extra category \(kategorie3\)
 
 Extra category used in the shop. Either another subcategory or a completely different category used for this item.
 
 For example the category is "Damen - Blusen & Tuniken", the subcategory is "Hemdblusen" and the extra category is "Kurzarmblusen".
 
 Another example: The category is "Men - Clothing - Jackets", the subcategory is "Jackets" and the extra category is "Leather Jackets".
+
 ### Examples
 
 ```text
@@ -301,8 +290,7 @@ Blousons
 Freizeit-Hemden
 ```
 
-
-## Children's clothing (kiko)
+## Children's clothing \(kiko\)
 
 Classification according to target groups specifically for children's ranges. Often used in the shop's navigation.
 
@@ -315,7 +303,7 @@ baby
 kleinkinder
 ```
 
-## Collar shape (kragenform)
+## Collar shape \(kragenform\)
 
 Especially for upper garments, the description of the collar or neckline.
 
@@ -329,7 +317,7 @@ Haifischkragen
 Rundhalsausschnitt
 ```
 
-## Material (material)
+## Material \(material\)
 
 Material composition of a product.
 
@@ -340,9 +328,7 @@ Material composition of a product.
 100% Nylon (Ripstop) mit Gore-Tex-Membran (PTFE)
 ```
 
-
-
-## Pattern (muster)
+## Pattern \(muster\)
 
 ### Examples
 
@@ -356,7 +342,7 @@ Blumenmuster
 einfarbig-strukturiert
 ```
 
-## Short name (name2)
+## Short name \(name2\)
 
 Often used as a short name in list views - e.g. `Freizeit-Hemd` or for search engine optimization.
 
@@ -367,8 +353,7 @@ Regenhose
 Bluse
 ```
 
-
-## Miscellaneous (sonstiges)
+## Miscellaneous \(sonstiges\)
 
 Additional item information that cannot be assigned to a specific attribute.
 
@@ -381,9 +366,7 @@ Natürlich
 Bio
 ```
 
-
-
-## Upper material (obermaterial)
+## Upper material \(obermaterial\)
 
 Rudimentarily distinguishes the fabric. Essential material of the article.
 
@@ -406,7 +389,7 @@ Boucle
 Grobstrick
 ```
 
-## Fit (passform)
+## Fit \(passform\)
 
 In relation to the body shape, is often used for shirts, jackets and suits.
 
@@ -422,7 +405,7 @@ comfort-fit
 körpernah
 ```
 
-## Special article groups (rubrik)
+## Special article groups \(rubrik\)
 
 Designates special article groups. Often used in the shop as a search filter or in the navigation.
 
@@ -436,7 +419,7 @@ Stillmode
 Übergrößen
 ```
 
-## Season (saison)
+## Season \(saison\)
 
 Describes to which season or seasonal collection the item belongs.
 
@@ -450,7 +433,7 @@ Sommer 2018
 HW18/19
 ```
 
-## Cut (schnitt)
+## Cut \(schnitt\)
 
 In reference to the form of the article. Is often used for shirts, trousers and shoes.
 
@@ -465,9 +448,10 @@ knielang
 7/8
 ```
 
-## Series (serie)
+## Series \(serie\)
 
 Series are used to identify article families or special editions.
+
 ### Examples
 
 ```text
@@ -476,7 +460,7 @@ Mountain Professional
 Expert Line
 ```
 
-## Sport type (sportart)
+## Sport type \(sportart\)
 
 Sports in which the article is used.
 
@@ -489,7 +473,7 @@ Radfahren
 Bike
 ```
 
-## Style (stil)
+## Style \(stil\)
 
 Style of the article.
 
@@ -502,10 +486,10 @@ Ethno
 Retro
 ```
 
-## Exact model (typ)
+## Exact model \(typ\)
 
-The exact model designation describes the product type.
-For example "Desertboot" instead of "Boot" or "Rain trousers" instead of "Trousers".
+The exact model designation describes the product type. For example "Desertboot" instead of "Boot" or "Rain trousers" instead of "Trousers".
+
 ### Examples
 
 ```text
@@ -514,7 +498,7 @@ Regenhose
 Hemdbluse
 ```
 
-## Closure (verschluss)
+## Closure \(verschluss\)
 
 Describes closure types of an item.
 
@@ -528,9 +512,11 @@ Druckknöpfe
 Klettverschluss
 Haken&Öse
 ```
-## Washing (waschung)
+
+## Washing \(waschung\)
 
 Optical effect of the material, mostly used for denim.
+
 ### Examples
 
 ```text
@@ -540,3 +526,4 @@ bleached
 vintage
 stone washed
 ```
+
