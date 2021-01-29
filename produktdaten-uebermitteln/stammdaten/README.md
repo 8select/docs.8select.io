@@ -14,7 +14,7 @@ The export must contain the following values:
   * identifier for group of product variants \(size only\)
 * Model
   * identifier for group of product variants \(colors etc.\)
-* Stock
+* Status
   * Flag 0/1 or current stock level
 * Size
 * Name
