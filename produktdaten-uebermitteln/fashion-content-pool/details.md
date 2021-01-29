@@ -1,34 +1,13 @@
 # Details and examples
 
-## Brand (brand)
+Values must be in plain text except for description. Some properties are required.
 
-Brand name or manufacturer of an item.
+The properties the better.
 
-### Examples
+## Description (beschreibung) - required
 
-```text
-Desigual
-HUGO BOSS
-Betty Barclay
-```
-
-## Farbe
-
-Die exakte Farbbezeichnung des Artikels.
-
-### Examples
-
-```text
-rot
-grün
-gelb
-schwarz-rot-gold
-Burnished Rosè
-```
-
-## Beschreibung
-
-Der Beschreibungstext zum Artikel im HTML-Format.
+The description text for the article. Often used in the shop on the product detail page.
+HTML format is allowed here.
 
 ### Examples
 
@@ -49,170 +28,90 @@ Material: 51% Baumwolle, 45% Polyester, 4% Elasthan<br><br>
 </p>
 ```
 
-## EAN
+## Color (farbe) - required
 
-Standardisierte eindeutige Materialnummer nach European Article Number \(EAN\) oder Unified Product Code \(UPC\).
-
-### Examples
-
-```text
-5027793879236
-```
-
-## Kurzname
-
-Oft als Kurzbezeichnung in Listenansichten verwendet - z.B. `Freizeit-Hemd` oder für Google mit mehr Infos zur besseren Suche.
-
-### Examples
-
-```text
-Freizeit-Hemd
-```
-
-## Kategorie
-
-Bezeichnung der Artikelgruppen, die meist so in der Shopnavigation verwendet werden.
-
-### Examples
-
-```text
-Sweatshirts & -jacken
-```
-
-## Kategorie 2
-
-Verfeinerung der Ebene `kategorie`.
-
-Zum Beispiel ist die Kategorie `Bekleidung` und der Produkttyp `Jacken`.
-
-### Examples
-
-```text
-Jacken
-Blusen
-Hemden
-```
-
-## Kategorie 3
-
-Verfeinerung der Ebene `kategorie` bzw. `kategorie2`.
-
-Zum Beispiel ist die Kategorie `Bekleidung`, der Produkttyp `Jacken` und die Unterkategorie `Lederjacken`.
-
-### Examples
-
-```text
-Lederjacken
-Parkas
-Blousons
-Freizeit-Hemden
-```
-
-## Bereich
-
-Damit können Teilsortimente bezeichnet sein.
-
-### Examples
-
-```text
-Outdoor
-Kosmetik
-Trachten
-Lifestyle
-```
-
-## Rubrik
-
-Bezeichnet spezielle Artikelgruppen, die als Filter oder Shop-Navigation genutzt werden.
-
-### Examples
-
-```text
-Große Größen
-Schwangerschaftsmode
-Umstandsmode
-Stillmode
-```
-
-## Abteilung
-
-Einteilung der Sortimente nach Zielgruppen.
-
-### Examples
-
-```text
-Damen
-Herren
-Kinder
-DOB
-HAKA
-KIKO
-```
-
-## Kiko
-
-Einteilung nach Zielgruppen speziell für Kindersortimente.
-
-### Examples
-
-```text
-mädchen
-jungen
-baby
-```
-
-## Typ
-
-Verfeinerung der Ebene `kategorie`.
-
-### Examples
-
-```text
-Desertboot
-Regenhosen
-```
-
-## Farbspektrum
-
-Farben sind einem Farbspektrum zugeordnet.
+The exact colour name of the item.
 
 ### Examples
 
 ```text
 rot
-blau
-braun
+grün
+gelb
+schwarz-rot-gold
+Burnished Rosè
 ```
 
-## Absatzhöhe
+## Category (kategorie1) - required
 
-Speziell bei Schuhen die Höhe des Absatzes.
+Description of the article groups. Often used in the shop's navigation and as breadcrumbs.
+The full category path will work best.
 
-Format mit oder ohne Maßeinheit.
+### Examples
+
+```text
+Herren - Outdoor Bekleidung - Outdoorhosen - Hardshellhosen
+Damen - Blusen & Tuniken
+Women - Clothes - Skirts
+Men - Clothes - Underwear & Nightwear - Sleepwear
+```
+
+## Brand (marke) - required
+
+Brand name or manufacturer of an item.
+
+### Examples
+
+```text
+JP1880
+HUGO BOSS
+Betty Barclay
+Jimmy Choo
+Gucci
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Heel height (absatzhöhe)
+
+Heel height of shoes with unit of measurement.
 
 ### Examples
 
 ```text
 5,5cm
-5,5
+Absatzhöhe in mm: 60
 ```
 
-## Muster
+## Department (abteilung)
+
+Classification of the assortments according to target groups. Often used in the shop's navigation.
 
 ### Examples
 
 ```text
-uni
-einfarbig
-kariert
-gestreift
-Blumenmuster
-einfarbig-strukturiert
+DOB
+HAKA
+KIKO
+BESPO
+Damen
+Herren
+Kinder
 ```
 
-## Ärmellaenge
+## Sleeve length (aermellaenge)
 
-Speziell bei Oberbekleidung die Länge der Ärmel.
+Especially for upper garments, the length of the sleeves.
 
 ### Examples
 
@@ -223,10 +122,202 @@ extra-lange Ärmel
 3/4 Arm
 extra kurzer Arm
 ```
+## Specification (auspraegung)
 
-## Kragenform
+Important information, especially for sports and outdoor activities, which helps to classify the article in the range.
 
-Speziell bei Oberbekleidung die Beschreibung des Kragens oder Ausschnitts.
+For backpacks, for example, volume `30-55 litres`, for ski poles the size information in units of measurement `160 to 175cm` or for special versions `left-handed`.
+
+### Examples
+
+```text
+30-55 Liter
+Körpergröße 160 bis 175cm
+Linkshänder
+Rucksackmaße 40 cm x 28 cm x 18 cm
+```
+
+## Related items (baukasten)
+
+SKU for a direct link to 1:1 related items. For example for modular suits.
+
+### Examples
+
+```text
+123-456-789
+```
+
+## Assortment (bereich)
+
+A shop may allocate products to different assortments.
+
+### Examples
+
+```text
+Mode
+Outdoor
+Kosmetik
+Trachten
+Lifestyle
+DIY
+```
+
+## Additional description (beschreibung2)
+
+Additional information about the product, technical description, short description or keywords.
+
+### Examples
+
+```text
+Gewicht=200 g Gewogen=Gr. L/31 Material=100% Nylon (Ripstop) mit Gore-Tex-Membran (PTFE)
+```
+
+
+## Details (detail)
+
+Any details of the article worth mentioning.
+
+### Examples
+
+```text
+Reißverschluss seitlich am Saum
+Brusttasche
+Volants
+Netzeinsatz
+Kragen in Kontrastfarbe
+```
+
+## EAN (ean)
+
+Standardised unique material number according to European Article Number \(EAN\) or Unified Product Code \(UPC\).
+
+### Examples
+
+```text
+5027793879236
+```
+
+## Features (eigenschaft)
+
+Specially designed for sports and outdoor use notes on the field of application.
+
+### Examples
+
+```text
+5 °C
+Schlafsack geeignet für Temparaturbereich 1 °C bis -16 °C
+```
+
+## Colour spectrum (farbspektrum)
+
+The colour spectrum refers to the main colour in the product and allows product sets across different colours from the same spectrum. Often used as a search filter in the shop.
+
+### Examples
+
+```text
+Schwarz Grau
+Braun Beige
+Rot
+Blau
+Gelb Orange
+```
+
+## Filling quantity (fuellmenge)
+
+Refers to the quantity of the item's contents, for example in the case of perfume.
+
+### Examples
+
+```text
+200ml
+0,5 Liter
+3kg
+150 Stück
+```
+
+## More features (funktion)
+
+Describes material functions and properties.
+
+### Examples
+
+```text
+kratzfest
+wasserdicht
+trocknet schnell
+schnelltrocknend
+atmungsaktiv
+100% UV-Schutz
+pflegeleicht
+bügelleicht
+körperformend
+```
+
+
+## Group (gruppe)
+
+Denotes an identifier for items that directly belong together.
+
+For example, bikini top "Aloha" and bikini bottom "Aloha" make the product `4242`.
+Construction jacket "Ernie" and construction trousers "Bert" make the product group `E&B`.
+
+A group can also consist of more than two items, e.g. mix & match group `Hawaii` consists of three bikini tops and two bikini bottoms.
+
+### Examples
+
+```text
+12345
+E&B
+Hawaii
+Gruppe-9000
+```
+
+## Subcategory (kategorie2)
+
+Subcategory used in the shop. 
+
+For example the category is "Damen - Blusen & Tuniken" and the subcategory is "Hemdblusen".
+
+### Examples
+
+```text
+Regenhosen
+Hemdblusen
+```
+## Extra category (kategorie3)
+
+Extra category used in the shop. Either another subcategory or a completely different category used for this item.
+
+For example the category is "Damen - Blusen & Tuniken", the subcategory is "Hemdblusen" and the extra category is "Kurzarmblusen".
+
+Another example: The category is "Men - Clothing - Jackets", the subcategory is "Jackets" and the extra category is "Leather Jackets".
+### Examples
+
+```text
+Kurzarmblusen
+Lederjacken
+Parkas
+Blousons
+Freizeit-Hemden
+```
+
+
+## Children's clothing (kiko)
+
+Classification according to target groups specifically for children's ranges. Often used in the shop's navigation.
+
+### Examples
+
+```text
+mädchen
+jungen
+baby
+kleinkinder
+```
+
+## Collar shape (kragenform)
+
+Especially for upper garments, the description of the collar or neckline.
 
 ### Examples
 
@@ -238,16 +329,71 @@ Haifischkragen
 Rundhalsausschnitt
 ```
 
-## Obermaterial
+## Material (material)
 
-Unterscheidet rudimentär den Stoff. Wesentliches Material des Artikels.
+Material composition of a product.
 
-Nur Gewebe mit besonderen optischen Eigenschaften werden unterschieden.
+### Examples
+
+```text
+98% Baumwolle, 2% Elasthan
+100% Nylon (Ripstop) mit Gore-Tex-Membran (PTFE)
+```
+
+
+
+## Pattern (muster)
+
+### Examples
+
+```text
+uni
+kariert
+floral
+einfarbig
+gestreift
+Blumenmuster
+einfarbig-strukturiert
+```
+
+## Short name (name2)
+
+Often used as a short name in list views - e.g. `Freizeit-Hemd` or for search engine optimization.
+
+### Examples
+
+```text
+Regenhose
+Bluse
+```
+
+
+## Miscellaneous (sonstiges)
+
+Additional item information that cannot be assigned to a specific attribute.
+
+### Examples
+
+```text
+abgenähte Taschen
+Ripstop
+Natürlich
+Bio
+```
+
+
+
+## Upper material (obermaterial)
+
+Rudimentarily distinguishes the fabric. Essential material of the article.
+
+Only fabrics with special optical properties are distinguished.
 
 ### Examples
 
 ```text
 baumwoll-denim
+velourlederoptik
 Wildleder
 Denim
 Edelstahl
@@ -260,9 +406,9 @@ Boucle
 Grobstrick
 ```
 
-## Passform
+## Fit (passform)
 
-In Bezug auf die Körperform, wird häufig für Hemden, Sakkos und Anzüge verwendet.
+In relation to the body shape, is often used for shirts, jackets and suits.
 
 ### Examples
 
@@ -276,168 +422,23 @@ comfort-fit
 körpernah
 ```
 
-## Schnitt
+## Special article groups (rubrik)
 
-In Bezug auf die Form des Artikels.
-
-### Examples
-
-```text
-Bootcut
-gerades Bein
-Oversized
-spitzer Schuh
-```
-
-## Waschung
-
-Optische Wirkung des Materials.
+Designates special article groups. Often used in the shop as a search filter or in the navigation.
 
 ### Examples
 
 ```text
-used
-destroyed
-bleached
-vintage
+Große Größen
+Schwangerschaftsmode
+Umstandsmode
+Stillmode
+Übergrößen
 ```
 
-## Stil
+## Season (saison)
 
-Stilrichtung des Artikels.
-
-### Examples
-
-```text
-Business
-Casual
-Ethno
-Retro
-```
-
-## Sportart
-
-Konkrete Beschreibung speziell bei Sportartikeln.
-
-### Examples
-
-```text
-Handball
-Bike
-Bergsteigen
-```
-
-## Detail
-
-Erwähnenswerte Details an Artikeln.
-
-### Examples
-
-```text
-Reißverschluss seitlich am Saum
-Brusttasche
-Volants
-Netzeinsatz
-Kragen in Kontrastfarbe
-```
-
-## Ausprägung
-
-Speziell für Sport und Outdoor wichtige Informationen, die helfen, den Artikel in das Sortiment einzuordnen.
-
-Bei Rucksäcken zum Beispiel Volumen `30-55 Liter`, bei Skistöcken die Größenangaben in Maßeinheit `160 bis 175cm` oder bei Sonderausführungen `Linkshänder`.
-
-### Examples
-
-```text
-30-55 Liter
-Körpergröße 160 bis 175cm
-Linkshänder
-```
-
-## Baukasten
-
-SKU für eine direkte Verbindung zu 1:1 zusammengehörigen Artikeln.
-
-### Examples
-
-```text
-123-456-789
-```
-
-## Eigenschaft
-
-Speziell für Sport und Outdoor Hinweise zum Einsatzbereich.
-
-### Examples
-
-```text
-5 °C
-Schlafsack geeignet für Temparaturbereich 1 °C bis -16 °C
-kratzfest
-wasserdicht
-```
-
-## Füllmenge
-
-Bezieht sich auf die Menge des Inhalts des Artikels, zum Beispiel bei Parfum.
-
-### Examples
-
-```text
-200ml
-0,5 Liter
-3kg
-150 Stück
-```
-
-## Funktion
-
-Beschreibt Materialfunktionen und -eigenschaften.
-
-### Examples
-
-```text
-trocknet schnell
-schnelltrocknend
-atmungsaktiv
-100% UV-Schutz
-pflegeleicht
-bügelleicht
-körperformend
-```
-
-## Gruppe
-
-Bezeichnet einen Identifikator für direkt zusammengehörige Artikel.
-
-Zum Beispiel Bikini-Oberteil "Aloha" und Bikini-Unterteil "Aloha" - Gruppe `4242` Baukasten-Sakko "Ernie" und Baukasten-Hose "Bert" - Gruppe`E&B`.
-
-Dabei können auch mehr als 2 Artikel eine Gruppe bilden z.B. Mix & Match: Gruppe `Hawaii` besteht aus 3 Bikini-Oberteilen und 2 Bikini-Unterteilen.
-
-### Examples
-
-```text
-12345
-E&B
-Aloha
-Gruppe-9000
-```
-
-## Material
-
-Bezeichnet die genaue Materialzusammensetzung des Artikels. \(z.B. \)
-
-### Examples
-
-```text
-98% Baumwolle, 2% Elasthan
-100% Nylon (Ripstop) mit Gore-Tex-Membran (PTFE)
-```
-
-## Saison
-
-Beschreibt zu welcher Saison bzw. saisonalen Kollektion der Artikel gehört.
+Describes to which season or seasonal collection the item belongs.
 
 ### Examples
 
@@ -449,10 +450,24 @@ Sommer 2018
 HW18/19
 ```
 
-## Serie
+## Cut (schnitt)
 
-Hier können Bezeichnungen für Serien übergeben werden, um Artikelfamilien oder Sondereditionen zu kennzeichnen.
+In reference to the form of the article. Is often used for shirts, trousers and shoes.
 
+### Examples
+
+```text
+Bootcut
+gerades Bein
+Oversized
+spitzer Schuh
+knielang
+7/8
+```
+
+## Series (serie)
+
+Series are used to identify article families or special editions.
 ### Examples
 
 ```text
@@ -461,9 +476,47 @@ Mountain Professional
 Expert Line
 ```
 
-## Verschluss
+## Sport type (sportart)
 
-Beschreibt Verschlussarten eines Artikels.
+Sports in which the article is used.
+
+### Examples
+
+```text
+Golf
+Bergsteigen
+Radfahren
+Bike
+```
+
+## Style (stil)
+
+Style of the article.
+
+### Examples
+
+```text
+Business
+Casual
+Ethno
+Retro
+```
+
+## Exact model (typ)
+
+The exact model designation describes the product type.
+For example "Desertboot" instead of "Boot" or "Rain trousers" instead of "Trousers".
+### Examples
+
+```text
+Desertboot
+Regenhose
+Hemdbluse
+```
+
+## Closure (verschluss)
+
+Describes closure types of an item.
 
 ### Examples
 
@@ -475,25 +528,15 @@ Druckknöpfe
 Klettverschluss
 Haken&Öse
 ```
+## Washing (waschung)
 
-## Beschreibung 2
-
-Zusätzliche Informationen zum Produkt, technische Beschreibung, Kurzbeschreibung oder auch Keywords.
-
+Optical effect of the material, mostly used for denim.
 ### Examples
 
 ```text
-Gewicht=200 g Gewogen=Gr. L/31 Material=100% Nylon (Ripstop) mit Gore-Tex-Membran (PTFE)
+used
+destroyed
+bleached
+vintage
+stone washed
 ```
-
-## Sonstiges
-
-Zusätzliche Artikelinformationen, die keinem spezifischen Attribut zugeordnet werden können.
-
-### Examples
-
-```text
-abgenähte Taschen
-Ripstop
-```
-
