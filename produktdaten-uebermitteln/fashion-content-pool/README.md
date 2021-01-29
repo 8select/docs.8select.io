@@ -1,12 +1,23 @@
 # Fashion Content Pool
 
-We provide a huge amount \(currently 5 figures\) of pre defined product sets. Depending on your assortment those will almost cover 80% of our products with content. We constantly improve the existing sets and add new sets for other assortments.
+We provide a huge amount \(currently 5 figures\) of pre defined product sets created by our fashion experts.  
+Depending on your assortment those will cover most of your products with content. We constantly improve the existing sets andd new sets according to current trends and add new sets for other assortments.
 
-In order to access the Fashion Content Pool, we need certain product properties so that our system can normalise the data and enrich the products with further properties. The more properties are transmitted, the more precisely the products are enriched with further properties.
+In order to access the Fashion Content Pool, we need certain product properties so that our system can normalise the data and enrich the products with further properties. 
+
+As a mimimum requirement the export must contain the following values:
+
+* category
+* description
+* brand
+* color
+
+On top of that there is no limit. The more properties are transmitted, the more precisely the products are enriched with further properties.   
+The combination of products inside the sets can be curated more precisely the more properties there are.
 
 {% file src="../../.gitbook/assets/datenexport-felder.xlsx" caption="Full export example" %}
 
-{% file src="../../.gitbook/assets/stock-price-example.csv" %}
+{% file src="../../.gitbook/assets/stock-price-example.csv" caption="stock and price update example" %}
 
 {% hint style="warning" %}
 Prices and stock levels can change very fast. To ensure that 8SELECT and the shop are in sync we recommend that you deliver one full export every 24 hours and an extra stock- price-update more often - up to every 15 minutes.

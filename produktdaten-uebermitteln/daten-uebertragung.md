@@ -24,7 +24,7 @@ We prefer a delivery as CSV with the data of a product variant \(SKU\) per line.
 
 {% file src="../.gitbook/assets/datenexport-beispiel.csv" caption="Full export example" %}
 
-{% file src="../.gitbook/assets/stock-price-example.csv" %}
+{% file src="../.gitbook/assets/stock-price-example.csv" caption="stock and price update example" %}
 
 {% hint style="warning" %}
 Prices and stock levels can change very fast. To ensure that 8SELECT and the shop are in sync we recommend that you deliver one full export every 24 hours and an extra stock- price-update more often - up to every 15 minutes.

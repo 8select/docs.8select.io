@@ -6,7 +6,7 @@ description: Base product data we need to playout any content
 
 In order to be able to display the products meaningfully in the widgets, a basic set of data must be transmitted. 
 
-The export must contain the following
+The export must contain the following values:
 
 * SKU
   * primary identifier used in widgets and tracking

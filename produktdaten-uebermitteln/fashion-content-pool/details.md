@@ -4,7 +4,7 @@
 
 Markenname bzw. Hersteller eines Artikels.
 
-### Beispiele
+### Examples
 
 ```text
 Desigual
@@ -16,7 +16,7 @@ Betty Barclay
 
 Die exakte Farbbezeichnung des Artikels.
 
-### Beispiele
+### Examples
 
 ```text
 rot
@@ -30,7 +30,7 @@ Burnished Rosè
 
 Der Beschreibungstext zum Artikel im HTML-Format.
 
-### Beispiele
+### Examples
 
 ```markup
 <p>
@@ -53,7 +53,7 @@ Material: 51% Baumwolle, 45% Polyester, 4% Elasthan<br><br>
 
 Standardisierte eindeutige Materialnummer nach European Article Number \(EAN\) oder Unified Product Code \(UPC\).
 
-### Beispiele
+### Examples
 
 ```text
 5027793879236
@@ -63,7 +63,7 @@ Standardisierte eindeutige Materialnummer nach European Article Number \(EAN\) o
 
 Oft als Kurzbezeichnung in Listenansichten verwendet - z.B. `Freizeit-Hemd` oder für Google mit mehr Infos zur besseren Suche.
 
-### Beispiele
+### Examples
 
 ```text
 Freizeit-Hemd
@@ -73,7 +73,7 @@ Freizeit-Hemd
 
 Bezeichnung der Artikelgruppen, die meist so in der Shopnavigation verwendet werden.
 
-### Beispiele
+### Examples
 
 ```text
 Sweatshirts & -jacken
@@ -85,7 +85,7 @@ Verfeinerung der Ebene `kategorie`.
 
 Zum Beispiel ist die Kategorie `Bekleidung` und der Produkttyp `Jacken`.
 
-### Beispiele
+### Examples
 
 ```text
 Jacken
@@ -99,7 +99,7 @@ Verfeinerung der Ebene `kategorie` bzw. `kategorie2`.
 
 Zum Beispiel ist die Kategorie `Bekleidung`, der Produkttyp `Jacken` und die Unterkategorie `Lederjacken`.
 
-### Beispiele
+### Examples
 
 ```text
 Lederjacken
@@ -112,7 +112,7 @@ Freizeit-Hemden
 
 Damit können Teilsortimente bezeichnet sein.
 
-### Beispiele
+### Examples
 
 ```text
 Outdoor
@@ -125,7 +125,7 @@ Lifestyle
 
 Bezeichnet spezielle Artikelgruppen, die als Filter oder Shop-Navigation genutzt werden.
 
-### Beispiele
+### Examples
 
 ```text
 Große Größen
@@ -138,7 +138,7 @@ Stillmode
 
 Einteilung der Sortimente nach Zielgruppen.
 
-### Beispiele
+### Examples
 
 ```text
 Damen
@@ -153,7 +153,7 @@ KIKO
 
 Einteilung nach Zielgruppen speziell für Kindersortimente.
 
-### Beispiele
+### Examples
 
 ```text
 mädchen
@@ -165,7 +165,7 @@ baby
 
 Verfeinerung der Ebene `kategorie`.
 
-### Beispiele
+### Examples
 
 ```text
 Desertboot
@@ -176,7 +176,7 @@ Regenhosen
 
 Farben sind einem Farbspektrum zugeordnet.
 
-### Beispiele
+### Examples
 
 ```text
 rot
@@ -190,7 +190,7 @@ Speziell bei Schuhen die Höhe des Absatzes.
 
 Format mit oder ohne Maßeinheit.
 
-### Beispiele
+### Examples
 
 ```text
 5,5cm
@@ -199,7 +199,7 @@ Format mit oder ohne Maßeinheit.
 
 ## Muster
 
-### Beispiele
+### Examples
 
 ```text
 uni
@@ -214,7 +214,7 @@ einfarbig-strukturiert
 
 Speziell bei Oberbekleidung die Länge der Ärmel.
 
-### Beispiele
+### Examples
 
 ```text
 normal
@@ -228,7 +228,7 @@ extra kurzer Arm
 
 Speziell bei Oberbekleidung die Beschreibung des Kragens oder Ausschnitts.
 
-### Beispiele
+### Examples
 
 ```text
 Rollkragen
@@ -244,7 +244,7 @@ Unterscheidet rudimentär den Stoff. Wesentliches Material des Artikels.
 
 Nur Gewebe mit besonderen optischen Eigenschaften werden unterschieden.
 
-### Beispiele
+### Examples
 
 ```text
 baumwoll-denim
@@ -264,7 +264,7 @@ Grobstrick
 
 In Bezug auf die Körperform, wird häufig für Hemden, Sakkos und Anzüge verwendet.
 
-### Beispiele
+### Examples
 
 ```text
 modern fit
@@ -280,7 +280,7 @@ körpernah
 
 In Bezug auf die Form des Artikels.
 
-### Beispiele
+### Examples
 
 ```text
 Bootcut
@@ -293,7 +293,7 @@ spitzer Schuh
 
 Optische Wirkung des Materials.
 
-### Beispiele
+### Examples
 
 ```text
 used
@@ -306,7 +306,7 @@ vintage
 
 Stilrichtung des Artikels.
 
-### Beispiele
+### Examples
 
 ```text
 Business
@@ -319,7 +319,7 @@ Retro
 
 Konkrete Beschreibung speziell bei Sportartikeln.
 
-### Beispiele
+### Examples
 
 ```text
 Handball
@@ -331,7 +331,7 @@ Bergsteigen
 
 Erwähnenswerte Details an Artikeln.
 
-### Beispiele
+### Examples
 
 ```text
 Reißverschluss seitlich am Saum
@@ -347,7 +347,7 @@ Speziell für Sport und Outdoor wichtige Informationen, die helfen, den Artikel 
 
 Bei Rucksäcken zum Beispiel Volumen `30-55 Liter`, bei Skistöcken die Größenangaben in Maßeinheit `160 bis 175cm` oder bei Sonderausführungen `Linkshänder`.
 
-### Beispiele
+### Examples
 
 ```text
 30-55 Liter
@@ -359,7 +359,7 @@ Linkshänder
 
 SKU für eine direkte Verbindung zu 1:1 zusammengehörigen Artikeln.
 
-### Beispiele
+### Examples
 
 ```text
 123-456-789
@@ -369,7 +369,7 @@ SKU für eine direkte Verbindung zu 1:1 zusammengehörigen Artikeln.
 
 Speziell für Sport und Outdoor Hinweise zum Einsatzbereich.
 
-### Beispiele
+### Examples
 
 ```text
 5 °C
@@ -382,7 +382,7 @@ wasserdicht
 
 Bezieht sich auf die Menge des Inhalts des Artikels, zum Beispiel bei Parfum.
 
-### Beispiele
+### Examples
 
 ```text
 200ml
@@ -395,7 +395,7 @@ Bezieht sich auf die Menge des Inhalts des Artikels, zum Beispiel bei Parfum.
 
 Beschreibt Materialfunktionen und -eigenschaften.
 
-### Beispiele
+### Examples
 
 ```text
 trocknet schnell
@@ -415,7 +415,7 @@ Zum Beispiel Bikini-Oberteil "Aloha" und Bikini-Unterteil "Aloha" - Gruppe `4242
 
 Dabei können auch mehr als 2 Artikel eine Gruppe bilden z.B. Mix & Match: Gruppe `Hawaii` besteht aus 3 Bikini-Oberteilen und 2 Bikini-Unterteilen.
 
-### Beispiele
+### Examples
 
 ```text
 12345
@@ -428,7 +428,7 @@ Gruppe-9000
 
 Bezeichnet die genaue Materialzusammensetzung des Artikels. \(z.B. \)
 
-### Beispiele
+### Examples
 
 ```text
 98% Baumwolle, 2% Elasthan
@@ -439,7 +439,7 @@ Bezeichnet die genaue Materialzusammensetzung des Artikels. \(z.B. \)
 
 Beschreibt zu welcher Saison bzw. saisonalen Kollektion der Artikel gehört.
 
-### Beispiele
+### Examples
 
 ```text
 Winter
@@ -453,7 +453,7 @@ HW18/19
 
 Hier können Bezeichnungen für Serien übergeben werden, um Artikelfamilien oder Sondereditionen zu kennzeichnen.
 
-### Beispiele
+### Examples
 
 ```text
 Mountain
@@ -465,7 +465,7 @@ Expert Line
 
 Beschreibt Verschlussarten eines Artikels.
 
-### Beispiele
+### Examples
 
 ```text
 Knöpfe
@@ -480,7 +480,7 @@ Haken&Öse
 
 Zusätzliche Informationen zum Produkt, technische Beschreibung, Kurzbeschreibung oder auch Keywords.
 
-### Beispiele
+### Examples
 
 ```text
 Gewicht=200 g Gewogen=Gr. L/31 Material=100% Nylon (Ripstop) mit Gore-Tex-Membran (PTFE)
@@ -490,7 +490,7 @@ Gewicht=200 g Gewogen=Gr. L/31 Material=100% Nylon (Ripstop) mit Gore-Tex-Membra
 
 Zusätzliche Artikelinformationen, die keinem spezifischen Attribut zugeordnet werden können.
 
-### Beispiele
+### Examples
 
 ```text
 abgenähte Taschen
