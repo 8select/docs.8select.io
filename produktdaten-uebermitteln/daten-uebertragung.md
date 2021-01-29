@@ -20,11 +20,11 @@ Currently we support the transfer of data by pulling a REST API \(8SELECT specif
 
 We can retrieve the product data in almost any format. 
 
-We prefer a delivery as CSV with the data of a product variant \(SKU\) per line. Here are two examples. The column headers are german but you can also use an english name.
+We prefer a delivery as CSV with the data of a product variant \(SKU\) per line. Here are two examples.
 
 {% file src="../.gitbook/assets/datenexport-beispiel.csv" caption="Full export example" %}
 
-{% file src="../.gitbook/assets/datenexport-beispiel-preise-bestand.csv" caption="Extra stock- price-update example" %}
+{% file src="../.gitbook/assets/stock-price-example.csv" %}
 
 {% hint style="warning" %}
 Prices and stock levels can change very fast. To ensure that 8SELECT and the shop are in sync we recommend that you deliver one full export every 24 hours and an extra stock- price-update more often - up to every 15 minutes.

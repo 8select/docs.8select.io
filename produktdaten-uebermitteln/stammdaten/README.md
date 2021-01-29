@@ -27,15 +27,13 @@ The export must contain the following
 In order to access our Fashion Content Pool, further data is required. See [**Fashion Content Pool**](../fashion-content-pool/).
 {% endhint %}
 
-{% file src="../../.gitbook/assets/datenexport-beispiel.csv" caption="Full export example" %}
+{% file src="../../.gitbook/assets/base-data-example.csv" caption="base data example" %}
 
-{% file src="../../.gitbook/assets/datenexport-beispiel-preise-bestand.csv" caption="Extra stock- price-update example" %}
+{% file src="../../.gitbook/assets/stock-price-example.csv" caption="stock and price update example" %}
 
 {% hint style="warning" %}
 Prices and stock levels can change very fast. To ensure that 8SELECT and the shop are in sync we recommend that you deliver one full export every 24 hours and an extra stock- price-update more often - up to every 15 minutes.
 {% endhint %}
-
-Prices and stock levels can change very fast. To ensure that 8SLECT and the shop are in sync we recommend that you deliver one full export every 24 hours and an extra stock- price-update more often - up to every 15 minutes.
 
 {% page-ref page="details.md" %}
 

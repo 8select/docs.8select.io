@@ -6,6 +6,12 @@ In order to access the Fashion Content Pool, we need certain product properties 
 
 {% file src="../../.gitbook/assets/datenexport-felder.xlsx" caption="Full export example" %}
 
+{% file src="../../.gitbook/assets/stock-price-example.csv" %}
+
+{% hint style="warning" %}
+Prices and stock levels can change very fast. To ensure that 8SELECT and the shop are in sync we recommend that you deliver one full export every 24 hours and an extra stock- price-update more often - up to every 15 minutes.
+{% endhint %}
+
 {% page-ref page="details.md" %}
 
 

@@ -1,6 +1,6 @@
 # Details and examples
 
-## SKU
+## SKU \(sku\)
 
 The SKU is unique. The SKU is the main identifier for a specific item \(buyable physical variant\) in a shop.
 
@@ -20,7 +20,7 @@ The SKU is used to find content for an item, to add an item to the shopping cart
 This means that this value must also be available in the shop for the widgets and in the checkout.
 {% endhint %}
 
-## Main-SKU
+## Main-SKU \(main-sku\)
 
 The Main-SKU is unique, it contains the model and colour. The Main SKU is the main identifier for an item \(parent item\) in a shop. 
 
@@ -36,7 +36,7 @@ Variant \(SKU\): Shirt Arie - color blue - size M
 Shirt-blue
 ```
 
-## Model
+## Model \(model\)
 
 A model refers to the basic product. A model can exist in several versions that differ, for example, in size, colour or pattern.
 
@@ -53,7 +53,7 @@ Variant \(SKU\): Shirt Arie - color blue - size M
 | 8277 | 8277-480 | 8277-480-01 |
 | shirt-arie | shirt-arie-color-blue | shirt-arie-color-blue-size-m |
 
-## Stock
+## Stock \(stock\)
 
 The value provides information about the availability of a variant. It can be a flag \(0/1\) or the quantity of available items.
 
@@ -73,7 +73,7 @@ not available
 0
 ```
 
-## Size
+## Size \(size\)
 
 Size of the item.
 
@@ -87,7 +87,7 @@ L
 M-L
 ```
 
-## Name
+## Name \(name\)
 
 Default name for the item as it is normally used on the product page.
 
@@ -98,7 +98,7 @@ Desigual Sweatshirt
 Evelyne GM 33
 ```
 
-## Retail price
+## Retail price \(retail-price\)
 
 The original price or RRP.   
 Usually shown as a crossed-out price in the shop. 
@@ -112,7 +112,7 @@ Without currency and in cents.
 19939
 ```
 
-## Discount price
+## Discount price \(discount-price\)
 
 The price at which the item is sold. 
 
@@ -125,22 +125,22 @@ Without currency and in cents.
 13750
 ```
 
-## Product URL
+## Product URL \(product-url\)
 
 Deep link that leads directly to the detail page in the shop of the variant.
 
-### Beispiele
+### Examples
 
 ```text
 https://www.ambellis.de/desigual-sweatjacke-8277480.html?sku=8277387
 https://www.bettybarclay.com/de/vera-mont-cocktail-kleid-21254528.html?farbe=burnished-ros&groesse=38
 ```
 
-## Images
+## Images \(images\)
 
 All available item images of the variant in the highest resolution. Multiple images are separated with pipe `|`. Position 1 is ideally a hollow man image or product image without model.
 
-### Beispiele
+### Examples
 
 ```javascript
 https://ambellis.scene7.com/is/image/ambellis/ext/8277480-01.jpg?$rtf\_amb\_prod-main-zoom\_xl$
