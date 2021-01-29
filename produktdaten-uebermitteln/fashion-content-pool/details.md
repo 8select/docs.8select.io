@@ -1,8 +1,8 @@
 # Details and examples
 
-## Marke
+## Brand (brand)
 
-Markenname bzw. Hersteller eines Artikels.
+Brand name or manufacturer of an item.
 
 ### Examples
 
