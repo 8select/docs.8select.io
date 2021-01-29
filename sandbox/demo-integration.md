@@ -4,6 +4,8 @@ To test the integration, the 8.SDK can be inserted into the shop via the \(Chrom
 
 Insert and execute the following snippets one by one to show the widget 8.SET Compose at the top of the current page.
 
+### Add 8.SDK Web in demo mode to your shop
+
 ```javascript
 // Load 8.SDK
 
@@ -22,10 +24,12 @@ Insert and execute the following snippets one by one to show the widget 8.SET Co
 })(document, 'script', window);
 ```
 
+### Add a widget to your shop
+
+You can add any widget via its id like described in the section [WIDGETS](https://docs.8select.io/widgets/).
+
 ```javascript
 // Add 8.SET Compose Widget
 _8select.demo('sys-psv')
 ```
-
-
 
