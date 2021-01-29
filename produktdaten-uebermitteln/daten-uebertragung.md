@@ -22,7 +22,7 @@ We can retrieve the product data in almost any format.
 
 We prefer a delivery as CSV with the data of a product variant \(SKU\) per line. Here are two examples.
 
-{% file src="../.gitbook/assets/fashion-content-pool-full-example.csv" caption="fashion content pool full export example" %}
+{% file src="../.gitbook/assets/fashion-content-pool-full-example.csv" caption="fashion content pool full example" %}
 
 {% file src="../.gitbook/assets/stock-price-example \(1\).csv" caption="stock and price update example" %}
 

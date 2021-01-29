@@ -15,9 +15,9 @@ As a mimimum requirement the export must contain the following values:
 On top of that there is no limit. The more properties are transmitted, the more precisely the products are enriched with further properties.   
 The combination of products inside the sets can be curated more precisely the more properties there are.
 
-{% file src="../../.gitbook/assets/fashion-content-pool-full-example.csv" caption="fashion content pool full export example" %}
+{% file src="../../.gitbook/assets/fashion-content-pool-full-example.csv" caption="fashion content pool full example" %}
 
-{% file src="../../.gitbook/assets/fashion-content-pool-minimum-example.csv" caption="fashion content pool minimum export example" %}
+{% file src="../../.gitbook/assets/fashion-content-pool-minimum-example.csv" caption="fashion content pool minimum example" %}
 
 {% file src="../../.gitbook/assets/stock-price-example \(1\).csv" caption="stock and price update example" %}
 
