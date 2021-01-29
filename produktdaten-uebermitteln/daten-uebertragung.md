@@ -1,4 +1,4 @@
-# Data transfer
+# Data Transfer
 
 Currently we support the transfer of data by pulling a REST API \(8SELECT specification\) or by file download.
 
@@ -18,7 +18,9 @@ Currently we support the transfer of data by pulling a REST API \(8SELECT specif
 
 ### Format
 
-We can retrieve the product data in almost any format. We prefer a deliver as CSV with the data of a product variant \(SKU\) per line.
+We can retrieve the product data in almost any format. 
+
+We prefer a delivery as CSV with the data of a product variant \(SKU\) per line. Here are two examples. The column headers are german but you can also use an english name.
 
 {% file src="../.gitbook/assets/datenexport-beispiel.csv" caption="Full export example" %}
 

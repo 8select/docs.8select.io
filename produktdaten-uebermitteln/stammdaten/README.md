@@ -2,7 +2,7 @@
 description: Base product data we need to playout any content
 ---
 
-# Base data
+# Base Data
 
 In order to be able to display the products meaningfully in the widgets, a basic set of data must be transmitted. 
 

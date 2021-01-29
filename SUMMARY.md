@@ -22,8 +22,8 @@
 
 ## Product Export <a id="produktdaten-uebermitteln"></a>
 
-* [Data transfer](produktdaten-uebermitteln/daten-uebertragung.md)
-* [Base data](produktdaten-uebermitteln/stammdaten/README.md)
+* [Data Transfer](produktdaten-uebermitteln/daten-uebertragung.md)
+* [Base Data](produktdaten-uebermitteln/stammdaten/README.md)
   * [Details and examples](produktdaten-uebermitteln/stammdaten/details.md)
 * [Fashion Content Pool](produktdaten-uebermitteln/fashion-content-pool/README.md)
   * [Details and examples](produktdaten-uebermitteln/fashion-content-pool/details.md)
