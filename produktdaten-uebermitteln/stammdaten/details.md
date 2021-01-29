@@ -53,7 +53,7 @@ Variant \(SKU\): Shirt Arie - color blue - size M
 | 8277 | 8277-480 | 8277-480-01 |
 | shirt-arie | shirt-arie-color-blue | shirt-arie-color-blue-size-m |
 
-## Stock \(stock\)
+## Stock \(status\)
 
 The value provides information about the availability of a variant. It can be a flag \(0/1\) or the quantity of available items.
 
