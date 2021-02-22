@@ -26,7 +26,7 @@ Any widget that has some kind of dynamic configuration that will influence wich 
    2. the 8.SET Compose widget should already be present in the DOM
       1. ⚠️ update widget configuration by calling `_8select.reinitSys('42')`
 5. If there is 8SELECT content for P42 the widget content is updated
-   1. If there is no content the widget will content will be emptied and made invisible to the user
+   1. If there is no content the widget will be emptied and made invisible to the user
 
 ## 8.SET Flat example
 
@@ -48,11 +48,11 @@ Any widget that has some kind of dynamic configuration that will influence wich 
    1. If there is no content the widget will stay empty and invisible to the user
 5. user navigates away from page
    1. Option a\) the modal that was shown is destroyed
-      1. the 8.SET Flat widget also has to be destroyed
+      1. the 8.SET Flat widget also has to be destroyed, but before the HTML is removed from the DOM - there are some event listeners that are cleaned up
          1. `_8select.utils.widgetLoader.findWidgetByType('SysAcc').destroy()`
       2. if another product is added to the cart the flow restarts at 2. 
    2. Option b\) the modal is just closed / hidden
-      1. the 8.SET Flat widget also has to be destroyed
+      1. the 8.SET Flat widget has to be destroyed
          1. `_8select.utils.widgetLoader.findWidgetByType('SysAcc').destroy()`
       2. if another product P42 is added to the cart the widget configuration has to be updated
       3. update widget configuration by manipulating the `data-sku` attribute
