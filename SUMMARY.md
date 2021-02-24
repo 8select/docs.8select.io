@@ -20,6 +20,7 @@
 * [8.SET Teaser List](widgets/8.set-teaser-list.md)
 * [8.SET Photo \(Beta\)](widgets/8.set-photo.md)
 * [8.SET Mail \(Beta\)](widgets/8.set-mail.md)
+* [8.SIMILAR \(Beta\)](widgets/8.similar-beta.md)
 
 ## Product Export <a id="produktdaten-uebermitteln"></a>
 
