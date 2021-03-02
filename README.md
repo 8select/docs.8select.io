@@ -8,7 +8,7 @@ You can simulate and preview all widgets with our demo mode. See section [**SAND
 
 ## Plug&Play Integration
 
-Integration for **Salesforce Commerce Cloud, Shopware 5, Oxid** and **JTL-Shop** is possible via one of our shop software specific plugins. You will find those in the respective app-stores of the shop systems.
+Integration for **Salesforce Commerce Cloud, Shopware 5** and **JTL-Shop** is possible via one of our shop software specific plugins. You will find those in the respective app-stores of the shop systems.
 
 ## Manual Integration
 
