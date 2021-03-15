@@ -15,10 +15,22 @@ For **sku**, the same value as in the product export must be used. The value mus
 
 ```javascript
 <script type="text/javascript">
-  //////
-  // 8.SDK Web code
-  //////
+    (function(d, s, w) {
+      var apiId = '<API-ID>';
+      w.eightlytics || function (w) {
+          w.eightlytics = function () {
+            window.eightlytics.queue = window.eightlytics.queue || [];
+            window.eightlytics.queue.push(arguments);
+          };
+      }(w);
+      var script = d.createElement(s);
+      script.src   = 'https://wgt.8select.io/' + apiId + '/loader.js';
+      var entry = d.getElementsByTagName(s)[0];
+      entry.parentNode.insertBefore(script, entry);
+    })(document, 'script', window);
 </script>
+
+// Two script tags, because the 8.SDK Web code has to run first to initialize the 8.LYTICS client
 
 <script type="text/javascript">
   window.eightlytics(
