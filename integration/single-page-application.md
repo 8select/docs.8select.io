@@ -10,9 +10,9 @@ In the future the SDK will get smarter and recognise widget configurations autom
 
 ## How to "tell" the SDK about updated widget configurations
 
-* change the configuration for example for the sku `data-sku="${new-sku}"`
-* also update a property that will make your SPA rerender the component
-  * [React](https://reactjs.org/docs/reconciliation.html#keys): `key=${new-sku}` 
-  * Vue.js: `:key=${new-sku}`
+* change the configuration for example for the SKU `data-sku="${new-sku}"`
+* **required:** also update a property that will make your SPA rerender the component
+  * [React](https://reactjs.org/docs/reconciliation.html#keys): `key={new-sku}` 
+  * Vue.js: `:key={new-sku}`
 * after the component is rendered call `_8select.initCSE()`
 
