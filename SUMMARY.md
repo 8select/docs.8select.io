@@ -17,7 +17,6 @@
 * [8.SET Compose](widgets/8.set-compose.md)
 * [8.SET Flat](widgets/8.set-flat.md)
 * [8.SET Teaser Button](widgets/8.set-teaser-button.md)
-* [8.SET Teaser List](widgets/8.set-teaser-list.md)
 * [8.SET Photo \(Beta\)](widgets/8.set-photo.md)
 * [8.SET Mail \(Beta\)](widgets/8.set-mail.md)
 * [8.SIMILAR \(Beta\)](widgets/8.similar.md)
