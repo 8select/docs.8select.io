@@ -22,6 +22,7 @@ The export must contain the following values:
 * Deeplink to product variant in shop
 * Images
   * All available images in maximum resolution. For an optimal presentation at least one cut out image \(hollow man photography\).
+  * Transfer images with least possible fillup / whitespace to optimize the presentation in the widgets.
 
 {% hint style="danger" %}
 In order to access our Fashion Content Pool, further data is required. See [**Fashion Content Pool**](../fashion-content-pool/).
