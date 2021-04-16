@@ -37,7 +37,7 @@ For **sku**, the same value as in the product export must be used. The value mus
     'purchase',
       {
         customerid: 'anonymous', // string
-        orderid: '1234', // string
+        orderid: '1234', // string - unique
         products: [
           {
             sku: '12345', // string
@@ -60,6 +60,8 @@ The **customerid** will be used to optimize content in the future. For the sake 
 {% endhint %}
 
 {% hint style="info" %}
+The **orderid has to be unique** because we use it to deduplicate orders.
+
 The **orderid** is used to compare our analytics data with the shop's analytics data on request. For example, for spot checks. If this is desired, the orderid must not be transmitted anonymously.
 {% endhint %}
 
