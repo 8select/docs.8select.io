@@ -6,7 +6,7 @@ Integrating something that you have not seen in action yet can be hard.
 To make the integration more tangible, it is helpful to see the widgets in your own shop in advance.  
 You can simulate and preview all widgets with our demo mode. See section [**SANDBOX**](sandbox/demo-integration.md) for detailed instructions.
 
-## Plug&Play Integration
+## Plug & Play Integration
 
 Integration for **Salesforce Commerce Cloud, Shopware 5** and **JTL-Shop** is possible via one of our shop software specific plugins. You will find those in the respective app-stores of the shop systems.
 
