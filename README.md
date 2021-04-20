@@ -2,7 +2,7 @@
 
 ## Preview
 
-Integrating something that you have not seen in action yet can be hard.   
+Integrating something that you have not seen in action yet can be hard.  
 To make the integration more tangible, it is helpful to see the widgets in your own shop in advance.  
 You can simulate and preview all widgets with our demo mode. See section [**SANDBOX**](sandbox/demo-integration.md) for detailed instructions.
 
@@ -24,6 +24,6 @@ Our customers have already integrated 8.HX into **SAP Commerce**, **novomind iSh
 
 ### Product Export
 
-A prerequisite for the playout of content is the delivery of product data from your online shop.   
+A prerequisite for the playout of content is the delivery of product data from your online shop.  
 Our widgets will show product data such as prices. Products can be placed directly in the shopping cart from within our widgets. It is therefor necessary that updates for prices and stocks can be retrieved as fast as possible.
 

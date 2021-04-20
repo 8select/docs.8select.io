@@ -41,5 +41,10 @@
 
 ## API
 
-* [8.API \(Alpha\)](api/8.api.md)
+* [General](api/general/README.md)
+  * [Introduction](api/general/introduction.md)
+  * [Authentication](api/general/authentication.md)
+  * [Pagination](api/general/pagination.md)
+  * [GraphQL Schema](api/general/graphql-schema.md)
+* [8.SET Compose \(Alpha\)](api/8.set-compose.md)
 
