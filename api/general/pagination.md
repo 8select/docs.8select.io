@@ -92,7 +92,7 @@ As mentioned above, pagination is not yet fully implemented. The following secti
 
 The `after` parameter can be used to traverse through a paginated result. It expects a cursor value which can be obtained from the previous response.
 
-Using a combination of slicing and cursor-based pagination for example, you could iterate through an a list of 8.SET Compose product sets one by one:
+Using a combination of slicing and cursor-based pagination for example, you could iterate through a list of 8.SET Compose product sets one by one:
 
 ```text
 productSets(

@@ -10,7 +10,7 @@ description: >-
 
 GraphQL is a query language for clients to fetch data they need from an API. It is defined through a [**specification**](http://spec.graphql.org), which describes how data should be requested and formatted in a response. 
 
-GraphQL is strongly typed and well structured. That means, an API will not only define **and quarantee** what type of data each field in its schema can be, but also define the links and relationships between any complex objects. This enables queries to fetch exactly the information they need, by specifying either a single object or traversing any links in the structure to request related information a single query.
+GraphQL is strongly typed and well structured. That means, an API will not only define **and guarantee** what type of data each field in its schema can be, but also define the links and relationships between any complex objects. This enables queries to fetch exactly the information they need by specifying either a single object or traversing any links in the structure to request related information in a single query.
 
 ### Why use GraphQL?
 
@@ -18,9 +18,9 @@ At 8SELECT we use GraphQL primarily because it enables developers to make API ca
 
 ### How to query GraphQL?
 
-Most commonly GraphQL can be queried by making HTTP `POST` requests to its respective endpoint. At 8SELECT this endpoint currently is `https://api-demo.8select.io`**`/graphql`**. To make a request you can use cURL or any other HTTP compatible client.
+Most commonly GraphQL can be queried by making HTTP `POST` requests to its respective endpoint. At 8SELECT this endpoint currently is `https://api.8select.io`**`/graphql`**. To make a request you can use cURL or any other HTTP compatible client.
 
-Currently, we only support `productSets` as a top-level resolver in our query schema. Given a specific product identifier, it will return a list of **8.SET Compose** product sets. Assuming you have a product with the SKU `123456-7890` in your catalogue,  you could use the following example to query the titles of respective product sets:
+Currently we only support `productSets` as a top-level resolver in our query schema. Given a specific product identifier, it will return a list of **8.SET Compose** product sets. Assuming you have a product with the SKU `123456-7890` in your catalogue,  you could use the following example to query the titles of respective product sets:
 
 ```text
 productSets(input: {queryType: SKU, value: "123456-7890"}) {
