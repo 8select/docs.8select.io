@@ -100,7 +100,6 @@ productSets(
     first: 1
 ) {
     edges {
-        cursor
         node {
             title
         }
