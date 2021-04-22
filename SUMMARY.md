@@ -45,6 +45,7 @@
   * [Introduction](api/general/introduction.md)
   * [Authentication](api/general/authentication.md)
   * [Pagination](api/general/pagination.md)
+  * [Exceptions](api/general/exceptions.md)
   * [GraphQL Schema](api/general/graphql-schema.md)
 * [8.SET Compose \(Alpha\)](api/8.set-compose.md)
 
