@@ -41,6 +41,7 @@
 
 ## API
 
+* [Changelog](api/changelog.md)
 * [General](api/general/README.md)
   * [Introduction](api/general/introduction.md)
   * [Authentication](api/general/authentication.md)
