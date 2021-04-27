@@ -41,7 +41,8 @@
 
 ## API
 
-* [Changelog](api/changelog.md)
+* [Changelog](api/changelog/README.md)
+  * [1.0.1](api/changelog/1.0.1.md)
 * [General](api/general/README.md)
   * [Introduction](api/general/introduction.md)
   * [Authentication](api/general/authentication.md)
