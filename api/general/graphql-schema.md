@@ -102,3 +102,40 @@ type ProductSetConnection {
 }
 ```
 
+## Introspection Query
+
+Through its introspection capabilities, GraphQL also allows to get information about the underlying schema using [**regular API queries**](https://docs.8select.io/api/general/introduction#how-to-query-graphql). The following example allows to fetch information about all top-level queries, their retrievable fields as well as parameters that can be passed to them:
+
+```graphql
+query {
+  __schema {
+    queryType {
+      kind
+      name
+      fields {
+        name
+        args {
+          name
+          type {
+            kind
+            name
+          }
+        }
+        type {
+          fields {
+            name
+            type {
+              kind
+              name
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+```
+
+Using appropriate tooling though, it will not be necessary to query this information most of the time. Instead almost every modern development environment has built-in functionalities to provide the information automatically.
+
