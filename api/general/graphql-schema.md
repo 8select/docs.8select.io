@@ -9,25 +9,26 @@ schema {
   query: Query
 }
 
-"""
-The 8SELECT GraphQL API currently supports 8.SET Compose only.
-"""
+
+"The 8SELECT GraphQL API currently supports 8.SET Compose only."
 type Query {
-  """
-  Fetch 8.SET Compose product sets for a given trigger product.
-  """
+  
+  "Fetch 8.SET Compose product sets for a given trigger product."
   productSets(
+    
     "Specifies the trigger product for which to fetch product sets."
     input: ProductSetQueryInput!
+    
     "An optional number of product sets to fetch."
     first: Int
+  
   ): ProductSetConnection
 }
 
-"""
-The set of query types supported by `productSets`.
-"""
+
+"The set of query types supported by `productSets`."
 enum ProductSetQueryType {
+  
   "The identifier specifying a set of different products of the same model."
   MODEL_ID
   
@@ -36,50 +37,55 @@ enum ProductSetQueryType {
   
   "The stock keeping unit identifier for a specific product."
   SKU
+
 }
 
-"""
-The trigger product for which to query product sets.
-"""
+
+"The trigger product for which to query product sets."
 input ProductSetQueryInput {
+  
   "The type of identifier by which to specify the trigger product."
   queryType: ProductSetQueryType!
   
   "The actual identifier to which the `queryType` refers."
   value: String!
+
 }
 
-"""
-The pagination information of the current page.
-"""
+
+"The pagination information of the current page."
 type PageInfo {
+
   "The cursor identifying the end of the current page."
   endCursor: String
+
 }
 
-"""
-A "page" of product sets containg a given number of items.
-"""
+
+"A 'page' of product sets containg a given number of items."
 type ProductSetConnection {
+
   "The list of product sets in the current page."
   edges: [ProductSetEdge!]!
   
   "The pagination information of the current page."
   pageInfo: PageInfo
+
 }
 
-"""
-An edge referring to a single product set.
-"""
+
+"An edge referring to a single product set."
 type ProductSetEdge {
+
   "The product set this edge refers to."
   node: ProductSet!
+
 }
 
-"""
-A product set based on a given trigger product.
-"""
+
+"A product set based on a given trigger product."
 type ProductSet {
+
   "The id of this specific product set."
   id: String!
   
@@ -89,23 +95,19 @@ type ProductSet {
   "An optional description of the product set."
   description: String
   
-  """
-  The trigger product this product set is based upon.
-  _Note: If this product is currently unavailable the closest alternative will
-  be used._
-  """
+  "The trigger product this product set is based upon."
+  "Note: If this product is currently unavailable the closest alternative will be used."
   triggerProduct: Product!
   
-  """
-  List of cross-selling products that combine well with the trigger product.
-  """
+  "List of cross-selling products that combine well with the trigger product."
   setProducts: [Product!]!
+
 }
 
-"""
-The interface of fields all product types have in common.
-"""
+
+"The interface of fields all product types have in common."
 interface IProduct {
+  
   "The stock keeping unit of a product."
   sku: String!
   
@@ -114,12 +116,13 @@ interface IProduct {
   
   "A list of variants for a product."
   variants: ProductVariantConnection!
+
 }
 
-"""
-A specific product.
-"""
+
+"A specific product."
 type Product implements IProduct {
+  
   "The stock keeping unit of this product."
   sku: String!
   
@@ -129,36 +132,36 @@ type Product implements IProduct {
   "The list of variants for this product."
   variants: ProductVariantConnection!
   
-  """
-  The list of similar products to potentially substitute this product with in
-  a product set.
-  """
+  "The list of similar products to potentially substitute this product with in a product set."
   alternatives(first: Int): ProductAlternativeConnection!
+
 }
 
-"""
-A "page" of alternative products containing a given number of items.
-"""
+
+"A 'page' of alternative products containing a given number of items."
 type ProductAlternativeConnection {
+
   "The list of similar products in the current page."
   edges: [ProductAlternativeEdge!]!
   
   "The pagination information of the current page."
   pageInfo: PageInfo
+
 }
 
-"""
-An edge referring to a single alternative product.
-"""
+
+"An edge referring to a single alternative product."
 type ProductAlternativeEdge {
+
   "The alternative product this edge refers to."
   node: ProductAlternative!
+
 }
 
-"""
-A specific alternative product.
-"""
+
+"A specific alternative product."
 type ProductAlternative implements IProduct {
+  
   "The stock keeping unit of this product."
   sku: String!
   
@@ -167,38 +170,41 @@ type ProductAlternative implements IProduct {
   
   "The list of variants for this product."
   variants: ProductVariantConnection!
+
 }
 
-"""
-A "page" of product variants containing a given number of items.
-"""
+
+"A 'page' of product variants containing a given number of items."
 type ProductVariantConnection {
+  
   "The list of product variants in the current page."
   edges: [ProductVariantEdge!]!
   
   "The pagination information of the current page."
   pageInfo: PageInfo
+
 }
 
-"""
-An edge referring to a single product variant.
-"""
+
+"An edge referring to a single product variant."
 type ProductVariantEdge {
+  
   "The product variant this edge refers to."
   node: ProductVariant!
+
 }
 
-"""
-The specific variant of a product.
-"""
+
+"The specific variant of a product."
 type ProductVariant {
+  
   "The stock keeping unit referring to this specific product variant."
   sku: String!
+
 }
 
-"""
-A model uniting several products.
-"""
+
+"A model uniting several products."
 type ProductModel {
   id: String!
 }
