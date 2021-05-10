@@ -7,7 +7,7 @@ description: Transfer order data for analytics and performance based pricing
 The commission is based on performance, i.e. only products purchased via our widgets are eligible for commission. To determine these products, the purchases in the shop are compared with the interactions in our widgets. For this purpose, all shop transactions must be transmitted. The transmission takes place without personal data and only contains the individual order items.
 
 {% hint style="info" %}
-The commission is based on **gross prices**, i.e. you have to transfer the **gross price** of a product.
+To simplify the commission process it is based on **gross prices**, i.e. you have to transfer the **gross price** of a product.
 {% endhint %}
 
 {% hint style="warning" %}
