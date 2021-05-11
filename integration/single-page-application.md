@@ -10,6 +10,15 @@ In the future the SDK will get smarter and recognise widget configurations autom
 
 ## How to "tell" the SDK about updated widget configurations
 
+### When is this necessary?
+
+Some examples for 8.SET Compose:
+
+* the product variant \(other than size\) is changed, for example if your customers can select the color or pattern as a variant of a product
+* the product completely changes, i.e. if the customer navigates to another product page
+
+### How to implement it?
+
 * change the configuration for example for the SKU `data-sku="${new-sku}"`
 * **required:** also update a property that will make your SPA rerender the component
   * [React](https://reactjs.org/docs/reconciliation.html#keys): `key={new-sku}` 
