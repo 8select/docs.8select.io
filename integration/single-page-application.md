@@ -25,3 +25,9 @@ Some examples for 8.SET Compose:
   * Vue.js: `:key={new-sku}`
 * after the component is rendered call `_8select.initCSE()`
 
+## Navigate to product page via SPA router
+
+Inside our widgets a user can click on a product and will be redirected to the corresponding product page in your shop. This is done by changing the browsers location, i.e. `window.location.href`.
+
+We can configure most widgets to make use of your SPA router if you provide a way to access the functionality via JavaScript. For example we could call something like `window.myFancyRouter.push("/path/to/product/user/wants/to/visit.html")`
+
