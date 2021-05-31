@@ -340,7 +340,7 @@ curl https://api-demo.8select.io/graphql \
 {% endtab %}
 {% endtabs %}
 
-As can be seen in the response, the list of alternatives can be quite extensive depending on the repective product. Let's say, we want to show 10 alternatives at most to make the UI easier to navigate. There would be no reason to fetch more product alternatives than necessary. To achieve this, we can use the `first` paramter to limit the number of returned alternatives:
+As can be seen in the response, the list of alternatives can be quite extensive depending on the respective product. Let's say, we want to show 10 alternatives at most to make the UI easier to navigate. There would be no reason to fetch more product alternatives than necessary. To achieve this, we can use the `first` paramter to limit the number of returned alternatives:
 
 {% tabs %}
 {% tab title="GraphQL Query" %}
