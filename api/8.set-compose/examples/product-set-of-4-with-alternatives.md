@@ -72,6 +72,323 @@ curl https://api-demo.8select.io/graphql \
           "node": {
             "setProducts": [
               {
+                "sku": "2473016",
+                "alternatives": {
+                  "edges": [
+                    {
+                      "node": {
+                        "sku": "4093774"
+                      }
+                    },
+                    {
+                      "node": {
+                        "sku": "4874214"
+                      }
+                    },
+                    {
+                      "node": {
+                        "sku": "2190659"
+                      }
+                    },
+                    {
+                      "node": {
+                        "sku": "3998588"
+                      }
+                    },
+                    {
+                      "node": {
+                        "sku": "4213148"
+                      }
+                    },
+                    {
+                      "node": {
+                        "sku": "4059867"
+                      }
+                    },
+                    {
+                      "node": {
+                        "sku": "4145691"
+                      }
+                    },
+                    {
+                      "node": {
+                        "sku": "2922202"
+                      }
+                    },
+                    {
+                      "node": {
+                        "sku": "4797685"
+                      }
+                    },
+                    {
+                      "node": {
+                        "sku": "4488291"
+                      }
+                    },
+                    {
+                      "node": {
+                        "sku": "4510399"
+                      }
+                    },
+                    {
+                      "node": {
+                        "sku": "3953578"
+                      }
+                    },
+                    {
+                      "node": {
+                        "sku": "4422927"
+                      }
+                    },
+                    {
+                      "node": {
+                        "sku": "3748404"
+                      }
+                    },
+                    {
+                      "node": {
+                        "sku": "5127370"
+                      }
+                    },
+                    {
+                      "node": {
+                        "sku": "3622844"
+                      }
+                    },
+                    {
+                      "node": {
+                        "sku": "5979057"
+                      }
+                    },
+                    {
+                      "node": {
+                        "sku": "4536866"
+                      }
+                    },
+                    {
+                      "node": {
+                        "sku": "6039559"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "sku": "4892986",
+                "alternatives": {
+                  "edges": [
+                    {
+                      "node": {
+                        "sku": "4081588"
+                      }
+                    },
+                    {
+                      "node": {
+                        "sku": "4180133"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "sku": "5535609",
+                "alternatives": {
+                  "edges": [
+                    {
+                      "node": {
+                        "sku": "182788"
+                      }
+                    },
+                    {
+                      "node": {
+                        "sku": "5729919"
+                      }
+                    },
+                    {
+                      "node": {
+                        "sku": "2908545"
+                      }
+                    },
+                    {
+                      "node": {
+                        "sku": "932301"
+                      }
+                    },
+                    {
+                      "node": {
+                        "sku": "2937814"
+                      }
+                    },
+                    {
+                      "node": {
+                        "sku": "3005923"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "sku": "4560673",
+                "alternatives": {
+                  "edges": [
+                    {
+                      "node": {
+                        "sku": "4222984"
+                      }
+                    },
+                    {
+                      "node": {
+                        "sku": "5865383"
+                      }
+                    },
+                    {
+                      "node": {
+                        "sku": "5216692"
+                      }
+                    },
+                    {
+                      "node": {
+                        "sku": "3464165"
+                      }
+                    },
+                    {
+                      "node": {
+                        "sku": "5034798"
+                      }
+                    },
+                    {
+                      "node": {
+                        "sku": "4983522"
+                      }
+                    },
+                    {
+                      "node": {
+                        "sku": "5594637"
+                      }
+                    },
+                    {
+                      "node": {
+                        "sku": "4361908"
+                      }
+                    },
+                    {
+                      "node": {
+                        "sku": "6059481"
+                      }
+                    },
+                    {
+                      "node": {
+                        "sku": "4706855"
+                      }
+                    },
+                    {
+                      "node": {
+                        "sku": "5814346"
+                      }
+                    },
+                    {
+                      "node": {
+                        "sku": "5589661"
+                      }
+                    },
+                    {
+                      "node": {
+                        "sku": "5811740"
+                      }
+                    },
+                    {
+                      "node": {
+                        "sku": "2759018"
+                      }
+                    },
+                    {
+                      "node": {
+                        "sku": "5223566"
+                      }
+                    },
+                    {
+                      "node": {
+                        "sku": "5702348"
+                      }
+                    },
+                    {
+                      "node": {
+                        "sku": "5898003"
+                      }
+                    },
+                    {
+                      "node": {
+                        "sku": "4871277"
+                      }
+                    },
+                    {
+                      "node": {
+                        "sku": "5698082"
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}
+```
+{% endtab %}
+{% endtabs %}
+
+As can be seen in the response, the list of alternatives can be quite extensive depending on the repective product. Let's say, we want to show 10 alternatives at most to make the UI easier to navigate. There would be no reason to fetch more product alternatives than necessary. To achieve this, we can use the `first` paramter to limit the number of returned alternatives:
+
+{% tabs %}
+{% tab title="GraphQL Query" %}
+```graphql
+query {
+  productSets(input: { queryType: MAIN_SKU, value: "5969155" }) {
+    edges {
+      node {
+        setProducts {
+          sku
+          alternatives(first: 10) {
+            edges {
+              node {
+                sku
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+```
+{% endtab %}
+
+{% tab title="Request" %}
+```bash
+curl https://api-demo.8select.io/graphql \
+-H 'x-api-id: <Your API ID>'  \
+-H 'Content-Type: application/json' \
+-d '{"query":"query { productSets(input: {queryType: MAIN_SKU, value: \"5969155\"}) { edges { node { setProducts { sku alternatives { edges { node { sku } } } } } } } }"}'
+
+
+
+
+```
+{% endtab %}
+
+{% tab title="Response" %}
+```javascript
+{
+  "data": {
+    "productSets": {
+      "edges": [
+        {
+          "node": {
+            "setProducts": [
+              {
                 "sku": "4874214",
                 "alternatives": {
                   "edges": [
@@ -124,30 +441,22 @@ curl https://api-demo.8select.io/graphql \
                       "node": {
                         "sku": "4488291"
                       }
-                    },
+                    }
+                  ]
+                }
+              },
+              {
+                "sku": "4892986",
+                "alternatives": {
+                  "edges": [
                     {
                       "node": {
-                        "sku": "4510399"
+                        "sku": "4081588"
                       }
                     },
                     {
                       "node": {
-                        "sku": "4422927"
-                      }
-                    },
-                    {
-                      "node": {
-                        "sku": "3953578"
-                      }
-                    },
-                    {
-                      "node": {
-                        "sku": "5127370"
-                      }
-                    },
-                    {
-                      "node": {
-                        "sku": "3748404"
+                        "sku": "4180133"
                       }
                     }
                   ]
@@ -181,22 +490,27 @@ curl https://api-demo.8select.io/graphql \
                       "node": {
                         "sku": "2937814"
                       }
+                    },
+                    {
+                      "node": {
+                        "sku": "3005923"
+                      }
                     }
                   ]
                 }
               },
               {
-                "sku": "4222984",
+                "sku": "4560673",
                 "alternatives": {
                   "edges": [
                     {
                       "node": {
-                        "sku": "4560673"
+                        "sku": "4222984"
                       }
                     },
                     {
                       "node": {
-                        "sku": "5865383"
+                        "sku": "3464165"
                       }
                     },
                     {
@@ -206,7 +520,7 @@ curl https://api-demo.8select.io/graphql \
                     },
                     {
                       "node": {
-                        "sku": "3464165"
+                        "sku": "5865383"
                       }
                     },
                     {
@@ -231,12 +545,12 @@ curl https://api-demo.8select.io/graphql \
                     },
                     {
                       "node": {
-                        "sku": "4706855"
+                        "sku": "6059481"
                       }
                     },
                     {
                       "node": {
-                        "sku": "6059481"
+                        "sku": "4706855"
                       }
                     }
                   ]
