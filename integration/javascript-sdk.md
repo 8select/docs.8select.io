@@ -26,6 +26,8 @@ In order to display content in the shop, the **8.SDK Web** \(JavaScript SDK\) mu
 
 {% hint style="warning" %}
 The script should be placed as far up as possible in the DOM, preferably as first in the `<head>` tag to ensure it is executed as early as possible. Since the script is inserted dynamically, it is `async` by default and the loading of the page is not blocked. More about this [here](https://developer.mozilla.org/en-US/docs/Web/API/HTMLScriptElement#dynamically_importing_scripts).
+
+It is necessary to execute the script before you do the checkout tracking, otherwise tracking will not work.
 {% endhint %}
 
 {% hint style="info" %}
