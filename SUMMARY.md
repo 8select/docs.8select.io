@@ -53,4 +53,9 @@
   * [Examples](api/8.set-compose/examples/README.md)
     * [Product set of 5](api/8.set-compose/examples/product-set-of-5.md)
     * [Product set of 4 with alternatives](api/8.set-compose/examples/product-set-of-4-with-alternatives.md)
+* [8.LYTICS \(Alpha\)](api/8.lytics/README.md)
+  * [General](api/8.lytics/general.md)
+  * [view](api/8.lytics/view.md)
+  * [interact](api/8.lytics/interact.md)
+  * [order](api/8.lytics/order.md)
 
