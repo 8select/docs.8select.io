@@ -4,7 +4,7 @@ For the time being we only support a limited amount of KPIs and therefor only a 
 
 Currently there are three types of events: `view`, `interact` and `order`.
 
-### [view](view.md)
+### [view](view/)
 
 Whenever the user has seen some 8SELECT content, i.e. it was in the device's viewport. For example if an 8.SET Compose content is presented to the user.
 

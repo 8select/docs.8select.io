@@ -54,10 +54,6 @@
     * [Product set of 5](api/8.set-compose/examples/product-set-of-5.md)
     * [Product set of 4 with alternatives](api/8.set-compose/examples/product-set-of-4-with-alternatives.md)
 
----
-
-* [8.LYTICS \(Alpha\)](8.lytics.md)
-
 ## API Tracking
 
 * [Changelog](api-tracking/changelog.md)
@@ -65,8 +61,10 @@
   * [Introduction](api-tracking/general/introduction.md)
   * [Authentication](api-tracking/general/authentication.md)
   * [User Identification](api-tracking/general/user-identification.md)
+  * [Context](api-tracking/general/context.md)
 * [Events](api-tracking/events/README.md)
-  * [view](api-tracking/events/view.md)
+  * [view](api-tracking/events/view/README.md)
+    * [User views 8.SET Compose content](api-tracking/events/view/user-views-8.set-compose-content.md)
   * [interact](api-tracking/events/interact.md)
   * [order](api-tracking/events/order.md)
 

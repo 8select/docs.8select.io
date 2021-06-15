@@ -10,6 +10,10 @@ description: >-
 
 This example illustrates fetching 8.SET Compose product sets by a given SKU from your catalogue.
 
+{% hint style="warning" %}
+Please note that in the example the field is still called `productSets` but will soon be renamed to `setCompose`. For backwards compatibility reasons we will provide both fields for a while.
+{% endhint %}
+
 {% tabs %}
 {% tab title="GraphQL Query" %}
 ```graphql

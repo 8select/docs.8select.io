@@ -41,5 +41,5 @@ The property containing the type specific payload is always named after the type
 
 ### context
 
-The context is used to provide additional contextual information about the origin of a given event. As of now there is only one type of context \(api\) which is required to always be included.
+The context is used to provide additional contextual information about the origin of a given event. You can read the section about [context](context.md) to learn more.
 
