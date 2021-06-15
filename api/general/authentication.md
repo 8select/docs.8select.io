@@ -14,7 +14,7 @@ Your API ID is permanently linked to your 8SELECT account. It must be included i
 
 ```text
 POST /graphql
-Host: https://api-demp.8select.io
+Host: https://api.8select.io
 x-api-id: <Your API ID>
 ```
 

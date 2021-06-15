@@ -53,10 +53,20 @@
   * [Examples](api/8.set-compose/examples/README.md)
     * [Product set of 5](api/8.set-compose/examples/product-set-of-5.md)
     * [Product set of 4 with alternatives](api/8.set-compose/examples/product-set-of-4-with-alternatives.md)
-* [8.LYTICS \(Alpha\)](api/8.lytics/README.md)
-  * [General](api/8.lytics/general.md)
-  * [Events](api/8.lytics/events/README.md)
-    * [view](api/8.lytics/events/view.md)
-    * [interact](api/8.lytics/events/interact.md)
-    * [order](api/8.lytics/events/order.md)
+
+---
+
+* [8.LYTICS \(Alpha\)](8.lytics.md)
+
+## API Tracking
+
+* [Changelog](api-tracking/changelog.md)
+* [General](api-tracking/general/README.md)
+  * [Introduction](api-tracking/general/introduction.md)
+  * [Authentication](api-tracking/general/authentication.md)
+  * [User Identification](api-tracking/general/user-identification.md)
+* [Events](api-tracking/events/README.md)
+  * [view](api-tracking/events/view.md)
+  * [interact](api-tracking/events/interact.md)
+  * [order](api-tracking/events/order.md)
 
