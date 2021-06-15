@@ -11,6 +11,7 @@
 * [Product Export](integration/produkt-export.md)
 * [A/B Testing](integration/a-b-testing.md)
 * [Single Page Application](integration/single-page-application.md)
+* [Tag Manager](integration/tag-manager.md)
 
 ## Widgets
 
