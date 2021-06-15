@@ -23,6 +23,7 @@ The export must contain the following values:
 * Images
   * All available images in maximum resolution. For an optimal presentation at least one cut out image \(hollow man photography\).
   * Transfer images with least possible fillup / whitespace to optimize the presentation in the widgets.
+  * ⚠️ We deliver image thumbnails from our CDN and cache images heavily. If you change images you have to also change the image URL in order to invalidate the CDN cache! ⚠️
 
 {% hint style="danger" %}
 In order to access our Fashion Content Pool, further data is required. See [**Fashion Content Pool**](../fashion-content-pool/).
