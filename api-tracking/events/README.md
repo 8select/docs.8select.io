@@ -8,7 +8,7 @@ Currently there are three types of events: `view`, `interact` and `order`.
 
 Whenever the user has seen some 8SELECT content, i.e. it was in the device's viewport. For example if an 8.SET Compose content is presented to the user.
 
-### [interact](interact.md)
+### [interact](interact/)
 
 Whenever the user has interacted with 8SELECT content. For example clicked on a product.
 

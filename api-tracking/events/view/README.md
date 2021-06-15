@@ -1,6 +1,6 @@
 # view
 
-A view event should be triggered whenever a piece of content slides into the users viewport. Assuming that you are showing 8.SET Compose product set data, that event should look like the following example.
+A view event should be triggered whenever a piece of content slides into the users viewport. Assuming that you are showing 8.SET Compose product set data, that event should look like the following example:
 
 ```javascript
 { 
@@ -21,9 +21,32 @@ A view event should be triggered whenever a piece of content slides into the use
 }
 ```
 
-The `userId` must be a consistent identifier as described in the [user identification](../../general/user-identification.md) section. Context should currently always contain a single object `{ "type": "api" }`.
+The `userId` must be a consistent identifier as described in the [user identification](../../general/user-identification.md) section. The context should currently always contain a single object `{ "type": "api" }` as defined in the [context](../../general/context.md) section.
 
-### type
+A view event is identified by it's type `view` and an additional `view` property containing specific information about the content being viewed. This property should in turn have a type and content-specific payload.
 
-The type is `view` with an additional property named `view`. The view property will contain
+{% hint style="info" %}
+Currently, only `setCompose` views are taken into consideration.
+{% endhint %}
+
+## setCompose
+
+A view event with type `setCompose` must contain a `setCompose` property containing the `id` of the viewed product set:
+
+```javascript
+{ 
+	...
+
+	"view": {
+		"type": "setCompose",
+		"setCompose": {
+			"id": "1b3de0bd-95c6-435a-8bb9-f4cae0160388",
+		},
+	},
+
+	...
+}
+```
+
+
 

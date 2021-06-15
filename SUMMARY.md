@@ -65,6 +65,8 @@
 * [Events](api-tracking/events/README.md)
   * [view](api-tracking/events/view/README.md)
     * [User views 8.SET Compose content](api-tracking/events/view/user-views-8.set-compose-content.md)
-  * [interact](api-tracking/events/interact.md)
+  * [interact](api-tracking/events/interact/README.md)
+    * [User clicks on a product within 8.SET Compose content](api-tracking/events/interact/user-clicks-on-a-product-within-8.set-compose-content.md)
+    * [User adds a product to their card from within 8.SET Compose content](api-tracking/events/interact/user-adds-a-product-to-their-card-from-within-8.set-compose-content.md)
   * [order](api-tracking/events/order.md)
 

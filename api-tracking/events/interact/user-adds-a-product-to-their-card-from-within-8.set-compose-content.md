@@ -1,0 +1,61 @@
+# User adds a product to their card from within 8.SET Compose content
+
+Let's assume you are showing content from 8.SET Compose that was loaded via [8.API](../../../api/8.set-compose/). Whenever a user adds a product from within that content to their cart you should send the respective `interact` event.
+
+Suppose, 8.API returned a payload like this:
+
+```javascript
+{
+  "data": {
+    "setCompose": { // currently named productSets but will be renamed
+      "edges": [
+        {
+          "node": {
+            "id": "f0db275c-f7ef-4a2c-8704-f51318c261ba",
+            "setProducts": [
+              ...
+              {
+                "sku": "654321-7890"
+              }
+              ...
+            ]
+          }
+        }
+      ]
+    }
+  }
+}          
+```
+
+The event you send would look like that:
+
+```javascript
+{ 
+	"userId": "c57a43f7-eefc-462b-b5a8-0ef421e90f67",
+
+	"type": "interact",
+
+	"interact": {
+	  "action": "addToCart",
+		"type": "product",
+		"product": {
+			"sku": "654321-7890",
+		},
+	},
+
+	"context": [
+	  {
+			"type": "setCompose",
+			"setCompose": {
+				"id": "f0db275c-f7ef-4a2c-8704-f51318c261ba",
+			},
+	  },
+		{ "type": "api" }
+	]
+}
+```
+
+The type of the event is `interact`. The corresponding `interact` property is intended to specify the action and target of the event. In our case, this would be `addToCart` and  `product`. Again, to describe the target more specifically, we include the `sku` of the product interacted with — as returned in the API response — in a `product` property.
+
+Lastly, the `context` must contain an object  `{ "type": "api" }` indicating the source of the data and the `setCompose` context specifying the containing product set returned by the API as described in the [context](../../general/context.md) section.
+

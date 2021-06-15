@@ -41,5 +41,5 @@ The property containing the type specific payload is always named after the type
 
 ### context
 
-The context is used to provide additional contextual information about the origin of a given event. You can read the section about [context](context.md) to learn more.
+The context is used to provide additional contextual information about the origin of a given event. You can find out more in the [context](context.md) section.
 
