@@ -28,11 +28,11 @@ x-api-id: <Your API ID>
 }
 ```
 
-Every event has to contain a type, a context and a type-specific payload. To enable commission based pricing a userId is required as well.
+Every event has to contain a `type`, a `context` and a type-specific payload. To enable commission based pricing a `userId` is required as well.
 
 ### userId
 
-The `userId` must be consistent for all events concerning a single user. It should be anonymised, i.e. a generated id without any connection to personal data. You can read the section about [user identification](user-identification.md) to learn more.
+The `userId` must be consistent for all events concerning a single user. It should be anonymized, i.e. a generated id without any connection to personal data. You can read the section about [user identification](user-identification.md) to learn more.
 
 ### type
 
