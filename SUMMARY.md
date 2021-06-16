@@ -69,5 +69,6 @@
   * [interact](api-tracking/events/interact/README.md)
     * [User clicks on a product within 8.SET Compose content](api-tracking/events/interact/user-clicks-on-a-product-within-8.set-compose-content.md)
     * [User adds a product to their card from within 8.SET Compose content](api-tracking/events/interact/user-adds-a-product-to-their-card-from-within-8.set-compose-content.md)
+    * [Example what is not a product interaction](api-tracking/events/interact/example-what-is-not-a-product-interaction.md)
   * [order](api-tracking/events/order.md)
 
