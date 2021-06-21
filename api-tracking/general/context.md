@@ -1,6 +1,6 @@
 # Context
 
-As implied by its name the context is supposed to provide contextual information about an event. This will help to classify and interpret KPIs generated from the events. Put differently the context describes the user journey from the inside out. This can range from the specifics of single elements in a product set to global information such as the containing page. Some of this contextual data will be attached at the API level. Other information has to be supplied from the client-side.
+As implied by its name the context is supposed to provide contextual information about an event. This will help to classify and interpret KPIs generated from the events. Put differently the context describes the user journey from the inside out. This can range from the specifics of single elements in a product set to global information such as the containing page or even enduser navigating the pages. Some of this contextual data will be attached at the API level. Other information has to be supplied from the client-side.
 
 ```javascript
 {
@@ -23,13 +23,20 @@ Similarly to the event structure itself, `context` elements will always have a `
 Currently, only two pieces of context are supported: `api` and `setCompose`.
 {% endhint %}
 
-## api
+## user
 
-If you are using [8.API](../../api/8.set-compose/) to fetch product set data, you must include the following context in your events:
+If you are using commision-based pricing, you must include the following context in your events:
 
 ```javascript
-{ "type": "api" }
+{ 
+  "type": "user",
+  "user": {
+    "id": "<user-id>"
+  }
+}
 ```
+
+Read the section about [user identification](user-identification.md) for more information on commision-based pricing and the requirements for the anonymized user ID.
 
 ## setCompose
 

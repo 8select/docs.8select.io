@@ -4,8 +4,6 @@ An interact event should be triggered whenever a piece of content is interacted 
 
 ```javascript
 { 
-	"userId": "c57a43f7-eefc-462b-b5a8-0ef421e90f67",
-
 	"type": "interact",
 
 	"interact": {
@@ -23,7 +21,12 @@ An interact event should be triggered whenever a piece of content is interacted 
 	      "id": "1b3de0bd-95c6-435a-8bb9-f4cae0160388"
 	    }
 	  },
-		{ "type": "api" }
+		{
+		  "type": "user",
+		  "user": {
+		    "id": "c57a43f7-eefc-462b-b5a8-0ef421e90f67"
+		  }
+		}
 	]
 }
 ```

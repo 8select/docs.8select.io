@@ -4,8 +4,6 @@ A view event should be triggered whenever a piece of content slides into the use
 
 ```javascript
 { 
-	"userId": "c57a43f7-eefc-462b-b5a8-0ef421e90f67",
-
 	"type": "view",
 
 	"view": {
@@ -16,7 +14,12 @@ A view event should be triggered whenever a piece of content slides into the use
 	},
 
 	"context": [
-		{ "type": "api" }
+		{
+		  "type": "user",
+		  "user": {
+		    "id": "c57a43f7-eefc-462b-b5a8-0ef421e90f67"
+		  }
+		}
 	]
 }
 ```

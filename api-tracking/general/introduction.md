@@ -11,8 +11,6 @@ Content-Type: application/json
 x-api-id: <Your API ID>
 
 { 
-	"userId": "c57a43f7-eefc-462b-b5a8-0ef421e90f67",
-
 	"type": "view",
 
 	"view": {
@@ -23,16 +21,21 @@ x-api-id: <Your API ID>
 	},
 
 	"context": [
-		{ "type": "api" }
+		{ 
+		  "type": "user",
+		  "user": {
+		    "id": "c57a43f7-eefc-462b-b5a8-0ef421e90f67"
+		  }
+		}
 	]
 }
 ```
 
-Every event has to contain a `type`, a `context` and a type-specific payload. To enable commission based pricing a `userId` is required as well.
+Every event has to contain a `type`, a `context` and a type-specific payload. To enable commission based pricing an entry of type `user` specifying the respective user `id` is required in the context as well.
 
-### userId
+### context\[?\(@.type == 'user'\)\].user.id
 
-The `userId` must be consistent for all events concerning a single user. It should be anonymized, i.e. a generated id without any connection to personal data. You can read the section about [user identification](user-identification.md) to learn more.
+The user `id` sent in the context array must be consistent for all events concerning a single user. It should be anonymized, i.e. a generated id without any connection to personal data. You can read the section about [user identification](user-identification.md) to learn more.
 
 ### type
 

@@ -30,8 +30,6 @@ The event you send would look like that:
 
 ```javascript
 { 
-	"userId": "c57a43f7-eefc-462b-b5a8-0ef421e90f67",
-
 	"type": "view",
 
 	"view": {
@@ -42,7 +40,12 @@ The event you send would look like that:
 	},
 
 	"context": [
-		{ "type": "api" }
+		{
+		  "type": "user",
+		  "user": {
+		    "id": "c57a43f7-eefc-462b-b5a8-0ef421e90f67"
+		  }
+		}
 	]
 }
 ```

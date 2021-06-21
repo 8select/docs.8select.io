@@ -4,8 +4,6 @@ An order event should be triggered whenever a user, i.e. one of your customers, 
 
 ```javascript
 { 
-	"userId": "c57a43f7-eefc-462b-b5a8-0ef421e90f67",
-
 	"type": "order",
 
 	"order": {
@@ -29,6 +27,15 @@ An order event should be triggered whenever a user, i.e. one of your customers, 
 			}
 		]
 	}
+	
+  "context": [
+		{
+		  "type": "user",
+		  "user": {
+		    "id": "c57a43f7-eefc-462b-b5a8-0ef421e90f67"
+		  }
+		}
+	]
 }
 ```
 

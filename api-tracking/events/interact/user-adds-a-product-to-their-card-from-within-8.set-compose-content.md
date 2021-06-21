@@ -33,8 +33,6 @@ The event you send would look like that:
 
 ```javascript
 { 
-	"userId": "c57a43f7-eefc-462b-b5a8-0ef421e90f67",
-
 	"type": "interact",
 
 	"interact": {
@@ -52,7 +50,12 @@ The event you send would look like that:
 				"id": "f0db275c-f7ef-4a2c-8704-f51318c261ba",
 			},
 	  },
-		{ "type": "api" }
+		{
+		  "type": "user",
+		  "user": {
+		    "id": "c57a43f7-eefc-462b-b5a8-0ef421e90f67"
+		  }
+		}
 	]
 }
 ```
