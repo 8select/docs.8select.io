@@ -31,7 +31,7 @@ x-api-id: <Your API ID>
 }
 ```
 
-Every event has to contain a `type`, a `context` and a type-specific payload. To enable commission based pricing an entry of type `user` specifying the respective user `id` is required in the context as well.
+Every event has to contain a `type`, a `context` and a type-specific payload. Additionally, the context must contain an entry of type `user`, specifying the respective user `id`. 
 
 ### context\[?\(@.type == 'user'\)\].user.id
 

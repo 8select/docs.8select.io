@@ -52,5 +52,5 @@ The event you send would look like that:
 
 The type of the event is `view`. The corresponding `view` property is intended to specify the target of the event. In our case, this would be `setCompose` as that is the type of data we requested from the API. Again, to describe the target more specifically, we include the `id` of the presented product set — as returned in the API response — in a `setCompose` property.
 
-Lastly, the `context` must contain a single object  `{ "type": "api" }` as described in the [context](../../general/context.md) section.
+Lastly, the `context` must contain an object with type `user` as described in the [context](../../general/context.md) section.
 

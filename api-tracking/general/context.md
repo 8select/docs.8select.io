@@ -20,12 +20,16 @@ As implied by its name the context is supposed to provide contextual information
 Similarly to the event structure itself, `context` elements will always have a `type` and optionally a type-specific payload named thereafter. 
 
 {% hint style="info" %}
-Currently, only two pieces of context are supported: `api` and `setCompose`.
+Currently, only two context types are supported: `setCompose` and `user`.
 {% endhint %}
 
 ## user
 
-If you are using commision-based pricing, you must include the following context in your events:
+{% hint style="danger" %}
+**Required**: Every event _must_ contain a context item with type `user`. Please read the [user identification](user-identification.md) section to learn more about the technical specifics of this context.
+{% endhint %}
+
+If you are using commision-based pricing, the `user` context is responsible for the event attribution:
 
 ```javascript
 { 

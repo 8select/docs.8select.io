@@ -31,7 +31,7 @@ An interact event should be triggered whenever a piece of content is interacted 
 }
 ```
 
-The `userId` must be a consistent identifier as described in the [user identification](../../general/user-identification.md) section. The `context` should currently always contain object `{ "type": "api" }` and the information about the containing product set as defined in the [context](../../general/context.md) section.
+The context array must currently always contain an object with type `user` as defined in the [context](../../general/context.md) section and the user ID specified therein must be a consistent identifier as described in the [user identification](../../general/user-identification.md) section. 
 
 An interact event is identified by its type `interact` and an additional `interact` property containing specific information about the content being interacted with. This property should in turn have a type and content-specific payload, as well as an optional third property `action` specifying the user interaction, e.g. `click` or `addToCart`.
 

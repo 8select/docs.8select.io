@@ -24,7 +24,7 @@ A view event should be triggered whenever a piece of content slides into the use
 }
 ```
 
-The `userId` must be a consistent identifier as described in the [user identification](../../general/user-identification.md) section. The context should currently always contain a single object `{ "type": "api" }` as defined in the [context](../../general/context.md) section.
+The context array must currently always contain an object with type `user` as defined in the [context](../../general/context.md) section and the user ID specified therein must be a consistent identifier as described in the [user identification](../../general/user-identification.md) section. 
 
 A view event is identified by it's type `view` and an additional `view` property containing specific information about the content being viewed. This property should in turn have a type and content-specific payload.
 

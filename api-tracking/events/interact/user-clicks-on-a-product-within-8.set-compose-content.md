@@ -62,5 +62,5 @@ The event you send would look like that:
 
 The type of the event is `interact`. The corresponding `interact` property is intended to specify the target and action of the event. In our case, this would be a `click` on a  `product`. Again, to describe the target more specifically, we include the `sku` of the product interacted with — as returned in the API response — in a `product` property.
 
-Lastly, the `context` must contain an object  `{ "type": "api" }` indicating the source of the data and the `setCompose` context specifying the containing product set returned by the API as described in the [context](../../general/context.md) section.
+Lastly, the `context` must contain an object with type `user` as described in the [context](../../general/context.md) section, as well as the `setCompose` context specifying the containing product set returned by the API as described in the [context](../../general/context.md) section.
 
