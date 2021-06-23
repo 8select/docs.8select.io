@@ -14,10 +14,10 @@ schema {
 type Query {
   
   "Fetch 8.SET Compose product sets for a given trigger product."
-  productSets(
+  setCompose(
     
     "Specifies the trigger product for which to fetch product sets."
-    input: ProductSetQueryInput!
+    input: SetComposeQueryInput!
     
     "An optional number of product sets to fetch."
     first: Int
@@ -26,8 +26,8 @@ type Query {
 }
 
 
-"The set of query types supported by `productSets`."
-enum ProductSetQueryType {
+"The set of query types supported by `setCompose`."
+enum SetComposeQueryType {
   
   "The identifier specifying a set of different products of the same model."
   MODEL_ID
@@ -42,10 +42,10 @@ enum ProductSetQueryType {
 
 
 "The trigger product for which to query product sets."
-input ProductSetQueryInput {
+input SetComposeQueryInput {
   
   "The type of identifier by which to specify the trigger product."
-  queryType: ProductSetQueryType!
+  queryType: SetComposeQueryType!
   
   "The actual identifier to which the `queryType` refers."
   value: String!

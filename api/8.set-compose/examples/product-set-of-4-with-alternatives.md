@@ -29,7 +29,7 @@ In the following example we are using the `MAIN_SKU` to query a product set and 
 {% tab title="GraphQL Query" %}
 ```graphql
 query {
-  productSets(input: { queryType: MAIN_SKU, value: "5969155" }) {
+  setCompose(input: { queryType: MAIN_SKU, value: "5969155" }) {
     edges {
       node {
         setProducts {
@@ -54,7 +54,7 @@ query {
 curl https://api-demo.8select.io/graphql \
 -H 'x-api-id: <Your API ID>'  \
 -H 'Content-Type: application/json' \
--d '{"query":"query { productSets(input: {queryType: MAIN_SKU, value: \"5969155\"}) { edges { node { setProducts { sku alternatives { edges { node { sku } } } } } } } }"}'
+-d '{"query":"query { setCompose(input: {queryType: MAIN_SKU, value: \"5969155\"}) { edges { node { setProducts { sku alternatives { edges { node { sku } } } } } } } }"}'
 
 
 
@@ -66,7 +66,7 @@ curl https://api-demo.8select.io/graphql \
 ```javascript
 {
   "data": {
-    "productSets": {
+    "setCompose": {
       "edges": [
         {
           "node": {
@@ -346,7 +346,7 @@ As can be seen in the response, the list of alternatives can be quite extensive 
 {% tab title="GraphQL Query" %}
 ```graphql
 query {
-  productSets(input: { queryType: MAIN_SKU, value: "5969155" }) {
+  setCompose(input: { queryType: MAIN_SKU, value: "5969155" }) {
     edges {
       node {
         setProducts {
@@ -371,7 +371,7 @@ query {
 curl https://api-demo.8select.io/graphql \
 -H 'x-api-id: <Your API ID>'  \
 -H 'Content-Type: application/json' \
--d '{"query":"query { productSets(input: {queryType: MAIN_SKU, value: \"5969155\"}) { edges { node { setProducts { sku alternatives { edges { node { sku } } } } } } } }"}'
+-d '{"query":"query { setCompose(input: {queryType: MAIN_SKU, value: \"5969155\"}) { edges { node { setProducts { sku alternatives { edges { node { sku } } } } } } } }"}'
 
 
 
@@ -383,7 +383,7 @@ curl https://api-demo.8select.io/graphql \
 ```javascript
 {
   "data": {
-    "productSets": {
+    "setCompose": {
       "edges": [
         {
           "node": {

@@ -17,7 +17,7 @@ Objects that share a relationship within our API are referred to as **nodes** an
 According to this structure, you could query the title of all 8.SET Compose product sets for a product with the SKU `123456-7890` in your catalogue by using the follwing query:
 
 ```text
-productSets(input: {queryType: SKU, value: "123456-7890"}) {
+setCompose(input: {queryType: SKU, value: "123456-7890"}) {
     edges {
         node {
             title
@@ -31,7 +31,7 @@ The responding result will reflect the same structure:
 ```text
 {
     "data": {
-        "productSets": {
+        "setCompose": {
             "edges": [
                 {
                     "node" : {
@@ -57,7 +57,7 @@ An optional parameter `first` can be used to limit the number of items returned 
 The following query for example, would allow you to return only a single 8.SET Compose product set for a product with the SKU `123456-7890` in your catalogue:
 
 ```text
-productSets(input: {queryType: SKU, value: "123456-7890"}, first: 1) {
+setCompose(input: {queryType: SKU, value: "123456-7890"}, first: 1) {
     edges {
         node {
             title
@@ -71,7 +71,7 @@ You can pass an arbitrary positive integer to the `first` argument. Bear in mind
 ```text
 {
     "data": {
-        "productSets": {
+        "setCompose": {
             "edges": [
                 {
                     "node" : {
@@ -95,7 +95,7 @@ The `after` parameter can be used to traverse through a paginated result. It exp
 Using a combination of slicing and cursor-based pagination for example, you could iterate through a list of 8.SET Compose product sets one by one:
 
 ```text
-productSets(
+setCompose(
     input: {queryType: SKU, value: "123456-7890"}, 
     first: 1
 ) {
@@ -115,7 +115,7 @@ This would result in the following response:
 ```text
 {
     "data": {
-        "productSets": {
+        "setCompose": {
             "edges": [
                 {
                     "node" : {
@@ -134,7 +134,7 @@ This would result in the following response:
 Now using the cursor from this response we can query the next product set:
 
 ```text
-productSets(
+setCompose(
     input: {queryType: SKU, value: "123456-7890"}, 
     after: "Zjk3NzA3ZTEtMWNiYS00YWQ0LWFiNDQtM2VmNTM0ZWYzNWUx", 
     first: 1
@@ -155,7 +155,7 @@ Which would in turn respond with the following result:
 ```text
 {
     "data": {
-        "productSets": {
+        "setCompose": {
             "edges": [
                 {
                     "node" : {

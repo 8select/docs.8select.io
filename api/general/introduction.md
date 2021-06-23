@@ -20,10 +20,10 @@ At 8SELECT we use GraphQL primarily because it enables developers to make API ca
 
 Most commonly GraphQL can be queried by making HTTP `POST` requests to its respective endpoint. At 8SELECT this endpoint currently is `https://api.8select.io`**`/graphql`**. To make a request you can use cURL or any other HTTP compatible client.
 
-Currently we only support `productSets` as a top-level resolver in our query schema. Given a specific product identifier, it will return a list of **8.SET Compose** product sets. Assuming you have a product with the SKU `123456-7890` in your catalogue,  you could use the following example to query the titles of respective product sets:
+Currently we only support `setCompose` as a top-level resolver in our query schema. Given a specific product identifier, it will return a list of **8.SET Compose** product sets. Assuming you have a product with the SKU `123456-7890` in your catalogue,  you could use the following example to query the titles of respective product sets:
 
 ```text
-productSets(input: {queryType: SKU, value: "123456-7890"}) {
+setCompose(input: {queryType: SKU, value: "123456-7890"}) {
     edges {
         node {
             title
@@ -40,7 +40,7 @@ Host: https://api-demo.8select.io
 Content-Type: application/json
 x-api-id: <Your API ID>
 {
-    "query": "{ productSets(input: {queryType: SKU, value: \"123456-7890\"}) { edges { node { title } } } }"
+    "query": "{ setCompose(input: {queryType: SKU, value: \"123456-7890\"}) { edges { node { title } } } }"
 }
 ```
 
@@ -50,7 +50,7 @@ Using `curl`, you could make the request with the following call:
 curl https://api-demo.8select.io/graphql \
      -H 'Content-Type: application/json' \
      -H 'x-api-id: <Your API ID>' \
-     -d '{ "query": "{ productSets(input: {queryType: SKU, value: \"123456-7890\"}) { edges { node { title } } } }" }'
+     -d '{ "query": "{ setCompose(input: {queryType: SKU, value: \"123456-7890\"}) { edges { node { title } } } }" }'
 ```
 
 #### Further Information

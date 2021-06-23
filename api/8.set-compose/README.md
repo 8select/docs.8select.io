@@ -11,14 +11,14 @@ description: >-
 This example illustrates fetching 8.SET Compose product sets by a given SKU from your catalogue.
 
 {% hint style="warning" %}
-Please note that in the example the field is still called `productSets` but will soon be renamed to `setCompose`. For backwards compatibility reasons we will provide both fields for a while.
+The `setCompose` query was formerly named `productSets`. For backwards compatibility we will provide and maintain both fields for a while. Please be aware though, that `productSets` has been deprecated and will be removed at some point in the future.
 {% endhint %}
 
 {% tabs %}
 {% tab title="GraphQL Query" %}
 ```graphql
 query {
-  productSets(input: {queryType: SKU, value: "486890-0001-09900"}, first: 1) {
+  setCompose(input: {queryType: SKU, value: "486890-0001-09900"}, first: 1) {
     edges {
       node {
         id
@@ -97,7 +97,7 @@ query {
 curl https://api-demo.8select.io/graphql \
 -H 'x-api-id: <Your API ID>'  \
 -H 'Content-Type: application/json' \
--d '{"query":"query {\n  productSets(input: {queryType: SKU, value: \"486890-0001-09900\"}, first: 1) {\n    edges {\n      node {\n        setProducts {\n          variants {\n            edges {\n              node {\n                sku\n              }\n            }\n          }\n          model {\n            id\n          }\n          alternatives {\n            edges {\n              node {\n                sku\n                variants {\n                  edges {\n                    node {\n                      sku\n                    }\n                  }\n                }\n              }\n            }\n          }\n          sku\n        }\n        description\n        id\n        title\n        triggerProduct {\n          alternatives {\n            edges {\n              node {\n                sku\n                model {\n                  id\n                }\n                variants {\n                  edges {\n                    node {\n                      sku\n                    }\n                  }\n                }\n              }\n            }\n          }\n          model {\n            id\n          }\n          sku\n          variants {\n            pageInfo {\n              endCursor\n            }\n            edges {\n              node {\n                sku\n              }\n            }\n          }\n        }\n      }\n    }\n  }\n}\n"}'
+-d '{"query":"query {\n  setCompose(input: {queryType: SKU, value: \"486890-0001-09900\"}, first: 1) {\n    edges {\n      node {\n        setProducts {\n          variants {\n            edges {\n              node {\n                sku\n              }\n            }\n          }\n          model {\n            id\n          }\n          alternatives {\n            edges {\n              node {\n                sku\n                variants {\n                  edges {\n                    node {\n                      sku\n                    }\n                  }\n                }\n              }\n            }\n          }\n          sku\n        }\n        description\n        id\n        title\n        triggerProduct {\n          alternatives {\n            edges {\n              node {\n                sku\n                model {\n                  id\n                }\n                variants {\n                  edges {\n                    node {\n                      sku\n                    }\n                  }\n                }\n              }\n            }\n          }\n          model {\n            id\n          }\n          sku\n          variants {\n            pageInfo {\n              endCursor\n            }\n            edges {\n              node {\n                sku\n              }\n            }\n          }\n        }\n      }\n    }\n  }\n}\n"}'
 ```
 {% endtab %}
 
@@ -105,7 +105,7 @@ curl https://api-demo.8select.io/graphql \
 ```javascript
 {
   "data": {
-    "productSets": {
+    "setCompose": {
       "edges": [
         {
           "node": {

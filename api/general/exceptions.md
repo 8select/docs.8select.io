@@ -17,14 +17,14 @@ Unauthorized requests cannot be resolved properly. All top-level fields in the i
 Let's a ssume the following query to fetch 8.SET Compose product sets for two different products from your catalogue at the same time:
 
 ```text
-productA: productSets(input: {queryType: SKU, value: "123456-7890"}) {
+productA: setCompose(input: {queryType: SKU, value: "123456-7890"}) {
     edges {
         node {
             title
         }
     }
 }
-productB: productSets(input: {queryType: SKU, value: "098764-4321"}) {
+productB: setCompose(input: {queryType: SKU, value: "098764-4321"}) {
     edges {
         node {
             title
@@ -40,7 +40,7 @@ POST /graphql
 Host: https://api-demo.8select.io
 Content-Type: application/json
 {
-    "query": "{ productA: productSets(input: {queryType: SKU, value: \"000021803-3\"}) { edges { node { title } } } productB: productSets(input: {queryType: SKU, value: \"000021803-1\"}) { edges { node { title } } } }"}"
+    "query": "{ productA: setCompose(input: {queryType: SKU, value: \"000021803-3\"}) { edges { node { title } } } productB: setCompose(input: {queryType: SKU, value: \"000021803-1\"}) { edges { node { title } } } }"}"
 }
 ```
 

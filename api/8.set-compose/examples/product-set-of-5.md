@@ -28,7 +28,7 @@ In the following example we are using the `MAIN_SKU` to query a product set and 
 {% tab title="GraphQL Query" %}
 ```graphql
 query {
-  productSets(input: { queryType: MAIN_SKU, value: "457297-0001" }) {
+  setCompose(input: { queryType: MAIN_SKU, value: "457297-0001" }) {
     edges {
       node {
         triggerProduct {
@@ -49,7 +49,7 @@ query {
 curl https://api-demo.8select.io/graphql \
 -H 'x-api-id: <Your API ID>'  \
 -H 'Content-Type: application/json' \
--d '{"query":"query { productSets(input: {queryType: MAIN_SKU, value: \"457297-0001\"}) { edges { node { triggerProduct { sku } setProducts { sku } } } } }"}'
+-d '{"query":"query { setCompose(input: {queryType: MAIN_SKU, value: \"457297-0001\"}) { edges { node { triggerProduct { sku } setProducts { sku } } } } }"}'
 ```
 {% endtab %}
 
@@ -57,7 +57,7 @@ curl https://api-demo.8select.io/graphql \
 ```javascript
 {
   "data": {
-    "productSets": {
+    "setCompose": {
       "edges": [
         {
           "node": {
@@ -96,7 +96,7 @@ Thus, our query could become as simple as this:
 {% tab title="GraphQL Query" %}
 ```graphql
 query {
-  productSets(input: { queryType: MAIN_SKU, value: "457297-0001" }) {
+  setCompose(input: { queryType: MAIN_SKU, value: "457297-0001" }) {
     edges {
       node {
         setProducts {
@@ -114,7 +114,7 @@ query {
 curl https://api-demo.8select.io/graphql \
 -H 'x-api-id: <Your API ID>'  \
 -H 'Content-Type: application/json' \
--d '{"query":"query Query { productSets(input: {queryType: MAIN_SKU, value: \"457297-0001\"}) { edges { node { setProducts { sku } } } } }"}'
+-d '{"query":"query Query { setCompose(input: {queryType: MAIN_SKU, value: \"457297-0001\"}) { edges { node { setProducts { sku } } } } }"}'
 ```
 {% endtab %}
 
@@ -122,7 +122,7 @@ curl https://api-demo.8select.io/graphql \
 ```javascript
 {
   "data": {
-    "productSets": {
+    "setCompose": {
       "edges": [
         {
           "node": {
