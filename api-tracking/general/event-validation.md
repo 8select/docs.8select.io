@@ -45,6 +45,6 @@ The above event is missing the `setCompose` property, which is required for `vie
 ```
 
 {% hint style="warning" %}
-Please note, that the validation endpoint is currently set to be very verbose. This means, it will try to match incoming events against all possible event types. The reported schema violations will thus include additional alerts regarding the allowed values of the top-level `type` property. These can be disregarded for now and we are working on a solution to make the output easier to interpret.
+Please note, that the validation endpoint is currently set to be very verbose. This means, it will often contain multiple alerts caused by the same schema violation. We are working on a solution to make the output more concise.
 {% endhint %}
 
