@@ -63,6 +63,7 @@
   * [Authentication](api-tracking/general/authentication.md)
   * [Context](api-tracking/general/context.md)
   * [User Identification](api-tracking/general/user-identification.md)
+  * [Event Validation](api-tracking/general/event-validation.md)
 * [Events](api-tracking/events/README.md)
   * [view](api-tracking/events/view/README.md)
     * [User views 8.SET Compose content](api-tracking/events/view/user-views-8.set-compose-content.md)
