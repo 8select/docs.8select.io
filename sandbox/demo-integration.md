@@ -30,6 +30,10 @@ You can add any widget via its id like described in the section [WIDGETS](https:
 
 ```javascript
 // Add 8.SET Compose Widget
-_8select.demo('sys-psv')
+_8select.demo('8.SET-Compose')
 ```
+
+{% hint style="warning" %}
+Currently only the widget `8.SET-Compose` supports the demo mode.
+{% endhint %}
 
