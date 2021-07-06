@@ -31,10 +31,6 @@
   * [Details and examples](produktdaten-uebermitteln/fashion-content-pool/details.md)
 * [Image Bot](produktdaten-uebermitteln/image-bot.md)
 
-## Plug&Play Integration
-
-* [Plugins](plug-and-play-integration/plugins.md)
-
 ## Sandbox
 
 * [Demo-Integration](sandbox/demo-integration.md)
