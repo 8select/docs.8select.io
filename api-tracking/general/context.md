@@ -7,12 +7,14 @@ As implied by its name the context is supposed to provide contextual information
   ...,
 	"context": [
 		{
-			"type": "setCompose",
-			"setCompose": {
-				"id": "1b3de0bd-95c6-435a-8bb9-f4cae0160388",
+			"content": {
+				"setCompose": {
+					"id": "1b3de0bd-95c6-435a-8bb9-f4cae0160388",
+				},
+				"type": "setCompose"
 			},
-		},
-		{ "type": "api" }
+			"type": "content",
+		}
 	]
 }
 ```
@@ -20,16 +22,16 @@ As implied by its name the context is supposed to provide contextual information
 Similarly to the event structure itself, `context` elements will always have a `type` and optionally a type-specific payload named thereafter. 
 
 {% hint style="info" %}
-Currently, only two context types are supported: `setCompose` and `user`.
+Currently, only two context types are supported: `content` and `user`.
 {% endhint %}
 
 ## user
 
 {% hint style="danger" %}
-**Required**: Every event _must_ contain a context item with type `user`. Please read the [user identification](user-identification.md) section to learn more about the technical specifics of this context.
+If you are using **commision-based pricing**, you must provide a `user` context.
 {% endhint %}
 
-If you are using commision-based pricing, the `user` context is responsible for the event attribution:
+The `user` context is responsible for the event attribution:
 
 ```javascript
 { 
@@ -42,16 +44,23 @@ If you are using commision-based pricing, the `user` context is responsible for 
 
 Read the section about [user identification](user-identification.md) for more information on commision-based pricing and the requirements for the anonymized user ID.
 
-## setCompose
+## content
 
-If the tracked interaction takes place within the context of an 8.SET Compose product set, e.g. a click on one of the products in the set, the following information must be included in the context of this event:
+If the tracked interaction takes place within the context of some 8SELECT-provided content, e.g. a click on one of the products in an 8.SET Compose product set, the following information must be included in the context of this event:
 
 ```javascript
 {
-  "type": "setCompose",
-  "setCompose": {
-    "id": "1b3de0bd-95c6-435a-8bb9-f4cae0160388",
+  "content": {
+    "setCompose": {
+      "id": "<set-id>",
+    },
+    "type": "setCompose"
   },
+  "type": "content",
 }
 ```
+
+{% hint style="info" %}
+Currently, only content of type `setCompose` is supported.
+{% endhint %}
 

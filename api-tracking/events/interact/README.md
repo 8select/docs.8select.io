@@ -16,10 +16,13 @@ An interact event should be triggered whenever a piece of content is interacted 
 
 	"context": [
 	  {
-	    "type": "setCompose",
-	    "setCompose": {
-	      "id": "1b3de0bd-95c6-435a-8bb9-f4cae0160388"
-	    }
+			"content": {
+	      "setCompose": {
+	        "id": "1b3de0bd-95c6-435a-8bb9-f4cae0160388"
+	      },
+      	"type": "setCompose",
+			},
+	    "type": "content"
 	  },
 		{
 		  "type": "user",

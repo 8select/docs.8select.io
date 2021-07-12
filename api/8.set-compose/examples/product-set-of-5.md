@@ -31,6 +31,7 @@ query {
   setCompose(input: { queryType: MAIN_SKU, value: "457297-0001" }) {
     edges {
       node {
+        id # for 8.API tracking
         triggerProduct {
           sku
         }
@@ -49,7 +50,8 @@ query {
 curl https://api-demo.8select.io/graphql \
 -H 'x-api-id: <Your API ID>'  \
 -H 'Content-Type: application/json' \
--d '{"query":"query { setCompose(input: {queryType: MAIN_SKU, value: \"457297-0001\"}) { edges { node { triggerProduct { sku } setProducts { sku } } } } }"}'
+-d '{"query":"query { setCompose(input: {queryType: MAIN_SKU, value: \"457297-0001\"}) { edges { node { id triggerProduct { sku } setProducts { sku } } } } }"}'
+
 ```
 {% endtab %}
 
@@ -61,6 +63,7 @@ curl https://api-demo.8select.io/graphql \
       "edges": [
         {
           "node": {
+            "id": "6fdf9c7e-3b28-4e39-9657-479cf757cabf",
             "triggerProduct": {
               "sku": "457297-0001"
             },
@@ -88,6 +91,10 @@ curl https://api-demo.8select.io/graphql \
 {% endtab %}
 {% endtabs %}
 
+{% hint style="info" %}
+The `id` is queried, so we can provide it as context when tracking 8.SET Compose interactions. To learn more, please refer to the [content context section](../../../api-tracking/general/context.md#content) of API tracking.
+{% endhint %}
+
 As can be seen, information about the `triggerProduct` must be queried separately. In our case we actually would not even need to query this field, as we already know the SKU of the product beforehand. We were using it to query the 8.SET Compose product set in the first place.
 
 Thus, our query could become as simple as this:
@@ -99,6 +106,7 @@ query {
   setCompose(input: { queryType: MAIN_SKU, value: "457297-0001" }) {
     edges {
       node {
+        id # for 8.API tracking
         setProducts {
           sku
         }
@@ -114,7 +122,8 @@ query {
 curl https://api-demo.8select.io/graphql \
 -H 'x-api-id: <Your API ID>'  \
 -H 'Content-Type: application/json' \
--d '{"query":"query Query { setCompose(input: {queryType: MAIN_SKU, value: \"457297-0001\"}) { edges { node { setProducts { sku } } } } }"}'
+-d '{"query":"query Query { setCompose(input: {queryType: MAIN_SKU, value: \"457297-0001\"}) { edges { node { id setProducts { sku } } } } }"}'
+
 ```
 {% endtab %}
 
@@ -126,6 +135,7 @@ curl https://api-demo.8select.io/graphql \
       "edges": [
         {
           "node": {
+            "id": "6fdf9c7e-3b28-4e39-9657-479cf757cabf",
             "setProducts": [
               {
                 "sku": "476793-0003"

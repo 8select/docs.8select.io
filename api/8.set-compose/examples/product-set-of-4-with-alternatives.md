@@ -32,6 +32,7 @@ query {
   setCompose(input: { queryType: MAIN_SKU, value: "5969155" }) {
     edges {
       node {
+        id # for 8.API tracking
         setProducts {
           sku
           alternatives {
@@ -54,7 +55,7 @@ query {
 curl https://api-demo.8select.io/graphql \
 -H 'x-api-id: <Your API ID>'  \
 -H 'Content-Type: application/json' \
--d '{"query":"query { setCompose(input: {queryType: MAIN_SKU, value: \"5969155\"}) { edges { node { setProducts { sku alternatives { edges { node { sku } } } } } } } }"}'
+-d '{"query":"query { setCompose(input: {queryType: MAIN_SKU, value: \"5969155\"}) { edges { node { id setProducts { sku alternatives { edges { node { sku } } } } } } } }"}'
 
 
 
@@ -70,6 +71,7 @@ curl https://api-demo.8select.io/graphql \
       "edges": [
         {
           "node": {
+            "id": "6fdf9c7e-3b28-4e39-9657-479cf757cabf",
             "setProducts": [
               {
                 "sku": "2473016",
@@ -340,6 +342,10 @@ curl https://api-demo.8select.io/graphql \
 {% endtab %}
 {% endtabs %}
 
+{% hint style="info" %}
+The `id` is queried, so we can provide it as context when tracking 8.SET Compose interactions. To learn more, please refer to the [content context section](../../../api-tracking/general/context.md#content) of API tracking.
+{% endhint %}
+
 As can be seen in the response, the list of alternatives can be quite extensive depending on the respective product. Let's say, we want to show 10 alternatives at most to make the UI easier to navigate. There would be no reason to fetch more product alternatives than necessary. To achieve this, we can use the `first` paramter to limit the number of returned alternatives:
 
 {% tabs %}
@@ -349,6 +355,7 @@ query {
   setCompose(input: { queryType: MAIN_SKU, value: "5969155" }) {
     edges {
       node {
+        id # for 8.API tracking
         setProducts {
           sku
           alternatives(first: 10) {
@@ -371,7 +378,7 @@ query {
 curl https://api-demo.8select.io/graphql \
 -H 'x-api-id: <Your API ID>'  \
 -H 'Content-Type: application/json' \
--d '{"query":"query { setCompose(input: {queryType: MAIN_SKU, value: \"5969155\"}) { edges { node { setProducts { sku alternatives { edges { node { sku } } } } } } } }"}'
+-d '{"query":"query { setCompose(input: {queryType: MAIN_SKU, value: \"5969155\"}) { edges { node { id setProducts { sku alternatives { edges { node { sku } } } } } } } }"}'
 
 
 
@@ -387,6 +394,7 @@ curl https://api-demo.8select.io/graphql \
       "edges": [
         {
           "node": {
+            "id": "6fdf9c7e-3b28-4e39-9657-479cf757cabf",
             "setProducts": [
               {
                 "sku": "4874214",

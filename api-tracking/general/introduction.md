@@ -31,18 +31,18 @@ x-api-id: <Your API ID>
 }
 ```
 
-Every event has to contain a `type`, a `context` and a type-specific payload. Additionally, the context must contain an entry of type `user`, specifying the respective user `id`. 
+Every event has to contain a `type` and a type-specific payload, as well as an optional `context` array.
 
-### context\[?\(@.type == 'user'\)\].user.id
+### context
 
-The user `id` sent in the context array must be consistent for all events concerning a single user. It should be anonymized, i.e. a generated id without any connection to personal data. You can read the section about [user identification](user-identification.md) to learn more.
+The context is used to provide additional contextual information about the origin of a given event. You can find out more in the [context](context.md) section.
+
+#### context\[type = "user"\].user.id
+
+The `id` sent in the user context within the context array must be consistent for all events concerning a single user. It should be anonymized, i.e. a generated id without any connection to personal data. You can read the section about [user identification](user-identification.md) to learn more.
 
 ### type
 
 There are currently three types of events \(view, interact, order\), each with a specific payload as defined in the respective sections under [events](../events/).  
 The property containing the type specific payload is always named after the type itself.
-
-### context
-
-The context is used to provide additional contextual information about the origin of a given event. You can find out more in the [context](context.md) section.
 

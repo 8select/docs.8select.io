@@ -45,10 +45,13 @@ The event you send would look like that:
 
 	"context": [
 	  {
-			"type": "setCompose",
-			"setCompose": {
-				"id": "f0db275c-f7ef-4a2c-8704-f51318c261ba",
+	    "content": {
+			  "setCompose": {
+				  "id": "f0db275c-f7ef-4a2c-8704-f51318c261ba",
+			  },
+			  "type": "setCompose",
 			},
+			"type": "content"
 	  },
 		{
 		  "type": "user",

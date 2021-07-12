@@ -1,9 +1,5 @@
 # User Identification
 
-{% hint style="info" %}
-The `user` context is currently required for **all** incoming events. Please read the [context](context.md) section for more information about the event context.
-{% endhint %}
-
 To enable commission based pricing the user has to be identified with a consistent identifier. The identifier is wrapped in a context object and must be consistent for all events concerning a single user:
 
 ```javascript
