@@ -16,7 +16,7 @@ The 8SELECT integration team will adjust the widget styling 🎨 to your shop de
 The widget is used to display cross-selling content in the form of product sets for a product.
 
 ```markup
-<div data-8select-widget-id="sys-psv" data-sku="42"></div>
+<div data-8select-widget-id="8.SET-Compose" data-sku="42"></div>
 ```
 
 {% hint style="info" %}
