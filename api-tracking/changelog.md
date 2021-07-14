@@ -1,4 +1,10 @@
 # Changelog
 
-The initial release is scheduled for end of June 2021.
+
+
+## 1.0.0 - 2021-07-08
+
+### Implemented Features
+
+* Initial release
 
