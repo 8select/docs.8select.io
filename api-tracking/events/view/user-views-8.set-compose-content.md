@@ -1,6 +1,6 @@
 # User views 8.SET Compose content
 
-Let's assume you are showing content from 8.SET Compose that was loaded via [8.API](../../../api/8.set-compose/). Whenever a user visits that page and sees that content you should send the respective `view` event. **Please ensure this event to be triggered only once per page view for a given set and only once the content is at least 50% in the device's viewport.**
+Let's assume you are showing content from 8.SET Compose that was loaded via [8.API](../../../api/8.set-compose/). Whenever a user visits that page and sees that content you should send the respective `view` event. **Please ensure this event to be triggered only once per page view for a given set and only once the content is at least 50% in the device's viewport.** 
 
 ![](../../../.gitbook/assets/viewcontent.gif)
 

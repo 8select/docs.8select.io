@@ -1,6 +1,6 @@
 # view
 
-A view event should be triggered whenever a piece of content slides into the users viewport. Assuming that you are showing 8.SET Compose product set data, that event should look like the following example:
+A view event should be triggered whenever **a piece of content slides into the users viewport**. Assuming that you are showing 8.SET Compose product set data, that event should look like the following example:
 
 ```javascript
 { 
@@ -24,7 +24,7 @@ A view event should be triggered whenever a piece of content slides into the use
 }
 ```
 
-A view event is identified by it's type `view` and an additional `view` property containing specific information about the content being viewed. This property should in turn have a type and content-specific payload.
+A view event is identified by its type `view` and an additional `view` property containing specific information about the content being viewed. This property should in turn have a type and content-specific payload.
 
 {% hint style="info" %}
 Currently, only `setCompose` views are taken into consideration.

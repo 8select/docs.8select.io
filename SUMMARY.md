@@ -62,6 +62,7 @@
   * [Event Validation](api-tracking/general/event-validation.md)
 * [Events](api-tracking/events/README.md)
   * [view](api-tracking/events/view/README.md)
+    * [Snippet to check if viewSet event can be sent](api-tracking/events/view/snippet-to-check-if-viewset-event-can-be-sent.md)
     * [User views 8.SET Compose content](api-tracking/events/view/user-views-8.set-compose-content.md)
   * [interact](api-tracking/events/interact/README.md)
     * [User clicks on a product within 8.SET Compose content](api-tracking/events/interact/user-clicks-on-a-product-within-8.set-compose-content.md)
