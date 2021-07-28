@@ -1,6 +1,6 @@
 # view
 
-A view event should be triggered whenever **a piece of content slides into the users viewport**. Assuming that you are showing 8.SET Compose product set data, that event should look like the following example:
+A view event should be triggered whenever [**a piece of content slides into the users viewport**](how-to-evaluate-if-view-event-can-be-sent.md). Assuming that you are showing 8.SET Compose product set data, that event should look like the following example:
 
 ```javascript
 { 
