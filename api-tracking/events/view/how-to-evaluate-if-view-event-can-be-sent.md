@@ -17,7 +17,7 @@ There are two cases when content is eligible to trigger such an event
 ## **Code Snippet**
 
 ```javascript
-export const getDimensions = node => {
+const getDimensions = node => {
   const nodeOffsetY = node.getBoundingClientRect().top + window.scrollY
   const nodeHeight = node.getBoundingClientRect().height
   const viewOffsetY = window.scrollY
@@ -25,7 +25,7 @@ export const getDimensions = node => {
   return { nodeOffsetY, nodeHeight, viewOffsetY, viewHeight }
 }
 
-export const isHalfViewFilledByNode = node => {
+const isHalfViewFilledByNode = node => {
   const { nodeOffsetY, nodeHeight, viewOffsetY, viewHeight } = getDimensions(node)
   const topNodeIsFillingBottomHalfView = viewOffsetY + viewHeight / 2 >= nodeOffsetY
   const bottomNodeIsFillingTopHalfView = viewOffsetY + viewHeight / 2 <= nodeOffsetY + nodeHeight
@@ -33,7 +33,7 @@ export const isHalfViewFilledByNode = node => {
   return topNodeIsFillingBottomHalfView && bottomNodeIsFillingTopHalfView
 }
 
-export const isHalfNodeVisible = node => {
+const isHalfNodeVisible = node => {
   const { nodeOffsetY, nodeHeight, viewOffsetY, viewHeight } = getDimensions(node)
   const viewBottomIsBelowTopHalfNode = viewOffsetY + viewHeight >= nodeOffsetY + nodeHeight / 2
   const viewTopIsAboveBottomHalfNode = viewOffsetY <= nodeOffsetY + nodeHeight / 2
@@ -42,8 +42,8 @@ export const isHalfNodeVisible = node => {
 }
 
 export default node => {
-  const isNodeHidden = node.node.offsetParent === null // if one of the parents is display none, this will be null
-  const isNodeFixed = node.node.style.position === 'fixed' // position fixed has no offsetParent
+  const isNodeHidden = node.offsetParent === null // if one of the parents is display none, this will be null
+  const isNodeFixed = node.style.position === 'fixed' // position fixed has no offsetParent
 
   if (isNodeHidden && !isNodeFixed) {
     return false
