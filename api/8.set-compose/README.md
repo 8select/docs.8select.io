@@ -94,7 +94,7 @@ query {
 
 {% tab title="Request" %}
 ```bash
-curl https://api-demo.8select.io/graphql \
+curl https://api.8select.io/graphql \
 -H 'x-api-id: <Your API ID>'  \
 -H 'Content-Type: application/json' \
 -d '{"query":"query {\n  setCompose(input: {queryType: SKU, value: \"486890-0001-09900\"}, first: 1) {\n    edges {\n      node {\n        setProducts {\n          variants {\n            edges {\n              node {\n                sku\n              }\n            }\n          }\n          model {\n            id\n          }\n          alternatives {\n            edges {\n              node {\n                sku\n                variants {\n                  edges {\n                    node {\n                      sku\n                    }\n                  }\n                }\n              }\n            }\n          }\n          sku\n        }\n        description\n        id\n        title\n        triggerProduct {\n          alternatives {\n            edges {\n              node {\n                sku\n                model {\n                  id\n                }\n                variants {\n                  edges {\n                    node {\n                      sku\n                    }\n                  }\n                }\n              }\n            }\n          }\n          model {\n            id\n          }\n          sku\n          variants {\n            pageInfo {\n              endCursor\n            }\n            edges {\n              node {\n                sku\n              }\n            }\n          }\n        }\n      }\n    }\n  }\n}\n"}'
