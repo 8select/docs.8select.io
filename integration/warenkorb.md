@@ -9,6 +9,13 @@ Many widgets allow a product to be added directly to the shopping cart.
 Widgets that allow to add products to the cart will call the function `_eightselect_shop_plugin.addToCart()`. This function can then directly contain the code to add something to the shopping cart or call another function that is already implemented in the shop frontend.
 
 ```javascript
+// 8.SDK Web
+<script type="text/javascript">
+    ...
+</script>
+
+
+// 8.SDK Web configuration for Shop's Cart API
 <script type="text/javascript">
   window._eightselect_shop_plugin = window._eightselect_shop_plugin || {};
   window._eightselect_shop_plugin.addToCart = function (sku, quantity, Promise) {
