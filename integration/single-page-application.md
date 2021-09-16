@@ -31,3 +31,22 @@ Inside our widgets a user can click on a product and will be redirected to the c
 
 We can configure most widgets to make use of your SPA router if you provide a way to access the functionality via JavaScript. For example we could call something like `window.myFancyRouter.push("/path/to/product/user/wants/to/visit.html")`
 
+{% hint style="info" %}
+We have the full deeplink of the product available, i.e. can call your function with the path only or if necessary with the full URL.
+{% endhint %}
+
+It is a good idea to also put the function or a reference to it inside the SDK shop configuration object.
+
+```javascript
+// 8.SDK Web configuration for Shop's Navigation API
+<script type="text/javascript">
+  window._eightselect_shop_plugin = window._eightselect_shop_plugin || {};
+  window._eightselect_shop_plugin.navigateTo = ...
+</script>
+
+// 8.SDK Web
+<script type="text/javascript">
+    ...
+</script>
+```
+
