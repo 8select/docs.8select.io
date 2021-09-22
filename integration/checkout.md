@@ -10,12 +10,18 @@ The commission is based on performance, i.e. only products purchased via our wid
 To simplify the commission process it is based on **gross prices**, i.e. you have to transfer the **gross price** of a product.
 {% endhint %}
 
+### Hints to consider
+
 {% hint style="warning" %}
 For **`price`**, the price in cents per item must be transferred as an **`integer`**.  
 For an item that costs 199.95 €, the value `19995` must be transferred. 
-
-For **sku**, the same value as in the product export must be used. The value must be transmitted as a **string**.
 {% endhint %}
+
+{% hint style="warning" %}
+For **sku**, the same value as in the [product export](../produktdaten-uebermitteln/stammdaten/details.md#sku-sku) must be used. The value must be transmitted as a **string**.
+{% endhint %}
+
+### Code
 
 ```javascript
 // 8.SDK Web
