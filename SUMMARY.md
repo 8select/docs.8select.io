@@ -45,7 +45,7 @@
   * [Pagination](api/general/pagination.md)
   * [Exceptions](api/general/exceptions.md)
   * [GraphQL Schema](api/general/graphql-schema.md)
-* [8.SET Compose (Alpha)](api/8.set-compose/README.md)
+* [8.SET Compose](api/8.set-compose/README.md)
   * [Examples](api/8.set-compose/examples/README.md)
     * [Product set of 5](api/8.set-compose/examples/product-set-of-5.md)
     * [Product set of 4 with alternatives](api/8.set-compose/examples/product-set-of-4-with-alternatives.md)
