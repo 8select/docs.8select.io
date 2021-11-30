@@ -2,9 +2,9 @@
 
 * [8.HX PLATFORM](README.md)
 
-## Shop Integration <a id="integration"></a>
+## Shop Integration <a href="#integration" id="integration"></a>
 
-* [8.SDK Web \(JavaScript SDK\)](integration/javascript-sdk.md)
+* [8.SDK Web (JavaScript SDK)](integration/javascript-sdk.md)
 * [Widgets](integration/widgets.md)
 * [Shopping Cart](integration/warenkorb.md)
 * [Checkout](integration/checkout.md)
@@ -18,11 +18,10 @@
 * [8.SET Compose](widgets/8.set-compose.md)
 * [8.SET Flat](widgets/8.set-flat.md)
 * [8.SET Teaser Button](widgets/8.set-teaser-button.md)
-* [8.SET Photo \(Beta\)](widgets/8.set-photo.md)
-* [8.SET Mail \(Beta\)](widgets/8.set-mail.md)
-* [8.SIMILAR \(Beta\)](widgets/8.similar.md)
+* [8.SET Photo](widgets/8.set-photo.md)
+* [8.SIMILAR](widgets/8.similar.md)
 
-## Product Export <a id="produktdaten-uebermitteln"></a>
+## Product Export <a href="#produktdaten-uebermitteln" id="produktdaten-uebermitteln"></a>
 
 * [Data Transfer](produktdaten-uebermitteln/daten-uebertragung.md)
 * [Base Data](produktdaten-uebermitteln/stammdaten/README.md)
@@ -46,7 +45,7 @@
   * [Pagination](api/general/pagination.md)
   * [Exceptions](api/general/exceptions.md)
   * [GraphQL Schema](api/general/graphql-schema.md)
-* [8.SET Compose \(Alpha\)](api/8.set-compose/README.md)
+* [8.SET Compose (Alpha)](api/8.set-compose/README.md)
   * [Examples](api/8.set-compose/examples/README.md)
     * [Product set of 5](api/8.set-compose/examples/product-set-of-5.md)
     * [Product set of 4 with alternatives](api/8.set-compose/examples/product-set-of-4-with-alternatives.md)
@@ -70,4 +69,3 @@
     * [Example what is not a product interaction](api-tracking/events/interact/example-what-is-not-a-product-interaction.md)
   * [order](api-tracking/events/order.md)
 * [Clients](api-tracking/clients.md)
-

@@ -8,7 +8,9 @@ In order to access the [Fashion Content Pool](../produktdaten-uebermitteln/fashi
 In the section [**PRODUCT EXPORT**](../produktdaten-uebermitteln/daten-uebertragung.md) the requirements and possibilities of data transfer are described in detail.
 {% endhint %}
 
-
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
+{% endcontent-ref %}
 
 
 
