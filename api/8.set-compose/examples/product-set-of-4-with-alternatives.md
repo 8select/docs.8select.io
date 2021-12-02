@@ -23,7 +23,7 @@ The 8SELECT GraphQL API allows you to query information about an 8.SET Compose p
 
 There are three `queryTypes`, you can choose from: `SKU`, `MAIN_SKU` and `MODEL_ID`. To learn more about the differences between those identifiers, see [https://docs.8select.io/produktdaten-uebermitteln/stammdaten/details](https://docs.8select.io/produktdaten-uebermitteln/stammdaten/details).
 
-In the following example we are using the `MAIN_SKU` to query a product set and the SKUs of the contained products, as well as their alternatives. The `triggerProduct` and the `setProducts` are two separate fields in the query. Since we already know the SKU of our trigger product and just want to show alternatives for set products, we actually only need to query the latter: 
+In the following example we are using the `MAIN_SKU` to query a product set and the SKUs of the contained products, as well as their alternatives. The `triggerProduct` and the `setProducts` are two separate fields in the query. Since we already know the SKU of our trigger product and just want to show alternatives for set products, we actually only need to query the latter:&#x20;
 
 {% tabs %}
 {% tab title="GraphQL Query" %}
@@ -52,7 +52,7 @@ query {
 
 {% tab title="Request" %}
 ```bash
-curl https://api-demo.8select.io/graphql \
+curl https://api.8select.io/graphql \
 -H 'x-api-id: <Your API ID>'  \
 -H 'Content-Type: application/json' \
 -d '{"query":"query { setCompose(input: {queryType: MAIN_SKU, value: \"5969155\"}) { edges { node { id setProducts { sku alternatives { edges { node { sku } } } } } } } }"}'
@@ -375,7 +375,7 @@ query {
 
 {% tab title="Request" %}
 ```bash
-curl https://api-demo.8select.io/graphql \
+curl https://api.8select.io/graphql \
 -H 'x-api-id: <Your API ID>'  \
 -H 'Content-Type: application/json' \
 -d '{"query":"query { setCompose(input: {queryType: MAIN_SKU, value: \"5969155\"}) { edges { node { id setProducts { sku alternatives { edges { node { sku } } } } } } } }"}'
@@ -575,5 +575,4 @@ curl https://api-demo.8select.io/graphql \
 {% endtab %}
 {% endtabs %}
 
-Looking at the UI we wanted to build, we would show one additional tile — next to our trigger product on the left — for each entry in the `setProducts` array. The tiles themselves are sliders, which a user can click through to see all product alternatives for the respecive set product. These correspond to the individual `node` fields in the `edges` array of the set product's `alternatives` field in the response. A button below the tiles allows a user to expand the slider and show multiple product alternatives in a row below the original 8.SET Compose product set. Using these SKUs, you can now fetch the product data and information required for your custom interface from your own shop API. 
-
+Looking at the UI we wanted to build, we would show one additional tile — next to our trigger product on the left — for each entry in the `setProducts` array. The tiles themselves are sliders, which a user can click through to see all product alternatives for the respecive set product. These correspond to the individual `node` fields in the `edges` array of the set product's `alternatives` field in the response. A button below the tiles allows a user to expand the slider and show multiple product alternatives in a row below the original 8.SET Compose product set. Using these SKUs, you can now fetch the product data and information required for your custom interface from your own shop API.&#x20;

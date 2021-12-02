@@ -47,7 +47,7 @@ query {
 
 {% tab title="Request" %}
 ```bash
-curl https://api-demo.8select.io/graphql \
+curl https://api.8select.io/graphql \
 -H 'x-api-id: <Your API ID>'  \
 -H 'Content-Type: application/json' \
 -d '{"query":"query { setCompose(input: {queryType: MAIN_SKU, value: \"457297-0001\"}) { edges { node { id triggerProduct { sku } setProducts { sku } } } } }"}'
@@ -119,7 +119,7 @@ query {
 
 {% tab title="Request" %}
 ```bash
-curl https://api-demo.8select.io/graphql \
+curl https://api.8select.io/graphql \
 -H 'x-api-id: <Your API ID>'  \
 -H 'Content-Type: application/json' \
 -d '{"query":"query Query { setCompose(input: {queryType: MAIN_SKU, value: \"457297-0001\"}) { edges { node { id setProducts { sku } } } } }"}'
@@ -160,5 +160,4 @@ curl https://api-demo.8select.io/graphql \
 {% endtab %}
 {% endtabs %}
 
-Looking at the UI we wanted to build, we would show one additional tile — next to our trigger product on the left — for each entry in the `setProducts` array. Taking the SKUs from the response, you can now fetch the product data and information required for your custom interface from your own shop API. 
-
+Looking at the UI we wanted to build, we would show one additional tile — next to our trigger product on the left — for each entry in the `setProducts` array. Taking the SKUs from the response, you can now fetch the product data and information required for your custom interface from your own shop API.&#x20;
