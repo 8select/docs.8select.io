@@ -28,7 +28,7 @@ Currently, only two context types are supported: `content` and `user`.
 ## user
 
 {% hint style="danger" %}
-If you are using **commision-based pricing**, you must provide a `user` context.
+If you want to have **user-based metrics**, you must provide a `user` context.
 {% endhint %}
 
 The `user` context is responsible for the event attribution:
@@ -42,7 +42,7 @@ The `user` context is responsible for the event attribution:
 }
 ```
 
-Read the section about [user identification](user-identification.md) for more information on commision-based pricing and the requirements for the anonymized user ID.
+Read the section about [user identification](user-identification.md) for more information on user-based metrics and the requirements for the anonymized user ID.
 
 ## content
 
