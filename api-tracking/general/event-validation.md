@@ -8,21 +8,19 @@ Host: https://api.8select.io
 Content-Type: application/json
 x-api-id: <Your API ID>
 
-{ 
-	"type": "view",
-
-	"view": {
-		"type": "setCompose",
-	},
-
-	"context": [
-		{ 
-		  "type": "user",
-		  "user": {
-		    "id": "c57a43f7-eefc-462b-b5a8-0ef421e90f67"
-		  }
-		}
-	]
+{
+  "type": "view",
+  "view": {
+    "type": "setCompose"
+  },
+  "context": [
+    {
+      "type": "user",
+      "user": {
+        "id": "c57a43f7-eefc-462b-b5a8-0ef421e90f67"
+      }
+    }
+  ]
 }
 ```
 
@@ -47,4 +45,3 @@ The above event is missing the `setCompose` property, which is required for `vie
 {% hint style="warning" %}
 Please note, that the validation endpoint is currently set to be very verbose. This means, it will often contain multiple alerts caused by the same schema violation. We are working on a solution to make the output more concise.
 {% endhint %}
-

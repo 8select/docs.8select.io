@@ -10,24 +10,22 @@ Host: https://api.8select.io
 Content-Type: application/json
 x-api-id: <Your API ID>
 
-{ 
-	"type": "view",
-
-	"view": {
-		"type": "setCompose",
-		"setCompose": {
-			"id": "1b3de0bd-95c6-435a-8bb9-f4cae0160388",
-		},
-	},
-
-	"context": [
-		{ 
-		  "type": "user",
-		  "user": {
-		    "id": "c57a43f7-eefc-462b-b5a8-0ef421e90f67"
-		  }
-		}
-	]
+{
+  "type": "view",
+  "view": {
+    "type": "setCompose",
+    "setCompose": {
+      "id": "1b3de0bd-95c6-435a-8bb9-f4cae0160388"
+    }
+  },
+  "context": [
+    {
+      "type": "user",
+      "user": {
+        "id": "c57a43f7-eefc-462b-b5a8-0ef421e90f67"
+      }
+    }
+  ]
 }
 ```
 
@@ -37,12 +35,11 @@ Every event has to contain a `type` and a type-specific payload, as well as an o
 
 The context is used to provide additional contextual information about the origin of a given event. You can find out more in the [context](context.md) section.
 
-#### context\[type = "user"\].user.id
+#### context\[type = "user"].user.id
 
 The `id` sent in the user context within the context array must be consistent for all events concerning a single user. It should be anonymized, i.e. a generated id without any connection to personal data. You can read the section about [user identification](user-identification.md) to learn more.
 
 ### type
 
-There are currently three types of events \(view, interact, order\), each with a specific payload as defined in the respective sections under [events](../events/).  
+There are currently three types of events (view, interact, order), each with a specific payload as defined in the respective sections under [events](../events/).\
 The property containing the type specific payload is always named after the type itself.
-

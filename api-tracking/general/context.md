@@ -5,21 +5,21 @@ As implied by its name the context is supposed to provide contextual information
 ```javascript
 {
   ...,
-	"context": [
-		{
-			"content": {
-				"setCompose": {
-					"id": "1b3de0bd-95c6-435a-8bb9-f4cae0160388",
-				},
-				"type": "setCompose"
-			},
-			"type": "content",
-		}
-	]
+  "context": [
+    {
+      "content": {
+        "setCompose": {
+          "id": "1b3de0bd-95c6-435a-8bb9-f4cae0160388",
+        },
+        "type": "setCompose"
+      },
+      "type": "content",
+    }
+  ]
 }
 ```
 
-Similarly to the event structure itself, `context` elements will always have a `type` and optionally a type-specific payload named thereafter. 
+Similarly to the event structure itself, `context` elements will always have a `type` and optionally a type-specific payload named thereafter.&#x20;
 
 {% hint style="info" %}
 Currently, only two context types are supported: `content` and `user`.
@@ -63,4 +63,3 @@ If the tracked interaction takes place within the context of some 8SELECT-provid
 {% hint style="info" %}
 Currently, only content of type `setCompose` is supported.
 {% endhint %}
-

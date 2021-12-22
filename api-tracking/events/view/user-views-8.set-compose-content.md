@@ -1,6 +1,6 @@
 # User views 8.SET Compose content
 
-Let's assume you are showing content from 8.SET Compose that was loaded via [8.API](../../../api/8.set-compose/). Whenever a user visits that page and sees that content you should send the respective `view` event. **Please ensure this event to be triggered only once per page view for a given set and only** [**once the content is at least 50% in the device's viewport or 50% of the content are in the viewport**](how-to-evaluate-if-view-event-can-be-sent.md)**.** 
+Let's assume you are showing content from 8.SET Compose that was loaded via [8.API](../../../api/8.set-compose/). Whenever a user visits that page and sees that content you should send the respective `view` event. **Please ensure this event to be triggered only once per page view for a given set and only** [**once the content is at least 50% in the device's viewport or 50% of the content are in the viewport**](how-to-evaluate-if-view-event-can-be-sent.md)**.**&#x20;
 
 ![](../../../.gitbook/assets/viewcontent.gif)
 
@@ -29,28 +29,24 @@ Suppose, 8.API returned a payload like this:
 The event you send would look like that:
 
 ```javascript
-{ 
-	"type": "view",
-
-	"view": {
-		"type": "setCompose",
-		"setCompose": {
-			"id": "f0db275c-f7ef-4a2c-8704-f51318c261ba",
-		},
-	},
-
-	"context": [
-		{
-		  "type": "user",
-		  "user": {
-		    "id": "c57a43f7-eefc-462b-b5a8-0ef421e90f67"
-		  }
-		}
-	]
+{
+  "type": "view",
+  "view": {
+    "type": "setCompose",
+    "setCompose": {
+      "id": "f0db275c-f7ef-4a2c-8704-f51318c261ba",
+    }
+  },
+  "context": [
+    {
+      "type": "user",
+      "user": {
+        "id": "c57a43f7-eefc-462b-b5a8-0ef421e90f67"
+      }
+    }
+  ]
 }
 ```
 
 The type of the event is `view`. The corresponding `view` property is intended to specify the target of the event. In our case, this would be `setCompose` as that is the type of data we requested from the API. Again, to describe the target more specifically, we include the `id` of the presented product set — as returned in the API response — in a `setCompose` property.
-
-
 
