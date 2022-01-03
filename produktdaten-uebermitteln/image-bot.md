@@ -4,7 +4,7 @@ We use the product images not only in our widgets but also to enrich the product
 
 We do this via our image bot.
 
-To ensure a smooth operation of the products, our image bot must have access to the product images.
+To ensure a smooth operation of the 8.HX, our image bot must have access to the product images.
 
 The image bot uses the following user agent:
 
@@ -13,4 +13,6 @@ The image bot uses the following user agent:
 ```
 
 The origin IP is not fixed. If it helps here is the [possible IP range](https://docs.aws.amazon.com/general/latest/gr/aws-ip-ranges.html).
+
+
 
