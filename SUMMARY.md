@@ -29,6 +29,7 @@
 * [Fashion Content Pool](produktdaten-uebermitteln/fashion-content-pool/README.md)
   * [Details and examples](produktdaten-uebermitteln/fashion-content-pool/details.md)
 * [Image Bot](produktdaten-uebermitteln/image-bot.md)
+* [Dead Products / Change of SKU](produktdaten-uebermitteln/dead-products-change-of-sku.md)
 
 ## Sandbox
 
