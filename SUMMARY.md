@@ -5,7 +5,8 @@
 ## Shop Integration <a href="#integration" id="integration"></a>
 
 * [8.SDK Web (JavaScript SDK)](integration/javascript-sdk.md)
-* [Widgets](integration/widgets.md)
+* [Widgets](integration/widgets/README.md)
+  * [🗺 Internationalization](integration/widgets/internationalization.md)
 * [Shopping Cart](integration/warenkorb.md)
 * [Checkout](integration/checkout.md)
 * [Product Export](integration/produkt-export.md)
