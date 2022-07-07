@@ -13,14 +13,15 @@ To identify a product variant that should be added to the cart we currently only
 {% endhint %}
 
 ```javascript
-// 8.SDK Web configuration for Shop's Cart API
+// 8.SDK Web configuration for shop's cart API
 <script type="text/javascript">
   window._eightselect_shop_plugin = window._eightselect_shop_plugin || {};
   window._eightselect_shop_plugin.addToCart = function (sku, quantity, Promise) {
     // the function has to return a promise
     // you can use the injected Promise or use your own polyfill
     
-    // add your cart logic here, for example
+    // add your cart logic here
+    // this is just an example - shopApi is something you actually have to implement
     return new Promise(function(resolve, reject) {
       var response = shopApi.add2cart(sku);
       if (response === "OK") {        
