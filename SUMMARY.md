@@ -51,6 +51,9 @@
   * [Examples](api/8.set-compose/examples/README.md)
     * [Product set of 5](api/8.set-compose/examples/product-set-of-5.md)
     * [Product set of 4 with alternatives](api/8.set-compose/examples/product-set-of-4-with-alternatives.md)
+* [8.SET Photo](api/8.set-photo/README.md)
+  * [Examples](api/8.set-photo/examples/README.md)
+    * [List available sets](api/8.set-photo/examples/list-available-sets.md)
 
 ## API Tracking
 
