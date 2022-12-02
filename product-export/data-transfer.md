@@ -20,6 +20,10 @@ We download your product data files on a schedule.
 You upload your product data files whenever something updates to our S3 bucket.\
 You just request a signed upload URL from our API and can then upload your file. You just need to make 2 simple HTTP calls for that.
 
+{% hint style="success" %}
+Your files are encrypted and can not be accessed from the outside.
+{% endhint %}
+
 ![](<../.gitbook/assets/Product Import - Frame 1 (1).jpg>)
 
 1. HTTP POST request to retrieve a signed upload URL.
