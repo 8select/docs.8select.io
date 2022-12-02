@@ -9,7 +9,7 @@ Many widgets allow a product to be added directly to the shopping cart.
 Widgets that allow to add products to the cart will call the function `_eightselect_shop_plugin.addToCart()`. This function can then directly contain the code to add something to the shopping cart or call another function that is already implemented in the shop frontend.
 
 {% hint style="warning" %}
-To identify a product variant that should be added to the cart we currently only have the **sku** available. For **sku**, the same value as in the [product export](../produktdaten-uebermitteln/stammdaten/details.md#sku-sku) is used.
+To identify a product variant that should be added to the cart we currently only have the **sku** available. For **sku**, the same value as in the [product export](../product-export/stammdaten/details.md#sku-sku) is used.
 {% endhint %}
 
 ```javascript

@@ -22,15 +22,15 @@
 * [8.SET Photo](widgets/8.set-photo.md)
 * [8.SIMILAR](widgets/8.similar.md)
 
-## Product Export <a href="#produktdaten-uebermitteln" id="produktdaten-uebermitteln"></a>
+## Product Export
 
-* [Data Transfer](produktdaten-uebermitteln/daten-uebertragung.md)
-* [Base Data](produktdaten-uebermitteln/stammdaten/README.md)
-  * [Details and examples](produktdaten-uebermitteln/stammdaten/details.md)
-* [Fashion Content Pool](produktdaten-uebermitteln/fashion-content-pool/README.md)
-  * [Details and examples](produktdaten-uebermitteln/fashion-content-pool/details.md)
-* [Image Bot](produktdaten-uebermitteln/image-bot.md)
-* [Dead Products / Change of SKU](produktdaten-uebermitteln/dead-products-change-of-sku.md)
+* [Data Transfer](product-export/data-transfer.md)
+* [Base Data](product-export/stammdaten/README.md)
+  * [Details and examples](product-export/stammdaten/details.md)
+* [Fashion Content Pool](product-export/fashion-content-pool/README.md)
+  * [Details and examples](product-export/fashion-content-pool/details.md)
+* [Image Bot](product-export/image-bot.md)
+* [Dead Products / Change of SKU](product-export/dead-products-change-of-sku.md)
 
 ## Sandbox
 
