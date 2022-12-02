@@ -1,10 +1,10 @@
 # Data Transfer
 
-Currently we support some push and pull methods to the transfer your product data.
+Currently we support some push and pull methods to transfer your product data.
 
 ## Pull
 
-We download your product data files on a schedule.
+We download your product data files on a schedule. You just tell us from where and when.
 
 ### Protocols
 
