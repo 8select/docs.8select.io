@@ -15,13 +15,17 @@ We download your product data files on a schedule.
   * AWS S3
 * HTTPS
 
-## Push
+## Push (Beta Preview)
 
 You upload your product data files whenever something updates to our S3 bucket.\
 You just request a signed upload URL from our API and can then upload your file. You just need to make 2 simple HTTP calls for that.
 
 {% hint style="success" %}
 Your files are encrypted and can not be accessed from the outside.
+{% endhint %}
+
+{% hint style="info" %}
+Push is currently in preview and might not work for you. General availability is planned for 12/2022.
 {% endhint %}
 
 ![](<../.gitbook/assets/Product Import - Frame 1 (1).jpg>)
