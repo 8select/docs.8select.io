@@ -31,11 +31,14 @@ Push is currently in preview and might not work for you. General availability is
 ![](<../.gitbook/assets/Product Import - Frame 1 (1).jpg>)
 
 1. HTTP POST request to retrieve a signed upload URL.
-   1. You will get a `key` and an `uploadUrl`.
+   1. Depending on wether you want to upload a full feed or update feed you need to set different body parameters.
+   2. You will get a `key` and an `uploadUrl`.
 2. HTTP PUT request to the retrieved `uploadUrl`.
-   1. The filename must match the retrieved `key`.
+   1. Don't forget to include the file in the HTTP body. :-)&#x20;
 
-{% swagger method="post" path="/uploads" baseUrl="https://integration.8select.io" summary="Get signed URL for full product export upload." expanded="true" %}
+### Upload Full Product Feed&#x20;
+
+{% swagger method="post" path="/uploads" baseUrl="https://integration.8select.io" summary="Get signed URL for full product feed upload." expanded="true" %}
 {% swagger-description %}
 
 {% endswagger-description %}
@@ -68,9 +71,9 @@ Your API SECRET provided by us.
 {% endswagger-response %}
 {% endswagger %}
 
+### Upload Update Product Feed&#x20;
 
-
-{% swagger method="post" path="/uploads" baseUrl="https://integration.8select.io" summary="Get signed URL for update product export upload." expanded="true" %}
+{% swagger method="post" path="/uploads" baseUrl="https://integration.8select.io" summary="Get signed URL for update product feed upload." expanded="true" %}
 {% swagger-description %}
 
 {% endswagger-description %}
