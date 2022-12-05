@@ -44,12 +44,24 @@ Push is currently in preview and might not work for you. General availability is
 Your API ID provided by us.
 {% endswagger-parameter %}
 
-{% swagger-parameter in="header" name="x-feed-id" required="true" %}
-Your FEED ID provided by us.
+{% swagger-parameter in="header" name="x-api-secret" required="true" %}
+Your API SECRET provided by us.
 {% endswagger-parameter %}
 
-{% swagger-parameter in="header" name="content-type" required="true" %}
-Currently we only support text/csv.
+{% swagger-parameter in="body" name="file-type" required="true" %}
+Currently we only support 
+
+`text/csv`
+
+.
+{% endswagger-parameter %}
+
+{% swagger-parameter in="body" name="feed-type" required="true" %}
+`product`
+
+ \| 
+
+`product-update`
 {% endswagger-parameter %}
 
 {% swagger-response status="201: Created" description="" %}
