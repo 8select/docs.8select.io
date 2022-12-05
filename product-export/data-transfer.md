@@ -35,7 +35,7 @@ Push is currently in preview and might not work for you. General availability is
 2. HTTP PUT request to the retrieved `uploadUrl`.
    1. The filename must match the retrieved `key`.
 
-{% swagger method="post" path="/products/uploads" baseUrl="https://integration.8select.io" summary="" %}
+{% swagger method="post" path="/uploads" baseUrl="https://integration.8select.io" summary="Get signed URL for full product export upload." expanded="true" %}
 {% swagger-description %}
 
 {% endswagger-description %}
@@ -48,20 +48,49 @@ Your API ID provided by us.
 Your API SECRET provided by us.
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="file-type" required="true" %}
-Currently we only support 
-
-`text/csv`
-
-.
+{% swagger-parameter in="body" name="type" required="true" %}
+`productFeed`
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="feed-type" required="true" %}
-`product`
+{% swagger-parameter in="body" name="productFeed" type="Object" required="true" %}
+`{ "fileType": "text/csv" }`
 
- \| 
+ 
+{% endswagger-parameter %}
 
-`product-update`
+{% swagger-response status="201: Created" description="" %}
+```typescript
+{ 
+  "key": string 
+  "uploadUrl": string
+}
+```
+{% endswagger-response %}
+{% endswagger %}
+
+
+
+{% swagger method="post" path="/uploads" baseUrl="https://integration.8select.io" summary="Get signed URL for update product export upload." expanded="true" %}
+{% swagger-description %}
+
+{% endswagger-description %}
+
+{% swagger-parameter in="header" name="x-api-id" required="true" %}
+Your API ID provided by us.
+{% endswagger-parameter %}
+
+{% swagger-parameter in="header" name="x-api-secret" required="true" %}
+Your API SECRET provided by us.
+{% endswagger-parameter %}
+
+{% swagger-parameter in="body" name="type" required="true" %}
+`productUpdateFeed`
+{% endswagger-parameter %}
+
+{% swagger-parameter in="body" name="productUpdateFeed" type="Object" required="true" %}
+`{ "fileType": "text/csv" }`
+
+ 
 {% endswagger-parameter %}
 
 {% swagger-response status="201: Created" description="" %}
