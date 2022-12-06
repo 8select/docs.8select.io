@@ -38,7 +38,7 @@ Push is currently in preview and might not work for you. General availability is
 
 ### Upload Full Product Feed&#x20;
 
-{% swagger method="post" path="/uploads" baseUrl="https://integration.8select.io" summary="Get signed URL for full product feed upload." expanded="true" %}
+{% swagger method="post" path="/uploads" baseUrl="https://api.8select.io" summary="Get signed URL for full product feed upload." expanded="true" %}
 {% swagger-description %}
 
 {% endswagger-description %}
@@ -73,7 +73,7 @@ Your API SECRET provided by us.
 
 ### Upload Update Product Feed&#x20;
 
-{% swagger method="post" path="/uploads" baseUrl="https://integration.8select.io" summary="Get signed URL for update product feed upload." expanded="true" %}
+{% swagger method="post" path="/uploads" baseUrl="https://api.8select.io" summary="Get signed URL for update product feed upload." expanded="true" %}
 {% swagger-description %}
 
 {% endswagger-description %}
