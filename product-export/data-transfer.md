@@ -15,7 +15,7 @@ We download your product data files on a schedule. You just tell us from where a
   * AWS S3
 * HTTPS
 
-## Push (Beta Preview)
+## Push
 
 You upload your product data files whenever something updates to our S3 bucket.\
 You just request a signed upload URL from our API and can then upload your file. You just need to make 2 simple HTTP calls for that.
@@ -24,11 +24,9 @@ You just request a signed upload URL from our API and can then upload your file.
 Your files are encrypted and can not be accessed from the outside.
 {% endhint %}
 
-{% hint style="info" %}
-Push is currently in preview and might not work for you. General availability is planned for 12/2022.
-{% endhint %}
-
 ![](<../.gitbook/assets/Product Import - Frame 1 (1).jpg>)
+
+### How it works
 
 1. HTTP POST request to retrieve a signed upload URL.
    1. Depending on wether you want to upload a full feed or update feed you need to set different body parameters.
@@ -36,7 +34,9 @@ Push is currently in preview and might not work for you. General availability is
 2. HTTP PUT request to the retrieved `uploadUrl`.
    1. Don't forget to include the file in the HTTP body. :-)&#x20;
 
-### Upload Full Product Feed&#x20;
+### API
+
+#### Upload Full Product Feed&#x20;
 
 {% swagger method="post" path="/uploads" baseUrl="https://api.8select.io" summary="Get signed URL for full product feed upload." expanded="true" %}
 {% swagger-description %}
@@ -71,7 +71,7 @@ Your API SECRET provided by us.
 {% endswagger-response %}
 {% endswagger %}
 
-### Upload Update Product Feed&#x20;
+#### Upload Update Product Feed&#x20;
 
 {% swagger method="post" path="/uploads" baseUrl="https://api.8select.io" summary="Get signed URL for update product feed upload." expanded="true" %}
 {% swagger-description %}
@@ -106,11 +106,16 @@ Your API SECRET provided by us.
 {% endswagger-response %}
 {% endswagger %}
 
-## Format
+## File Format
 
-We can download and process the product data in almost any format. For file uploads we only support CSV for now.
+We currently only support CSV format.\
+Each line will hold a product variant (SKU).
 
-We prefer a delivery as CSV with the data of a product variant (SKU) per line. Here are two examples.
+You can not provide files in CSV format? No problem, talk to us and we will find a solution. :heart:
+
+### Examples
+
+Here are two examples for you.:bulb:
 
 {% file src="../.gitbook/assets/fashion-content-pool-full-example.csv" %}
 fashion content pool full example
