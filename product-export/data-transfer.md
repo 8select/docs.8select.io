@@ -14,6 +14,8 @@ We download your product data files on a schedule. You just tell us from where a
   * FTPS
   * AWS S3
 * HTTPS
+  * with credentials via basic auth
+  * custom login forms will probably also work, talk to us please :yellow\_heart:
 
 ## Push
 
