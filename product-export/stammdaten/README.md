@@ -25,19 +25,22 @@ If a property has multiple values those should be separated by a pipe `|`.
 * Images
   * All available images in maximum resolution. For an optimal presentation at least one cut out image (hollow man photography).
   * Transfer images with least possible fillup / whitespace to optimize the presentation in the widgets.
-  * ⚠️ We deliver image thumbnails from our CDN and cache images heavily. If you change images you have to also change the image URL in order to invalidate the CDN cache! ⚠️
 
 {% hint style="danger" %}
+We deliver image thumbnails from our CDN and cache images heavily. If you change images you have to also change the image URL in order to invalidate the CDN cache!&#x20;
+{% endhint %}
+
+{% hint style="info" %}
 In order to access our Fashion Content Pool, further data is required. See [**Fashion Content Pool**](../fashion-content-pool/).
 {% endhint %}
 
-### Example files
+### Examples
 
 {% file src="../../.gitbook/assets/base-data-example (1).csv" %}
 base data example
 {% endfile %}
 
-{% hint style="warning" %}
+{% hint style="info" %}
 Prices and stock levels can change very fast. To ensure that 8SELECT and the shop are in sync we recommend that you deliver one full export every 24 hours and an extra stock- price-update more often - up to every 15 minutes.
 {% endhint %}
 
