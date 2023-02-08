@@ -30,7 +30,6 @@
 * [Fashion Content Pool](product-export/fashion-content-pool/README.md)
   * [Details and examples](product-export/fashion-content-pool/details.md)
 * [Image Bot](product-export/image-bot.md)
-* [Dead Products / Change of SKU](product-export/dead-products-change-of-sku.md)
 
 ## Sandbox
 
