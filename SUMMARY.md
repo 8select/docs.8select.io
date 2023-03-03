@@ -25,8 +25,8 @@
 ## Product Export
 
 * [Data Transfer](product-export/data-transfer.md)
-* [Base Data](product-export/stammdaten/README.md)
-  * [Details and examples](product-export/stammdaten/details.md)
+* [Base Data](product-export/base-data/README.md)
+  * [Details and examples](product-export/base-data/details.md)
 * [Fashion Content Pool](product-export/fashion-content-pool/README.md)
   * [Details and examples](product-export/fashion-content-pool/details.md)
 * [Image Bot](product-export/image-bot.md)

@@ -57,7 +57,7 @@ For an item that costs 199.95 €, the value `19995` must be transferred.&#x20;
 {% endhint %}
 
 {% hint style="warning" %}
-For **sku**, the same value as in the [product export](../product-export/stammdaten/details.md#sku-sku) must be used. The value must be transmitted as a **string**.
+For **sku**, the same value as in the [product export](../product-export/base-data/details.md#sku-sku) must be used. The value must be transmitted as a **string**.
 {% endhint %}
 
 {% hint style="info" %}
