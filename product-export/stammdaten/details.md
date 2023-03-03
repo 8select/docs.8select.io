@@ -53,7 +53,7 @@ Variant (SKU): Shirt Arie - color blue - size M
 | 8277       | 8277-480              | 8277-480-01                  |
 | shirt-arie | shirt-arie-color-blue | shirt-arie-color-blue-size-m |
 
-## Stock (status)
+## Stock (stock)
 
 The value provides information about the availability of a variant. It can be a flag (0/1) or the quantity of available items.
 
@@ -73,11 +73,11 @@ not available
 0
 ```
 
-## Size (size)
+## Variant (variant)
 
-Size of the item.
+For example the size of the item.
 
-### Beispiele
+### Examples
 
 ```
 38
@@ -85,6 +85,7 @@ L
 32/32
 32 L
 M-L
+30ml
 ```
 
 ## Name (name)
@@ -125,7 +126,7 @@ Without currency and in cents.
 13750
 ```
 
-## Product URL (product-url)
+## Product URL (deeplink)
 
 Deep link that leads directly to the detail page in the shop of the variant.
 
@@ -136,14 +137,15 @@ https://www.ambellis.de/desigual-sweatjacke-8277480.html?sku=8277387
 https://www.bettybarclay.com/de/vera-mont-cocktail-kleid-21254528.html?farbe=burnished-ros&groesse=38
 ```
 
-## Images (images)
+## Image (image)
 
-All available item images of the variant in the highest resolution. Multiple images are separated with pipe `|`. Position 1 is ideally a hollow man image or product image without model.
+* Main image in maximum resolution. Used for data tagging via image recognition.
+* For an optimal recognition use the cut out image (hollow man photography) without any other objects / persons.
 
 ### Examples
 
 ```javascript
 https://ambellis.scene7.com/is/image/ambellis/ext/8277480-01.jpg?$rtf\_amb\_prod-main-zoom\_xl$
 
-https://cdn.8select.io/image1.jpg|https://cdn.8select.io/image2.jpg
+https://cdn.8select.io/image1.jpg
 ```

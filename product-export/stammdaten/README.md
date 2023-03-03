@@ -16,15 +16,28 @@ If a property has multiple values those should be separated by a pipe `|`.
   * identifier for group of product variants (size only)
 * Model
   * identifier for group of product variants (colors etc.)
-* Status
-  * Flag 0/1 or current stock level
-* Size
+* Stock
+  * current stock level or flag 0/1
+* Variant
+  * name of variant - for example `L, M, 32/34, 42, 150 ml`
 * Name
-* Retail price and discount price
+  * product name
+* Category paths
+  * breadcrumbs used in the shop - for example `Women > Clothes > Jackets > Blazer`
+  * if product is in multiple paths use a pipe `|` as a separator
+* Brand
+* Retail price
+* Discount price
+* Lowest price in the last 30 days\*
+  * only if required by law in your country
 * Deeplink to product variant in shop
-* Images
-  * All available images in maximum resolution. For an optimal presentation at least one cut out image (hollow man photography).
-  * Transfer images with least possible fillup / whitespace to optimize the presentation in the widgets.
+* Image
+  * Main image in maximum resolution. Used for data tagging via image recognition.
+  * For an optimal recognition use the cut out image (hollow man photography) without any other objects / persons.
+* Thumbnail
+  * Main image in smaller resolution. Used for widget content.
+  * Use image with least possible fillup / whitespace to optimize the presentation in the widgets
+  * For an optimal presentation use the cut out image (hollow man photography) without any other objects / persons.
 
 {% hint style="danger" %}
 We deliver image thumbnails from our CDN and cache images heavily. If you change images you have to also change the image URL in order to invalidate the CDN cache!&#x20;
@@ -36,15 +49,15 @@ In order to access our Fashion Content Pool, further data is required. See [**Fa
 
 ### Examples
 
-{% file src="../../.gitbook/assets/base-data-example (1).csv" %}
+{% file src="../../.gitbook/assets/base-data-example.csv" %}
 base data example
 {% endfile %}
 
 {% hint style="info" %}
-Prices and stock levels can change very fast. To ensure that 8SELECT and the shop are in sync we recommend that you deliver one full export every 24 hours and an extra stock- price-update more often - up to every 15 minutes.
+Prices and stock levels can change very fast. To ensure that 8SELECT and the shop are in sync we recommend that you deliver one full export every 24 hours and an extra stock- price-update more often - up to every 30 minutes.
 {% endhint %}
 
-{% file src="../../.gitbook/assets/stock-price-example (1).csv" %}
+{% file src="../../.gitbook/assets/stock-price-example.csv" %}
 stock and price update example
 {% endfile %}
 

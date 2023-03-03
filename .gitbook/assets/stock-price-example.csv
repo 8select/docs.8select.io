@@ -1,4 +1,3 @@
-sku;stock;retail-price;discount-price
-100759001;1;160.00;160.00
-10075-foo-9002-bar;0;80.00;60.00
-;;;
+sku;stock;retail-price;discount-price;discount-price-30-days
+100759001;22;160.00;160.00;160.00
+10075-foo-9002-bar;1;80.00;60.00;50.00
