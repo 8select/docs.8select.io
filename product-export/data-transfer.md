@@ -31,17 +31,17 @@ Your files are encrypted and can not be accessed from the outside.
 
 ### How it works
 
-1. HTTP POST request to retrieve a signed upload URL.
-   1. Depending on wether you want to upload a full feed or update feed you need to set different body parameters.
-   2. You will get a `key` and an `uploadUrl`.
-2. HTTP PUT request to the retrieved `uploadUrl`.
-   1. Don't forget to include the file in the HTTP body. :-)&#x20;
+1. Send a HTTP POST request to `api.8select.io/feeds/uploads` to retrieve a pre-signed upload request, i.e. a JSON object containing the following properties:
+   * `headers`: A map of string key-value pairs
+   * `method`: A HTTP method, e.g. `PUT`
+   * `url`: A presigned URL
+2. Send another HTTP request using the `method` and `url`, **and including all** `headers` returned by the previous request, as well as the file to be uploaded in the HTTP body.
 
 ### API
 
-#### Upload Full Product Feed&#x20;
+#### Upload Product Feed&#x20;
 
-{% swagger method="post" path="/uploads" baseUrl="https://api.8select.io" summary="Get signed URL for full product feed upload." expanded="true" %}
+{% swagger method="post" path="/feeds/uploads" baseUrl="https://api.8select.io" summary="Get a pre-signed request for product feed upload." expanded="true" %}
 {% swagger-description %}
 
 {% endswagger-description %}
@@ -54,56 +54,31 @@ Your API ID provided by us.
 Your API SECRET provided by us.
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="type" required="true" %}
-`productFeed`
+{% swagger-parameter in="body" name="format" required="true" type="" %}
+`"csv"`
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="productFeed" type="Object" required="true" %}
-`{ "fileType": "text/csv" }`
+{% swagger-parameter in="body" name="config" type="Object" required="true" %}
+`{ "delimiter": ",", "skuFieldName": "sku" }`
 
  
 {% endswagger-parameter %}
 
-{% swagger-response status="201: Created" description="" %}
+{% swagger-parameter in="header" name="content-type" required="true" type="application/json" %}
+
+{% endswagger-parameter %}
+
+{% swagger-response status="200: OK" description="" %}
 ```typescript
-{ 
-  "key": string 
-  "uploadUrl": string
-}
-```
-{% endswagger-response %}
-{% endswagger %}
-
-#### Upload Update Product Feed&#x20;
-
-{% swagger method="post" path="/uploads" baseUrl="https://api.8select.io" summary="Get signed URL for update product feed upload." expanded="true" %}
-{% swagger-description %}
-
-{% endswagger-description %}
-
-{% swagger-parameter in="header" name="x-api-id" required="true" %}
-Your API ID provided by us.
-{% endswagger-parameter %}
-
-{% swagger-parameter in="header" name="x-api-secret" required="true" %}
-Your API SECRET provided by us.
-{% endswagger-parameter %}
-
-{% swagger-parameter in="body" name="type" required="true" %}
-`productUpdateFeed`
-{% endswagger-parameter %}
-
-{% swagger-parameter in="body" name="productUpdateFeed" type="Object" required="true" %}
-`{ "fileType": "text/csv" }`
-
- 
-{% endswagger-parameter %}
-
-{% swagger-response status="201: Created" description="" %}
-```typescript
-{ 
-  "key": string 
-  "uploadUrl": string
+{
+    "headers": {
+        "Content-Type": "text/csv; charset=utf-8", // depending on the request parameters
+        "X-Amz-Meta-Delimiter": ",", // depending on the request parameters
+        "X-Amz-Meta-Sku-Field-Name": "sku", // depending on the request parameters
+        ... // could be more
+    },
+    "method": "PUT",
+    "url": "https://s3.eu-central-1.amazonaws.com/..."
 }
 ```
 {% endswagger-response %}
