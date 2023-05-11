@@ -46,22 +46,28 @@ Your files are encrypted and can not be accessed from the outside.
 
 {% endswagger-description %}
 
-{% swagger-parameter in="header" name="x-api-id" required="true" %}
+{% swagger-parameter in="header" name="x-api-id" required="true" type="String" %}
 Your API ID provided by us.
 {% endswagger-parameter %}
 
-{% swagger-parameter in="header" name="x-api-secret" required="true" %}
+{% swagger-parameter in="header" name="x-api-secret" required="true" type="String" %}
 Your API SECRET provided by us.
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="format" required="true" type="" %}
-`"csv"`
+{% swagger-parameter in="body" name="identifier" required="true" type="String" %}
+The field by which a record can be uniquely identified, e.g. 
+
+`"sku"`
+
+ or 
+
+`"productId"`
+
+ 
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="config" type="Object" required="true" %}
-`{ "delimiter": ",", "skuFieldName": "sku" }`
-
- 
+{% swagger-parameter in="body" name="format" type="Object" required="true" %}
+{ "options": { "delimiter": "," }, "type": "csv" }
 {% endswagger-parameter %}
 
 {% swagger-parameter in="header" name="content-type" required="true" type="application/json" %}
