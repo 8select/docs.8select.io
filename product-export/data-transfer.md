@@ -1,6 +1,10 @@
 # Data Transfer
 
-Currently we support some push and pull methods to transfer your product data.
+Currently we support push and pull methods to transfer your product data.
+
+{% hint style="success" %}
+Your files are encrypted on our side and can not be accessed from the outside.
+{% endhint %}
 
 ## Pull
 
@@ -21,11 +25,7 @@ We download your product data files on a schedule. You just tell us from where a
 ## Push
 
 You upload your product data files whenever something updates to our S3 bucket.\
-You just request a signed upload URL from our API and can then upload your file. You just need to make 2 simple HTTP calls for that.
-
-{% hint style="success" %}
-Your files are encrypted and can not be accessed from the outside.
-{% endhint %}
+You request a signed upload URL from our API and can then upload your file. You just need to make 2 simple HTTP calls for that.
 
 ![](<../.gitbook/assets/Product Import - Frame 1 (1).jpg>)
 
@@ -35,7 +35,7 @@ Your files are encrypted and can not be accessed from the outside.
    * `headers`: A map of string key-value pairs
    * `method`: A HTTP method, e.g. `PUT`
    * `url`: A presigned URL
-2. Send another HTTP request using the `method` and `url`, **and including all** `headers` returned by the previous request, as well as the file to be uploaded in the HTTP body.
+2. Send a second HTTP request using the `method` and `url`, **and including all** `headers` returned by the previous request, as well as the file to be uploaded in the HTTP body.
 
 ### API
 
@@ -89,26 +89,3 @@ The field by which a record can be uniquely identified, e.g.
 ```
 {% endswagger-response %}
 {% endswagger %}
-
-## File Format
-
-We currently only support CSV format.\
-Each line will hold a product variant (SKU).
-
-You can not provide files in CSV format? No problem, talk to us and we will find a solution. :heart:
-
-### Examples
-
-Here are two examples for you.:bulb:
-
-{% file src="../.gitbook/assets/fashion-content-pool-full-example.csv" %}
-fashion content pool full example
-{% endfile %}
-
-{% file src="../.gitbook/assets/stock-price-example (1).csv" %}
-stock and price update example
-{% endfile %}
-
-{% hint style="warning" %}
-Prices and stock levels can change very fast. To ensure that 8SELECT and the shop are in sync we recommend that you deliver one full export every 24 hours and an extra stock- price-update more often - up to every 15 minutes.
-{% endhint %}
