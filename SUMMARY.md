@@ -8,7 +8,7 @@
 * [Widgets](integration/widgets/README.md)
   * [🗺 Internationalization](integration/widgets/internationalization.md)
 * [Shopping Cart](integration/warenkorb.md)
-* [Checkout](integration/checkout.md)
+* [Checkout Tracking](integration/checkout.md)
 * [Product Export](integration/produkt-export.md)
 * [A/B Testing](integration/a-b-testing.md)
 * [Single Page Application](integration/single-page-application.md)
