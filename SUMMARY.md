@@ -20,7 +20,7 @@
 * [8.SET - on product page](widgets/8.set-compose.md)
 * [8.SET  - on cart layer](widgets/8.set-flat.md)
 * [8.SET - CTA element](widgets/8.set-teaser-button.md)
-* [8.SET Photo](widgets/8.set-photo.md)
+* [8.SET Custom](widgets/8.set-photo.md)
 
 ## Product Export
 
