@@ -13,6 +13,7 @@
 * [A/B Testing](integration/a-b-testing.md)
 * [Single Page Application](integration/single-page-application.md)
 * [Tag Manager](integration/tag-manager.md)
+* [Data Privacy / Cookies / GDPR](integration/data-privacy-cookies-gdpr.md)
 
 ## Widgets
 
