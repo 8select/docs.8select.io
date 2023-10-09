@@ -29,8 +29,8 @@ Insert and execute the following snippets one by one to show the widget 8.SET Co
 You can add any widget via its id like described in the section [WIDGETS](https://docs.8select.io/widgets/).
 
 ```javascript
-// Add 8.SET Compose Widget
-_8select.demo('8.SET-Compose')
+// Add 8.SET Widget
+_8select.demo('8.SET')
 ```
 
 {% hint style="warning" %}

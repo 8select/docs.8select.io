@@ -11,12 +11,12 @@ The widgets are configured via `data` attributes. There are static and dynamic a
 The 8SELECT integration team will adjust the widget styling 🎨 to your shop design. ❤️&#x20;
 {% endhint %}
 
-### Example 8.SET Compose
+### Example 8.SET
 
 The widget is used to display cross-selling content in the form of product sets for a product.
 
 ```markup
-<div data-8select-widget-id="8.SET-Compose" data-sku="42"></div>
+<div data-8select-widget-id="8.SET" data-sku="42"></div>
 ```
 
 {% hint style="info" %}

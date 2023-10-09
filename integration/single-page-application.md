@@ -12,15 +12,25 @@ In the future the SDK will get smarter and recognise widget configurations autom
 
 ### When is this necessary?
 
-Some examples for 8.SET Compose:
+Some examples for 8.SET
 
 * the product variant (other than size) is changed, for example if your customers can select the color or pattern as a variant of a product
 * the product completely changes, i.e. if the customer navigates to another product page
 
 ### How to implement it?
 
+#### SDK API
+
+```javascript
+window._8select.updateWidgetSku('8.SET', 'your-new-sku-here')
+window._8select.updateWidgetSku('8.SIMILAR', 'your-new-sku-here')
+window._8select.updateWidgetSku('8.SET-Custom', 'your-new-sku-here')
+```
+
+#### re-render
+
 * change the configuration for example for the SKU `data-sku="${new-sku}"`
-* **required:** also update a property that will make your SPA rerender the component
+* **required:** also update a property that will make your SPA re-render the component
   * [React](https://reactjs.org/docs/reconciliation.html#keys): `key={new-sku}`&#x20;
   * Vue.js: `:key={new-sku}`
 * after the component is rendered call `_8select.initCSE()`

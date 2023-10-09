@@ -55,15 +55,7 @@ Your API SECRET provided by us.
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" name="identifier" required="true" type="String" %}
-The field by which a record can be uniquely identified, e.g. 
-
-`"sku"`
-
- or 
-
-`"productId"`
-
- 
+The field by which a record can be uniquely identified, e.g. `"sku"` or `"productId"`&#x20;
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" name="format" type="Object" required="true" %}
