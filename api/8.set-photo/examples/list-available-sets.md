@@ -20,7 +20,7 @@ In the above example we show a list of available 8.SET-Photo sets. For each set 
 
 ## How it works
 
-The 8SELECT GraphQL API allows you to query information about 8.SET Photo sets containing identifiers of the sets. These enable you to display the 8.SET Photo widget for specific sets, see [8.set-photo.md](../../../widgets/8.set-photo.md "mention").
+The 8SELECT GraphQL API allows you to query information about 8.SET Photo sets containing identifiers of the sets. These enable you to display the 8.SET Photo widget for specific sets, see [8.set-custom.md](../../../widgets/8.set-custom.md "mention").
 
 With the `queryType TAGS` you can filter the 8.SET Photo sets. The individual`TAGS` can be included as well as excluded.
 
