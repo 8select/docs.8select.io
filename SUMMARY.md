@@ -24,6 +24,7 @@
   * [Product Page](widgets/touchpoints/product-page.md)
   * [Cart Layer](widgets/touchpoints/cart-layer.md)
   * [Cart](widgets/touchpoints/cart.md)
+  * [Content Page](widgets/touchpoints/content-page.md)
 
 ## Product Export
 
