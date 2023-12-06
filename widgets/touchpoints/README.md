@@ -2,7 +2,7 @@
 
 You can use any widget on any kind of page in your shop. In order to identify which page the widget is on you need to add another data attribute - `data-touchpoint`.
 
-Recommended values are `product`, `cart-layer`, `cart`, `content`, `category`, `search`.
+Eligible values are `product`, `cart-layer`, `cart`, `content`, `category`, `search`.
 
 
 
