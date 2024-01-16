@@ -9,8 +9,10 @@ You can not provide files in CSV format? No problem, talk to us and we will find
 
 ## CSV Format
 
-* Column separator is a comma `;`
+* Column separator is a semicolon `;`
 * Wrap all values in the text qualifier double-quote `"`
+  * If your text includes double-quotes those need to be escaped with another double-quote \
+    `"T-Shirt ""Santa"""`
 * For multi-value fields use a comma `,` to separate values
 * Encoding is UTF-8
 
