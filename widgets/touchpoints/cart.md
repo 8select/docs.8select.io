@@ -10,7 +10,7 @@ Show complementary products via 8.SET
 
 {% code overflow="wrap" %}
 ```html
-<div data-8select-widget-id="8.SET" data-sku="insert-sku-of-any-cart-product" data-touchpoint="cart-layer"></div>
+<div data-8select-widget-id="8.SET" data-sku="insert-sku-of-any-cart-product" data-touchpoint="cart"></div>
 ```
 {% endcode %}
 
@@ -18,6 +18,6 @@ or show similar items via 8.SIMILAR
 
 {% code overflow="wrap" %}
 ```html
-<div data-8select-widget-id="8.SIMILAR" data-sku="insert-sku-of-any-cart-product" data-touchpoint="cart-layer"></div>
+<div data-8select-widget-id="8.SIMILAR" data-sku="insert-sku-of-any-cart-product" data-touchpoint="cart"></div>
 ```
 {% endcode %}

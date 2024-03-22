@@ -11,6 +11,6 @@ The container element will be set to `display:block` in case there is content. S
 ```html
 <div class="-eightselect-widget-container" style="display:none">
     <h2>Complementary products you may like</h2>
-    <div data-8select-widget-id="8.SET" data-sku="42"></div>
+    <div data-8select-widget-id="8.SET" data-touchpoint="product" data-sku="42"></div>
 </div>
 ```

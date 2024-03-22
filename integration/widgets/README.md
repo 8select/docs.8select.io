@@ -16,7 +16,7 @@ The 8SELECT integration team will adjust the widget styling 🎨 to your shop de
 The widget is used to display cross-selling content in the form of product sets for a product.
 
 ```markup
-<div data-8select-widget-id="8.SET" data-sku="42"></div>
+<div data-8select-widget-id="8.SET" data-touchpoint="product" data-sku="42"></div>
 ```
 
 {% hint style="info" %}
@@ -25,7 +25,7 @@ You can find a detailed description in the [**WIDGETS**](https://docs.8select.io
 
 ### Static Attributes
 
-The value of these attributes does not change, for example`data-8select-widget-id`.
+The value of these attributes does not change, for example`data-8select-widget-id` or `data-touchpoint`.
 
 ### Dynamic Attributes
 
