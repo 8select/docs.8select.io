@@ -1,3 +1,9 @@
+---
+description: >-
+  Simple version of 8.SET Compose with limited user interaction - for example
+  for a cart layer
+---
+
 # Touchpoints
 
 You can use any widget on any kind of page in your shop. In order to identify which page the widget is on you need to add another data attribute - `data-touchpoint`.

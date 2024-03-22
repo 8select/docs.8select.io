@@ -22,11 +22,11 @@
 * [8.SIMILAR](widgets/8.similar.md)
 * [8.SET](widgets/8.set.md)
 * [8.SET Custom](widgets/8.set-custom.md)
-* [Touchpoints](widgets/touchpoints/README.md)
-  * [Product Page](widgets/touchpoints/product-page.md)
-  * [Cart Layer](widgets/touchpoints/cart-layer.md)
-  * [Cart](widgets/touchpoints/cart.md)
-  * [Content Page](widgets/touchpoints/content-page.md)
+* [Touchpoints](widgets/8.set-flat/README.md)
+  * [Product Page](widgets/8.set-flat/product-page.md)
+  * [Cart Layer](widgets/8.set-flat/cart-layer.md)
+  * [Cart](widgets/8.set-flat/cart.md)
+  * [Content Page](widgets/8.set-flat/content-page.md)
 
 ## Product Export
 

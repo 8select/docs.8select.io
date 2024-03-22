@@ -1,31 +1,29 @@
 # Data Transfer
 
-Currently we support push and pull methods to transfer your product data.
-
-{% hint style="success" %}
-Your files are encrypted on our side and can not be accessed from the outside.
-{% endhint %}
+We support two main ways of transferring product data between your shop and our infrastructure.
 
 ## Pull
 
-We download your product data files on a schedule. You just tell us from where and when.
+We periodically download your product data files from a given origin using any of the following protocols:
 
-### Protocols
+* HTTP(S)
+  * requires a `"Content-Type"` header indicating the feed format, e.g. `text/csv`
+  * supports optional `gzip` compression, if specified in a `"Content-Encoding"` header
+* (S)FTP
+  * requires a file extension indicating the feed format, e.g. `.csv`
+* AWS S3
+  * requries a `"Content-Type"` metadata indicating the feed format, e.g. `text/csv`
 
-* File Storage like
-  * FTP
-  * SFTP
-  * FTPS
-  * AWS S3
-* HTTPS
-  * without credentials
-  * with credentials via basic auth
-  * custom login forms will probably also work, talk to us please :yellow\_heart:
+Each of these protocols can be used with and without credentials — if you have non-standard requirements, just talk to us and we'll find a way :yellow\_heart:
 
 ## Push
 
 You upload your product data files whenever something updates to our S3 bucket.\
 You request a signed upload URL from our API and can then upload your file. You just need to make 2 simple HTTP calls for that.
+
+{% hint style="success" %}
+Your files are encrypted on our side and can not be accessed from the outside.
+{% endhint %}
 
 ![](<../.gitbook/assets/Product Import - Frame 1 (1).jpg>)
 
@@ -41,32 +39,27 @@ You request a signed upload URL from our API and can then upload your file. You 
 
 #### Upload Product Feed&#x20;
 
-{% swagger method="post" path="/feeds/uploads" baseUrl="https://api.8select.io" summary="Get a pre-signed request for product feed upload." expanded="true" %}
-{% swagger-description %}
+## Get a pre-signed request for product feed upload.
 
-{% endswagger-description %}
+<mark style="color:green;">`POST`</mark> `https://api.8select.io/feeds/uploads`
 
-{% swagger-parameter in="header" name="x-api-id" required="true" type="String" %}
-Your API ID provided by us.
-{% endswagger-parameter %}
+#### Headers
 
-{% swagger-parameter in="header" name="x-api-secret" required="true" type="String" %}
-Your API SECRET provided by us.
-{% endswagger-parameter %}
+| Name                                           | Type             | Description                     |
+| ---------------------------------------------- | ---------------- | ------------------------------- |
+| x-api-id<mark style="color:red;">\*</mark>     | String           | Your API ID provided by us.     |
+| x-api-secret<mark style="color:red;">\*</mark> | String           | Your API SECRET provided by us. |
+| content-type<mark style="color:red;">\*</mark> | application/json |                                 |
 
-{% swagger-parameter in="body" name="identifier" required="true" type="String" %}
-The field by which a record can be uniquely identified, e.g. `"sku"` or `"productId"`&#x20;
-{% endswagger-parameter %}
+#### Request Body
 
-{% swagger-parameter in="body" name="format" type="Object" required="true" %}
-{ "options": { "delimiter": "," }, "type": "csv" }
-{% endswagger-parameter %}
+| Name                                         | Type   | Description                                                                            |
+| -------------------------------------------- | ------ | -------------------------------------------------------------------------------------- |
+| identifier<mark style="color:red;">\*</mark> | String | The field by which a record can be uniquely identified, e.g. `"sku"` or `"productId"`  |
+| format<mark style="color:red;">\*</mark>     | Object | { "options": { "delimiter": "," }, "type": "csv" }                                     |
 
-{% swagger-parameter in="header" name="content-type" required="true" type="application/json" %}
-
-{% endswagger-parameter %}
-
-{% swagger-response status="200: OK" description="" %}
+{% tabs %}
+{% tab title="200: OK " %}
 ```typescript
 {
     "headers": {
@@ -79,5 +72,5 @@ The field by which a record can be uniquely identified, e.g. `"sku"` or `"produc
     "url": "https://s3.eu-central-1.amazonaws.com/..."
 }
 ```
-{% endswagger-response %}
-{% endswagger %}
+{% endtab %}
+{% endtabs %}
