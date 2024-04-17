@@ -6,6 +6,7 @@
 
 * [8.SDK Web (JavaScript SDK)](integration/javascript-sdk.md)
 * [Widgets](integration/widgets/README.md)
+  * [➕ Add more elements, like custom headline](integration/widgets/add-more-elements-like-custom-headline.md)
   * [👻 Hide recommendation area in case there is no content](integration/widgets/hide-recommendation-area-in-case-there-is-no-content.md)
   * [🔎 Adding widgets after 8.SDK was loaded](integration/widgets/adding-widgets-after-8.sdk-was-loaded.md)
   * [🗺️ Internationalization](integration/widgets/internationalization.md)
