@@ -37,9 +37,7 @@ Your files are encrypted on our side and can not be accessed from the outside.
 
 ### API
 
-#### Upload Product Feed&#x20;
-
-## Get a pre-signed request for product feed upload.
+#### get a pre-signed request for product feed upload
 
 <mark style="color:green;">`POST`</mark> `https://api.8select.io/feeds/uploads`
 
@@ -58,6 +56,8 @@ Your files are encrypted on our side and can not be accessed from the outside.
 | identifier<mark style="color:red;">\*</mark> | String | The field by which a record can be uniquely identified, e.g. `"sku"` or `"productId"`  |
 | format<mark style="color:red;">\*</mark>     | Object | { "options": { "delimiter": "," }, "type": "csv" }                                     |
 
+#### Response
+
 {% tabs %}
 {% tab title="200: OK " %}
 ```typescript
@@ -72,5 +72,32 @@ Your files are encrypted on our side and can not be accessed from the outside.
     "url": "https://s3.eu-central-1.amazonaws.com/..."
 }
 ```
+{% endtab %}
+{% endtabs %}
+
+
+
+#### API usage example via cURL
+
+This is just for demonstration purposes. You can use this method to make a test upload. For production use you should do this programatically with code on your server. :sunglasses:
+
+Replace `your-api-secret` and `your-api-secret` with your credentials.
+
+{% tabs %}
+{% tab title="get presigned URL" %}
+{% code overflow="wrap" lineNumbers="true" %}
+```bash
+curl -v -X POST "https://api.8select.io/feeds/uploads" -d '{ "identifier": "sku", "format": { "type": "csv","options": { "delimiter": ","}}}' -H "x-api-id:your-api-id" -H "x-api-secret:your-api-secret" -H "content-type:application/json"
+```
+{% endcode %}
+{% endtab %}
+
+{% tab title="upload file" %}
+{% code overflow="wrap" lineNumbers="true" %}
+```bash
+curl -X PUT -T /path/to/your/file -H "Content-Type: text/csv" -H "X-Amz-Meta-Delimiter:," -H "X-Amz-Meta-Delta:false" -H "X-Amz-Meta-Identifier:sku" \
+        "https://s3.eu-central-1.amazonaws.com/......"
+```
+{% endcode %}
 {% endtab %}
 {% endtabs %}
