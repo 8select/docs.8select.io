@@ -7,7 +7,7 @@ A view event should be triggered whenever [**a piece of content slides into the 
   "type": "view",
   "view": {
     "type": "customSet",
-    "setCompose": {
+    "customSet": {
       "id": "1b3de0bd-95c6-435a-8bb9-f4cae0160388"
     }
   },
