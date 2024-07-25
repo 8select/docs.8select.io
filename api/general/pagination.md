@@ -7,48 +7,59 @@ description: >-
 # Pagination
 
 {% hint style="warning" %}
-As pagination is not yet fully implemented, all paginated fields will currently return **all** results. However, to avoid breaking changes once pagination will be enabled, the respective pattern is already prepared and enforced.
+As pagination is not yet fully implemented, all paginated fields will allow you to limit the returned items via the first argument. However it is not possible to set an offset.
+
+To avoid breaking changes once pagination will be enabled, the respective pattern is already prepared and enforced.
 {% endhint %}
 
 ## Nodes and Edges
 
 Objects that share a relationship within our API are referred to as **nodes** and their connections as **edges**. To enable pagination, a field representing a one-to-many relationship contains a single `edges` object, which in turn is a list of nodes. Each such `node` object represents a single related item.
 
-According to this structure, you could query the title of all 8.SET Compose product sets for a product with the SKU `123456-7890` in your catalogue by using the follwing query:
+According to this structure, you could query a list of similar products:
 
-```
-setCompose(input: {queryType: SKU, value: "123456-7890"}) {
-    edges {
+```graphql
+product(id: "8S-DEMO-Polohemd-1") {
+   similarProducts {
+      edges {
         node {
-            title
+          id
         }
+      }
     }
+  }
 }
 ```
 
 The responding result will reflect the same structure:
 
-```
-{
-    "data": {
-        "setCompose": {
-            "edges": [
-                {
-                    "node" : {
-                        "title": "Product Set Example 1"
-                    }
-                },
-                {
-                    "node" : {
-                        "title": "Product Set Example 2"
-                    }
-                },
-                ...
-            ]
-        }
+<pre class="language-json"><code class="lang-json"><strong>{
+</strong>  "data": {
+    "product": {
+      "similarProducts": {
+        "edges": [
+          {
+            "node": {
+              "id": "8S-DEMO-Polohemd-10"
+            }
+          },
+          {
+            "node": {
+              "id": "8S-DEMO-Polohemd-9"
+            }
+          },
+          ...,
+          {
+            "node": {
+              "id": "8S-DEMO-Polohemd-6"
+            }
+          }
+        ]
+      }
     }
+  }
 }
-```
+</code></pre>
 
 ## Slicing
 
@@ -56,119 +67,40 @@ An optional parameter `first` can be used to limit the number of items returned 
 
 The following query for example, would allow you to return only a single 8.SET Compose product set for a product with the SKU `123456-7890` in your catalogue:
 
-```
-setCompose(input: {queryType: SKU, value: "123456-7890"}, first: 1) {
-    edges {
+```graphql
+product(id: "8S-DEMO-Polohemd-1") {
+   similarProducts(first: 2) {
+      edges {
         node {
-            title
+          id
         }
+      }
     }
+  }
 }
 ```
 
 You can pass an arbitrary positive integer to the `first` argument. Bear in mind though, that the result will always be the same shape, even if you request a single item. So the above query would result in:
 
-```
+```json
 {
-    "data": {
-        "setCompose": {
-            "edges": [
-                {
-                    "node" : {
-                        "title": "Product Set Example 1"
-                    }
-                }
-            ]
-        }
-    }
-}
-```
-
-## Cursor-based pagination
-
-{% hint style="danger" %}
-As mentioned above, pagination is not yet fully implemented. The following section is thus just a preview of how to use the cursor-based, forward pagination once it will be implemented.
-{% endhint %}
-
-The `after` parameter can be used to traverse through a paginated result. It expects a cursor value which can be obtained from the previous response.
-
-Using a combination of slicing and cursor-based pagination for example, you could iterate through a list of 8.SET Compose product sets one by one:
-
-```
-setCompose(
-    input: {queryType: SKU, value: "123456-7890"}, 
-    first: 1
-) {
-    edges {
-        node {
-            title
-        }
-    }
-    pageInfo {
-        endCursor
-    }
-}
-```
-
-This would result in the following response:
-
-```
-{
-    "data": {
-        "setCompose": {
-            "edges": [
-                {
-                    "node" : {
-                        "title": "Product Set Example 1"
-                    }
-                }
-            ],
-            "pageInfo": {
-                "endCursor": "Zjk3NzA3ZTEtMWNiYS00YWQ0LWFiNDQtM2VmNTM0ZWYzNWUx"
+  "data": {
+    "product": {
+      "similarProducts": {
+        "edges": [
+          {
+            "node": {
+              "id": "8S-DEMO-Polohemd-10"
             }
-        }
-    }
-}
-```
-
-Now using the cursor from this response we can query the next product set:
-
-```
-setCompose(
-    input: {queryType: SKU, value: "123456-7890"}, 
-    after: "Zjk3NzA3ZTEtMWNiYS00YWQ0LWFiNDQtM2VmNTM0ZWYzNWUx", 
-    first: 1
-) {
-    edges {
-        node {
-            title
-        }
-    }
-    pageInfo {
-        endCursor
-    }
-}
-```
-
-Which would in turn respond with the following result:
-
-```
-{
-    "data": {
-        "setCompose": {
-            "edges": [
-                {
-                    "node" : {
-                        "title": "Product Set Example 2"
-                    }
-                }
-            ],
-            "pageInfo": {
-                "endCursor": "NjIzMjZkM2ItN2M0My00MTNjLWJhMjUtZWNhMDhhOGExMDE0"
+          },
+          {
+            "node": {
+              "id": "8S-DEMO-Polohemd-9"
             }
-        }
+          }
+        ]
+      }
     }
+  }
 }
 ```
-
-Following this pattern we could continue traversing through the list of **all** relevant product sets. Additionally, this approach is very flexible and even enables changing slice sizes between consecutive queries as the used cursor is always based on the previous result.

@@ -1,6 +1,6 @@
 # User clicks on a product within 8.SET Compose content
 
-Let's assume you are showing content from 8.SET Compose that was loaded via [8.API](../../../api/8.set-compose/). Whenever a user clicks on a product within that content you should send the respective `interact` event.
+Let's assume you are showing content from 8.SET Compose that was loaded via [8.API](broken-reference). Whenever a user clicks on a product within that content you should send the respective `interact` event.
 
 ![](../../../.gitbook/assets/interactProduct.gif)
 

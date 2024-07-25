@@ -47,6 +47,7 @@
 ## API
 
 * [Changelog](api/changelog/README.md)
+  * [2.0.0](api/changelog/2.0.0.md)
   * [1.0.1](api/changelog/1.0.1.md)
 * [General](api/general/README.md)
   * [Introduction](api/general/introduction.md)
@@ -54,13 +55,11 @@
   * [Pagination](api/general/pagination.md)
   * [Exceptions](api/general/exceptions.md)
   * [GraphQL Schema](api/general/graphql-schema.md)
-* [8.SET Compose](api/8.set-compose/README.md)
-  * [Examples](api/8.set-compose/examples/README.md)
-    * [Product set of 5](api/8.set-compose/examples/product-set-of-5.md)
-    * [Product set of 4 with alternatives](api/8.set-compose/examples/product-set-of-4-with-alternatives.md)
-* [8.SET Photo](api/8.set-photo/README.md)
-  * [Examples](api/8.set-photo/examples/README.md)
-    * [List available sets](api/8.set-photo/examples/list-available-sets.md)
+* [Examples](api/examples/README.md)
+  * [8.SIMILAR](api/examples/8.similar.md)
+  * [8.SET](api/examples/8.set.md)
+  * [8.SET Custom](api/examples/8.set-custom.md)
+  * [Product Page - All Content](api/examples/product-page-all-content.md)
 
 ## API Tracking
 

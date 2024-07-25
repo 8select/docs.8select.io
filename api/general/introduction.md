@@ -18,42 +18,76 @@ At 8SELECT we use GraphQL primarily because it enables developers to make API ca
 
 ### How to query GraphQL?
 
-Most commonly GraphQL can be queried by making HTTP `POST` requests to its respective endpoint. At 8SELECT this endpoint currently is `https://api.8select.io`**`/graphql`**. To make a request you can use cURL or any other HTTP compatible client.
+Most commonly GraphQL can be queried by making HTTP `POST` requests to its respective endpoint. At 8SELECT this endpoint currently is `https://api.8select.io/graphql`. To make a request you can use cURL or any other HTTP compatible client. There are also various GraphQL specific clients available in different programming languages.
 
-Currently we only support `setCompose` as a top-level resolver in our query schema. Given a specific product identifier, it will return a list of **8.SET Compose** product sets. Assuming you have a product with the SKU `123456-7890` in your catalogue,  you could use the following example to query the titles of respective product sets:
+You get query content for a given product identifier or query a specific custom-set.
 
-```
-setCompose(input: {queryType: SKU, value: "123456-7890"}) {
-    edges {
+Assuming you have a product with the SKU `8S-DEMO-Polohemd-1` in your catalogue,  you could use the following example to query a list of similar products.
+
+```graphql
+product(id: "8S-DEMO-Polohemd-1") {
+   similarProducts(first: 5) {
+      edges {
         node {
-            title
+          id
         }
+      }
     }
+  }
 }
 ```
 
-To send this query to the GraphQL endpoint you would use the following request:
+To send this query to the GraphQL endpoint you would use the following request in `curl`
 
+```bash
+curl --request POST \
+  --url https://api.8select.io/graphql \
+  --header 'Content-Type: application/json' \
+  --header 'x-api-id: db54750f-80fc-4818-9455-30ca233225dc' \
+  --data '{"query":"query {\n  product(id: \"8S-DEMO-Polohemd-1\") {\n    similarProducts(first: 5) {\n      edges {\n        node {\n          id\n        }\n      }\n    }\n  }\n}\n"}'
 ```
-POST /graphql
-Host: https://api-demo.8select.io
-Content-Type: application/json
-x-api-id: <Your API ID>
+
+And the result will be a list of similar products limited to the first 5
+
+```json
 {
-    "query": "{ setCompose(input: {queryType: SKU, value: \"123456-7890\"}) { edges { node { title } } } }"
+  "data": {
+    "product": {
+      "similarProducts": {
+        "edges": [
+          {
+            "node": {
+              "id": "8S-DEMO-Polohemd-10"
+            }
+          },
+          {
+            "node": {
+              "id": "8S-DEMO-Polohemd-9"
+            }
+          },
+          {
+            "node": {
+              "id": "8S-DEMO-Polohemd-7"
+            }
+          },
+          {
+            "node": {
+              "id": "8S-DEMO-Polohemd-8"
+            }
+          },
+          {
+            "node": {
+              "id": "8S-DEMO-Polohemd-2"
+            }
+          }
+        ]
+      }
+    }
+  }
 }
-```
-
-Using `curl`, you could make the request with the following call:
-
-```
-curl https://api-demo.8select.io/graphql \
-     -H 'Content-Type: application/json' \
-     -H 'x-api-id: <Your API ID>' \
-     -d '{ "query": "{ setCompose(input: {queryType: SKU, value: \"123456-7890\"}) { edges { node { title } } } }" }'
 ```
 
 #### Further Information
 
-To find out more, read the official [**GraphQL documentation**](https://graphql.org/learn/) and learn about writing efficient [**GraphQL queries**](https://graphql.org/learn/queries/).&#x20;
+To find out more about GraphQL in general, read the official [**GraphQL documentation**](https://graphql.org/learn/) and learn about writing efficient [**GraphQL queries**](https://graphql.org/learn/queries/).&#x20;
 

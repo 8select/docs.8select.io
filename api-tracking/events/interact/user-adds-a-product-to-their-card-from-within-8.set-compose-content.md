@@ -1,6 +1,6 @@
 # User adds a product to their card from within 8.SET Compose content
 
-Let's assume you are showing content from 8.SET Compose that was loaded via [8.API](../../../api/8.set-compose/). Whenever a user adds a product from within that content to their cart you should send the respective `interact` event.
+Let's assume you are showing content from 8.SET Compose that was loaded via [8.API](broken-reference). Whenever a user adds a product from within that content to their cart you should send the respective `interact` event.
 
 ![](../../../.gitbook/assets/addToCart.gif)
 
