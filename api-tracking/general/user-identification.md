@@ -9,7 +9,7 @@ To enable user-based metrics the user has to be identified with a consistent ide
     {
       "type": "user",
       "user": {
-        "id": "c57a43f7-eefc-462b-b5a8-0ef421e90f67"
+        "id": "c57a43f7-eefc-462b-b5a8-0ef421e90f67" // uuid-v4
       }
     }
   ],	

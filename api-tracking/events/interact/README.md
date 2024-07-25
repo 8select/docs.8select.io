@@ -1,6 +1,6 @@
 # interact
 
-An interact event should be triggered whenever a piece of content is interacted with by a user. Assuming that you are showing 8.SET Compose product set data and a user clicks on a product contained in that set, the event should look like the following example:
+An interact event should be triggered whenever a piece of content is interacted with by a user. Assuming that you are showing 8.SET product set data and a user clicks on a product contained in that set, the event should look like the following example:
 
 ```javascript
 {
@@ -15,10 +15,10 @@ An interact event should be triggered whenever a piece of content is interacted 
   "context": [
     {
       "content": {
-        "setCompose": {
-          "id": "1b3de0bd-95c6-435a-8bb9-f4cae0160388"
+        "matchingProductClusters": {
+          "id": "457297-0001-00340"
         },
-        "type": "setCompose"
+        "type": "matchingProductClusters"
       },
       "type": "content"
     },

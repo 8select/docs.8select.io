@@ -13,8 +13,8 @@ x-api-id: <Your API ID>
 {
   "type": "view",
   "view": {
-    "type": "setCompose",
-    "setCompose": {
+    "type": "customSet",
+    "customSet": {
       "id": "1b3de0bd-95c6-435a-8bb9-f4cae0160388"
     }
   },

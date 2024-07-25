@@ -8,10 +8,10 @@ As implied by its name the context is supposed to provide contextual information
   "context": [
     {
       "content": {
-        "setCompose": {
+        "customSet": {
           "id": "1b3de0bd-95c6-435a-8bb9-f4cae0160388",
         },
-        "type": "setCompose"
+        "type": "customSet"
       },
       "type": "content",
     }
@@ -28,7 +28,7 @@ Currently, only two context types are supported: `content` and `user`.
 ## user
 
 {% hint style="danger" %}
-If you want to have **user-based metrics**, you must provide a `user` context.
+Currently **user-based metrics are required** for our current pricing model**,** i.e. you have to provide a `user` context.
 {% endhint %}
 
 The `user` context is responsible for the event attribution:
@@ -46,20 +46,16 @@ Read the section about [user identification](user-identification.md) for more in
 
 ## content
 
-If the tracked interaction takes place within the context of some 8SELECT-provided content, e.g. a click on one of the products in an 8.SET Compose product set, the following information must be included in the context of this event:
+If the tracked interaction takes place within the context of some 8SELECT-provided content, e.g. a click on one of the products in an 8.SET-Custom product set, the following information must be included in the context of this event:
 
 ```javascript
 {
   "content": {
-    "setCompose": {
+    "customSet": {
       "id": "<set-id>",
     },
-    "type": "setCompose"
+    "type": "customSet"
   },
   "type": "content",
 }
 ```
-
-{% hint style="info" %}
-Currently, only content of type `setCompose` is supported.
-{% endhint %}

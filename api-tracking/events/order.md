@@ -7,7 +7,7 @@ An order event should be triggered whenever a user, i.e. one of your customers, 
   "type": "order",
   "order": {
     "id": "0987654321",
-		"lines": [
+    "lines": [
       {
         "sku": "654321-7890",
         "grossPrice": {
@@ -46,6 +46,6 @@ Each order lines entry must contain the `sku` of the ordered product and the qua
 Lastly, the `context` must contain an object with type `user` as described in the [context](../general/context.md) section.
 
 {% hint style="info" %}
-Duplicate `order` events will be filtered server-side.
+Duplicate `order` events will be filtered on our server-side so you do not have to implement anything to solve that.
 {% endhint %}
 

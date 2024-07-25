@@ -1,7 +1,6 @@
 # Example what is not a product interaction
 
-Because our `interact` are the reference events for our commission based pricing we want to make sure you only send interact product events if the user is really interacting with the product and not with something else.\
-
+Because our `interact` events are the reference events for our commission based pricing we want to make sure you only send interact events if the user is really interacting with the product and not with something else.
 
 ## Product Carousel
 

@@ -11,7 +11,7 @@ x-api-id: <Your API ID>
 {
   "type": "view",
   "view": {
-    "type": "setCompose"
+    "type": "customSet"
   },
   "context": [
     {
@@ -24,19 +24,19 @@ x-api-id: <Your API ID>
 }
 ```
 
-The above event is missing the `setCompose` property, which is required for `view` events of type `"setCompose"`. The validation endpoint will thus among others report this violation:
+The above event is missing the `customSet` property, which is required for `view` events of type `"customSet"`. The validation endpoint will thus among others report this violation:
 
 ```javascript
 [
   ...,
   {
     "instancePath": "/view",
-    "schemaPath": "#/definitions/PayloadSetCompose/required",
+    "schemaPath": "#/definitions/PayloadCustomSet/required",
     "keyword": "required",
     "params": {
-      "missingProperty": "setCompose"
+      "missingProperty": "customSet"
     },
-    "message": "must have required property 'setCompose'"
+    "message": "must have required property 'customSet'"
   },
   ...
 ]
