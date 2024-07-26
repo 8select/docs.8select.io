@@ -14,7 +14,11 @@ For the matching products we do not want to show similar products for our curren
 
 <figure><img src="../../.gitbook/assets/all-content.gif" alt=""><figcaption></figcaption></figure>
 
-## GraphQL query and response
+## GraphQL query and response - id only
+
+To ensure that you show the most recent data in you shop you should only query the product ids and fetch the rest of the data you need for your UI from your own database.
+
+In case you can not make the extra roundtrip you can actually query all the data that is required to render a basic UI. Just consult the GraphQL schema.
 
 {% tabs %}
 {% tab title="GraphQL query" %}
