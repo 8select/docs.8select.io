@@ -6,6 +6,8 @@
 
 * You can now request any type of content via the API
 * The schema completely changed
+* You can now not only get the product id but also the properties like brand, name, prices etc.
+  * To ensure that you show the most recent data you should still make an extra roundtrip to your own database and fetch the most recent data to render your UI
 
 [Go to detailed version description.](2.0.0.md)
 
