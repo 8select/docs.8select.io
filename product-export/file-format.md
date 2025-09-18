@@ -23,12 +23,13 @@ A product export can either contain all of your product catalogue or only parts 
 If you are able to send updates on demand or can send a delta (i.e. only include changed products since the last export) you can do so as well. If not you can just send all products.
 
 In case you can only export in stock products that is also fine.\
-We treat products that where in an export in the past but are not inside an export for more than 24 hours as out of stock. So in general it is better to also include out of stock products in an export, to reflect stock changes immediately.\
+We treat products that where in an export in the past but are not inside an export for more than 24 hours as out of stock. So in general it is better to also include out of stock products in an export, to reflect stock changes immediately.
 
-
-{% hint style="info" %}
+{% hint style="warning" %}
 You should send us a full export every 24 hours - that way we can make sure everything is in sync.
 {% endhint %}
+
+You can also use different feeds in terms of columns. For example one with all fields and one with only stock and price. That is a best practice in case you can not provide a delta feed but want to reduce ressources to create the feed on your side as much as possible.
 
 ## Examples
 
