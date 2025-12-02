@@ -79,3 +79,7 @@
     * [User adds a product to their card from within 8.SET content](api-tracking/events/interact/user-adds-a-product-to-their-card-from-within-8.set-compose-content.md)
     * [Example what is not a product interaction](api-tracking/events/interact/example-what-is-not-a-product-interaction.md)
   * [order](api-tracking/events/order.md)
+* [Examples](api-tracking/examples/README.md)
+  * [8.SIMILAR](api-tracking/examples/8.similar.md)
+  * [8.SET](api-tracking/examples/8.set.md)
+  * [8.SET Custom](api-tracking/examples/8.set-custom.md)
