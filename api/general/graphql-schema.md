@@ -102,6 +102,11 @@ type ProductReference {
     "An optional number of products to fetch (default: 12)."
     first: Int
   ): ProductConnection
+
+  productSets(
+    "An optional number of sets to fetch (default: 1)."
+    first: Int
+  ): ProductSetConnection
 }
 
 type ProductClusterConnection {
@@ -258,6 +263,8 @@ type ProductVariant {
 
   "The price of this product variant."
   price: Price!
+
+  variantId: String
 }
 
 enum CurrencyCode {
@@ -446,6 +453,64 @@ The specific variant of a product.
 type SetComposeProductVariant {
   "The stock keeping unit referring to this specific product variant."
   sku: String!
+}
+
+type ProductSetConnection {
+  "The list of product sets in the current page."
+  edges: [ProductSetEdge!]!
+
+  "The pagination information of the current page."
+  pageInfo: PageInfo
+}
+
+type ProductSetEdge {
+  "The product set this edge refers to."
+  node: ProductSet!
+}
+
+type ProductSet {
+  "The id of this specific product set."
+  id: ID!
+
+  "The image of the product set. May be null."
+  imageLink: String
+
+  "List of products in order of definition."
+  products: [ProductSetProduct!]!
+
+  "The list of tags of the product set. May be empty."
+  tags: [String!]!
+}
+
+type ProductSetProduct {
+  "The id of this product."
+  id: ID!
+
+  "The name of this product."
+  title: String!
+
+  "The online store URL of this product."
+  link: String!
+
+  "The image of the product."
+  imageLink: String!
+
+  """
+  The decimal amount of the price including currency in ISO 4217, e.g "19.99 EUR".
+  """
+  price: String!
+
+  """
+  The decimal amount of sale the price including currency in ISO 4217, e.g "19.99 EUR".
+  Discounted price if applicable, otherwise null. Same format as `price`.
+  """
+  salePrice: String
+
+  "The brand of this product."
+  brand: String!
+
+  "A list of tags attached to this product. May be empty."
+  tags: [String!]!
 }
 ```
 
