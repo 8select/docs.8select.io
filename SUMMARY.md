@@ -47,6 +47,7 @@
 ## API
 
 * [Changelog](api/changelog/README.md)
+  * [2.1.0](api/changelog/2.1.0.md)
   * [2.0.0](api/changelog/2.0.0.md)
   * [1.0.1](api/changelog/1.0.1.md)
 * [General](api/general/README.md)
@@ -57,6 +58,7 @@
   * [GraphQL Schema](api/general/graphql-schema.md)
 * [Examples](api/examples/README.md)
   * [8.SIMILAR](api/examples/8.similar.md)
+  * [8.SET (simplified)](api/examples/8.set-simplified.md)
   * [8.SET](api/examples/8.set.md)
   * [8.SET Custom](api/examples/8.set-custom.md)
   * [Product Page - All Content](api/examples/product-page-all-content.md)
@@ -81,5 +83,6 @@
   * [order](api-tracking/events/order.md)
 * [Examples](api-tracking/examples/README.md)
   * [8.SIMILAR](api-tracking/examples/8.similar.md)
+  * [8.SET (simplified)](api-tracking/examples/8.set-simplified.md)
   * [8.SET](api-tracking/examples/8.set.md)
   * [8.SET Custom](api-tracking/examples/8.set-custom.md)
