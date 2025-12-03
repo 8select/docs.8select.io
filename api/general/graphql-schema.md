@@ -98,15 +98,15 @@ type ProductReference {
     first: Int
   ): ProductClusterConnection
 
+  productSets(
+    "An optional number of product sets to fetch (default: 10, maximum: 10)."
+    first: Int
+  ): ProductSetConnection
+
   similarProducts(
     "An optional number of products to fetch (default: 12)."
     first: Int
   ): ProductConnection
-
-  productSets(
-    "An optional number of sets to fetch (default: 1)."
-    first: Int
-  ): ProductSetConnection
 }
 
 type ProductClusterConnection {
@@ -483,17 +483,17 @@ type ProductSet {
 }
 
 type ProductSetProduct {
+  "The brand of this product."
+  brand: String!
+
   "The id of this product."
   id: ID!
 
-  "The name of this product."
-  title: String!
+  "The image URL of the product."
+  imageLink: String!
 
   "The online store URL of this product."
   link: String!
-
-  "The image of the product."
-  imageLink: String!
 
   """
   The decimal amount of the price including currency in ISO 4217, e.g "19.99 EUR".
@@ -501,17 +501,18 @@ type ProductSetProduct {
   price: String!
 
   """
-  The decimal amount of sale the price including currency in ISO 4217, e.g "19.99 EUR".
+  The decimal amount of sale the price including currency in ISO 4217, e.g "15.99 EUR".
   Discounted price if applicable, otherwise null. Same format as `price`.
   """
   salePrice: String
 
-  "The brand of this product."
-  brand: String!
-
   "A list of tags attached to this product. May be empty."
   tags: [String!]!
+
+  "The name of this product."
+  title: String!
 }
+
 ```
 
 ## Introspection Query
