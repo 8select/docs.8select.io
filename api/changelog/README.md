@@ -1,10 +1,18 @@
 # Changelog
 
-## [2.1.0 - 2025-12-03](2.1.0.md)
+## [2.2.0 - 2025-12-03](2.2.0.md)
 
 ### Implemented Features
 
 * You can now request a simplified version of 8.SET and 8.SET Custom combined
+
+[Go to detailed version description.](2.2.0.md)
+
+## [2.1.0 - 2025-09-04](2.1.0.md)
+
+### Implemented Features
+
+* You will now get back more than 1 8.SET Custom set.
 
 [Go to detailed version description.](2.1.0.md)
 

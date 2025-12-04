@@ -8,8 +8,8 @@ In order to access the [Fashion Content Pool](../product-export/fashion-content-
 In the section [**PRODUCT EXPORT**](../product-export/data-transfer.md) the requirements and possibilities of data transfer are described in detail.
 {% endhint %}
 
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
+{% content-ref url="/broken/pages/-MMuiyOkhGU1N1EtCIG7" %}
+[Broken link](/broken/pages/-MMuiyOkhGU1N1EtCIG7)
 {% endcontent-ref %}
 
 

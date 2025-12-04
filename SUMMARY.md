@@ -47,6 +47,7 @@
 ## API
 
 * [Changelog](api/changelog/README.md)
+  * [2.2.0](api/changelog/2.2.0.md)
   * [2.1.0](api/changelog/2.1.0.md)
   * [2.0.0](api/changelog/2.0.0.md)
   * [1.0.1](api/changelog/1.0.1.md)

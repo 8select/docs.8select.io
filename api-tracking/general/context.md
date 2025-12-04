@@ -28,7 +28,7 @@ Currently, only two context types are supported: `content` and `user`.
 ## user
 
 {% hint style="danger" %}
-Currently **user-based metrics are required** for our current pricing model**,** i.e. you have to provide a `user` context.
+Currently **user-based metrics are required** for our current pricing mode&#x6C;**,** i.e. you have to provide a `user` context.
 {% endhint %}
 
 The `user` context is responsible for the event attribution:
