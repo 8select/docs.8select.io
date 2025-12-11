@@ -43,19 +43,38 @@ Your files are encrypted on our side and can not be accessed from the outside.
 
 #### Headers
 
-| Name                                           | Type             | Description                     |
-| ---------------------------------------------- | ---------------- | ------------------------------- |
-| x-api-id<mark style="color:red;">\*</mark>     | String           | Your API ID provided by us.     |
-| x-api-secret<mark style="color:red;">\*</mark> | String           | Your API SECRET provided by us. |
-| content-type<mark style="color:red;">\*</mark> | application/json |                                 |
+<table><thead><tr><th width="208.296875">Name</th><th width="180.7313232421875">Type</th><th>Description</th></tr></thead><tbody><tr><td>x-api-id<mark style="color:red;">*</mark></td><td>String</td><td>Your API ID provided by us.</td></tr><tr><td>x-api-secret<mark style="color:red;">*</mark></td><td>String</td><td>Your API SECRET provided by us.</td></tr><tr><td>content-type<mark style="color:red;">*</mark></td><td>application/json</td><td></td></tr></tbody></table>
 
 #### Request Body
 
-| Name                                         | Type    | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
-| -------------------------------------------- | ------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| identifier<mark style="color:red;">\*</mark> | String  | The field by which a record can be uniquely identified, e.g. `"sku"` or `"productId"`                                                                                                                                                                                                                                                                                                                                                                          |
-| format<mark style="color:red;">\*</mark>     | Object  | { "options": { "delimiter": "," }, "type": "csv" }                                                                                                                                                                                                                                                                                                                                                                                                             |
-| delta                                        | Boolean | <p>If set to <code>false</code> we will mark all products that are not present in the feed as deleted.</p><p>If set to <code>true</code> we will just update the products contained in the feed and keep all other products as is.</p><p></p><p>That way you can push so called delta-feeds that only include changes and save ressources and you and our side.</p><p></p><p><code>true</code> or <code>false</code><br><br>defaults to <code>false</code></p> |
+{% tabs %}
+{% tab title="parameters" %}
+<table><thead><tr><th width="177.1312255859375">Name</th><th width="131">Type</th><th>Description</th></tr></thead><tbody><tr><td>identifier<mark style="color:red;">*</mark></td><td>String</td><td>The field by which a record can be uniquely identified, e.g. <code>sku</code> or <code>product_id</code> </td></tr><tr><td>format<mark style="color:red;">*</mark></td><td>Object</td><td><pre class="language-json" data-overflow="wrap"><code class="lang-json">{ 
+  "options": { 
+    "delimiter": "," 
+  }, 
+  "type": "csv" 
+}
+</code></pre></td></tr><tr><td>delta</td><td>Boolean</td><td><p>If set to <code>false</code> we will mark all products that are not present in the feed as deleted.</p><p>If set to <code>true</code> we will just update the products contained in the feed and keep all other products as is.</p><p></p><p>That way you can push so called delta-feeds that only include changes and save ressources and you and our side.</p><p></p><p><code>true</code> or <code>false</code><br><br>defaults to <code>false</code></p></td></tr></tbody></table>
+{% endtab %}
+
+{% tab title="example" %}
+
+
+```json
+{
+  "delta": true,
+  "format": {
+    "options": {
+      "delimiter": ","
+    },
+    "type": "csv"
+  },
+  "identifier": "product_id"
+}
+```
+{% endtab %}
+{% endtabs %}
 
 #### Response
 
