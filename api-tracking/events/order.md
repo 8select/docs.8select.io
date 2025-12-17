@@ -1,6 +1,10 @@
 # order
 
-An order event should be triggered whenever a user, i.e. one of your customers, places an order. It should look like the following example:
+An order event should be triggered whenever a user, i.e. one of your customers, places an order. It should look like the following example.
+
+{% hint style="warning" %}
+Make sure you send the amount that 1 item costs as `amount` and not the sum of the order line.
+{% endhint %}
 
 ```javascript
 {
@@ -11,10 +15,10 @@ An order event should be triggered whenever a user, i.e. one of your customers, 
       {
         "sku": "654321-7890",
         "grossPrice": {
-          "amount": 0.99, // unit price
+          "amount": 0.99, // unit price - i.e. price of 1 item not the sum of 5
           "currency": "EUR" // currency code as defined by ISO 4217
         },
-        "quantity": 5
+        "quantity": 5 // how many items where bought
       },
       {
         "sku": "567890-4321",
@@ -41,7 +45,7 @@ The context array must currently always contain an object with type `user` as de
 
 An order event is identified by its type `order` and an additional `order` property containing specific information about the products being ordered. This property must have the `id` of the order in your shop system and a `lines` property, containing a list of ordered items.
 
-Each order lines entry must contain the `sku` of the ordered product and the quantity of items ordered of this product. Additionally, it must include a `grossPrice` object with a `currency` code, as defined by [ISO 4217](https://en.wikipedia.org/wiki/ISO\_4217), and the `amount` of money paid (including e.g. VAT) for one unit of this entry, i.e. the price of a single item.
+Each order lines entry must contain the `sku` of the ordered product and the quantity of items ordered of this product. Additionally, it must include a `grossPrice` object with a `currency` code, as defined by [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217), and the `amount` of money paid (including e.g. VAT) for **one unit** of this entry, i.e. the price of a single item.
 
 Lastly, the `context` must contain an object with type `user` as described in the [context](../general/context.md) section.
 
